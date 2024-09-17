@@ -1,13 +1,20 @@
-[gd_scene load_steps=6 format=3 uid="uid://ovcp80hs6ocp"]
+[gd_scene load_steps=7 format=3 uid="uid://ovcp80hs6ocp"]
 
 [ext_resource type="Script" path="res://main_scene.gd" id="1_awwpn"]
 [ext_resource type="Texture2D" uid="uid://c8o2xhc145nko" path="res://Images/frame_02_delay098.PNG" id="1_o5wqx"]
+[ext_resource type="Texture2D" uid="uid://cc68yuysnroya" path="res://Images/itchbg.png" id="2_adycd"]
 [ext_resource type="Texture2D" uid="uid://c44kd874loklv" path="res://Images/FhFIk--VIAEZVNx.jpg" id="2_wcrnx"]
 [ext_resource type="Script" path="res://control.gd" id="2_wfkx1"]
 [ext_resource type="Texture2D" uid="uid://ciwcoishgvr0p" path="res://Images/ka9_AK_Gina_oi.png" id="3_jdfji"]
 
 [node name="MainScene" type="Node2D"]
 script = ExtResource("1_awwpn")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1149.0
+offset_bottom = 647.0
+texture = ExtResource("2_adycd")
+expand_mode = 1
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3

@@ -1,0 +1,91 @@
+[gd_scene load_steps=10 format=3 uid="uid://eo56ohcmyuf1"]
+
+[ext_resource type="Texture2D" uid="uid://coxpki1w8bdea" path="res://Images/Ina_Tent.png" id="1_xhyt5"]
+[ext_resource type="Texture2D" uid="uid://cwk4s40dfj3vc" path="res://Images/Ina_Tent_Peek.png" id="2_j1g51"]
+[ext_resource type="Texture2D" uid="uid://bln3b7mk8x1s0" path="res://Images/Ina_Armstrong.png" id="3_0pryc"]
+[ext_resource type="Texture2D" uid="uid://dxxu0aq22crqu" path="res://Images/Ina_Armstrong_Peek.png" id="4_qrrig"]
+[ext_resource type="Texture2D" uid="uid://5tkt101hbtx" path="res://Images/Ina_Glock.png" id="5_qrver"]
+[ext_resource type="Texture2D" uid="uid://cv18c2iumqfjg" path="res://Images/Ina_Glock_Peek.png" id="6_c35bw"]
+[ext_resource type="Texture2D" uid="uid://bm216auyh5mwo" path="res://Images/Tent.png" id="7_hrjtl"]
+[ext_resource type="Texture2D" uid="uid://bv8ucx2x2xv8p" path="res://Images/Armstrong.png" id="8_ot8of"]
+[ext_resource type="Texture2D" uid="uid://db7wbtwy4qyn7" path="res://Images/Glock.png" id="9_gef00"]
+
+[node name="HideSeekTest" type="Node2D"]
+scale = Vector2(0.1, 0.1)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BoxContainer" type="BoxContainer" parent="Control/MarginContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="Control"]
+layout_mode = 2
+offset_left = 430.0
+offset_top = 570.0
+offset_right = 2350.0
+offset_bottom = 1650.0
+size_flags_horizontal = 6
+texture_normal = ExtResource("1_xhyt5")
+texture_pressed = ExtResource("2_j1g51")
+texture_disabled = ExtResource("2_j1g51")
+stretch_mode = 0
+
+[node name="TextureButton2" type="TextureButton" parent="Control"]
+layout_mode = 2
+offset_left = 170.0
+offset_top = 3060.0
+offset_right = 2090.0
+offset_bottom = 4140.0
+texture_normal = ExtResource("3_0pryc")
+texture_pressed = ExtResource("4_qrrig")
+texture_disabled = ExtResource("4_qrrig")
+
+[node name="TextureButton3" type="TextureButton" parent="Control"]
+layout_mode = 2
+offset_left = 2520.0
+offset_top = 1970.0
+offset_right = 4440.0
+offset_bottom = 3050.0
+texture_normal = ExtResource("5_qrver")
+texture_pressed = ExtResource("6_c35bw")
+texture_disabled = ExtResource("6_c35bw")
+flip_h = true
+
+[node name="TextureButton4" type="TextureButton" parent="Control"]
+layout_mode = 2
+offset_left = 2610.0
+offset_top = 3520.0
+offset_right = 4530.0
+offset_bottom = 4600.0
+texture_normal = ExtResource("7_hrjtl")
+texture_pressed = ExtResource("7_hrjtl")
+texture_disabled = ExtResource("7_hrjtl")
+
+[node name="TextureButton5" type="TextureButton" parent="Control"]
+layout_mode = 2
+offset_left = 3290.0
+offset_top = 730.0
+offset_right = 5210.0
+offset_bottom = 1810.0
+texture_normal = ExtResource("8_ot8of")
+texture_pressed = ExtResource("8_ot8of")
+texture_disabled = ExtResource("8_ot8of")
+
+[node name="TextureButton6" type="TextureButton" parent="Control"]
+layout_mode = 2
+offset_left = 5430.0
+offset_top = 2660.0
+offset_right = 7350.0
+offset_bottom = 3740.0
+texture_normal = ExtResource("9_gef00")
+texture_pressed = ExtResource("9_gef00")
+texture_disabled = ExtResource("9_gef00")
