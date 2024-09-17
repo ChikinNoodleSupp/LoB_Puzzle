@@ -14,6 +14,12 @@ config/name="L&B_Puzzle"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[file_customization]
+
+folder_colors={
+"res://Images/": "orange"
+}
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
