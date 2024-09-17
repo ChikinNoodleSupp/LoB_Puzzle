@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://eo56ohcmyuf1"]
+[gd_scene load_steps=11 format=3 uid="uid://eo56ohcmyuf1"]
 
+[ext_resource type="Script" path="res://hide_seek_test.gd" id="1_3s7my"]
 [ext_resource type="Texture2D" uid="uid://coxpki1w8bdea" path="res://Images/Ina_Tent.png" id="1_xhyt5"]
 [ext_resource type="Texture2D" uid="uid://cwk4s40dfj3vc" path="res://Images/Ina_Tent_Peek.png" id="2_j1g51"]
 [ext_resource type="Texture2D" uid="uid://bln3b7mk8x1s0" path="res://Images/Ina_Armstrong.png" id="3_0pryc"]
@@ -12,6 +13,7 @@
 
 [node name="HideSeekTest" type="Node2D"]
 scale = Vector2(0.1, 0.1)
+script = ExtResource("1_3s7my")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -89,3 +91,14 @@ offset_bottom = 3740.0
 texture_normal = ExtResource("9_gef00")
 texture_pressed = ExtResource("9_gef00")
 texture_disabled = ExtResource("9_gef00")
+
+[node name="RollButton" type="Button" parent="Control"]
+layout_mode = 2
+offset_left = 480.0
+offset_top = 1740.0
+offset_right = 2400.0
+offset_bottom = 2820.0
+size_flags_horizontal = 6
+text = "roll"
+
+[connection signal="pressed" from="Control/RollButton" to="." method="_on_roll_button_pressed"]
