@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dwxrpmgb8l7hr"]
+
+[node name="HidingSpot" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.559028, 0.866181, 0.145592, 1)

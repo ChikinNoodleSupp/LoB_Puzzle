@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dj8dmmbur0xf8"]
+
+[node name="EmptySpot" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.89647, 0.237898, 0.295055, 1)

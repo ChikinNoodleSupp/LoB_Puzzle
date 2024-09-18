@@ -6,25 +6,39 @@
 [ext_resource type="Texture2D" uid="uid://bln3b7mk8x1s0" path="res://Images/Ina_Armstrong.png" id="3_0pryc"]
 [ext_resource type="Texture2D" uid="uid://dxxu0aq22crqu" path="res://Images/Ina_Armstrong_Peek.png" id="4_qrrig"]
 
-[node name="HideSeekTest" type="Node2D"]
-scale = Vector2(0.1, 0.1)
+[node name="HideSeekTest" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 script = ExtResource("1_3s7my")
 
-[node name="Control" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="Control"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="MarginContainer" type="MarginContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="BoxContainer" type="BoxContainer" parent="Control/MarginContainer"]
+[node name="BoxContainer" type="VBoxContainer" parent="ColorRect/MarginContainer"]
 layout_mode = 2
 
-[node name="TextureButton" type="TextureButton" parent="Control"]
+[node name="TextureButton" type="TextureButton" parent="."]
 layout_mode = 2
 offset_left = 430.0
 offset_top = 570.0
@@ -36,17 +50,17 @@ texture_pressed = ExtResource("2_j1g51")
 texture_disabled = ExtResource("2_j1g51")
 stretch_mode = 0
 
-[node name="TextureButton2" type="TextureButton" parent="Control"]
+[node name="TextureButton2" type="TextureButton" parent="."]
 layout_mode = 2
-offset_left = 170.0
-offset_top = 3060.0
-offset_right = 2090.0
-offset_bottom = 4140.0
+offset_left = 2200.0
+offset_top = 600.0
+offset_right = 4120.0
+offset_bottom = 1680.0
 texture_normal = ExtResource("3_0pryc")
 texture_pressed = ExtResource("4_qrrig")
 texture_disabled = ExtResource("4_qrrig")
 
-[node name="RollButton" type="Button" parent="Control"]
+[node name="RollButton" type="Button" parent="."]
 layout_mode = 2
 offset_left = 480.0
 offset_top = 1740.0
@@ -55,6 +69,6 @@ offset_bottom = 2820.0
 size_flags_horizontal = 6
 text = "roll"
 
-[connection signal="pressed" from="Control/TextureButton" to="." method="_on_texture_button_pressed"]
-[connection signal="pressed" from="Control/TextureButton2" to="." method="_on_texture_button_2_pressed"]
-[connection signal="pressed" from="Control/RollButton" to="." method="_on_roll_button_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]
+[connection signal="pressed" from="RollButton" to="." method="_on_roll_button_pressed"]
