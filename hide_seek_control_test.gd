@@ -169,9 +169,8 @@ func reset_hidingSpots():
 	# Clear the list of instances
 	instances.clear()
 
+
+
 # Make sure to call randomize() in the _ready() function to seed the random number generator
 func _ready():
 	randomize()
-	
-	
-	
