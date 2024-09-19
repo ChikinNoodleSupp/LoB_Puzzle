@@ -101,12 +101,20 @@ func spawnLolloHidingSpot(pos):
 	add_child(instance)
 	instance.position = pos
 	instances.append(instance)
+	
+	# instance.connect("pressed", self, "_on_lollo_button_pressed")
+
+
 
 func spawnBernieHidingSpot(pos):
 	var instance = HidingSpot2.instantiate()
 	add_child(instance)
 	instance.position = pos
 	instances.append(instance)
+
+func _on_lollo_button_pressed():
+	LolloFound = true
+	print("Lollo found!")
 
 func spawnHidingSpot1(pos): # spawn L and B at random_num1 and 2, and spawn empty hiding spots at the rest
 	var instance = EmptySpot.instantiate()

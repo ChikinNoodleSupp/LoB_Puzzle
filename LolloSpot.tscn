@@ -1,12 +1,3 @@
 [gd_scene format=3 uid="uid://dwxrpmgb8l7hr"]
 
-[node name="HidingSpot" type="Node2D"]
-
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
-color = Color(0.888619, 0.754532, 0.166535, 1)
-
-[node name="TextureButton" type="TextureButton" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="LolloSpot" type="TextureButton"]
