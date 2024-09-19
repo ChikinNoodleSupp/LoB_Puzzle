@@ -9,8 +9,8 @@ var LolloFound = false
 var BernieFound = false
 
 var EmptySpot = preload("res://empty_spot.tscn")
-var HidingSpot = preload("res://hiding_spot.tscn")
-var HidingSpot2 = preload("res://hiding_spot.tscn")
+var HidingSpot = preload("res://LolloSpot.tscn")
+var HidingSpot2 = preload("res://BernieSpot.tscn")
 
 var instances = []
 

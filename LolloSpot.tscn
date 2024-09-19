@@ -5,4 +5,8 @@
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
-color = Color(0.559028, 0.866181, 0.145592, 1)
+color = Color(0.888619, 0.754532, 0.166535, 1)
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
