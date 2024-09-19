@@ -169,7 +169,14 @@ func reset_hidingSpots():
 	# Clear the list of instances
 	instances.clear()
 
-
+func isLolloBernieFound():
+	# Check if both LolloFound and BernieFound are true
+	if LolloFound and BernieFound:
+		reset_arrays()
+		reset_hidingSpots()
+		# show victory
+		#+1 point?
+		# go next scene
 
 # Make sure to call randomize() in the _ready() function to seed the random number generator
 func _ready():
