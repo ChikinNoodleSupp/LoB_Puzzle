@@ -7,9 +7,3 @@
 toggle_mode = true
 texture_normal = ExtResource("1_kn7rm")
 texture_pressed = ExtResource("2_fk6jw")
-
-[node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-color = Color(1, 1, 0.117647, 1)
