@@ -1,3 +1,15 @@
-[gd_scene format=3 uid="uid://dwxrpmgb8l7hr"]
+[gd_scene load_steps=3 format=3 uid="uid://dwxrpmgb8l7hr"]
+
+[ext_resource type="Texture2D" uid="uid://c8o2xhc145nko" path="res://Images/frame_02_delay098.PNG" id="1_kn7rm"]
+[ext_resource type="Texture2D" uid="uid://ciwcoishgvr0p" path="res://Images/ka9_AK_Gina_oi.png" id="2_fk6jw"]
 
 [node name="LolloSpot" type="TextureButton"]
+toggle_mode = true
+texture_normal = ExtResource("1_kn7rm")
+texture_pressed = ExtResource("2_fk6jw")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(1, 1, 0.117647, 1)
