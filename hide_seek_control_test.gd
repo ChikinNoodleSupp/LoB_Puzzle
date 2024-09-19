@@ -131,6 +131,8 @@ func spawnHidingSpot6(pos): # spawn L and B at random_num1 and 2, and spawn empt
 	add_child(instance)
 	instance.position = pos
 
+func startSpawn():
+	pass
 
 # Helper function to get a random number from an array
 func get_random_from_array(arr):
@@ -151,6 +153,7 @@ func reset_arrays():
 # Make sure to call randomize() in the _ready() function to seed the random number generator
 func _ready():
 	randomize()
+	startSpawn()
 	
 	var HnS_1 = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_1")
 	var HnS_2 = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_2")
