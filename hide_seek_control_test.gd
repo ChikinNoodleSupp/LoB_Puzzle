@@ -16,6 +16,7 @@ var instances = []
 
 func _on_test_btn_pressed() -> void:
 	reset_arrays() # temp
+	reset_hidingSpots()
 	
 	 # Roll a random number from array1
 	var random_num1 = get_random_from_array(array1)
