@@ -21,8 +21,6 @@ var HnS_4position
 var HnS_5position
 var HnS_6position
 
-
-
 func _on_test_btn_pressed() -> void:
 	reset_arrays() # temp
 	reset_hidingSpots()
@@ -48,7 +46,7 @@ func _on_test_btn_pressed() -> void:
 	#var HnS_4 = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_4")
 	#var HnS_5 = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_5")
 	#var HnS_6 = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_6")
-	#
+	
 	#var HnS_1position = HnS_1.position
 	#var HnS_2position = HnS_2.position
 	#var HnS_3position = HnS_3.position
