@@ -45,19 +45,19 @@ size_flags_horizontal = 3
 text = "Hide and seek test"
 
 [node name="HnS_1" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(226, 278)
+position = Vector2(218, 269)
 
 [node name="HnS_2" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(525, 270)
+position = Vector2(508, 265)
 
 [node name="HnS_3" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(807, 286)
+position = Vector2(828, 274)
 
 [node name="HnS_4" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
 position = Vector2(219, 467)
 
 [node name="HnS_5" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(520, 458)
+position = Vector2(506, 465)
 
 [node name="HnS_6" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
 position = Vector2(818, 457)
