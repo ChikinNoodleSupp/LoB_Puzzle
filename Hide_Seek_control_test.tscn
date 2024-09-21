@@ -48,19 +48,19 @@ text = "Hide and seek test"
 position = Vector2(218, 269)
 
 [node name="HnS_2" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(508, 265)
+position = Vector2(511, 255)
 
 [node name="HnS_3" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
 position = Vector2(828, 274)
 
 [node name="HnS_4" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(219, 467)
+position = Vector2(218, 488)
 
 [node name="HnS_5" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(506, 465)
+position = Vector2(522, 497)
 
 [node name="HnS_6" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(818, 457)
+position = Vector2(825, 518)
 
 [node name="TestBtn" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2

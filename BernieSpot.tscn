@@ -4,6 +4,5 @@
 [ext_resource type="Texture2D" uid="uid://ciwcoishgvr0p" path="res://Images/ka9_AK_Gina_oi.png" id="2_37qug"]
 
 [node name="BernieSpot" type="TextureButton"]
-toggle_mode = true
 texture_normal = ExtResource("1_fygf1")
 texture_pressed = ExtResource("2_37qug")

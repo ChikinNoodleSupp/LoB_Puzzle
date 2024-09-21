@@ -119,7 +119,7 @@ func spawnLolloHidingSpot(pos):
 	instance.position = pos
 	instances.append(instance)
 	
-	# instance.connect("pressed", self, "_on_lollo_button_pressed")
+	instance.connect("pressed", _on_lollo_spot_pressed)
 
 
 
@@ -128,10 +128,18 @@ func spawnBernieHidingSpot(pos):
 	add_child(instance)
 	instance.position = pos
 	instances.append(instance)
+	
+	instance.connect("pressed", _on_bernie_spot_pressed)
 
-func _on_lollo_spot_pressed():
-	LolloFound = true
+func _on_lollo_spot_pressed() -> void:
 	print("Lollo found!")
+	LolloFound = true
+	isLolloBernieFound()
+
+func _on_bernie_spot_pressed() -> void:
+	print("Bernie found!")
+	BernieFound = true
+	isLolloBernieFound()
 
 func spawnHidingSpot1(pos): # spawn L and B at random_num1 and 2, and spawn empty hiding spots at the rest
 	var instance = EmptySpot.instantiate()
@@ -167,8 +175,7 @@ func reset_hidingSpots():
 func isLolloBernieFound():
 	# Check if both LolloFound and BernieFound are true
 	if LolloFound and BernieFound:
-		reset_arrays()
-		reset_hidingSpots()
+		_on_test_btn_pressed()
 		# show victory
 		#+1 point?
 		# go next scene
