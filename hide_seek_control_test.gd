@@ -191,8 +191,6 @@ func isLolloBernieFound():
 	# Check if both LolloFound and BernieFound are true
 	
 	if LolloFound and BernieFound:
-		# isLolloAndBernieSpawned = false
-		_on_test_btn_pressed()
-		# show victory
-		#+1 point?
-		# go next scene
+		await get_tree().create_timer(1.0).timeout #wait for seconds
+		_on_test_btn_pressed() # change to go next scene
+		
