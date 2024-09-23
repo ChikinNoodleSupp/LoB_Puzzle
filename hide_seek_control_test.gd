@@ -25,8 +25,8 @@ var HnS_6position
 
 
 func _on_test_btn_pressed() -> void:
-	reset_arrays() # temp
-	reset_hidingSpots()
+	#reset_arrays() # temp
+	#reset_hidingSpots()
 	#if isLolloAndBernieSpawned:
 		#$LolloSpot.disabled = false
 		#$BernieSpot.disabled = false
@@ -125,7 +125,8 @@ func spawnLolloHidingSpot(pos):
 	add_child(instance)
 	instance.position = pos
 	instances.append(instance)
-	instance.connect("pressed", _on_lollo_spot_pressed)
+	instance.connect("pressed", Callable(self, "_on_lollo_spot_pressed"))
+	
 	
 
 func spawnBernieHidingSpot(pos):
@@ -133,21 +134,27 @@ func spawnBernieHidingSpot(pos):
 	add_child(instance)
 	instance.position = pos
 	instances.append(instance)
-	
-	instance.connect("pressed", _on_bernie_spot_pressed)
+	instance.connect("pressed", Callable(self, "_on_bernie_spot_pressed"))
 
-func _on_lollo_spot_pressed() -> void:
+func _on_lollo_spot_pressed(button):
+	# var button = get_parent()
 	print("Lollo found!")
 	LolloFound = true
-	$LolloSpot.disabled = true
+	
+	if button and button is TextureButton:
+		button.set_disabled = true  # Disable the TextureButton
+	
 	isLolloBernieFound()
 
-func _on_bernie_spot_pressed() -> void:
+func _on_bernie_spot_pressed(button):
+	# var button = get_parent()
 	print("Bernie found!")
 	BernieFound = true
-	$BernieSpot.disabled = true
-	isLolloBernieFound()
 	
+	if button and button is TextureButton:
+		button.set_disabled = true  # Disable the texture button
+	
+	isLolloBernieFound()
 
 func spawnHidingSpot1(pos): # spawn L and B at random_num1 and 2, and spawn empty hiding spots at the rest
 	var instance = EmptySpot.instantiate()
@@ -181,14 +188,12 @@ func reset_hidingSpots():
 	instances.clear()
 
 func isLolloBernieFound():
-	# Check if both LolloFound and BernieFound are true
-	
 	if LolloFound and BernieFound:
-		# isLolloAndBernieSpawned = false
-		_on_test_btn_pressed()
-		# show victory
-		#+1 point?
-		# go next scene
+		print("Both Lollo and Bernie found! Resetting...")
+		# Only reset when both buttons are found
+		reset_arrays()
+		reset_hidingSpots()
+		_on_test_btn_pressed()  # Respawn new buttons
 
 # Make sure to call randomize() in the _ready() function to seed the random number generator
 func _ready():
