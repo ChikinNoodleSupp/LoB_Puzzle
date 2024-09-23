@@ -21,9 +21,16 @@ var HnS_4position
 var HnS_5position
 var HnS_6position
 
+# var isLolloAndBernieSpawned = false
+
+
 func _on_test_btn_pressed() -> void:
 	reset_arrays() # temp
 	reset_hidingSpots()
+	#if isLolloAndBernieSpawned:
+		#$LolloSpot.disabled = false
+		#$BernieSpot.disabled = false
+	
 	
 	 # Roll a random number from array1
 	var random_num1 = get_random_from_array(array1)
@@ -118,10 +125,8 @@ func spawnLolloHidingSpot(pos):
 	add_child(instance)
 	instance.position = pos
 	instances.append(instance)
-	
 	instance.connect("pressed", _on_lollo_spot_pressed)
-
-
+	
 
 func spawnBernieHidingSpot(pos):
 	var instance = HidingSpot2.instantiate()
@@ -134,18 +139,22 @@ func spawnBernieHidingSpot(pos):
 func _on_lollo_spot_pressed() -> void:
 	print("Lollo found!")
 	LolloFound = true
+	$LolloSpot.disabled = true
 	isLolloBernieFound()
 
 func _on_bernie_spot_pressed() -> void:
 	print("Bernie found!")
 	BernieFound = true
+	$BernieSpot.disabled = true
 	isLolloBernieFound()
+	
 
 func spawnHidingSpot1(pos): # spawn L and B at random_num1 and 2, and spawn empty hiding spots at the rest
 	var instance = EmptySpot.instantiate()
 	add_child(instance)
 	instance.position = pos
 	instances.append(instance)
+	# isLolloAndBernieSpawned = true
 	
 
 # Helper function to get a random number from an array
@@ -165,16 +174,17 @@ func reset_arrays():
 	print("Arrays reset!")
 	
 func reset_hidingSpots():
-	# Loop through all instances and remove them
+	
 	for instance in instances:
 		if instance and instance.is_inside_tree():
 			instance.queue_free()  # Safely remove the node from the scene
-	# Clear the list of instances
 	instances.clear()
 
 func isLolloBernieFound():
 	# Check if both LolloFound and BernieFound are true
+	
 	if LolloFound and BernieFound:
+		# isLolloAndBernieSpawned = false
 		_on_test_btn_pressed()
 		# show victory
 		#+1 point?
@@ -183,6 +193,8 @@ func isLolloBernieFound():
 # Make sure to call randomize() in the _ready() function to seed the random number generator
 func _ready():
 	randomize()
+	
+	
 	
 	HnS_1position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_1").position
 	HnS_2position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_2").position

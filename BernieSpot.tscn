@@ -6,3 +6,4 @@
 [node name="BernieSpot" type="TextureButton"]
 texture_normal = ExtResource("1_fygf1")
 texture_pressed = ExtResource("2_37qug")
+texture_disabled = ExtResource("2_37qug")

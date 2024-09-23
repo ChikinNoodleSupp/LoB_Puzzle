@@ -10,4 +10,5 @@ script/source = "extends TextureButton
 [node name="LolloSpot" type="TextureButton"]
 texture_normal = ExtResource("1_kn7rm")
 texture_pressed = ExtResource("2_fk6jw")
+texture_disabled = ExtResource("2_fk6jw")
 script = SubResource("GDScript_hdxlj")
