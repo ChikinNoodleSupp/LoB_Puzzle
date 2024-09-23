@@ -21,16 +21,25 @@ var HnS_4position
 var HnS_5position
 var HnS_6position
 
-# var isLolloAndBernieSpawned = false
+
+
+func _ready(): # on start basically
+	reset_arrays()
+	reset_hidingSpots()
+	randomize()
+	
+	
+	HnS_1position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_1").position
+	HnS_2position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_2").position
+	HnS_3position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_3").position
+	HnS_4position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_4").position
+	HnS_5position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_5").position
+	HnS_6position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_6").position
 
 
 func _on_test_btn_pressed() -> void:
 	reset_arrays() # temp
 	reset_hidingSpots()
-	#if isLolloAndBernieSpawned:
-		#$LolloSpot.disabled = false
-		#$BernieSpot.disabled = false
-	
 	
 	 # Roll a random number from array1
 	var random_num1 = get_random_from_array(array1)
@@ -121,39 +130,39 @@ func _on_test_btn_pressed() -> void:
 	
 
 func spawnLolloHidingSpot(pos):
-	var instance = HidingSpot.instantiate()
-	add_child(instance)
-	instance.position = pos
-	instances.append(instance)
-	instance.connect("pressed", _on_lollo_spot_pressed)
+	var LolloButton = HidingSpot.instantiate() as TextureButton
+	add_child(LolloButton)
+	LolloButton.position = pos
+	instances.append(LolloButton)
+	LolloButton.connect("pressed", _on_lollo_spot_pressed)
 	
 
 func spawnBernieHidingSpot(pos):
-	var instance = HidingSpot2.instantiate()
-	add_child(instance)
-	instance.position = pos
-	instances.append(instance)
+	var BernieButton = HidingSpot2.instantiate() as TextureButton
+	add_child(BernieButton)
+	BernieButton.position = pos
+	instances.append(BernieButton)
 	
-	instance.connect("pressed", _on_bernie_spot_pressed)
+	BernieButton.connect("pressed", _on_bernie_spot_pressed)
 
-func _on_lollo_spot_pressed() -> void:
+func _on_lollo_spot_pressed(button):
 	print("Lollo found!")
 	LolloFound = true
-	$LolloSpot.disabled = true
+	button.disable = true
 	isLolloBernieFound()
 
-func _on_bernie_spot_pressed() -> void:
+func _on_bernie_spot_pressed(button):
 	print("Bernie found!")
 	BernieFound = true
-	$BernieSpot.disabled = true
+	button.disabled = true
 	isLolloBernieFound()
 	
 
 func spawnHidingSpot1(pos): # spawn L and B at random_num1 and 2, and spawn empty hiding spots at the rest
-	var instance = EmptySpot.instantiate()
-	add_child(instance)
-	instance.position = pos
-	instances.append(instance)
+	var EmptyButton = EmptySpot.instantiate()
+	add_child(EmptyButton)
+	EmptyButton.position = pos
+	instances.append(EmptyButton)
 	# isLolloAndBernieSpawned = true
 	
 
@@ -189,16 +198,3 @@ func isLolloBernieFound():
 		# show victory
 		#+1 point?
 		# go next scene
-
-# Make sure to call randomize() in the _ready() function to seed the random number generator
-func _ready():
-	randomize()
-	
-	
-	
-	HnS_1position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_1").position
-	HnS_2position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_2").position
-	HnS_3position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_3").position
-	HnS_4position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_4").position
-	HnS_5position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_5").position
-	HnS_6position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_6").position
