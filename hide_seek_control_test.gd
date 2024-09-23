@@ -12,6 +12,10 @@ var EmptySpot = preload("res://empty_spot.tscn")
 var HidingSpot = preload("res://LolloSpot.tscn")
 var HidingSpot2 = preload("res://BernieSpot.tscn")
 
+var LolloButton: TextureButton
+var BernieButton: TextureButton
+
+
 var instances = []
 
 var HnS_1position
@@ -123,40 +127,32 @@ func _on_test_btn_pressed() -> void:
 		#spawnHidingSpot1(HnS_6position)
 	
 	
-	# Check if both LolloFound and BernieFound are true
-	if LolloFound and BernieFound:
-		reset_arrays()
-		
-	
 
 func spawnLolloHidingSpot(pos):
-	var LolloButton = HidingSpot.instantiate() as TextureButton
+	LolloButton = HidingSpot.instantiate() as TextureButton
 	add_child(LolloButton)
 	LolloButton.position = pos
 	instances.append(LolloButton)
 	LolloButton.connect("pressed", _on_lollo_spot_pressed)
 	
-
 func spawnBernieHidingSpot(pos):
-	var BernieButton = HidingSpot2.instantiate() as TextureButton
+	BernieButton = HidingSpot2.instantiate() as TextureButton
 	add_child(BernieButton)
 	BernieButton.position = pos
 	instances.append(BernieButton)
-	
 	BernieButton.connect("pressed", _on_bernie_spot_pressed)
 
-func _on_lollo_spot_pressed(button):
+func _on_lollo_spot_pressed():
 	print("Lollo found!")
 	LolloFound = true
-	button.disable = true
+	LolloButton.disabled = true
 	isLolloBernieFound()
 
-func _on_bernie_spot_pressed(button):
+func _on_bernie_spot_pressed():
 	print("Bernie found!")
 	BernieFound = true
-	button.disabled = true
+	BernieButton.disabled = true
 	isLolloBernieFound()
-	
 
 func spawnHidingSpot1(pos): # spawn L and B at random_num1 and 2, and spawn empty hiding spots at the rest
 	var EmptyButton = EmptySpot.instantiate()
@@ -183,11 +179,13 @@ func reset_arrays():
 	print("Arrays reset!")
 	
 func reset_hidingSpots():
-	
 	for instance in instances:
 		if instance and instance.is_inside_tree():
 			instance.queue_free()  # Safely remove the node from the scene
 	instances.clear()
+	
+	
+	
 
 func isLolloBernieFound():
 	# Check if both LolloFound and BernieFound are true
