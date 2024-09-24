@@ -1,9 +1,51 @@
-[gd_scene format=3 uid="uid://bfet2ccdjje2p"]
+[gd_scene load_steps=2 format=3 uid="uid://bfet2ccdjje2p"]
 
-[node name="Control" type="Control"]
+[ext_resource type="Script" path="res://main_menu.gd" id="1_ntmjj"]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_ntmjj")
+
+[node name="ButtonManager" type="Control" parent="."]
 layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="ButtonManager"]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 1882.0
+offset_bottom = 1036.0
 grow_horizontal = 2
 grow_vertical = 2
+color = Color(0.88111, 0.655415, 0.443337, 1)
+
+[node name="Hide_Seek" type="Button" parent="ButtonManager"]
+layout_mode = 0
+offset_left = 146.0
+offset_top = 421.0
+offset_right = 561.0
+offset_bottom = 653.0
+text = "Hide & Seek"
+
+[node name="Puzzles" type="Button" parent="ButtonManager"]
+layout_mode = 0
+offset_left = 703.0
+offset_top = 421.0
+offset_right = 1118.0
+offset_bottom = 653.0
+text = "Puzzles"
+
+[node name="SmoothieMix" type="Button" parent="ButtonManager"]
+layout_mode = 0
+offset_left = 1260.0
+offset_top = 418.0
+offset_right = 1675.0
+offset_bottom = 650.0
+text = "Smoothie Mix"
+
+[connection signal="pressed" from="ButtonManager/Hide_Seek" to="." method="_on_hide_seek_pressed"]
+[connection signal="pressed" from="ButtonManager/Puzzles" to="." method="_on_puzzles_pressed"]
+[connection signal="pressed" from="ButtonManager/SmoothieMix" to="." method="_on_smoothie_mix_pressed"]

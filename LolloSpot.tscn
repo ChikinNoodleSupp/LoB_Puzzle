@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dwxrpmgb8l7hr"]
+[gd_scene load_steps=5 format=3 uid="uid://dwxrpmgb8l7hr"]
 
 [ext_resource type="Texture2D" uid="uid://c8o2xhc145nko" path="res://Images/frame_02_delay098.PNG" id="1_kn7rm"]
 [ext_resource type="Texture2D" uid="uid://ciwcoishgvr0p" path="res://Images/ka9_AK_Gina_oi.png" id="2_fk6jw"]
+[ext_resource type="Texture2D" uid="uid://cm6udsesrsf56" path="res://Images/ina button hover2.png" id="3_cluht"]
 
 [sub_resource type="GDScript" id="GDScript_hdxlj"]
 script/source = "extends TextureButton
@@ -10,5 +11,6 @@ script/source = "extends TextureButton
 [node name="LolloSpot" type="TextureButton"]
 texture_normal = ExtResource("1_kn7rm")
 texture_pressed = ExtResource("2_fk6jw")
+texture_hover = ExtResource("3_cluht")
 texture_disabled = ExtResource("2_fk6jw")
 script = SubResource("GDScript_hdxlj")
