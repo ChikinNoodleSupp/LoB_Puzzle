@@ -1,19 +1,19 @@
 [gd_scene load_steps=7 format=3 uid="uid://ovcp80hs6ocp"]
 
-[ext_resource type="Script" path="res://main_scene.gd" id="1_awwpn"]
-[ext_resource type="Texture2D" uid="uid://c8o2xhc145nko" path="res://Images/frame_02_delay098.PNG" id="1_o5wqx"]
-[ext_resource type="Texture2D" uid="uid://cc68yuysnroya" path="res://Images/itchbg.png" id="2_adycd"]
-[ext_resource type="Texture2D" uid="uid://c44kd874loklv" path="res://Images/FhFIk--VIAEZVNx.jpg" id="2_wcrnx"]
-[ext_resource type="Script" path="res://control.gd" id="2_wfkx1"]
-[ext_resource type="Texture2D" uid="uid://ciwcoishgvr0p" path="res://Images/ka9_AK_Gina_oi.png" id="3_jdfji"]
+[ext_resource type="Script" path="res://main_scene.gd" id="1_mv7gh"]
+[ext_resource type="Texture2D" uid="uid://cc68yuysnroya" path="res://Images/itchbg.png" id="2_xbbdh"]
+[ext_resource type="Script" path="res://control.gd" id="3_2xl86"]
+[ext_resource type="Texture2D" uid="uid://c8o2xhc145nko" path="res://Images/frame_02_delay098.PNG" id="4_rv7lh"]
+[ext_resource type="Texture2D" uid="uid://c44kd874loklv" path="res://Images/FhFIk--VIAEZVNx.jpg" id="5_yuhyh"]
+[ext_resource type="Texture2D" uid="uid://ciwcoishgvr0p" path="res://Images/ka9_AK_Gina_oi.png" id="6_o4fhe"]
 
 [node name="MainScene" type="Node2D"]
-script = ExtResource("1_awwpn")
+script = ExtResource("1_mv7gh")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 1149.0
 offset_bottom = 647.0
-texture = ExtResource("2_adycd")
+texture = ExtResource("2_xbbdh")
 expand_mode = 1
 
 [node name="Control" type="Control" parent="."]
@@ -21,7 +21,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 176.0
 offset_bottom = 40.0
-script = ExtResource("2_wfkx1")
+script = ExtResource("3_2xl86")
 
 [node name="MarginContainer" type="MarginContainer" parent="Control"]
 layout_mode = 0
@@ -35,10 +35,10 @@ layout_mode = 2
 layout_mode = 2
 toggle_mode = true
 keep_pressed_outside = true
-texture_normal = ExtResource("1_o5wqx")
-texture_pressed = ExtResource("2_wcrnx")
-texture_hover = ExtResource("3_jdfji")
-texture_disabled = ExtResource("2_wcrnx")
+texture_normal = ExtResource("4_rv7lh")
+texture_pressed = ExtResource("5_yuhyh")
+texture_hover = ExtResource("6_o4fhe")
+texture_disabled = ExtResource("5_yuhyh")
 stretch_mode = 0
 
 [node name="Label" type="Label" parent="Control/MarginContainer/BoxContainer"]
