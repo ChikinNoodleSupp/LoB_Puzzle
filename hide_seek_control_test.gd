@@ -4,6 +4,10 @@ extends Control
 var array1 = [1, 2, 3, 4, 5, 6]
 var array2 = [1, 2, 3, 4, 5, 6]
 
+var sceneArray = ["res://Hide_Seek_control_test.tscn", "res://Hide_Seek_control_test_2.tscn", "res://Hide_Seek_control_test_3.tscn"] # just add more scenes
+
+static var sceneNumber = 0
+
 # Declare booleans
 var LolloFound = false
 var BernieFound = false
@@ -28,8 +32,8 @@ var HnS_6position
 
 
 func _ready(): # on start basically
-	reset_arrays()
-	reset_hidingSpots()
+	#reset_arrays()
+	#reset_hidingSpots()
 	randomize()
 	
 	
@@ -41,7 +45,9 @@ func _ready(): # on start basically
 	HnS_6position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_6").position
 
 
-func _on_test_btn_pressed() -> void:
+
+
+# func _on_test_btn_pressed() -> void:
 	reset_arrays() # temp
 	reset_hidingSpots()
 	
@@ -192,5 +198,10 @@ func isLolloBernieFound():
 	
 	if LolloFound and BernieFound:
 		await get_tree().create_timer(1.0).timeout #wait for seconds
-		_on_test_btn_pressed() # change to go next scene
+		# print("printed raw scene number", sceneNumber)
+		sceneNumber +=1
 		
+		get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()]) # make into a list so you can rotate through all scenes
+		# print("printed scene number modulo size", sceneNumber%sceneArray.size())
+		
+		# make a for loop? go down the list everytime this function is called. Go to next scene depending on the list

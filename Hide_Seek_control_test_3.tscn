@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://c3w621as6bs7g"]
+[gd_scene load_steps=3 format=3 uid="uid://dkamj5hku4biw"]
 
-[ext_resource type="Texture2D" uid="uid://c8o2xhc145nko" path="res://Images/frame_02_delay098.PNG" id="1_nctv3"]
-[ext_resource type="Script" path="res://hide_seek_control_test.gd" id="1_q8788"]
+[ext_resource type="Script" path="res://hide_seek_control_test.gd" id="1_4cmt0"]
+[ext_resource type="Texture2D" uid="uid://c8o2xhc145nko" path="res://Images/frame_02_delay098.PNG" id="2_xtcbh"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -10,7 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_q8788")
+script = ExtResource("1_4cmt0")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -45,26 +45,26 @@ size_flags_horizontal = 3
 text = "Hide and seek test"
 
 [node name="HnS_1" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(218, 269)
+position = Vector2(146, 547)
 
 [node name="HnS_2" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(861, 336)
+position = Vector2(452, 538)
 
 [node name="HnS_3" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(1413, 326)
+position = Vector2(735, 546)
 
 [node name="HnS_4" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(263, 819)
+position = Vector2(984, 543)
 
 [node name="HnS_5" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(883, 780)
+position = Vector2(1262, 535)
 
 [node name="HnS_6" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(1451, 803)
+position = Vector2(1557, 549)
 
 [node name="TestBtn" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 text = "Test game"
-icon = ExtResource("1_nctv3")
+icon = ExtResource("2_xtcbh")
 
 [connection signal="pressed" from="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/TestBtn" to="." method="_on_test_btn_pressed"]
