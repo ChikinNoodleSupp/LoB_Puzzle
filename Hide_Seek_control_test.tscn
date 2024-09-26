@@ -1,95 +1,15 @@
-[gd_scene load_steps=8 format=3 uid="uid://c3w621as6bs7g"]
+[gd_scene load_steps=6 format=3 uid="uid://c3w621as6bs7g"]
 
 [ext_resource type="Texture2D" uid="uid://c8o2xhc145nko" path="res://Images/frame_02_delay098.PNG" id="1_nctv3"]
 [ext_resource type="Script" path="res://hide_seek_control_test.gd" id="1_q8788"]
 [ext_resource type="Texture2D" uid="uid://cd0rvan0p5sh3" path="res://Images/temp bg2.png" id="2_t2pl7"]
 
-[sub_resource type="Animation" id="Animation_78da0"]
+[sub_resource type="Animation" id="Animation_bsj3v"]
 resource_name = "Fade_out"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../../Transition/ColorRect:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../../Transition/ColorRect:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
 
-[sub_resource type="Animation" id="Animation_mchby"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../../Transition/ColorRect:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../../Transition/ColorRect:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
-[sub_resource type="Animation" id="Animation_6xych"]
-resource_name = "Fade_in"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../../Transition/ColorRect:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../../Transition/ColorRect:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(1),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_jslci"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vdoi7"]
 _data = {
-"Fade_in": SubResource("Animation_6xych"),
-"Fade_out": SubResource("Animation_78da0"),
-"RESET": SubResource("Animation_mchby")
+"Fade_out": SubResource("Animation_bsj3v")
 }
 
 [node name="Control" type="Control"]
@@ -196,13 +116,11 @@ size_flags_horizontal = 3
 text = "Hide and seek test"
 
 [node name="Transition" type="AnimationPlayer" parent="."]
-root_node = NodePath("../ButtonManager/Hide_Seek")
 libraries = {
-"": SubResource("AnimationLibrary_jslci")
+"": SubResource("AnimationLibrary_vdoi7")
 }
 
 [node name="ColorRect" type="ColorRect" parent="Transition"]
-visible = false
 offset_left = -85.0
 offset_top = -48.0
 offset_right = 2013.0
