@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cm3ygla4f3mcc"]
+[gd_scene load_steps=4 format=3 uid="uid://cm3ygla4f3mcc"]
 
 [ext_resource type="Script" path="res://hide_seek_control_test.gd" id="1_c44l3"]
+[ext_resource type="Texture2D" uid="uid://cd0rvan0p5sh3" path="res://Images/temp bg2.png" id="2_02n6d"]
 [ext_resource type="Texture2D" uid="uid://c8o2xhc145nko" path="res://Images/frame_02_delay098.PNG" id="2_8nmu1"]
 
 [node name="Control" type="Control"]
@@ -12,14 +13,14 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_c44l3")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.136826, 0.136826, 0.136826, 1)
+texture = ExtResource("2_02n6d")
 
 [node name="MarginContainer" type="MarginContainer" parent="ColorRect"]
 layout_mode = 1
@@ -45,24 +46,25 @@ size_flags_horizontal = 3
 text = "Hide and seek test"
 
 [node name="HnS_1" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(563, 456)
+position = Vector2(353, 307)
 
 [node name="HnS_2" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(892, 240)
+position = Vector2(877, 379)
 
 [node name="HnS_3" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(1269, 428)
+position = Vector2(1393, 298)
 
 [node name="HnS_4" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(568, 709)
+position = Vector2(367, 633)
 
 [node name="HnS_5" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(886, 873)
+position = Vector2(880, 749)
 
 [node name="HnS_6" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(1239, 741)
+position = Vector2(1397, 651)
 
 [node name="TestBtn" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
+visible = false
 layout_mode = 2
 text = "Test game"
 icon = ExtResource("2_8nmu1")

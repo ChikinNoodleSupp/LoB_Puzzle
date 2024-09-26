@@ -34,6 +34,7 @@ var HnS_6position
 func _ready(): # on start basically
 	#reset_arrays()
 	#reset_hidingSpots()
+	# add fade in
 	randomize()
 	
 	
@@ -197,8 +198,10 @@ func isLolloBernieFound():
 	# Check if both LolloFound and BernieFound are true
 	
 	if LolloFound and BernieFound:
+		
 		await get_tree().create_timer(1.0).timeout #wait for seconds
 		# print("printed raw scene number", sceneNumber)
+		# add fade out, when fade out is done, then switch scene
 		sceneNumber +=1
 		
 		get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()]) # make into a list so you can rotate through all scenes

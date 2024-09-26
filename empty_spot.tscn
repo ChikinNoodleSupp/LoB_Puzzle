@@ -1,8 +1,18 @@
-[gd_scene format=3 uid="uid://dj8dmmbur0xf8"]
+[gd_scene load_steps=2 format=3 uid="uid://dj8dmmbur0xf8"]
+
+[ext_resource type="Texture2D" uid="uid://c3ycjbylipq0l" path="res://Images/temp art 1.png" id="1_88swl"]
 
 [node name="EmptySpot" type="Node2D"]
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-color = Color(0.89647, 0.237898, 0.295055, 1)
+
+[node name="TextureButton" type="TextureButton" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("1_88swl")
+texture_pressed = ExtResource("1_88swl")
