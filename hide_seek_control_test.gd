@@ -208,3 +208,8 @@ func isLolloBernieFound():
 		# print("printed scene number modulo size", sceneNumber%sceneArray.size())
 		
 		# make a for loop? go down the list everytime this function is called. Go to next scene depending on the list
+		
+		
+		
+func _on_back_btn_pressed() -> void:
+	get_tree().change_scene_to_file("res://MainMenu.tscn")
