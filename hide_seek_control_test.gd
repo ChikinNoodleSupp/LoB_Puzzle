@@ -29,14 +29,14 @@ var HnS_4position
 var HnS_5position
 var HnS_6position
 
-
+@onready var transition = $AnimationPlayer
 
 func _ready(): # on start basically
 	#reset_arrays()
 	#reset_hidingSpots()
 	# add fade in
 	randomize()
-	
+	transition.play("Fade_in")
 	
 	HnS_1position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_1").position
 	HnS_2position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_2").position
@@ -203,8 +203,8 @@ func isLolloBernieFound():
 		# print("printed raw scene number", sceneNumber)
 		# add fade out, when fade out is done, then switch scene
 		sceneNumber +=1
-		
-		get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()]) # make into a list so you can rotate through all scenes
+		transition.play("Fade_out")
+		# get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()]) # make into a list so you can rotate through all scenes
 		# print("printed scene number modulo size", sceneNumber%sceneArray.size())
 		
 		# make a for loop? go down the list everytime this function is called. Go to next scene depending on the list
@@ -213,3 +213,9 @@ func isLolloBernieFound():
 		
 func _on_back_btn_pressed() -> void:
 	get_tree().change_scene_to_file("res://MainMenu.tscn")
+	transition.play("Fade_out")
+	
+
+func _on_animation_player_animation_finished(anim_name: StringName) -> void:
+	if anim_name == "Fade_out":
+		get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()])
