@@ -205,7 +205,7 @@ func isLolloBernieFound():
 		# add fade out, when fade out is done, then switch scene
 		transition.play("Fade_out")
 		sceneNumber +=1
-		
+		get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()])
 		# get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()]) # make into a list so you can rotate through all scenes
 		# print("printed scene number modulo size", sceneNumber%sceneArray.size())
 		
@@ -221,6 +221,7 @@ func _on_back_btn_pressed() -> void:
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "Fade_out":
 		print("fade out")
-		get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()])
+		# get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()])
+
 	else:
 		pass
