@@ -84,7 +84,7 @@ func _ready(): # on start basically
 	
 	var positionArray = [HnS_1position, HnS_2position, HnS_3position, HnS_4position, HnS_5position, HnS_6position]
 	
-	for i in range(0, array1.size()):
+	for i in range(0, array1.size()): 
 		if random_num1 == i+1:
 			spawnLolloHidingSpot(positionArray[i])
 		elif random_num2 == i+1:
@@ -205,6 +205,7 @@ func isLolloBernieFound():
 		# add fade out, when fade out is done, then switch scene
 		transition.play("Fade_out")
 		sceneNumber +=1
+		await get_tree().create_timer(1.1).timeout
 		get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()])
 		# get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()]) # make into a list so you can rotate through all scenes
 		# print("printed scene number modulo size", sceneNumber%sceneArray.size())
