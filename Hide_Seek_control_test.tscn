@@ -226,10 +226,10 @@ libraries = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="AnimationPlayer"]
-offset_left = -42.0
-offset_top = -21.0
-offset_right = 1991.0
-offset_bottom = 1134.0
+offset_left = -563.0
+offset_top = -464.0
+offset_right = 2684.0
+offset_bottom = 1323.0
 color = Color(0, 0, 0, 1)
 
 [connection signal="pressed" from="ColorRect/MarginContainer5/VBoxContainer2/HBoxContainer/TestBtn" to="." method="_on_test_btn_pressed"]
