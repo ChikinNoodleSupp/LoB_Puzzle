@@ -206,13 +206,8 @@ func isLolloBernieFound():
 		transition.play("Fade_out")
 		sceneNumber +=1
 		await get_tree().create_timer(0.6).timeout
-		get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()])
-		# get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()]) # make into a list so you can rotate through all scenes
-		# print("printed scene number modulo size", sceneNumber%sceneArray.size())
-		
-		# make a for loop? go down the list everytime this function is called. Go to next scene depending on the list
-		
-		
+		get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()]) #change this, instead of chance scene to, initiate
+		# var someting = sceneArray[sceneNumber%sceneArray.size()]
 		
 func _on_back_btn_pressed() -> void:
 	get_tree().change_scene_to_file("res://MainMenu.tscn")
