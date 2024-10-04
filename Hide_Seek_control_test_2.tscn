@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://cm3ygla4f3mcc"]
+[gd_scene load_steps=6 format=3 uid="uid://cm3ygla4f3mcc"]
 
 [ext_resource type="Script" path="res://hide_seek_control_test.gd" id="1_c44l3"]
-[ext_resource type="Texture2D" uid="uid://c8o2xhc145nko" path="res://Images/frame_02_delay098.PNG" id="2_8nmu1"]
 
 [sub_resource type="Animation" id="Animation_xkhnl"]
 resource_name = "Fade_out"
@@ -151,12 +150,6 @@ position = Vector2(880, 749)
 [node name="HnS_6" type="Node2D" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
 position = Vector2(1397, 651)
 
-[node name="TestBtn" type="Button" parent="ColorRect/MarginContainer/VBoxContainer/HBoxContainer"]
-visible = false
-layout_mode = 2
-text = "Test game"
-icon = ExtResource("2_8nmu1")
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_4lnf5")
@@ -168,5 +161,3 @@ offset_top = -213.0
 offset_right = 2492.0
 offset_bottom = 1366.0
 color = Color(0, 0, 0, 1)
-
-[connection signal="pressed" from="ColorRect/MarginContainer/VBoxContainer/HBoxContainer/TestBtn" to="." method="_on_test_btn_pressed"]

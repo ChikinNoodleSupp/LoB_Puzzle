@@ -31,10 +31,9 @@ var HnS_6position
 
 @onready var transition = $AnimationPlayer
 
-func _ready(): # on start basically
-	#reset_arrays()
-	#reset_hidingSpots()
-	# add fade in
+var current_scene: Node = null
+
+func mainCode(): # on start basically
 	randomize()
 	transition.play("Fade_in")
 	print("fade in")
@@ -206,17 +205,31 @@ func isLolloBernieFound():
 		transition.play("Fade_out")
 		sceneNumber +=1
 		await get_tree().create_timer(0.6).timeout
-		get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()]) #change this, instead of chance scene to, initiate
-		# var someting = sceneArray[sceneNumber%sceneArray.size()]
+		# get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()]) #change this, instead of chance scene to, initiate
 		
+		# If there is already an instantiated scene, remove it
+		if current_scene:
+			current_scene.queue_free()  # Remove the previous scene
+		
+		var scene_path = sceneArray[sceneNumber % sceneArray.size()]
+		var new_scene = load(scene_path).instantiate()
+		
+		current_scene = new_scene
+		
+		
+		
+		
+		transition.play("Fade_in")
+
 func _on_back_btn_pressed() -> void:
 	get_tree().change_scene_to_file("res://MainMenu.tscn")
-	# transition.play("Fade_out")
+	transition.play("Fade_out")
 	
 
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "Fade_out":
 		print("fade out")
+		
 		# get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()])
 		#WHY ISNT IT WORKING REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
 
