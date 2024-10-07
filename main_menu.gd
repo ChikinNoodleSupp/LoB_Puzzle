@@ -25,5 +25,5 @@ func _on_smoothie_mix_pressed() -> void:
 
 func _on_transition_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "Fade_out":
-		get_tree().change_scene_to_file("res://Hide_Seek_control_test.tscn")
+		get_tree().change_scene_to_file("res://Hide_Seek_Main.tscn")
 	

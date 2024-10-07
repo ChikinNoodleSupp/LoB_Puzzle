@@ -16,6 +16,10 @@ var EmptySpot = preload("res://empty_spot.tscn")
 var HidingSpot = preload("res://LolloSpot.tscn")
 var HidingSpot2 = preload("res://BernieSpot.tscn")
 
+var Scene1 = preload("res://Hide_Seek_control_test.tscn")
+var Scene2 = preload("res://Hide_Seek_control_test_2.tscn")
+var Scene3 = preload("res://Hide_Seek_control_test_3.tscn")
+
 var LolloButton: TextureButton
 var BernieButton: TextureButton
 
@@ -29,26 +33,39 @@ var HnS_4position
 var HnS_5position
 var HnS_6position
 
+
+
 @onready var transition = $AnimationPlayer
 
 var current_scene: Node = null
 
-func mainCode(): # on start basically
-	randomize()
+func _ready() -> void:
+	newScene()
 	transition.play("Fade_in")
 	print("fade in")
+
+
+func mainCode(): # on start basically
+	print("Running mainCode(), current scene: ", current_scene.name)
 	
-	HnS_1position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_1").position
-	HnS_2position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_2").position
-	HnS_3position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_3").position
-	HnS_4position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_4").position
-	HnS_5position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_5").position
-	HnS_6position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_6").position
-
-
-
-
-# func _on_test_btn_pressed() -> void:
+	randomize()
+	
+	HnS_1position = current_scene.find_child("HnS_1").position
+	HnS_2position = current_scene.find_child("HnS_2").position
+	HnS_3position = current_scene.find_child("HnS_3").position
+	HnS_4position = current_scene.find_child("HnS_4").position
+	HnS_5position = current_scene.find_child("HnS_5").position
+	HnS_6position = current_scene.find_child("HnS_6").position
+	
+	#HnS_1position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_1").position
+	#HnS_2position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_2").position
+	#HnS_3position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_3").position
+	#HnS_4position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_4").position
+	#HnS_5position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_5").position
+	#HnS_6position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_6").position
+	
+	
+	# func _on_test_btn_pressed() -> void:
 	reset_arrays() # temp
 	reset_hidingSpots()
 	
@@ -198,28 +215,25 @@ func isLolloBernieFound():
 	# Check if both LolloFound and BernieFound are true
 	
 	if LolloFound and BernieFound:
-		
+		sceneNumber +=1
 		await get_tree().create_timer(1.0).timeout #wait for seconds
 		# print("printed raw scene number", sceneNumber)
 		# add fade out, when fade out is done, then switch scene
 		transition.play("Fade_out")
-		sceneNumber +=1
+		
 		await get_tree().create_timer(0.6).timeout
-		# get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()]) #change this, instead of chance scene to, initiate
-		
-		# If there is already an instantiated scene, remove it
-		if current_scene:
-			current_scene.queue_free()  # Remove the previous scene
-		
-		var scene_path = sceneArray[sceneNumber % sceneArray.size()]
-		var new_scene = load(scene_path).instantiate()
-		
-		current_scene = new_scene
-		
-		
-		
+		newScene()
 		
 		transition.play("Fade_in")
+
+func newScene():
+	if current_scene:
+		current_scene.queue_free()  # Remove the previous scene
+	var scene_path = sceneArray[sceneNumber % sceneArray.size()]
+	var new_scene = load(scene_path).instantiate()
+	get_tree().current_scene.add_child(new_scene)
+	current_scene = new_scene
+	call_deferred("mainCode")
 
 func _on_back_btn_pressed() -> void:
 	get_tree().change_scene_to_file("res://MainMenu.tscn")
@@ -232,6 +246,3 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 		
 		# get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()])
 		#WHY ISNT IT WORKING REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
-
-	else:
-		pass
