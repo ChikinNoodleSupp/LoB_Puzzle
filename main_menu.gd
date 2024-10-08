@@ -1,13 +1,10 @@
 extends Node2D
 
 @onready var transition = $Transition
-# var HideSeek = preload("res://Hide_Seek_control_test.tscn")
 
-# Called when the node enters the scene tree for the first time.
+#Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	transition.play("Fade_in")
-
-
 
 
 func _on_hide_seek_pressed() -> void:
