@@ -20,6 +20,8 @@ var Scene1 = preload("res://Hide_Seek_control_test.tscn")
 var Scene2 = preload("res://Hide_Seek_control_test_2.tscn")
 var Scene3 = preload("res://Hide_Seek_control_test_3.tscn")
 
+var HUD = preload("res://HUD.tscn")
+
 var LolloButton: TextureButton
 var BernieButton: TextureButton
 
@@ -33,16 +35,21 @@ var HnS_4position
 var HnS_5position
 var HnS_6position
 
-
-
 @onready var transition = $AnimationPlayer
 
 var current_scene: Node = null
 
+
 func _ready() -> void:
 	newScene()
+	
+	var HudButton = HUD.instantiate()
+	add_child(HudButton)
+	HudButton.connect("pressed", _on_back_btn_pressed)
+
 	transition.play("Fade_in")
 	print("fade in")
+	
 
 
 func mainCode(): # on start basically

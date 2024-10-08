@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://eo2y3to8yrxe"]
+
+[node name="TextureButton" type="Button"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -188.0
+offset_top = 45.0
+offset_right = -31.0
+offset_bottom = 76.0
+grow_horizontal = 0
+button_mask = 7
+text = "Back to Main Menu"
