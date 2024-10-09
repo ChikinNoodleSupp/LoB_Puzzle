@@ -125,15 +125,25 @@ texture = ExtResource("2_gkhg8")
 metadata/_edit_use_anchors_ = true
 
 [node name="MarginContainer" type="MarginContainer" parent="ButtonManager"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ButtonManager/MarginContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ButtonManager/MarginContainer/VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="Hide_Seek" type="TextureButton" parent="ButtonManager/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -150,8 +160,12 @@ layout_mode = 2
 texture_normal = ExtResource("4_i7cqn")
 texture_hover = ExtResource("7_vp5k6")
 
-[node name="MenuButton" type="MenuButton" parent="ButtonManager/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="MenuButton" type="MenuButton" parent="ButtonManager"]
 layout_mode = 2
+offset_left = 1820.0
+offset_top = 22.0
+offset_right = 1903.0
+offset_bottom = 60.0
 text = "Language"
 flat = false
 switch_on_hover = true
@@ -166,8 +180,12 @@ popup/item_3/id = 3
 popup/item_4/text = "Finnish"
 popup/item_4/id = 4
 
-[node name="HSlider" type="HSlider" parent="ButtonManager/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="HSlider" type="VSlider" parent="ButtonManager"]
 layout_mode = 2
+offset_left = 1842.0
+offset_top = 88.0
+offset_right = 1875.0
+offset_bottom = 278.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
