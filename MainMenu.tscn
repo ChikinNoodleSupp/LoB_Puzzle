@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bfet2ccdjje2p"]
+[gd_scene load_steps=11 format=3 uid="uid://bfet2ccdjje2p"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_ntmjj"]
 [ext_resource type="Texture2D" uid="uid://tgkxhyx3uvua" path="res://Images/temp bg.png" id="2_gkhg8"]
@@ -9,92 +9,12 @@
 [ext_resource type="Texture2D" uid="uid://b2xpi4bn063m4" path="res://Images/puzzles hover.png" id="5_11hnp"]
 [ext_resource type="Texture2D" uid="uid://cfm2mhxtd4ppu" path="res://Images/sm hover.png" id="7_vp5k6"]
 
-[sub_resource type="Animation" id="Animation_6xych"]
+[sub_resource type="Animation" id="Animation_nrxah"]
 resource_name = "Fade_in"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../../Transition/ColorRect:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../../Transition/ColorRect:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(1),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
 
-[sub_resource type="Animation" id="Animation_78da0"]
-resource_name = "Fade_out"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../../Transition/ColorRect:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../../Transition/ColorRect:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
-[sub_resource type="Animation" id="Animation_mchby"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../../Transition/ColorRect:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../../Transition/ColorRect:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_jslci"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jxrd0"]
 _data = {
-"Fade_in": SubResource("Animation_6xych"),
-"Fade_out": SubResource("Animation_78da0"),
-"RESET": SubResource("Animation_mchby")
+"Fade_in": SubResource("Animation_nrxah")
 }
 
 [node name="MainMenu" type="Node2D"]
@@ -102,54 +22,54 @@ script = ExtResource("1_ntmjj")
 
 [node name="ButtonManager" type="Control" parent="."]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect" type="TextureRect" parent="ButtonManager"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 1882.0
-offset_bottom = 1036.0
+offset_right = 1920.0
+offset_bottom = 1080.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_gkhg8")
+metadata/_edit_use_anchors_ = true
 
-[node name="Hide_Seek" type="TextureButton" parent="ButtonManager"]
+[node name="MarginContainer" type="MarginContainer" parent="ButtonManager"]
 layout_mode = 0
-offset_left = 190.0
-offset_top = 438.0
-offset_right = 613.0
-offset_bottom = 670.0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ButtonManager/MarginContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ButtonManager/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Hide_Seek" type="TextureButton" parent="ButtonManager/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
 texture_normal = ExtResource("2_ly0ba")
 texture_hover = ExtResource("3_tc35e")
 
-[node name="Puzzles" type="TextureButton" parent="ButtonManager"]
-layout_mode = 0
-offset_left = 733.0
-offset_top = 442.0
-offset_right = 1156.0
-offset_bottom = 674.0
+[node name="Puzzles" type="TextureButton" parent="ButtonManager/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
 texture_normal = ExtResource("3_7hvit")
 texture_hover = ExtResource("5_11hnp")
 
-[node name="SmoothieMix" type="TextureButton" parent="ButtonManager"]
-layout_mode = 0
-offset_left = 1273.0
-offset_top = 433.0
-offset_right = 1696.0
-offset_bottom = 665.0
+[node name="SmoothieMix" type="TextureButton" parent="ButtonManager/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
 texture_normal = ExtResource("4_i7cqn")
 texture_hover = ExtResource("7_vp5k6")
 
-[node name="MenuButton" type="MenuButton" parent="ButtonManager"]
-layout_mode = 0
-offset_left = 1790.0
-offset_top = 40.0
-offset_right = 1873.0
-offset_bottom = 71.0
+[node name="MenuButton" type="MenuButton" parent="ButtonManager/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
 text = "Language"
 flat = false
 switch_on_hover = true
@@ -164,27 +84,21 @@ popup/item_3/id = 3
 popup/item_4/text = "Finnish"
 popup/item_4/id = 4
 
-[node name="HSlider" type="HSlider" parent="ButtonManager"]
-layout_mode = 0
-offset_left = 1684.0
-offset_top = 1038.0
-offset_right = 1887.0
-offset_bottom = 1054.0
+[node name="HSlider" type="HSlider" parent="ButtonManager/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
 
 [node name="Transition" type="AnimationPlayer" parent="."]
-root_node = NodePath("../ButtonManager/Hide_Seek")
 libraries = {
-"": SubResource("AnimationLibrary_jslci")
+"": SubResource("AnimationLibrary_jxrd0")
 }
 
 [node name="ColorRect" type="ColorRect" parent="Transition"]
-offset_left = -85.0
-offset_top = -48.0
-offset_right = 2013.0
-offset_bottom = 1145.0
+offset_left = -295.0
+offset_top = -270.0
+offset_right = 2323.0
+offset_bottom = 1351.0
 color = Color(0, 0, 0, 1)
 
-[connection signal="pressed" from="ButtonManager/Hide_Seek" to="." method="_on_hide_seek_pressed"]
-[connection signal="pressed" from="ButtonManager/Puzzles" to="." method="_on_puzzles_pressed"]
-[connection signal="pressed" from="ButtonManager/SmoothieMix" to="." method="_on_smoothie_mix_pressed"]
-[connection signal="animation_finished" from="Transition" to="." method="_on_transition_animation_finished"]
+[connection signal="pressed" from="ButtonManager/MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_pressed"]
+[connection signal="pressed" from="ButtonManager/MarginContainer/VBoxContainer/HBoxContainer/Puzzles" to="." method="_on_puzzles_pressed"]
+[connection signal="pressed" from="ButtonManager/MarginContainer/VBoxContainer/HBoxContainer/SmoothieMix" to="." method="_on_smoothie_mix_pressed"]
