@@ -39,23 +39,20 @@ var HnS_6position
 
 var current_scene: Node = null
 
+var HudButton
 
 func _ready() -> void:
 	newScene()
 	
-	var HudButton = HUD.instantiate()
-	add_child(HudButton)
-	HudButton.connect("pressed", _on_back_btn_pressed)
-
 	transition.play("Fade_in")
 	print("fade in")
 	
 
-
 func mainCode(): # on start basically
 	print("Running mainCode(), current scene: ", current_scene.name)
 	randomize()
-	
+	clearHUD()
+	spawnHUD()
 	HnS_1position = current_scene.find_child("HnS_1").position
 	HnS_2position = current_scene.find_child("HnS_2").position
 	HnS_3position = current_scene.find_child("HnS_3").position
@@ -69,6 +66,7 @@ func mainCode(): # on start basically
 	#HnS_4position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_4").position
 	#HnS_5position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_5").position
 	#HnS_6position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_6").position
+	
 	
 	
 	# func _on_test_btn_pressed() -> void:
@@ -157,6 +155,7 @@ func mainCode(): # on start basically
 		#spawnHidingSpot1(HnS_6position)
 	
 	
+	
 
 func spawnLolloHidingSpot(pos):
 	LolloButton = HidingSpot.instantiate() as TextureButton
@@ -191,6 +190,10 @@ func spawnHidingSpot1(pos): # spawn L and B at random_num1 and 2, and spawn empt
 	instances.append(EmptyButton)
 	# isLolloAndBernieSpawned = true
 	
+func spawnHUD():
+	HudButton = HUD.instantiate()
+	add_child(HudButton)
+	HudButton.connect("pressed", _on_back_btn_pressed)
 
 # Helper function to get a random number from an array
 func get_random_from_array(arr):
@@ -214,8 +217,11 @@ func reset_hidingSpots():
 			instance.queue_free()  # Safely remove the node from the scene
 	instances.clear()
 	
-	
-	
+func clearHUD():
+	if HudButton:
+		HudButton.queue_free()
+	else:
+		pass
 
 func isLolloBernieFound():
 	# Check if both LolloFound and BernieFound are true
