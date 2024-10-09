@@ -47,7 +47,6 @@ func _ready() -> void:
 
 func mainCode(): # on start basically
 	print("Running mainCode(), current scene: ", current_scene.name)
-	
 	randomize()
 	
 	HnS_1position = current_scene.find_child("HnS_1").position
