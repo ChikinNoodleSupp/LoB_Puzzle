@@ -1,21 +1,21 @@
 [gd_scene load_steps=13 format=3 uid="uid://bfet2ccdjje2p"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_ntmjj"]
+[ext_resource type="Texture2D" uid="uid://tgkxhyx3uvua" path="res://Images/temp bg.png" id="2_gkhg8"]
 [ext_resource type="Texture2D" uid="uid://yyyit87tdghm" path="res://Images/hns title.png" id="2_ly0ba"]
-[ext_resource type="Texture2D" uid="uid://cd0rvan0p5sh3" path="res://Images/temp bg2.png" id="2_m0r7n"]
 [ext_resource type="Texture2D" uid="uid://o7taeeb65yor" path="res://Images/puzzles title.png" id="3_7hvit"]
 [ext_resource type="Texture2D" uid="uid://cu4572dyivmu4" path="res://Images/hns hover.png" id="3_tc35e"]
 [ext_resource type="Texture2D" uid="uid://cq4ttfuyllhia" path="res://Images/sm title.png" id="4_i7cqn"]
 [ext_resource type="Texture2D" uid="uid://b2xpi4bn063m4" path="res://Images/puzzles hover.png" id="5_11hnp"]
 [ext_resource type="Texture2D" uid="uid://cfm2mhxtd4ppu" path="res://Images/sm hover.png" id="7_vp5k6"]
 
-[sub_resource type="Animation" id="Animation_xkhnl"]
-resource_name = "Fade_out"
+[sub_resource type="Animation" id="Animation_6d8hl"]
+resource_name = "Fade_in"
 length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../AnimationPlayer/ColorRect:self_modulate")
+tracks/0/path = NodePath("AnimationPlayer/ColorRect:self_modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -27,7 +27,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("../AnimationPlayer/ColorRect:visible")
+tracks/1/path = NodePath("AnimationPlayer/ColorRect:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -37,13 +37,13 @@ tracks/1/keys = {
 "values": [false]
 }
 
-[sub_resource type="Animation" id="Animation_mwo5y"]
-resource_name = "Fade_in"
+[sub_resource type="Animation" id="Animation_uwtgl"]
+resource_name = "Fade_out"
 length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../AnimationPlayer/ColorRect:self_modulate")
+tracks/0/path = NodePath("AnimationPlayer/ColorRect:self_modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -55,7 +55,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("../AnimationPlayer/ColorRect:visible")
+tracks/1/path = NodePath("AnimationPlayer/ColorRect:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -65,12 +65,12 @@ tracks/1/keys = {
 "values": [true]
 }
 
-[sub_resource type="Animation" id="Animation_avqbf"]
+[sub_resource type="Animation" id="Animation_6gjqc"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../AnimationPlayer/ColorRect:self_modulate")
+tracks/0/path = NodePath("AnimationPlayer/ColorRect:self_modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -82,21 +82,21 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("../AnimationPlayer/ColorRect:visible")
+tracks/1/path = NodePath("AnimationPlayer/ColorRect:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [true]
+"values": [false]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_4lnf5"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rlixt"]
 _data = {
-"Fade_in": SubResource("Animation_xkhnl"),
-"Fade_out": SubResource("Animation_mwo5y"),
-"RESET": SubResource("Animation_avqbf")
+"Fade_in": SubResource("Animation_6d8hl"),
+"Fade_out": SubResource("Animation_uwtgl"),
+"RESET": SubResource("Animation_6gjqc")
 }
 
 [node name="ButtonManager" type="Control"]
@@ -118,7 +118,7 @@ offset_left = 3.0
 offset_right = 3.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_m0r7n")
+texture = ExtResource("2_gkhg8")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -183,15 +183,16 @@ popup/item_4/id = 4
 layout_mode = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-root_node = NodePath("")
 libraries = {
-"": SubResource("AnimationLibrary_4lnf5")
+"": SubResource("AnimationLibrary_rlixt")
 }
 
 [node name="ColorRect" type="ColorRect" parent="AnimationPlayer"]
 visible = false
-offset_left = -563.0
-offset_top = -464.0
-offset_right = 2684.0
-offset_bottom = 1323.0
+offset_left = -932.0
+offset_top = -797.0
+offset_right = 2916.0
+offset_bottom = 2312.0
 color = Color(0, 0, 0, 1)
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_pressed"]
