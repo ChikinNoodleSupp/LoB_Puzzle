@@ -20,6 +20,10 @@ boot_splash/image="res://Images/hns hover.png"
 config/icon="res://Images/frame_02_delay098.PNG"
 boot_splash/minimum_display_time=3000
 
+[autoload]
+
+LocalizationScene="*res://Localization_Scene.tscn"
+
 [display]
 
 window/size/viewport_width=1920
