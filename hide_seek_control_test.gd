@@ -248,15 +248,15 @@ func newScene():
 	call_deferred("mainCode")
 
 func _on_back_btn_pressed() -> void:
-	transition.play("Fade_out")
-	await get_tree().create_timer(0.6).timeout
-	get_tree().change_scene_to_file("res://MainMenu.tscn")
+	transition.play("Fade_out_2")
+	
+	
 	
 	
 
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
-	if anim_name == "Fade_out":
+	if anim_name == "Fade_out_2":
 		print("fade out")
-		
+		get_tree().change_scene_to_file("res://MainMenu.tscn")
 		# get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()])
 		#WHY ISNT IT WORKING REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
