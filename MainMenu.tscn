@@ -1,13 +1,16 @@
-[gd_scene load_steps=13 format=3 uid="uid://bfet2ccdjje2p"]
+[gd_scene load_steps=16 format=3 uid="uid://bfet2ccdjje2p"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_ntmjj"]
 [ext_resource type="Texture2D" uid="uid://tgkxhyx3uvua" path="res://Images/temp bg.png" id="2_gkhg8"]
-[ext_resource type="Texture2D" uid="uid://yyyit87tdghm" path="res://Images/hns title.png" id="2_ly0ba"]
 [ext_resource type="Texture2D" uid="uid://o7taeeb65yor" path="res://Images/puzzles title.png" id="3_7hvit"]
-[ext_resource type="Texture2D" uid="uid://cu4572dyivmu4" path="res://Images/hns hover.png" id="3_tc35e"]
 [ext_resource type="Texture2D" uid="uid://cq4ttfuyllhia" path="res://Images/sm title.png" id="4_i7cqn"]
 [ext_resource type="Texture2D" uid="uid://b2xpi4bn063m4" path="res://Images/puzzles hover.png" id="5_11hnp"]
 [ext_resource type="Texture2D" uid="uid://cfm2mhxtd4ppu" path="res://Images/sm hover.png" id="7_vp5k6"]
+[ext_resource type="Texture2D" uid="uid://dpdk0kwcfvtud" path="res://SE_flag.png" id="9_d140y"]
+[ext_resource type="Texture2D" uid="uid://cq01e2cjfcee" path="res://EN_flag.png" id="10_jqhjr"]
+[ext_resource type="Texture2D" uid="uid://ckptme1vb0bcp" path="res://DE_flag.png" id="11_nnhqi"]
+[ext_resource type="Texture2D" uid="uid://rmkyjrmxw3l1" path="res://NO_flag.png" id="12_ngvbc"]
+[ext_resource type="Texture2D" uid="uid://dr0lffbdiw2x3" path="res://FN_flag.png" id="13_2mnoq"]
 
 [sub_resource type="Animation" id="Animation_6d8hl"]
 resource_name = "Fade_in"
@@ -139,10 +142,10 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="Hide_Seek" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="Hide_Seek" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-texture_normal = ExtResource("2_ly0ba")
-texture_hover = ExtResource("3_tc35e")
+theme_override_font_sizes/font_size = 42
+text = "Hide and Seek"
 
 [node name="Puzzles" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -155,32 +158,37 @@ texture_normal = ExtResource("4_i7cqn")
 texture_hover = ExtResource("7_vp5k6")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer"]
+custom_minimum_size = Vector2(150, 100)
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
-size_flags_vertical = 0
+size_flags_vertical = 6
 
 [node name="MenuButton" type="MenuButton" parent="MarginContainer/VBoxContainer2/HBoxContainer"]
 layout_mode = 2
 text = "Language"
 flat = false
+expand_icon = true
 switch_on_hover = true
 item_count = 5
-popup/item_0/text = "Swedish"
+popup/item_0/text = "Svenska"
+popup/item_0/icon = ExtResource("9_d140y")
 popup/item_1/text = "English"
+popup/item_1/icon = ExtResource("10_jqhjr")
 popup/item_1/id = 1
-popup/item_2/text = "Danish"
+popup/item_2/text = "Dansk"
+popup/item_2/icon = ExtResource("11_nnhqi")
 popup/item_2/id = 2
-popup/item_3/text = "Norwegian"
+popup/item_3/text = "Norsk"
+popup/item_3/icon = ExtResource("12_ngvbc")
 popup/item_3/id = 3
-popup/item_4/text = "Finnish"
+popup/item_4/text = "Suomi"
+popup/item_4/icon = ExtResource("13_2mnoq")
 popup/item_4/id = 4
-
-[node name="HSlider" type="VSlider" parent="MarginContainer/VBoxContainer2/HBoxContainer"]
-layout_mode = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -196,5 +204,4 @@ offset_bottom = 2312.0
 color = Color(0, 0, 0, 1)
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer2/HBoxContainer/MenuButton" to="." method="_on_menu_button_pressed"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

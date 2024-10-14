@@ -2,14 +2,52 @@ extends Control
 
 @onready var transition = $AnimationPlayer
 @onready var colorrect = $AnimationPlayer/ColorRect
-@onready var button = $MarginContainer/VBoxContainer2/HBoxContainer/MenuButton
-
+var localizationScene = preload("res://Localization_Scene.tscn")
+@onready var menuButton = $MarginContainer/VBoxContainer2/HBoxContainer/MenuButton
+@onready var popup = menuButton.get_popup()
+@onready var HnS = $MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek
 
 #Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	colorrect.visible = true
 	transition.play("Fade_in")
-	button.get_popup().id_pressed.connect(_on_menu_button_pressed)
+	popup.id_pressed.connect(changeLanguage)
+
+func changeLanguage(id):
+	print(id)
+	match id:
+		0: Swedish()
+		1: English()
+		2: Danish()
+		3: Norwegian()
+		4: Finnish()
+	# tutorial: https://www.youtube.com/watch?v=Lw-3Tnwv4Ds
+	# documentation: https://www.reddit.com/r/godot/comments/177rdyo/menubutton_difficult_to_use/
+
+func Swedish():
+	print("Svenska")
+	menuButton.text = "Språk"
+	HnS.text = "Kurragömma"
+
+func English():
+	print("English")
+	menuButton.text = "Language"
+	HnS.text = "Hide & Seek"
+
+func Danish():
+	print("Dansk")
+	menuButton.text = "Sprog"
+	HnS.text = "Gemmeleg"
+
+func Norwegian():
+	print("Norsk")
+	menuButton.text = "Språk"
+	HnS.text = "Gjemsel"
+
+func Finnish():
+	print("Suomi")
+	menuButton.text = "Kieli"
+	HnS.text = "Piilosta"
 
 func _on_hide_seek_pressed() -> void:
 	transition.play("Fade_out")
@@ -30,12 +68,3 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 		get_tree().change_scene_to_file("res://Hide_Seek_Main.tscn")
 		
 		
-func _on_menu_button_pressed(id : int):
-	match id:
-		0: String("Swedish")
-		1: String("English")
-		2: String("Danish")
-		3: String("Norwegian")
-		4: String("Finnish")
-	# tutorial: https://www.youtube.com/watch?v=Lw-3Tnwv4Ds
-	# documentation: https://www.reddit.com/r/godot/comments/177rdyo/menubutton_difficult_to_use/
