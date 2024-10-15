@@ -7,4 +7,7 @@ var setDanish = false
 var setNorwegian = false
 var setFinnish = false
 
+
+
+
 # var testNum = 3

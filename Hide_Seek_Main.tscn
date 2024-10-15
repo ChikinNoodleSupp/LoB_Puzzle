@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://bcyokg3fmgifd"]
 
 [ext_resource type="Script" path="res://hide_seek_control_test.gd" id="1_7ocwq"]
-[ext_resource type="Texture2D" uid="uid://cd0rvan0p5sh3" path="res://Images/temp bg2.png" id="2_5bodq"]
+[ext_resource type="Texture2D" uid="uid://cxuoo0mv4kxgj" path="res://lb_strand.png" id="2_4qrnc"]
 
 [sub_resource type="Animation" id="Animation_k8xn7"]
 resource_name = "Fade_in"
@@ -138,7 +138,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_5bodq")
+texture = ExtResource("2_4qrnc")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
