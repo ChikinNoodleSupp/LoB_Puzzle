@@ -1,13 +1,13 @@
-[gd_scene format=3 uid="uid://eo2y3to8yrxe"]
+[gd_scene load_steps=3 format=3 uid="uid://eo2y3to8yrxe"]
 
-[node name="TextureButton" type="Button"]
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -188.0
-offset_top = 45.0
-offset_right = -31.0
-offset_bottom = 76.0
-grow_horizontal = 0
+[ext_resource type="Texture2D" uid="uid://carqn3bithi0k" path="res://Images/go_back_B.png" id="1_4hv5w"]
+[ext_resource type="Texture2D" uid="uid://deooncn3t75wu" path="res://Images/go_back_W.png" id="2_ie3c8"]
+
+[node name="TextureButton" type="TextureButton"]
+offset_left = 25.0
+offset_top = 20.0
+offset_right = 134.0
+offset_bottom = 120.0
 button_mask = 7
-text = "Back to Main Menu"
+texture_normal = ExtResource("1_4hv5w")
+texture_hover = ExtResource("2_ie3c8")

@@ -7,8 +7,19 @@ var localizationScene = preload("res://Localization_Scene.tscn")
 @onready var popup = menuButton.get_popup()
 @onready var HnS = $MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek
 
+
 #Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	if Localization.setSwedish:
+		Swedish()
+	elif Localization.setDanish:
+		Danish()
+	elif Localization.setEnglish:
+		English()
+	elif Localization.setNorwegian:
+		Norwegian()
+	elif Localization.setFinnish:
+		Finnish()
 	colorrect.visible = true
 	transition.play("Fade_in")
 	popup.id_pressed.connect(changeLanguage)
@@ -28,26 +39,52 @@ func Swedish():
 	print("Svenska")
 	menuButton.text = "Språk"
 	HnS.text = "Kurragömma"
+	Localization.setSwedish = true
+	Localization.setEnglish = false
+	Localization.setDanish = false
+	Localization.setNorwegian = false
+	Localization.setFinnish = false
+	
 
 func English():
 	print("English")
 	menuButton.text = "Language"
 	HnS.text = "Hide & Seek"
+	Localization.setSwedish = false
+	Localization.setEnglish = true
+	Localization.setDanish = false
+	Localization.setNorwegian = false
+	Localization.setFinnish = false
 
 func Danish():
 	print("Dansk")
 	menuButton.text = "Sprog"
 	HnS.text = "Gemmeleg"
+	Localization.setSwedish = false
+	Localization.setEnglish = false
+	Localization.setDanish = true
+	Localization.setNorwegian = false
+	Localization.setFinnish = false
 
 func Norwegian():
 	print("Norsk")
 	menuButton.text = "Språk"
 	HnS.text = "Gjemsel"
+	Localization.setSwedish = false
+	Localization.setEnglish = false
+	Localization.setDanish = false
+	Localization.setNorwegian = true
+	Localization.setFinnish = false
 
 func Finnish():
 	print("Suomi")
 	menuButton.text = "Kieli"
 	HnS.text = "Piilosta"
+	Localization.setSwedish = false
+	Localization.setEnglish = false
+	Localization.setDanish = false
+	Localization.setNorwegian = false
+	Localization.setFinnish = true
 
 func _on_hide_seek_pressed() -> void:
 	transition.play("Fade_out")

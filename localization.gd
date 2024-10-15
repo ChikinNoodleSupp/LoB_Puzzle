@@ -1,9 +1,10 @@
 extends Control
 
 var languageButtons = preload("res://MainMenu.tscn")
+var setSwedish = false
+var setEnglish = false
+var setDanish = false
+var setNorwegian = false
+var setFinnish = false
 
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass
+# var testNum = 3

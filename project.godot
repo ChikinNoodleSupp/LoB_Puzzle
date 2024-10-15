@@ -22,7 +22,7 @@ boot_splash/minimum_display_time=3000
 
 [autoload]
 
-LocalizationScene="*res://Localization_Scene.tscn"
+Localization="*res://Localization.gd"
 
 [display]
 

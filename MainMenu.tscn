@@ -148,11 +148,13 @@ theme_override_font_sizes/font_size = 42
 text = "Hide and Seek"
 
 [node name="Puzzles" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+visible = false
 layout_mode = 2
 texture_normal = ExtResource("3_7hvit")
 texture_hover = ExtResource("5_11hnp")
 
 [node name="SmoothieMix" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+visible = false
 layout_mode = 2
 texture_normal = ExtResource("4_i7cqn")
 texture_hover = ExtResource("7_vp5k6")
