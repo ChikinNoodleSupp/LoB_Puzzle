@@ -89,6 +89,7 @@ func Finnish():
 
 func _on_hide_seek_pressed() -> void:
 	transition.play("Fade_out")
+	AudioPlayer.play_music_level()
 	#await get_tree().create_timer(0.6).timeout
 	#get_tree().change_scene_to_file("res://Hide_Seek_Main.tscn")
 	
