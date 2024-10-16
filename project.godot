@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="L&B_Hide&Seek"
+config/description="Lollo & Bernie Hide and Seek game"
 config/version="1"
-run/main_scene="res://Hide_Seek_Main.tscn"
+run/main_scene="res://MainMenu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 boot_splash/bg_color=Color(0.164769, 0.073178, 0.309627, 1)
 boot_splash/show_image=false
@@ -23,6 +24,7 @@ boot_splash/minimum_display_time=3000
 [autoload]
 
 Localization="*res://Localization.gd"
+AudioPlayer="*res://audio_player.gd"
 
 [display]
 
@@ -31,7 +33,6 @@ window/size/viewport_height=1080
 window/size/mode=2
 window/size/resizable=false
 window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
 
 [file_customization]
 

@@ -42,6 +42,7 @@ var current_scene: Node = null
 var HudButton
 
 func _ready() -> void:
+	AudioPlayer.play_music_level()
 	newScene()
 	
 	transition.play("Fade_in")

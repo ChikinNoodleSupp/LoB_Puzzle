@@ -117,8 +117,6 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 3.0
-offset_right = 3.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_gkhg8")
@@ -136,6 +134,7 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+theme_override_constants/separation = 50
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -145,7 +144,6 @@ size_flags_vertical = 4
 [node name="Hide_Seek" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 42
-text = "Hide and Seek"
 
 [node name="Puzzles" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 visible = false
@@ -159,38 +157,83 @@ layout_mode = 2
 texture_normal = ExtResource("4_i7cqn")
 texture_hover = ExtResource("7_vp5k6")
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer"]
-custom_minimum_size = Vector2(150, 100)
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 0
-
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer2"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
+size_flags_horizontal = 4
 size_flags_vertical = 6
+theme_override_constants/separation = 23
 
-[node name="MenuButton" type="MenuButton" parent="MarginContainer/VBoxContainer2/HBoxContainer"]
+[node name="SE_Btn" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
-text = "Language"
-flat = false
-expand_icon = true
-switch_on_hover = true
-item_count = 5
-popup/item_0/text = "Svenska"
-popup/item_0/icon = ExtResource("9_d140y")
-popup/item_1/text = "English"
-popup/item_1/icon = ExtResource("10_jqhjr")
-popup/item_1/id = 1
-popup/item_2/text = "Dansk"
-popup/item_2/icon = ExtResource("11_nnhqi")
-popup/item_2/id = 2
-popup/item_3/text = "Norsk"
-popup/item_3/icon = ExtResource("12_ngvbc")
-popup/item_3/id = 3
-popup/item_4/text = "Suomi"
-popup/item_4/icon = ExtResource("13_2mnoq")
-popup/item_4/id = 4
+texture_normal = ExtResource("9_d140y")
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/SE_Btn"]
+visible = false
+layout_mode = 0
+offset_left = 1.0
+offset_top = 60.0
+offset_right = 99.0
+offset_bottom = 95.0
+theme_override_font_sizes/font_size = 25
+text = "Svenska"
+horizontal_alignment = 1
+
+[node name="DK_Btn" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("11_nnhqi")
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/DK_Btn"]
+visible = false
+offset_left = 1.0
+offset_top = 60.0
+offset_right = 99.0
+offset_bottom = 95.0
+theme_override_font_sizes/font_size = 25
+text = "Dansk"
+horizontal_alignment = 1
+
+[node name="NO_Btn" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("12_ngvbc")
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/NO_Btn"]
+visible = false
+offset_left = 1.0
+offset_top = 60.0
+offset_right = 99.0
+offset_bottom = 95.0
+theme_override_font_sizes/font_size = 25
+text = "Norsk"
+horizontal_alignment = 1
+
+[node name="FI_Btn" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("13_2mnoq")
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/FI_Btn"]
+visible = false
+offset_left = 1.0
+offset_top = 60.0
+offset_right = 99.0
+offset_bottom = 95.0
+theme_override_font_sizes/font_size = 25
+text = "Suomi"
+horizontal_alignment = 1
+
+[node name="EN_Btn" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("10_jqhjr")
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/EN_Btn"]
+visible = false
+offset_left = 1.0
+offset_top = 60.0
+offset_right = 99.0
+offset_bottom = 95.0
+theme_override_font_sizes/font_size = 25
+text = "English"
+horizontal_alignment = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -205,5 +248,18 @@ offset_right = 2916.0
 offset_bottom = 2312.0
 color = Color(0, 0, 0, 1)
 
+[node name="HSlider" type="HSlider" parent="."]
+layout_mode = 2
+offset_left = 483.0
+offset_top = 659.0
+offset_right = 783.0
+offset_bottom = 675.0
+scale = Vector2(3.3, 3.3)
+
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/SE_Btn" to="." method="_on_se_btn_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/DK_Btn" to="." method="_on_dk_btn_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/NO_Btn" to="." method="_on_no_btn_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/FI_Btn" to="." method="_on_fi_btn_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/EN_Btn" to="." method="_on_en_btn_pressed"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

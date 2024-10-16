@@ -3,13 +3,14 @@ extends Control
 @onready var transition = $AnimationPlayer
 @onready var colorrect = $AnimationPlayer/ColorRect
 var localizationScene = preload("res://Localization_Scene.tscn")
-@onready var menuButton = $MarginContainer/VBoxContainer2/HBoxContainer/MenuButton
-@onready var popup = menuButton.get_popup()
+#@onready var menuButton = $MarginContainer/VBoxContainer2/HBoxContainer/MenuButton
+#@onready var popup = menuButton.get_popup()
 @onready var HnS = $MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek
 
 
 #Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	Localization.setSwedish = true
 	if Localization.setSwedish:
 		Swedish()
 	elif Localization.setDanish:
@@ -22,22 +23,22 @@ func _ready() -> void:
 		Finnish()
 	colorrect.visible = true
 	transition.play("Fade_in")
-	popup.id_pressed.connect(changeLanguage)
+	# popup.id_pressed.connect(changeLanguage)
 
-func changeLanguage(id):
-	print(id)
-	match id:
-		0: Swedish()
-		1: English()
-		2: Danish()
-		3: Norwegian()
-		4: Finnish()
-	# tutorial: https://www.youtube.com/watch?v=Lw-3Tnwv4Ds
-	# documentation: https://www.reddit.com/r/godot/comments/177rdyo/menubutton_difficult_to_use/
+#func changeLanguage(id):
+	#print(id)
+	#match id:
+		#0: Swedish()
+		#1: English()
+		#2: Danish()
+		#3: Norwegian()
+		#4: Finnish()
+	## tutorial: https://www.youtube.com/watch?v=Lw-3Tnwv4Ds
+	## documentation: https://www.reddit.com/r/godot/comments/177rdyo/menubutton_difficult_to_use/
 
 func Swedish():
 	print("Svenska")
-	menuButton.text = "Språk"
+	# menuButton.text = "Språk"
 	HnS.text = "Kurragömma"
 	Localization.setSwedish = true
 	Localization.setEnglish = false
@@ -48,7 +49,7 @@ func Swedish():
 
 func English():
 	print("English")
-	menuButton.text = "Language"
+	# menuButton.text = "Language"
 	HnS.text = "Hide & Seek"
 	Localization.setSwedish = false
 	Localization.setEnglish = true
@@ -58,7 +59,7 @@ func English():
 
 func Danish():
 	print("Dansk")
-	menuButton.text = "Sprog"
+	# menuButton.text = "Sprog"
 	HnS.text = "Gemmeleg"
 	Localization.setSwedish = false
 	Localization.setEnglish = false
@@ -68,7 +69,7 @@ func Danish():
 
 func Norwegian():
 	print("Norsk")
-	menuButton.text = "Språk"
+	# menuButton.text = "Språk"
 	HnS.text = "Gjemsel"
 	Localization.setSwedish = false
 	Localization.setEnglish = false
@@ -78,8 +79,8 @@ func Norwegian():
 
 func Finnish():
 	print("Suomi")
-	menuButton.text = "Kieli"
-	HnS.text = "Piilosta"
+	# menuButton.text = "Kieli"
+	HnS.text = "Piiloleikki"
 	Localization.setSwedish = false
 	Localization.setEnglish = false
 	Localization.setDanish = false
@@ -105,3 +106,23 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 		get_tree().change_scene_to_file("res://Hide_Seek_Main.tscn")
 		
 		
+
+
+func _on_se_btn_pressed() -> void:
+	Swedish()
+
+
+func _on_dk_btn_pressed() -> void:
+	Danish()
+
+
+func _on_no_btn_pressed() -> void:
+	Norwegian()
+
+
+func _on_fi_btn_pressed() -> void:
+	Finnish()
+
+
+func _on_en_btn_pressed() -> void:
+	English()
