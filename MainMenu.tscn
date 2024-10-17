@@ -250,11 +250,13 @@ color = Color(0, 0, 0, 1)
 
 [node name="HSlider" type="HSlider" parent="."]
 layout_mode = 2
-offset_left = 483.0
-offset_top = 659.0
-offset_right = 783.0
-offset_bottom = 675.0
+offset_left = 469.0
+offset_top = 655.0
+offset_right = 769.0
+offset_bottom = 671.0
 scale = Vector2(3.3, 3.3)
+max_value = 1.0
+step = 0.001
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/SE_Btn" to="." method="_on_se_btn_pressed"]
@@ -263,3 +265,4 @@ scale = Vector2(3.3, 3.3)
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/FI_Btn" to="." method="_on_fi_btn_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/EN_Btn" to="." method="_on_en_btn_pressed"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="value_changed" from="HSlider" to="." method="_on_h_slider_value_changed"]

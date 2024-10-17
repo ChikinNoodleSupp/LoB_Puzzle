@@ -10,6 +10,7 @@ var localizationScene = preload("res://Localization_Scene.tscn")
 
 #Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	AudioPlayer.play_music_menu()
 	Localization.setSwedish = true
 	if Localization.setSwedish:
 		Swedish()
@@ -89,7 +90,7 @@ func Finnish():
 
 func _on_hide_seek_pressed() -> void:
 	transition.play("Fade_out")
-	AudioPlayer.play_music_level()
+	AudioPlayer.stop_music_level()
 	#await get_tree().create_timer(0.6).timeout
 	#get_tree().change_scene_to_file("res://Hide_Seek_Main.tscn")
 	
@@ -127,3 +128,7 @@ func _on_fi_btn_pressed() -> void:
 
 func _on_en_btn_pressed() -> void:
 	English()
+
+
+func _on_h_slider_value_changed(value: float) -> void:
+	AudioServer.set_bus_volume_db(0,linear_to_db(value))
