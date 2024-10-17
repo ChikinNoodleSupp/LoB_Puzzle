@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bfet2ccdjje2p"]
+[gd_scene load_steps=17 format=3 uid="uid://bfet2ccdjje2p"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_ntmjj"]
 [ext_resource type="Texture2D" uid="uid://tgkxhyx3uvua" path="res://Images/temp bg.png" id="2_gkhg8"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dpdk0kwcfvtud" path="res://SE_flag.png" id="9_d140y"]
 [ext_resource type="Texture2D" uid="uid://cq01e2cjfcee" path="res://EN_flag.png" id="10_jqhjr"]
 [ext_resource type="Texture2D" uid="uid://ckptme1vb0bcp" path="res://DE_flag.png" id="11_nnhqi"]
+[ext_resource type="PackedScene" uid="uid://tfnskewqicsp" path="res://Volume_Slider.tscn" id="12_1ubmn"]
 [ext_resource type="Texture2D" uid="uid://rmkyjrmxw3l1" path="res://NO_flag.png" id="12_ngvbc"]
 [ext_resource type="Texture2D" uid="uid://dr0lffbdiw2x3" path="res://FN_flag.png" id="13_2mnoq"]
 
@@ -185,6 +186,7 @@ texture_normal = ExtResource("11_nnhqi")
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/DK_Btn"]
 visible = false
+layout_mode = 0
 offset_left = 1.0
 offset_top = 60.0
 offset_right = 99.0
@@ -199,6 +201,7 @@ texture_normal = ExtResource("12_ngvbc")
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/NO_Btn"]
 visible = false
+layout_mode = 0
 offset_left = 1.0
 offset_top = 60.0
 offset_right = 99.0
@@ -213,6 +216,7 @@ texture_normal = ExtResource("13_2mnoq")
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/FI_Btn"]
 visible = false
+layout_mode = 0
 offset_left = 1.0
 offset_top = 60.0
 offset_right = 99.0
@@ -227,6 +231,7 @@ texture_normal = ExtResource("10_jqhjr")
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/EN_Btn"]
 visible = false
+layout_mode = 0
 offset_left = 1.0
 offset_top = 60.0
 offset_right = 99.0
@@ -248,15 +253,12 @@ offset_right = 2916.0
 offset_bottom = 2312.0
 color = Color(0, 0, 0, 1)
 
-[node name="HSlider" type="HSlider" parent="."]
-layout_mode = 2
-offset_left = 469.0
-offset_top = 655.0
-offset_right = 769.0
-offset_bottom = 671.0
-scale = Vector2(3.3, 3.3)
-max_value = 1.0
-step = 0.001
+[node name="HSlider" parent="." instance=ExtResource("12_1ubmn")]
+layout_mode = 0
+offset_left = 844.0
+offset_top = 646.0
+offset_right = 1070.0
+offset_bottom = 662.0
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/SE_Btn" to="." method="_on_se_btn_pressed"]
@@ -265,4 +267,3 @@ step = 0.001
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/FI_Btn" to="." method="_on_fi_btn_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/EN_Btn" to="." method="_on_en_btn_pressed"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
-[connection signal="value_changed" from="HSlider" to="." method="_on_h_slider_value_changed"]

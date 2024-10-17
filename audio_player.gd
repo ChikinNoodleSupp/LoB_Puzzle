@@ -5,12 +5,11 @@ const bg_music = preload("res://Music/AB_Bubble_BACKING.mp3")
 const menu_music = preload("res://Music/Lollo Bernie Song_SCAN_SHORT_Backing_WAV_2020.mp3")
 
 
-func _play_music(music: AudioStream, volume = 0.0):
+func _play_music(music: AudioStream):
 	if stream == music:
 		return
 	
 	stream = music
-	volume_db = volume
 	play()
 	
 func play_music_level():
