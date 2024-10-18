@@ -10,6 +10,7 @@ func _play_music(music: AudioStream):
 		return
 	
 	stream = music
+	set_bus("Master")
 	play()
 	
 func play_music_level():
