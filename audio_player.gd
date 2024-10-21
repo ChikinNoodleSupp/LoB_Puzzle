@@ -1,5 +1,6 @@
 extends AudioStreamPlayer
 
+# signal audio_started
 
 const bg_music = preload("res://Music/AB_Bubble_BACKING.mp3")
 const menu_music = preload("res://Music/Lollo Bernie Song_SCAN_SHORT_Backing_WAV_2020.mp3")
@@ -13,6 +14,8 @@ func _play_music(music: AudioStream, volume = 0.0):
 	volume_db = volume
 	set_bus("Master")
 	play()
+	
+	# emit_signal("audio_started")
 	
 func play_music_level():
 	_play_music(bg_music)
