@@ -25,6 +25,7 @@ boot_splash/minimum_display_time=3000
 
 Localization="*res://Localization.gd"
 AudioPlayer="*res://audio_player.gd"
+VolumeSlider="*res://volume_slider.gd"
 
 [display]
 

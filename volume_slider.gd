@@ -7,18 +7,17 @@ var bus_name: String
 
 var bus_index: int
 
+
 func ready() -> void:
 	bus_index = AudioServer.get_bus_index(bus_name)
-	
 	
 	_set_initial_value()
 	
 	self.connect("value_changed", _value_changed)
 
-func _set_initial_value() -> void:
-	#value = db_to_linear(AudioServer.get_bus_volume_db(bus_index))
-	AP.volume = 0.5
-	value = AP.volume
+func _set_initial_value():
+	value = db_to_linear(AudioServer.get_bus_volume_db(bus_index))
+	
 	
 
 func _value_changed(value: float) -> void:
