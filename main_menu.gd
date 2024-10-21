@@ -7,9 +7,12 @@ var localizationScene = preload("res://Localization_Scene.tscn")
 #@onready var popup = menuButton.get_popup()
 @onready var HnS = $MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek
 
+#var VS = preload("res://Volume_Slider.tscn")
+
 
 #Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	#spawnSlider()
 	AudioPlayer.play_music_menu()
 	Localization.setSwedish = true
 	if Localization.setSwedish:
@@ -25,6 +28,11 @@ func _ready() -> void:
 	colorrect.visible = true
 	transition.play("Fade_in")
 	# popup.id_pressed.connect(changeLanguage)
+
+#func spawnSlider():
+	#var SliderBtn = VS.instantiate() as HSlider
+	#add_child(SliderBtn)
+	#
 
 #func changeLanguage(id):
 	#print(id)

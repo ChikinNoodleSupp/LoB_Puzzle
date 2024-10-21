@@ -259,6 +259,7 @@ offset_left = 844.0
 offset_top = 646.0
 offset_right = 1070.0
 offset_bottom = 662.0
+value = 0.0
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/SE_Btn" to="." method="_on_se_btn_pressed"]
