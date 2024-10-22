@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://g6m6f7ec3qm7"
+path="res://.godot/imported/ES_Menu UI, Select, Notification 21 - Epidemic Sound.mp3-49c137fc8a74826db2aa3ded35ef82f0.mp3str"
+
+[deps]
+
+source_file="res://SFX/ES_Menu UI, Select, Notification 21 - Epidemic Sound.mp3"
+dest_files=["res://.godot/imported/ES_Menu UI, Select, Notification 21 - Epidemic Sound.mp3-49c137fc8a74826db2aa3ded35ef82f0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

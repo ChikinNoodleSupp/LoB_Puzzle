@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b66xdp5cs3jje"
+path="res://.godot/imported/ES_Digital, Video Game, Select, Positive, Notification 05 - Epidemic Sound.mp3-65ea88b8472270e64d9b23dcd143d3ac.mp3str"
+
+[deps]
+
+source_file="res://SFX/ES_Digital, Video Game, Select, Positive, Notification 05 - Epidemic Sound.mp3"
+dest_files=["res://.godot/imported/ES_Digital, Video Game, Select, Positive, Notification 05 - Epidemic Sound.mp3-65ea88b8472270e64d9b23dcd143d3ac.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b6qm368cem808"
+path="res://.godot/imported/ES_Button Click, Input Response, Tap, Short - Epidemic Sound.mp3-26df6bac3cfd2fd2cbc34d2158d7a98b.mp3str"
+
+[deps]
+
+source_file="res://SFX/ES_Button Click, Input Response, Tap, Short - Epidemic Sound.mp3"
+dest_files=["res://.godot/imported/ES_Button Click, Input Response, Tap, Short - Epidemic Sound.mp3-26df6bac3cfd2fd2cbc34d2158d7a98b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

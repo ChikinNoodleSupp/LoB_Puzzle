@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ceh7ehjk12f4w"
+path="res://.godot/imported/ES_Notification, Video Game, Select, Click, Beep, Positive & Negative 02 - Epidemic Sound.mp3-04f25d9b5032711c029429744c143a98.mp3str"
+
+[deps]
+
+source_file="res://SFX/ES_Notification, Video Game, Select, Click, Beep, Positive & Negative 02 - Epidemic Sound.mp3"
+dest_files=["res://.godot/imported/ES_Notification, Video Game, Select, Click, Beep, Positive & Negative 02 - Epidemic Sound.mp3-04f25d9b5032711c029429744c143a98.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

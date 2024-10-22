@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c6pf2a6n4amrw"
+path="res://.godot/imported/ES_Hands, Hard Tap - Epidemic Sound.mp3-38af4db726a185bae1803a7cd6615ce4.mp3str"
+
+[deps]
+
+source_file="res://SFX/ES_Hands, Hard Tap - Epidemic Sound.mp3"
+dest_files=["res://.godot/imported/ES_Hands, Hard Tap - Epidemic Sound.mp3-38af4db726a185bae1803a7cd6615ce4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

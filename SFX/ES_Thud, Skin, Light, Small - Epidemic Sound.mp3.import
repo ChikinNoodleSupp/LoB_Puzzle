@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bve8dxojh8a1a"
+path="res://.godot/imported/ES_Thud, Skin, Light, Small - Epidemic Sound.mp3-dd7a4eacc23bcecd99bd245878c89e22.mp3str"
+
+[deps]
+
+source_file="res://SFX/ES_Thud, Skin, Light, Small - Epidemic Sound.mp3"
+dest_files=["res://.godot/imported/ES_Thud, Skin, Light, Small - Epidemic Sound.mp3-dd7a4eacc23bcecd99bd245878c89e22.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
