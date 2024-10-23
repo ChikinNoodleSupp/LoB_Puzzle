@@ -7,7 +7,7 @@ var localizationScene = preload("res://Localization_Scene.tscn")
 #@onready var popup = menuButton.get_popup()
 @onready var HnS = $MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek
 
-
+@onready var mouseHover = false
 
 
 #Called when the node enters the scene tree for the first time.
@@ -137,3 +137,16 @@ func _on_fi_btn_pressed() -> void:
 
 func _on_en_btn_pressed() -> void:
 	English()
+
+
+
+func _on_hide_seek_mouse_entered() -> void:
+	mouseHover = true # set mouse hover = true, and in another func on mouse click / input, play() sfx. If hover = true, dont play()
+	if mouseHover:
+		print("mouse hover true")
+
+
+func _on_hide_seek_mouse_exited() -> void:
+	mouseHover = false # set mouse hover = false
+	if mouseHover == false:
+		print("mouse hover false")

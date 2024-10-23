@@ -4,6 +4,8 @@ extends AudioStreamPlayer
 
 const bg_music = preload("res://Music/AB_Bubble_BACKING.mp3")
 const menu_music = preload("res://Music/Lollo Bernie Song_SCAN_SHORT_Backing_WAV_2020.mp3")
+const clickSFX = preload("res://SFX/test_btn-01.mp3")
+
 
 
 func _play_music(music: AudioStream, volume = 0.0):
@@ -34,3 +36,6 @@ func found_sfx():
 func empty_sfx():
 	# something soft and not too intrusive
 	pass
+func press_sfx():
+	pass
+	_play_music(clickSFX)
