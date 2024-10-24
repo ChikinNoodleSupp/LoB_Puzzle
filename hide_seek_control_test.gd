@@ -12,7 +12,13 @@ static var sceneNumber = 0
 var LolloFound = false
 var BernieFound = false
 
-var EmptySpot = preload("res://empty_spot.tscn") # List maybe? if spawn empty spot 1 at pos 1 unless theres hidingspot1 or 2 already there
+var EmptySpot = preload("res://empty_spot.tscn")
+var EmptySpot2 = preload("res://empty_spot2.tscn")
+var EmptySpot3 = preload("res://empty_spot3.tscn")
+var EmptySpot4 = preload("res://empty_spot4.tscn")
+var EmptySpot5 = preload("res://empty_spot5.tscn")
+var EmptySpot6 = preload("res://empty_spot6.tscn")
+
 var HidingSpot = preload("res://LolloSpot.tscn")
 var HidingSpot2 = preload("res://BernieSpot.tscn")
 
@@ -111,7 +117,7 @@ func mainCode(): # on start basically
 		elif random_num2 == i+1:
 			spawnBernieHidingSpot(positionArray[i])
 		else:
-			spawnHidingSpot1(positionArray[i])
+			spawnHidingSpot1(positionArray[i]) #remove position array, and instead just spawn specific empty spots at their corresponding place
 	
 	#if random_num1 == 1:
 		#spawnLolloHidingSpot(HnS_1position) #initiate lollo hiding spot
@@ -190,6 +196,8 @@ func spawnHidingSpot1(pos): # spawn L and B at random_num1 and 2, and spawn empt
 	EmptyButton.position = pos
 	instances.append(EmptyButton)
 	# isLolloAndBernieSpawned = true
+	# var EmptyButton1 = EmptySpot2.instantiate()
+	# EmptyButton1.position = HnS_2position
 	
 func spawnHUD():
 	HudButton = HUD.instantiate()
