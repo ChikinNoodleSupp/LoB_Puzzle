@@ -1,7 +1,21 @@
-[gd_scene load_steps=8 format=3 uid="uid://bcyokg3fmgifd"]
+[gd_scene load_steps=22 format=3 uid="uid://bcyokg3fmgifd"]
 
 [ext_resource type="Script" path="res://hide_seek_control_test.gd" id="1_7ocwq"]
-[ext_resource type="Texture2D" uid="uid://cxuoo0mv4kxgj" path="res://lb_strand.png" id="2_4qrnc"]
+[ext_resource type="Texture2D" uid="uid://djj3oolji5gd8" path="res://Assets/Strand/BG/Asset 11.png" id="2_rd785"]
+[ext_resource type="Texture2D" uid="uid://bn22avvrktoih" path="res://Assets/Strand/BG/Asset 21.png" id="3_66jfn"]
+[ext_resource type="Texture2D" uid="uid://detlpws4ptvb5" path="res://Assets/Strand/BG/Asset 10.png" id="4_6fbsd"]
+[ext_resource type="Texture2D" uid="uid://cyx4g2wgqlxhf" path="res://Assets/Strand/BG/Asset 20.png" id="5_0sbmc"]
+[ext_resource type="Texture2D" uid="uid://do3dicjdilf52" path="res://Assets/Strand/BG/Asset 19.png" id="6_svfp5"]
+[ext_resource type="Texture2D" uid="uid://8inryhxy7vsc" path="res://Assets/Strand/BG/Asset 6.png" id="7_tn0r5"]
+[ext_resource type="Texture2D" uid="uid://culy8nlwy1l5e" path="res://Assets/Strand/BG/Asset 7.png" id="8_psdwe"]
+[ext_resource type="Texture2D" uid="uid://yegfutb0ljx7" path="res://Assets/Strand/BG/Asset 8.png" id="9_b0qpp"]
+[ext_resource type="Texture2D" uid="uid://86ciyj5vquhx" path="res://Assets/Strand/BG/Asset 13.png" id="10_0oug7"]
+[ext_resource type="Texture2D" uid="uid://d4ap2qgj8sj3h" path="res://Assets/Strand/BG/Asset 14.png" id="11_hui53"]
+[ext_resource type="Texture2D" uid="uid://dwstq8wwv5i3j" path="res://Assets/Strand/BG/Asset 15.png" id="12_638s7"]
+[ext_resource type="Texture2D" uid="uid://dobw7ky0ukrur" path="res://Assets/Strand/BG/Asset 18.png" id="13_15iif"]
+[ext_resource type="Texture2D" uid="uid://cmmc5gybbxa80" path="res://Assets/Strand/BG/Asset 17.png" id="14_f3g85"]
+[ext_resource type="Texture2D" uid="uid://chfutk4q6qgyg" path="res://Assets/Strand/BG/Asset 3.png" id="15_s134o"]
+[ext_resource type="Texture2D" uid="uid://cviqpw0tnye1k" path="res://Assets/Strand/BG/Asset 4.png" id="16_3mbko"]
 
 [sub_resource type="Animation" id="Animation_k8xn7"]
 resource_name = "Fade_in"
@@ -131,14 +145,139 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7ocwq")
 
-[node name="Background" type="TextureRect" parent="."]
+[node name="Strand_BG" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_4qrnc")
+texture = ExtResource("2_rd785")
+
+[node name="Sky" type="TextureRect" parent="Strand_BG"]
+layout_mode = 0
+offset_left = 9.5
+offset_right = 1933.5
+offset_bottom = 530.0
+texture = ExtResource("3_66jfn")
+
+[node name="Island1" type="TextureRect" parent="Strand_BG"]
+layout_mode = 0
+offset_left = 7.5
+offset_top = 471.0
+offset_right = 301.5
+offset_bottom = 540.0
+texture = ExtResource("4_6fbsd")
+
+[node name="Shoreline" type="TextureRect" parent="Strand_BG"]
+layout_mode = 0
+offset_left = 10.5
+offset_top = 725.0
+offset_right = 1934.5
+offset_bottom = 1077.0
+texture = ExtResource("5_0sbmc")
+
+[node name="Beach" type="TextureRect" parent="Strand_BG/Shoreline"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 28.0
+offset_right = 1923.0
+offset_bottom = 355.0
+texture = ExtResource("6_svfp5")
+
+[node name="Sun" type="TextureRect" parent="Strand_BG"]
+layout_mode = 0
+offset_left = 783.5
+offset_top = 65.0
+offset_right = 1000.5
+offset_bottom = 287.0
+texture = ExtResource("7_tn0r5")
+
+[node name="Cloud" type="TextureRect" parent="Strand_BG"]
+layout_mode = 0
+offset_left = 856.5
+offset_top = 161.0
+offset_right = 1101.5
+offset_bottom = 272.0
+texture = ExtResource("8_psdwe")
+
+[node name="Cloud2" type="TextureRect" parent="Strand_BG"]
+layout_mode = 0
+offset_left = 279.5
+offset_top = 84.0
+offset_right = 524.5
+offset_bottom = 195.0
+texture = ExtResource("9_b0qpp")
+
+[node name="Waves" type="TextureRect" parent="Strand_BG"]
+layout_mode = 0
+offset_left = 115.5
+offset_top = 594.0
+offset_right = 319.5
+offset_bottom = 659.0
+texture = ExtResource("10_0oug7")
+
+[node name="Waves5" type="TextureRect" parent="Strand_BG"]
+offset_left = 1100.5
+offset_top = 631.0
+offset_right = 1305.5
+offset_bottom = 696.0
+texture = ExtResource("11_hui53")
+
+[node name="Waves2" type="TextureRect" parent="Strand_BG"]
+layout_mode = 0
+offset_left = 523.5
+offset_top = 680.0
+offset_right = 728.5
+offset_bottom = 745.0
+texture = ExtResource("11_hui53")
+
+[node name="Waves4" type="TextureRect" parent="Strand_BG"]
+offset_left = 549.0
+offset_top = 550.0
+offset_right = 681.0
+offset_bottom = 592.0
+texture = ExtResource("12_638s7")
+
+[node name="Waves3" type="TextureRect" parent="Strand_BG"]
+layout_mode = 0
+offset_left = 1534.5
+offset_top = 565.0
+offset_right = 1666.5
+offset_bottom = 607.0
+texture = ExtResource("12_638s7")
+
+[node name="Suitcase" type="TextureRect" parent="Strand_BG"]
+layout_mode = 0
+offset_left = 206.5
+offset_top = 746.0
+offset_right = 424.5
+offset_bottom = 967.0
+texture = ExtResource("13_15iif")
+
+[node name="Ball" type="TextureRect" parent="Strand_BG"]
+layout_mode = 0
+offset_left = 272.5
+offset_top = 845.0
+offset_right = 455.5
+offset_bottom = 986.0
+texture = ExtResource("14_f3g85")
+
+[node name="SandCastle" type="TextureRect" parent="Strand_BG"]
+layout_mode = 0
+offset_left = 1302.5
+offset_top = 675.0
+offset_right = 1506.5
+offset_bottom = 920.0
+texture = ExtResource("15_s134o")
+
+[node name="Crab" type="TextureRect" parent="Strand_BG"]
+layout_mode = 0
+offset_left = 1446.5
+offset_top = 890.0
+offset_right = 1513.5
+offset_bottom = 955.0
+texture = ExtResource("16_3mbko")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
