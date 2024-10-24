@@ -12,7 +12,7 @@ static var sceneNumber = 0
 var LolloFound = false
 var BernieFound = false
 
-var EmptySpot = preload("res://empty_spot.tscn")
+var EmptySpot = preload("res://empty_spot.tscn") # List maybe? if spawn empty spot 1 at pos 1 unless theres hidingspot1 or 2 already there
 var HidingSpot = preload("res://LolloSpot.tscn")
 var HidingSpot2 = preload("res://BernieSpot.tscn")
 

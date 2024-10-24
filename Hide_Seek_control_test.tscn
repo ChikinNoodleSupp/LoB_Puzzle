@@ -105,10 +105,10 @@ texture = ExtResource("10_c2u0e")
 
 [node name="Waves2" type="TextureRect" parent="Strand_BG"]
 layout_mode = 0
-offset_left = 523.5
-offset_top = 680.0
-offset_right = 728.5
-offset_bottom = 745.0
+offset_left = 810.5
+offset_top = 661.0
+offset_right = 1015.5
+offset_bottom = 726.0
 texture = ExtResource("10_c2u0e")
 
 [node name="Waves4" type="TextureRect" parent="Strand_BG"]
@@ -168,19 +168,19 @@ layout_mode = 2
 size_flags_vertical = 4
 
 [node name="HnS_1" type="Node2D" parent="VBoxContainer/HBoxContainer"]
-position = Vector2(53.5, 268)
+position = Vector2(-20, 66)
 
 [node name="HnS_2" type="Node2D" parent="VBoxContainer/HBoxContainer"]
-position = Vector2(594.5, 466)
+position = Vector2(575.5, 632)
 
 [node name="HnS_3" type="Node2D" parent="VBoxContainer/HBoxContainer"]
-position = Vector2(1267.5, 365)
+position = Vector2(927.5, 342)
 
 [node name="HnS_4" type="Node2D" parent="VBoxContainer/HBoxContainer"]
 position = Vector2(166, 705)
 
 [node name="HnS_5" type="Node2D" parent="VBoxContainer/HBoxContainer"]
-position = Vector2(981.5, 643)
+position = Vector2(903.5, 510)
 
 [node name="HnS_6" type="Node2D" parent="VBoxContainer/HBoxContainer"]
-position = Vector2(1597.5, 588)
+position = Vector2(1484.5, 18)

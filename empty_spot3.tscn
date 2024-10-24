@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://nywdswpmbpjc"]
+
+[ext_resource type="Texture2D" uid="uid://bxq7r88i8mwrn" path="res://Assets/Strand/Hover/Asset 4.png" id="1_h7m3b"]
+[ext_resource type="Texture2D" uid="uid://cuqyvseakqo0g" path="res://Assets/Strand/Pressed/Asset 9.png" id="2_tjpgo"]
+
+[node name="EmptySpot" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="Control"]
+layout_mode = 1
+offset_right = 851.0
+offset_bottom = 465.0
+pivot_offset = Vector2(131.5, 232.5)
+texture_normal = ExtResource("1_h7m3b")
+texture_pressed = ExtResource("2_tjpgo")
+texture_hover = ExtResource("1_h7m3b")
