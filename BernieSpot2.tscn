@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://crflep62rtthc"]
+
+[ext_resource type="Texture2D" uid="uid://c2x253ek2t655" path="res://Images/temp art 2.png" id="1_0d0hs"]
+[ext_resource type="Texture2D" uid="uid://cmmw2hnbcfblv" path="res://Images/temp art 3_outline.png" id="2_iwh2b"]
+[ext_resource type="Texture2D" uid="uid://l5av30ft7vnx" path="res://Images/temp art 2_outline.png" id="3_h37cq"]
+[ext_resource type="Texture2D" uid="uid://bgaj6udy3rq1p" path="res://Images/temp art 3.png" id="4_wmpr3"]
+
+[node name="BernieSpot" type="TextureButton"]
+offset_right = 176.0
+offset_bottom = 230.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource("1_0d0hs")
+texture_pressed = ExtResource("2_iwh2b")
+texture_hover = ExtResource("3_h37cq")
+texture_disabled = ExtResource("4_wmpr3")

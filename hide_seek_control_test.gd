@@ -18,17 +18,24 @@ var EmptySpot3 = preload("res://empty_spot3.tscn")
 var EmptySpot4 = preload("res://empty_spot4.tscn")
 var EmptySpot5 = preload("res://empty_spot5.tscn")
 var EmptySpot6 = preload("res://empty_spot6.tscn")
+var hidingSpotArray = [EmptySpot, EmptySpot2, EmptySpot3, EmptySpot4, EmptySpot5, EmptySpot6]
 
-var HidingSpot = preload("res://LolloSpot.tscn")
-var HidingSpot2 = preload("res://BernieSpot.tscn")
+var LolloHiding = preload("res://LolloSpot.tscn") # make x6, put in array
+var lolloArray = [LolloHiding, ]
+var BernieHiding = preload("res://BernieSpot.tscn")
+var bernieArray = [BernieHiding, ]
 
 var Scene1 = preload("res://Hide_Seek_control_test.tscn")
+var Scene1Bool
 var Scene2 = preload("res://Hide_Seek_control_test_2.tscn")
+var Scene2Bool
 var Scene3 = preload("res://Hide_Seek_control_test_3.tscn")
+var Scene3Bool
 
 var HUD = preload("res://HUD.tscn")
 
 var LolloButton: TextureButton
+
 var BernieButton: TextureButton
 
 
@@ -111,13 +118,14 @@ func mainCode(): # on start basically
 	
 	var positionArray = [HnS_1position, HnS_2position, HnS_3position, HnS_4position, HnS_5position, HnS_6position]
 	
+	
 	for i in range(0, array1.size()): 
 		if random_num1 == i+1:
-			spawnLolloHidingSpot(positionArray[i])
+			spawnLolloHidingSpot(positionArray[i], lolloArray[i]) # do same thign as spawn hiding spot thing
 		elif random_num2 == i+1:
-			spawnBernieHidingSpot(positionArray[i])
+			spawnBernieHidingSpot(positionArray[i], bernieArray[i])
 		else:
-			spawnHidingSpot1(positionArray[i]) #remove position array, and instead just spawn specific empty spots at their corresponding place
+			spawnHidingSpot1(positionArray[i], hidingSpotArray[i])
 	
 	#if random_num1 == 1:
 		#spawnLolloHidingSpot(HnS_1position) #initiate lollo hiding spot
@@ -164,15 +172,15 @@ func mainCode(): # on start basically
 	
 	
 
-func spawnLolloHidingSpot(pos):
-	LolloButton = HidingSpot.instantiate() as TextureButton
+func spawnLolloHidingSpot(pos, spot):
+	LolloButton = spot.instantiate() as TextureButton
 	add_child(LolloButton)
 	LolloButton.position = pos
 	instances.append(LolloButton)
 	LolloButton.connect("pressed", _on_lollo_spot_pressed)
 	
-func spawnBernieHidingSpot(pos):
-	BernieButton = HidingSpot2.instantiate() as TextureButton
+func spawnBernieHidingSpot(pos, spot):
+	BernieButton = spot.instantiate() as TextureButton
 	add_child(BernieButton)
 	BernieButton.position = pos
 	instances.append(BernieButton)
@@ -190,8 +198,8 @@ func _on_bernie_spot_pressed():
 	BernieButton.disabled = true
 	isLolloBernieFound()
 
-func spawnHidingSpot1(pos): # spawn L and B at random_num1 and 2, and spawn empty hiding spots at the rest
-	var EmptyButton = EmptySpot.instantiate()
+func spawnHidingSpot1(pos, spot): # spawn L and B at random_num1 and 2, and spawn empty hiding spots at the rest
+	var EmptyButton = spot.instantiate()
 	add_child(EmptyButton)
 	EmptyButton.position = pos
 	instances.append(EmptyButton)

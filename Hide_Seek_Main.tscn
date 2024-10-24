@@ -218,6 +218,7 @@ offset_bottom = 659.0
 texture = ExtResource("10_0oug7")
 
 [node name="Waves5" type="TextureRect" parent="Strand_BG"]
+layout_mode = 0
 offset_left = 1100.5
 offset_top = 631.0
 offset_right = 1305.5
@@ -233,6 +234,7 @@ offset_bottom = 745.0
 texture = ExtResource("11_hui53")
 
 [node name="Waves4" type="TextureRect" parent="Strand_BG"]
+layout_mode = 0
 offset_left = 549.0
 offset_top = 550.0
 offset_right = 681.0
