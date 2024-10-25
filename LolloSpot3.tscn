@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://b0trjox5m0k3r"]
 
-[ext_resource type="Texture2D" uid="uid://ldikl4e5dlcy" path="res://Images/Hiding_blue.png" id="1_pawl8"]
+[ext_resource type="Texture2D" uid="uid://bxq7r88i8mwrn" path="res://Assets/Strand/Hover/Asset 4.png" id="1_n67qk"]
 [ext_resource type="Texture2D" uid="uid://cuwhisvkk5l4e" path="res://Images/found_blue_outline.png" id="2_xfhl0"]
 [ext_resource type="Texture2D" uid="uid://vf5htyx85yh5" path="res://Images/Hiding_blue_outline.png" id="3_wp3mo"]
 [ext_resource type="Texture2D" uid="uid://qsnynv4n5j4p" path="res://Images/found_blue.png" id="4_l5r2v"]
@@ -10,10 +10,8 @@ script/source = "extends TextureButton
 "
 
 [node name="LolloSpot" type="TextureButton"]
-texture_normal = ExtResource("1_pawl8")
+texture_normal = ExtResource("1_n67qk")
 texture_pressed = ExtResource("2_xfhl0")
 texture_hover = ExtResource("3_wp3mo")
 texture_disabled = ExtResource("4_l5r2v")
 script = SubResource("GDScript_hdxlj")
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]

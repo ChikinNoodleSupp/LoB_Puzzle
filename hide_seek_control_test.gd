@@ -21,9 +21,20 @@ var EmptySpot6 = preload("res://empty_spot6.tscn")
 var hidingSpotArray = [EmptySpot, EmptySpot2, EmptySpot3, EmptySpot4, EmptySpot5, EmptySpot6]
 
 var LolloHiding = preload("res://LolloSpot.tscn") # make x6, put in array
-var lolloArray = [LolloHiding, ]
+var LolloHiding2 = preload("res://LolloSpot2.tscn")
+var LolloHiding3 = preload("res://LolloSpot3.tscn")
+var LolloHiding4 = preload("res://LolloSpot4.tscn")
+var LolloHiding5 = preload("res://LolloSpot5.tscn")
+var LolloHiding6 = preload("res://LolloSpot6.tscn")
+var lolloArray = [LolloHiding, LolloHiding2, LolloHiding3, LolloHiding4, LolloHiding5, LolloHiding6]
+
 var BernieHiding = preload("res://BernieSpot.tscn")
-var bernieArray = [BernieHiding, ]
+var BernieHiding2 = preload("res://BernieSpot2.tscn")
+var BernieHiding3 = preload("res://BernieSpot3.tscn")
+var BernieHiding4 = preload("res://BernieSpot4.tscn")
+var BernieHiding5 = preload("res://BernieSpot5.tscn")
+var BernieHiding6 = preload("res://BernieSpot6.tscn")
+var bernieArray = [BernieHiding, BernieHiding2, BernieHiding3, BernieHiding4, BernieHiding5, BernieHiding6]
 
 var Scene1 = preload("res://Hide_Seek_control_test.tscn")
 var Scene1Bool
