@@ -173,16 +173,16 @@ size_flags_vertical = 4
 position = Vector2(-20, 66)
 
 [node name="HnS_2" type="Node2D" parent="VBoxContainer/HBoxContainer"]
-position = Vector2(575.5, 632)
+position = Vector2(468.5, 551)
 
 [node name="HnS_3" type="Node2D" parent="VBoxContainer/HBoxContainer"]
-position = Vector2(927.5, 342)
+position = Vector2(614.5, 200)
 
 [node name="HnS_4" type="Node2D" parent="VBoxContainer/HBoxContainer"]
-position = Vector2(166, 705)
+position = Vector2(-56.5, 573)
 
 [node name="HnS_5" type="Node2D" parent="VBoxContainer/HBoxContainer"]
-position = Vector2(903.5, 510)
+position = Vector2(916.5, 525)
 
 [node name="HnS_6" type="Node2D" parent="VBoxContainer/HBoxContainer"]
-position = Vector2(1484.5, 18)
+position = Vector2(1336.5, -69)

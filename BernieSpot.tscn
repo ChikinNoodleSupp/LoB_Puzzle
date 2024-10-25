@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dhkhgjvhbqqko"]
 
-[ext_resource type="Texture2D" uid="uid://c2x253ek2t655" path="res://Images/temp art 2.png" id="1_3gw51"]
+[ext_resource type="Texture2D" uid="uid://2it1g4bn5fxn" path="res://Assets/Strand/Hover/Asset 6.png" id="1_sixdb"]
 [ext_resource type="Texture2D" uid="uid://bgaj6udy3rq1p" path="res://Images/temp art 3.png" id="2_8cubu"]
 [ext_resource type="Texture2D" uid="uid://cmmw2hnbcfblv" path="res://Images/temp art 3_outline.png" id="2_vvt7d"]
 [ext_resource type="Texture2D" uid="uid://l5av30ft7vnx" path="res://Images/temp art 2_outline.png" id="3_kbc1f"]
@@ -10,7 +10,7 @@ offset_right = 176.0
 offset_bottom = 230.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
-texture_normal = ExtResource("1_3gw51")
+texture_normal = ExtResource("1_sixdb")
 texture_pressed = ExtResource("2_vvt7d")
 texture_hover = ExtResource("3_kbc1f")
 texture_disabled = ExtResource("2_8cubu")
