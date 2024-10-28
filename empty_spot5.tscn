@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bmkdj3xa1fond" path="res://Assets/Strand/Pressed/P_Trashcan.png" id="2_v85wc"]
 [ext_resource type="BitMap" uid="uid://cp3txgpnea1v7" path="res://Assets/Strand/Mask/M_Trashcan.png" id="3_yrstd"]
 
-[node name="EmptySpot" type="Node2D"]
+[node name="EmptySpot2" type="Node2D"]
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
