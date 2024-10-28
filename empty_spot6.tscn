@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dh738cd7pmuml"]
+[gd_scene load_steps=4 format=3 uid="uid://dh738cd7pmuml"]
 
-[ext_resource type="Texture2D" uid="uid://mtjw1a412tbl" path="res://Assets/Strand/Hover/Asset 1.png" id="1_nsdga"]
+[ext_resource type="Texture2D" uid="uid://bn35wna7pkib3" path="res://Assets/Strand/Hover/H_BigPalm.png" id="1_48625"]
 [ext_resource type="Texture2D" uid="uid://tf2jlg1wwggo" path="res://Assets/Strand/Pressed/Asset 7.png" id="2_f0yjr"]
+[ext_resource type="BitMap" uid="uid://vtkmqu24oncs" path="res://Assets/Strand/Mask/M_BigPalm.png" id="3_e5h08"]
 
 [node name="EmptySpot" type="Node2D"]
 
@@ -16,6 +17,7 @@ layout_mode = 1
 offset_right = 845.0
 offset_bottom = 1230.0
 pivot_offset = Vector2(131.5, 232.5)
-texture_normal = ExtResource("1_nsdga")
+texture_normal = ExtResource("1_48625")
 texture_pressed = ExtResource("2_f0yjr")
-texture_hover = ExtResource("1_nsdga")
+texture_hover = ExtResource("1_48625")
+texture_click_mask = ExtResource("3_e5h08")

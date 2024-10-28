@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://nywdswpmbpjc"]
+[gd_scene load_steps=4 format=3 uid="uid://nywdswpmbpjc"]
 
-[ext_resource type="Texture2D" uid="uid://bxq7r88i8mwrn" path="res://Assets/Strand/Hover/Asset 4.png" id="1_h7m3b"]
-[ext_resource type="Texture2D" uid="uid://cuqyvseakqo0g" path="res://Assets/Strand/Pressed/Asset 9.png" id="2_tjpgo"]
+[ext_resource type="Texture2D" uid="uid://bbdxmrqtnrl17" path="res://Assets/Strand/Hover/H_Mountain.png" id="1_110oo"]
+[ext_resource type="Texture2D" uid="uid://gnriqsenmmfm" path="res://Assets/Strand/Pressed/P_Mountain.png" id="2_xumvj"]
+[ext_resource type="BitMap" uid="uid://cav1m5te4mxit" path="res://Assets/Strand/Mask/M_Mountain.png" id="3_tb7qc"]
 
 [node name="EmptySpot" type="Node2D"]
 
@@ -16,6 +17,7 @@ layout_mode = 1
 offset_right = 851.0
 offset_bottom = 465.0
 pivot_offset = Vector2(131.5, 232.5)
-texture_normal = ExtResource("1_h7m3b")
-texture_pressed = ExtResource("2_tjpgo")
-texture_hover = ExtResource("1_h7m3b")
+texture_normal = ExtResource("1_110oo")
+texture_pressed = ExtResource("2_xumvj")
+texture_hover = ExtResource("1_110oo")
+texture_click_mask = ExtResource("3_tb7qc")
