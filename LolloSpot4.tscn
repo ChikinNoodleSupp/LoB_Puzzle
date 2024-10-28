@@ -1,17 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://dbf74bnu3237m"]
+[gd_scene load_steps=5 format=3 uid="uid://dbf74bnu3237m"]
 
-[ext_resource type="Texture2D" uid="uid://46dr67nxc3aj" path="res://Assets/Strand/Hover/Asset 5.png" id="1_xb8pw"]
-[ext_resource type="Texture2D" uid="uid://cuwhisvkk5l4e" path="res://Images/found_blue_outline.png" id="2_04xnq"]
-[ext_resource type="Texture2D" uid="uid://vf5htyx85yh5" path="res://Images/Hiding_blue_outline.png" id="3_ijf1w"]
-[ext_resource type="Texture2D" uid="uid://qsnynv4n5j4p" path="res://Images/found_blue.png" id="4_qkb6j"]
+[ext_resource type="Texture2D" uid="uid://c85dwtcf15sb2" path="res://Assets/Strand/Hover/H_Chair.png" id="1_7t1k1"]
+[ext_resource type="Texture2D" uid="uid://4bf8iva5fua3" path="res://Assets/Strand/LnB/L_Chair.png" id="2_6rocp"]
+[ext_resource type="BitMap" uid="uid://cdg2kuucgun3u" path="res://Assets/Strand/Mask/M_Chair.png" id="3_jn5j1"]
 
 [sub_resource type="GDScript" id="GDScript_hdxlj"]
 script/source = "extends TextureButton
 "
 
 [node name="LolloSpot" type="TextureButton"]
-texture_normal = ExtResource("1_xb8pw")
-texture_pressed = ExtResource("2_04xnq")
-texture_hover = ExtResource("3_ijf1w")
-texture_disabled = ExtResource("4_qkb6j")
+texture_normal = ExtResource("1_7t1k1")
+texture_pressed = ExtResource("2_6rocp")
+texture_hover = ExtResource("2_6rocp")
+texture_disabled = ExtResource("2_6rocp")
+texture_click_mask = ExtResource("3_jn5j1")
 script = SubResource("GDScript_hdxlj")

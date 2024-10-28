@@ -1,16 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://c5je55hod2njk"]
+[gd_scene load_steps=4 format=3 uid="uid://c5je55hod2njk"]
 
-[ext_resource type="Texture2D" uid="uid://dlvh48wdcf6o7" path="res://Assets/Strand/Hover/Asset 2.png" id="1_2eor6"]
-[ext_resource type="Texture2D" uid="uid://cmmw2hnbcfblv" path="res://Images/temp art 3_outline.png" id="2_wf57i"]
-[ext_resource type="Texture2D" uid="uid://l5av30ft7vnx" path="res://Images/temp art 2_outline.png" id="3_ey63e"]
-[ext_resource type="Texture2D" uid="uid://bgaj6udy3rq1p" path="res://Images/temp art 3.png" id="4_0l11g"]
+[ext_resource type="Texture2D" uid="uid://c0gtt46mo0llr" path="res://Assets/Strand/Hover/H_Trashcan.png" id="1_fl46n"]
+[ext_resource type="Texture2D" uid="uid://dpsfp0yrlvtt5" path="res://Assets/Strand/LnB/B_Trashcan.png" id="2_fm6b0"]
+[ext_resource type="BitMap" uid="uid://cp3txgpnea1v7" path="res://Assets/Strand/Mask/M_Trashcan.png" id="3_db7rv"]
 
 [node name="BernieSpot" type="TextureButton"]
 offset_right = 176.0
 offset_bottom = 230.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
-texture_normal = ExtResource("1_2eor6")
-texture_pressed = ExtResource("2_wf57i")
-texture_hover = ExtResource("3_ey63e")
-texture_disabled = ExtResource("4_0l11g")
+texture_normal = ExtResource("1_fl46n")
+texture_pressed = ExtResource("2_fm6b0")
+texture_hover = ExtResource("2_fm6b0")
+texture_disabled = ExtResource("2_fm6b0")
+texture_click_mask = ExtResource("3_db7rv")

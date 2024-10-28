@@ -4,7 +4,7 @@ extends Control
 var array1 = [1, 2, 3, 4, 5, 6]
 var array2 = [1, 2, 3, 4, 5, 6]
 
-var sceneArray = ["res://Hide_Seek_control_test.tscn", "res://Hide_Seek_control_test_2.tscn", "res://Hide_Seek_control_test_3.tscn"] # just add more scenes
+var sceneArray = ["res://Hide_Seek_control_test.tscn"]#, "res://Hide_Seek_control_test_2.tscn", "res://Hide_Seek_control_test_3.tscn"] # just add more scenes
 
 static var sceneNumber = 0
 
