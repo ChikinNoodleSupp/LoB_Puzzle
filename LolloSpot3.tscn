@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bbdxmrqtnrl17" path="res://Assets/Strand/Hover/H_Mountain.png" id="1_xa04g"]
 [ext_resource type="Texture2D" uid="uid://d276q7weu41fw" path="res://Assets/Strand/LnB/L_Mountain.png" id="2_584ra"]
-[ext_resource type="BitMap" uid="uid://cav1m5te4mxit" path="res://Assets/Strand/Mask/M_Mountain.png" id="3_m4sh7"]
+[ext_resource type="BitMap" uid="uid://day1uugx7wd1q" path="res://Assets/Strand/Mask/M_Mountain_BIG.png" id="3_8on4f"]
 
 [sub_resource type="GDScript" id="GDScript_hdxlj"]
 script/source = "extends TextureButton
@@ -13,5 +13,5 @@ texture_normal = ExtResource("1_xa04g")
 texture_pressed = ExtResource("2_584ra")
 texture_hover = ExtResource("2_584ra")
 texture_disabled = ExtResource("2_584ra")
-texture_click_mask = ExtResource("3_m4sh7")
+texture_click_mask = ExtResource("3_8on4f")
 script = SubResource("GDScript_hdxlj")
