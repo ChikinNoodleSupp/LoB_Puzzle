@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://day1uugx7wd1q"
+path="res://.godot/imported/M_Mountain_BIG.png-3fe42cce4b3b5442cdb5e0d294f97563.res"
+
+[deps]
+
+source_file="res://Assets/Strand/Mask/M_Mountain_BIG.png"
+dest_files=["res://.godot/imported/M_Mountain_BIG.png-3fe42cce4b3b5442cdb5e0d294f97563.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

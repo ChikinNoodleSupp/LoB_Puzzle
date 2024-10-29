@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://ciyjv48jgmguj"
+path="res://.godot/imported/M_Palms_BIG.png-6db6813e191033941a91f0c3f77f21b9.res"
+
+[deps]
+
+source_file="res://Assets/Strand/Mask/M_Palms_BIG.png"
+dest_files=["res://.godot/imported/M_Palms_BIG.png-6db6813e191033941a91f0c3f77f21b9.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

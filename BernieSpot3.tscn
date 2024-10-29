@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bbdxmrqtnrl17" path="res://Assets/Strand/Hover/H_Mountain.png" id="1_lymhr"]
 [ext_resource type="Texture2D" uid="uid://ddh0p31x8sf6g" path="res://Assets/Strand/LnB/B_Mountain.png" id="2_74546"]
-[ext_resource type="BitMap" uid="uid://cav1m5te4mxit" path="res://Assets/Strand/Mask/M_Mountain.png" id="3_fion1"]
+[ext_resource type="BitMap" uid="uid://day1uugx7wd1q" path="res://Assets/Strand/Mask/M_Mountain_BIG.png" id="3_r1fdr"]
 
 [node name="BernieSpot" type="TextureButton"]
 offset_right = 176.0
@@ -13,4 +13,4 @@ texture_normal = ExtResource("1_lymhr")
 texture_pressed = ExtResource("2_74546")
 texture_hover = ExtResource("2_74546")
 texture_disabled = ExtResource("2_74546")
-texture_click_mask = ExtResource("3_fion1")
+texture_click_mask = ExtResource("3_r1fdr")

@@ -2,22 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://bmlm57p0la87n" path="res://Assets/Strand/Hover/H_Palms.png" id="1_5u30t"]
 [ext_resource type="Texture2D" uid="uid://dv4y71oppiw64" path="res://Assets/Strand/Pressed/P_Palms.png" id="2_eg3fu"]
-[ext_resource type="BitMap" uid="uid://cvyqxc2b3nhnj" path="res://Assets/Strand/Mask/M_Palms.png" id="3_un3ob"]
+[ext_resource type="BitMap" uid="uid://ciyjv48jgmguj" path="res://Assets/Strand/Mask/M_Palms_BIG.png" id="3_awc6x"]
 
-[node name="EmptySpot2" type="Node2D"]
-
-[node name="Control" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="TextureButton" type="TextureButton" parent="Control"]
-layout_mode = 1
+[node name="empty_spot" type="TextureButton"]
 offset_right = 263.0
 offset_bottom = 465.0
 texture_normal = ExtResource("1_5u30t")
 texture_pressed = ExtResource("2_eg3fu")
 texture_hover = ExtResource("1_5u30t")
-texture_click_mask = ExtResource("3_un3ob")
+texture_click_mask = ExtResource("3_awc6x")
 stretch_mode = 3

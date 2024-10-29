@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bfet2ccdjje2p"]
+[gd_scene load_steps=18 format=3 uid="uid://bfet2ccdjje2p"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_ntmjj"]
 [ext_resource type="Texture2D" uid="uid://tgkxhyx3uvua" path="res://Images/temp bg.png" id="2_gkhg8"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://tfnskewqicsp" path="res://Volume_Slider.tscn" id="12_1ubmn"]
 [ext_resource type="Texture2D" uid="uid://rmkyjrmxw3l1" path="res://NO_flag.png" id="12_ngvbc"]
 [ext_resource type="Texture2D" uid="uid://dr0lffbdiw2x3" path="res://FN_flag.png" id="13_2mnoq"]
+[ext_resource type="Texture2D" uid="uid://chmkovjpjvdnm" path="res://Assets/icon_sound_mini.png" id="13_nr8ox"]
 
 [sub_resource type="Animation" id="Animation_6d8hl"]
 resource_name = "Fade_in"
@@ -261,6 +262,15 @@ offset_right = 1061.0
 offset_bottom = 660.0
 value = 0.5
 
+[node name="CheckBox" type="CheckBox" parent="HSlider"]
+layout_mode = 0
+offset_left = -95.0
+offset_top = -17.0
+offset_right = -52.0
+offset_bottom = 7.0
+scale = Vector2(2.05, 2.05)
+icon = ExtResource("13_nr8ox")
+
 [connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_mouse_entered"]
 [connection signal="mouse_exited" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_mouse_exited"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_pressed"]
@@ -270,3 +280,4 @@ value = 0.5
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/FI_Btn" to="." method="_on_fi_btn_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/EN_Btn" to="." method="_on_en_btn_pressed"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="toggled" from="HSlider/CheckBox" to="." method="_on_check_box_toggled"]

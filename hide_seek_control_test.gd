@@ -43,12 +43,16 @@ var Scene2Bool
 var Scene3 = preload("res://Hide_Seek_control_test_3.tscn")
 var Scene3Bool
 
+@onready var BG_1 = $Strand_BG
+@onready var BG_2
+@onready var BG_3
+var BG = [BG_1, BG_2, BG_3]
+
 var HUD = preload("res://HUD.tscn")
 
 var LolloButton: TextureButton
-
 var BernieButton: TextureButton
-
+var EmptyButton: TextureButton
 
 var instances = []
 
@@ -59,11 +63,15 @@ var HnS_4position
 var HnS_5position
 var HnS_6position
 
+# var BG_Btn
+
 @onready var transition = $AnimationPlayer
 
 var current_scene: Node = null
 
 var HudButton
+
+@onready var clickSFX = preload("res://SFX/test_btn-01.mp3")
 
 func _ready() -> void:
 	AudioPlayer.play_music_level()
@@ -84,6 +92,9 @@ func mainCode(): # on start basically
 	HnS_4position = current_scene.find_child("HnS_4").position
 	HnS_5position = current_scene.find_child("HnS_5").position
 	HnS_6position = current_scene.find_child("HnS_6").position
+	
+	# BG_Btn = current_scene.find_child("BG_Btn")
+	
 	
 	#HnS_1position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_1").position
 	#HnS_2position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_2").position
@@ -202,22 +213,29 @@ func _on_lollo_spot_pressed():
 	LolloFound = true
 	LolloButton.disabled = true
 	isLolloBernieFound()
-
+	AudioPlayer.play_FX(clickSFX, 0)
+	
 func _on_bernie_spot_pressed():
 	print("Bernie found!")
 	BernieFound = true
 	BernieButton.disabled = true
 	isLolloBernieFound()
+	AudioPlayer.play_FX(clickSFX, 0)
 
 func spawnHidingSpot1(pos, spot): # spawn L and B at random_num1 and 2, and spawn empty hiding spots at the rest
-	var EmptyButton = spot.instantiate()
+	EmptyButton = spot.instantiate() as TextureButton # setting this to texture button breaks everything which is quite cringe
 	add_child(EmptyButton)
 	EmptyButton.position = pos
 	instances.append(EmptyButton)
+	EmptyButton.connect("pressed", _on_empty_button_pressed)
 	# isLolloAndBernieSpawned = true
 	# var EmptyButton1 = EmptySpot2.instantiate()
 	# EmptyButton1.position = HnS_2position
-	
+
+func _on_empty_button_pressed():
+	print("No one here!")
+	AudioPlayer.play_FX(clickSFX, 0)
+
 func spawnHUD():
 	HudButton = HUD.instantiate()
 	add_child(HudButton)
@@ -267,6 +285,7 @@ func isLolloBernieFound():
 		transition.play("Fade_in")
 
 func newScene():
+	# Change BG here
 	if current_scene:
 		current_scene.queue_free()  # Remove the previous scene
 	var scene_path = sceneArray[sceneNumber % sceneArray.size()]
@@ -288,3 +307,8 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 		get_tree().change_scene_to_file("res://MainMenu.tscn")
 		# get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()])
 		#WHY ISNT IT WORKING REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+
+
+#func _on_bg_btn_pressed() -> void:
+	#AudioPlayer.play_FX(clickSFX, 0)
+	#print("hello")

@@ -2,22 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://mjd42v7k7v7v" path="res://Assets/Strand/Hover/H_Water.png" id="1_f7ax6"]
 [ext_resource type="Texture2D" uid="uid://81pff73ntwuu" path="res://Assets/Strand/Pressed/P_Water.png" id="2_3gx7m"]
-[ext_resource type="BitMap" uid="uid://cpsys625p4agv" path="res://Assets/Strand/Mask/M_Water.png" id="3_pjq5v"]
+[ext_resource type="BitMap" uid="uid://282xs6n8n7u2" path="res://Assets/Strand/Mask/M_Water_BIG.png" id="3_l78uu"]
 
-[node name="EmptySpot2" type="Node2D"]
-
-[node name="Control" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="TextureButton" type="TextureButton" parent="Control"]
-layout_mode = 1
+[node name="empty_spot2" type="TextureButton"]
 offset_right = 263.0
 offset_bottom = 465.0
 pivot_offset = Vector2(131.5, 232.5)
 texture_normal = ExtResource("1_f7ax6")
 texture_pressed = ExtResource("2_3gx7m")
 texture_hover = ExtResource("1_f7ax6")
-texture_click_mask = ExtResource("3_pjq5v")
+texture_click_mask = ExtResource("3_l78uu")

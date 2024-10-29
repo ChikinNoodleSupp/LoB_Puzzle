@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://282xs6n8n7u2"
+path="res://.godot/imported/M_Water_BIG.png-47160901362127fbda0981c9ab65584a.res"
+
+[deps]
+
+source_file="res://Assets/Strand/Mask/M_Water_BIG.png"
+dest_files=["res://.godot/imported/M_Water_BIG.png-47160901362127fbda0981c9ab65584a.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

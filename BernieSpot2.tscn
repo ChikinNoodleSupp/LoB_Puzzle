@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://mjd42v7k7v7v" path="res://Assets/Strand/Hover/H_Water.png" id="1_ra3es"]
 [ext_resource type="Texture2D" uid="uid://ba0ae4vsfftip" path="res://Assets/Strand/LnB/B_Water.png" id="2_4v2fy"]
-[ext_resource type="BitMap" uid="uid://cpsys625p4agv" path="res://Assets/Strand/Mask/M_Water.png" id="3_mwtmq"]
+[ext_resource type="BitMap" uid="uid://282xs6n8n7u2" path="res://Assets/Strand/Mask/M_Water_BIG.png" id="3_muf1e"]
 
 [node name="BernieSpot" type="TextureButton"]
 offset_right = 176.0
@@ -13,4 +13,4 @@ texture_normal = ExtResource("1_ra3es")
 texture_pressed = ExtResource("2_4v2fy")
 texture_hover = ExtResource("2_4v2fy")
 texture_disabled = ExtResource("2_4v2fy")
-texture_click_mask = ExtResource("3_mwtmq")
+texture_click_mask = ExtResource("3_muf1e")

@@ -9,10 +9,16 @@ var localizationScene = preload("res://Localization_Scene.tscn")
 
 @onready var mouseHover = false
 
+@onready var _checkbox = $HSlider/CheckBox
 
 #Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	#spawnSlider()
+	if AudioPlayer.mute == true:
+		_checkbox.button_pressed = true
+	elif AudioPlayer.mute == false:
+		_checkbox.button_pressed = false
+	
 	AudioPlayer.play_music_menu()
 	
 	Localization.setSwedish = true
@@ -150,3 +156,11 @@ func _on_hide_seek_mouse_exited() -> void:
 	mouseHover = false # set mouse hover = false
 	if mouseHover == false:
 		print("mouse hover false")
+
+
+func _on_check_box_toggled(toggled_on: bool) -> void:
+	if toggled_on:
+		AudioPlayer.mute = true
+	else:
+		AudioPlayer.mute = false
+	AudioServer.set_bus_mute(AudioServer.get_bus_index("Master"), toggled_on)

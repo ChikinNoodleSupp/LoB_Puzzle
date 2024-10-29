@@ -2,22 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://bn35wna7pkib3" path="res://Assets/Strand/Hover/H_BigPalm.png" id="1_48625"]
 [ext_resource type="Texture2D" uid="uid://tf2jlg1wwggo" path="res://Assets/Strand/Pressed/Asset 7.png" id="2_f0yjr"]
-[ext_resource type="BitMap" uid="uid://vtkmqu24oncs" path="res://Assets/Strand/Mask/M_BigPalm.png" id="3_e5h08"]
+[ext_resource type="BitMap" uid="uid://dt8concimkomq" path="res://Assets/Strand/Mask/M_BigPalm_BIG.png" id="3_q12kt"]
 
-[node name="EmptySpot" type="Node2D"]
-
-[node name="Control" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="TextureButton" type="TextureButton" parent="Control"]
-layout_mode = 1
+[node name="empty_spot6" type="TextureButton"]
 offset_right = 845.0
 offset_bottom = 1230.0
 pivot_offset = Vector2(131.5, 232.5)
 texture_normal = ExtResource("1_48625")
 texture_pressed = ExtResource("2_f0yjr")
 texture_hover = ExtResource("1_48625")
-texture_click_mask = ExtResource("3_e5h08")
+texture_click_mask = ExtResource("3_q12kt")

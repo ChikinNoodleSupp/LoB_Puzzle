@@ -2,22 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://c85dwtcf15sb2" path="res://Assets/Strand/Hover/H_Chair.png" id="1_cfb8p"]
 [ext_resource type="Texture2D" uid="uid://fdqn1n13agy" path="res://Assets/Strand/Pressed/P_Chair.png" id="2_kytxd"]
-[ext_resource type="BitMap" uid="uid://cdg2kuucgun3u" path="res://Assets/Strand/Mask/M_Chair.png" id="3_13uag"]
+[ext_resource type="BitMap" uid="uid://bbbbotljx7x1h" path="res://Assets/Strand/Mask/M_Chair_BIG.png" id="3_5ppx8"]
 
-[node name="EmptySpot2" type="Node2D"]
-
-[node name="Control" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="TextureButton" type="TextureButton" parent="Control"]
-layout_mode = 1
+[node name="empty_spot4" type="TextureButton"]
 offset_right = 556.0
 offset_bottom = 557.0
 pivot_offset = Vector2(131.5, 232.5)
 texture_normal = ExtResource("1_cfb8p")
 texture_pressed = ExtResource("2_kytxd")
 texture_hover = ExtResource("1_cfb8p")
-texture_click_mask = ExtResource("3_13uag")
+texture_click_mask = ExtResource("3_5ppx8")
