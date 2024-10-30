@@ -128,27 +128,27 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 
 func _on_se_btn_pressed() -> void:
 	Swedish()
-	AudioPlayer.play_FX(AudioPlayer.clickSFX, 0)
+	AudioPlayer.play_FX(AudioPlayer.languageSFX, 0)
 
 
 func _on_dk_btn_pressed() -> void:
 	Danish()
-	AudioPlayer.play_FX(AudioPlayer.clickSFX, 0)
+	AudioPlayer.play_FX(AudioPlayer.languageSFX, 0)
 
 
 func _on_no_btn_pressed() -> void:
 	Norwegian()
-	AudioPlayer.play_FX(AudioPlayer.clickSFX, 0)
+	AudioPlayer.play_FX(AudioPlayer.languageSFX, 0)
 
 
 func _on_fi_btn_pressed() -> void:
 	Finnish()
-	AudioPlayer.play_FX(AudioPlayer.clickSFX, 0)
+	AudioPlayer.play_FX(AudioPlayer.languageSFX, 0)
 
 
 func _on_en_btn_pressed() -> void:
 	English()
-	AudioPlayer.play_FX(AudioPlayer.clickSFX, 0)
+	AudioPlayer.play_FX(AudioPlayer.languageSFX, 0)
 
 
 

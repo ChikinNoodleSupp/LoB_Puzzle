@@ -9,8 +9,9 @@ var mute = false
 
 @onready var clickSFX = preload("res://SFX/test_btn-01.mp3")
 @onready var foundSFX = preload("res://SFX/SFX_LnB_1.mp3")
+@onready var languageSFX = preload("res://SFX/SFX_Blop_1.mp3")
 
-func _play_music(music: AudioStream, volume = 0.0):
+func _play_music(music: AudioStream, volume = -8.0):
 	if stream == music:
 		return
 	
@@ -34,6 +35,7 @@ func play_FX(stream: AudioStream, volume = 0.0):
 	fx_player.stream = stream
 	fx_player.name = "FX_PLAYER"
 	fx_player.volume_db = volume
+	set_bus("Master")
 	add_child(fx_player)
 	fx_player.play()
 	
