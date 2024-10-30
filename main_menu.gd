@@ -104,6 +104,7 @@ func Finnish():
 	Localization.setFinnish = true
 
 func _on_hide_seek_pressed() -> void:
+	AudioPlayer.play_FX(AudioPlayer.clickSFX, 0)
 	transition.play("Fade_out")
 	AudioPlayer.stop_music_level()
 	#await get_tree().create_timer(0.6).timeout
@@ -127,22 +128,27 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 
 func _on_se_btn_pressed() -> void:
 	Swedish()
+	AudioPlayer.play_FX(AudioPlayer.clickSFX, 0)
 
 
 func _on_dk_btn_pressed() -> void:
 	Danish()
+	AudioPlayer.play_FX(AudioPlayer.clickSFX, 0)
 
 
 func _on_no_btn_pressed() -> void:
 	Norwegian()
+	AudioPlayer.play_FX(AudioPlayer.clickSFX, 0)
 
 
 func _on_fi_btn_pressed() -> void:
 	Finnish()
+	AudioPlayer.play_FX(AudioPlayer.clickSFX, 0)
 
 
 func _on_en_btn_pressed() -> void:
 	English()
+	AudioPlayer.play_FX(AudioPlayer.clickSFX, 0)
 
 
 
@@ -159,6 +165,7 @@ func _on_hide_seek_mouse_exited() -> void:
 
 
 func _on_check_box_toggled(toggled_on: bool) -> void:
+	AudioPlayer.play_FX(AudioPlayer.clickSFX, 0)
 	if toggled_on:
 		AudioPlayer.mute = true
 	else:

@@ -71,7 +71,7 @@ var current_scene: Node = null
 
 var HudButton
 
-@onready var clickSFX = preload("res://SFX/test_btn-01.mp3")
+
 
 func _ready() -> void:
 	AudioPlayer.play_music_level()
@@ -213,14 +213,14 @@ func _on_lollo_spot_pressed():
 	LolloFound = true
 	LolloButton.disabled = true
 	isLolloBernieFound()
-	AudioPlayer.play_FX(clickSFX, 0)
+	AudioPlayer.play_FX(AudioPlayer.foundSFX, 0)
 	
 func _on_bernie_spot_pressed():
 	print("Bernie found!")
 	BernieFound = true
 	BernieButton.disabled = true
 	isLolloBernieFound()
-	AudioPlayer.play_FX(clickSFX, 0)
+	AudioPlayer.play_FX(AudioPlayer.foundSFX, 0)
 
 func spawnHidingSpot1(pos, spot): # spawn L and B at random_num1 and 2, and spawn empty hiding spots at the rest
 	EmptyButton = spot.instantiate() as TextureButton # setting this to texture button breaks everything which is quite cringe
@@ -234,7 +234,7 @@ func spawnHidingSpot1(pos, spot): # spawn L and B at random_num1 and 2, and spaw
 
 func _on_empty_button_pressed():
 	print("No one here!")
-	AudioPlayer.play_FX(clickSFX, 0)
+	AudioPlayer.play_FX(AudioPlayer.clickSFX, 0)
 
 func spawnHUD():
 	HudButton = HUD.instantiate()

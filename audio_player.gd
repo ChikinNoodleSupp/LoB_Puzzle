@@ -7,6 +7,8 @@ const menu_music = preload("res://Music/Lollo Bernie Song_SCAN_SHORT_Backing_WAV
 
 var mute = false
 
+@onready var clickSFX = preload("res://SFX/test_btn-01.mp3")
+@onready var foundSFX = preload("res://SFX/SFX_LnB_1.mp3")
 
 func _play_music(music: AudioStream, volume = 0.0):
 	if stream == music:
