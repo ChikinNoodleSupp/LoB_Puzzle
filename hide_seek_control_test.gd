@@ -44,8 +44,8 @@ var Scene3 = preload("res://Hide_Seek_control_test_3.tscn")
 var Scene3Bool
 
 @onready var BG_1 = $Strand_BG
-@onready var BG_2
-@onready var BG_3
+@onready var BG_2 = $Strand_BG2
+@onready var BG_3 = $Strand_BG3
 var BG = [BG_1, BG_2, BG_3]
 
 var HUD = preload("res://HUD.tscn")
