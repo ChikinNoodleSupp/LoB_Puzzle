@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://crflep62rtthc"]
 
-[ext_resource type="Texture2D" uid="uid://mjd42v7k7v7v" path="res://Assets/Strand/Hover/H_Water.png" id="1_ra3es"]
-[ext_resource type="Texture2D" uid="uid://ba0ae4vsfftip" path="res://Assets/Strand/LnB/B_Water.png" id="2_4v2fy"]
+[ext_resource type="Texture2D" uid="uid://csp1x1vlrsso5" path="res://Assets/Strand/LnB/Final/bernie kanot.png" id="1_ssqr2"]
+[ext_resource type="Texture2D" uid="uid://ctns0he25ddl2" path="res://Assets/Strand/LnB/Final/bernie kanot (2).png" id="2_avvkl"]
 [ext_resource type="BitMap" uid="uid://282xs6n8n7u2" path="res://Assets/Strand/Mask/M_Water_BIG.png" id="3_muf1e"]
 
 [node name="BernieSpot" type="TextureButton"]
@@ -9,8 +9,8 @@ offset_right = 176.0
 offset_bottom = 230.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
-texture_normal = ExtResource("1_ra3es")
-texture_pressed = ExtResource("2_4v2fy")
-texture_hover = ExtResource("2_4v2fy")
-texture_disabled = ExtResource("2_4v2fy")
+texture_normal = ExtResource("1_ssqr2")
+texture_pressed = ExtResource("2_avvkl")
+texture_hover = ExtResource("1_ssqr2")
+texture_disabled = ExtResource("2_avvkl")
 texture_click_mask = ExtResource("3_muf1e")
