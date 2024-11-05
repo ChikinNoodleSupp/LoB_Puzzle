@@ -5,7 +5,7 @@
 [ext_resource type="BitMap" uid="uid://dw1baww4a4yfm" path="res://Assets/Strand/Mask/M_BigPalm_2.png" id="3_vjtbc"]
 
 [node name="BernieSpot" type="TextureButton"]
-z_index = 2
+z_index = 3
 offset_right = 176.0
 offset_bottom = 230.0
 size_flags_horizontal = 0

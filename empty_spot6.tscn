@@ -5,6 +5,7 @@
 [ext_resource type="BitMap" uid="uid://dw1baww4a4yfm" path="res://Assets/Strand/Mask/M_BigPalm_2.png" id="3_vqbob"]
 
 [node name="empty_spot6" type="TextureButton"]
+z_index = 3
 offset_right = 845.0
 offset_bottom = 1230.0
 pivot_offset = Vector2(131.5, 232.5)

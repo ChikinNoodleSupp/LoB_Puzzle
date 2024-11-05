@@ -5,6 +5,7 @@
 [ext_resource type="BitMap" uid="uid://fqramrhj3rcf" path="res://Assets/Strand/Mask/M_Palms_2.png" id="3_m8b7r"]
 
 [node name="empty_spot" type="TextureButton"]
+z_index = 1
 offset_right = 263.0
 offset_bottom = 465.0
 texture_normal = ExtResource("1_5u30t")

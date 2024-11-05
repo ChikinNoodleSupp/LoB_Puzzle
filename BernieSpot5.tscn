@@ -5,7 +5,7 @@
 [ext_resource type="BitMap" uid="uid://6jw72lxk3hbk" path="res://Assets/Strand/Mask/M_Trashcan_2.png" id="3_men8y"]
 
 [node name="BernieSpot" type="TextureButton"]
-z_index = 2
+z_index = 3
 offset_right = 176.0
 offset_bottom = 230.0
 size_flags_horizontal = 0

@@ -5,6 +5,7 @@
 [ext_resource type="BitMap" uid="uid://d34gsok1k2b0u" path="res://Assets/Strand/Mask/M_Canoe_2.png" id="3_ccm33"]
 
 [node name="empty_spot2" type="TextureButton"]
+z_index = 2
 offset_right = 263.0
 offset_bottom = 465.0
 pivot_offset = Vector2(131.5, 232.5)

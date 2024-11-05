@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dm0xq4bl7wmfs" path="res://Assets/Strand/LnB/B_Canoe_F.png" id="2_13m2x"]
 
 [node name="BernieSpot" type="TextureButton"]
-z_index = 1
+z_index = 2
 offset_right = 176.0
 offset_bottom = 230.0
 size_flags_horizontal = 0

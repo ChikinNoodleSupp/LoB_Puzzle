@@ -5,7 +5,7 @@
 [ext_resource type="BitMap" uid="uid://d0cb0wmajvrsn" path="res://Assets/Strand/Mask/M_Chair_2.png" id="3_oq3j7"]
 
 [node name="BernieSpot" type="TextureButton"]
-z_index = 2
+z_index = 3
 offset_right = 176.0
 offset_bottom = 230.0
 size_flags_horizontal = 0
