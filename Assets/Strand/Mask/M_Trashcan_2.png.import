@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://6jw72lxk3hbk"
+path="res://.godot/imported/M_Trashcan_2.png-0e6cd2eedbc43e961169026c00eeca14.res"
+
+[deps]
+
+source_file="res://Assets/Strand/Mask/M_Trashcan_2.png"
+dest_files=["res://.godot/imported/M_Trashcan_2.png-0e6cd2eedbc43e961169026c00eeca14.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

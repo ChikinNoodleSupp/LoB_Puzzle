@@ -1,17 +1,17 @@
 [gd_scene load_steps=5 format=3 uid="uid://b0trjox5m0k3r"]
 
-[ext_resource type="Texture2D" uid="uid://bbdxmrqtnrl17" path="res://Assets/Strand/Hover/H_Mountain.png" id="1_xa04g"]
-[ext_resource type="Texture2D" uid="uid://d276q7weu41fw" path="res://Assets/Strand/LnB/L_Mountain.png" id="2_584ra"]
-[ext_resource type="BitMap" uid="uid://day1uugx7wd1q" path="res://Assets/Strand/Mask/M_Mountain_BIG.png" id="3_8on4f"]
+[ext_resource type="Texture2D" uid="uid://d2ilwk76loc68" path="res://Assets/Strand/LnB/lollo berg.png" id="1_3kcvo"]
+[ext_resource type="Texture2D" uid="uid://bu01ujfw4mgb5" path="res://Assets/Strand/LnB/lollo berg (2).png" id="2_wj20d"]
+[ext_resource type="BitMap" uid="uid://bg6ngvo5sae7x" path="res://Assets/Strand/Mask/M_Mountain_BIG.png" id="3_8on4f"]
 
 [sub_resource type="GDScript" id="GDScript_hdxlj"]
 script/source = "extends TextureButton
 "
 
 [node name="LolloSpot" type="TextureButton"]
-texture_normal = ExtResource("1_xa04g")
-texture_pressed = ExtResource("2_584ra")
-texture_hover = ExtResource("2_584ra")
-texture_disabled = ExtResource("2_584ra")
+texture_normal = ExtResource("1_3kcvo")
+texture_pressed = ExtResource("2_wj20d")
+texture_hover = ExtResource("1_3kcvo")
+texture_disabled = ExtResource("2_wj20d")
 texture_click_mask = ExtResource("3_8on4f")
 script = SubResource("GDScript_hdxlj")

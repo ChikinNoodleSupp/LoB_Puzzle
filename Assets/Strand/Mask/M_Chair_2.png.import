@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://d0cb0wmajvrsn"
+path="res://.godot/imported/M_Chair_2.png-813e2128003ee157f15b344ec4bea946.res"
+
+[deps]
+
+source_file="res://Assets/Strand/Mask/M_Chair_2.png"
+dest_files=["res://.godot/imported/M_Chair_2.png-813e2128003ee157f15b344ec4bea946.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

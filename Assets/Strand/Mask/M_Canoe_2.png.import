@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://d34gsok1k2b0u"
+path="res://.godot/imported/M_Canoe_2.png-9a24d6193e5d064130365fdf2addedbe.res"
+
+[deps]
+
+source_file="res://Assets/Strand/Mask/M_Canoe_2.png"
+dest_files=["res://.godot/imported/M_Canoe_2.png-9a24d6193e5d064130365fdf2addedbe.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

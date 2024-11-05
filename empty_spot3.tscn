@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://nywdswpmbpjc"]
 
-[ext_resource type="Texture2D" uid="uid://bbdxmrqtnrl17" path="res://Assets/Strand/Hover/H_Mountain.png" id="1_110oo"]
-[ext_resource type="Texture2D" uid="uid://gnriqsenmmfm" path="res://Assets/Strand/Pressed/P_Mountain.png" id="2_xumvj"]
-[ext_resource type="BitMap" uid="uid://day1uugx7wd1q" path="res://Assets/Strand/Mask/M_Mountain_BIG.png" id="3_gwjk8"]
+[ext_resource type="Texture2D" uid="uid://bp84virc1jk74" path="res://Assets/Strand/Hover/H_Mountain.png" id="1_110oo"]
+[ext_resource type="Texture2D" uid="uid://bfy2rhcrk37jh" path="res://Assets/Strand/Pressed/P_Mountain.png" id="2_xumvj"]
+[ext_resource type="BitMap" uid="uid://bg6ngvo5sae7x" path="res://Assets/Strand/Mask/M_Mountain_BIG.png" id="3_gwjk8"]
 
 [node name="empty_spot3" type="TextureButton"]
 offset_right = 851.0
@@ -11,4 +11,5 @@ pivot_offset = Vector2(131.5, 232.5)
 texture_normal = ExtResource("1_110oo")
 texture_pressed = ExtResource("2_xumvj")
 texture_hover = ExtResource("1_110oo")
+texture_disabled = ExtResource("2_xumvj")
 texture_click_mask = ExtResource("3_gwjk8")

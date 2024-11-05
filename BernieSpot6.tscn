@@ -1,16 +1,17 @@
 [gd_scene load_steps=4 format=3 uid="uid://camithkxkf8st"]
 
-[ext_resource type="Texture2D" uid="uid://v8j2eg5jwkjb" path="res://Assets/Strand/LnB/Final/bernie palm.png" id="1_xl1ua"]
-[ext_resource type="Texture2D" uid="uid://c47yn2v1to6uc" path="res://Assets/Strand/LnB/Final/Asset 22.png" id="2_ksyk2"]
-[ext_resource type="BitMap" uid="uid://dt8concimkomq" path="res://Assets/Strand/Mask/M_BigPalm_BIG.png" id="3_eyuto"]
+[ext_resource type="Texture2D" uid="uid://bw284hkhsfpx" path="res://Assets/Strand/LnB/B_BigPalm_H.png" id="1_8t781"]
+[ext_resource type="Texture2D" uid="uid://bdhqo6mpmr0ae" path="res://Assets/Strand/LnB/B_BigPalm_F.png" id="2_8m8od"]
+[ext_resource type="BitMap" uid="uid://dw1baww4a4yfm" path="res://Assets/Strand/Mask/M_BigPalm_2.png" id="3_vjtbc"]
 
 [node name="BernieSpot" type="TextureButton"]
+z_index = 2
 offset_right = 176.0
 offset_bottom = 230.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
-texture_normal = ExtResource("1_xl1ua")
-texture_pressed = ExtResource("2_ksyk2")
-texture_hover = ExtResource("1_xl1ua")
-texture_disabled = ExtResource("2_ksyk2")
-texture_click_mask = ExtResource("3_eyuto")
+texture_normal = ExtResource("1_8t781")
+texture_pressed = ExtResource("2_8m8od")
+texture_hover = ExtResource("1_8t781")
+texture_disabled = ExtResource("2_8m8od")
+texture_click_mask = ExtResource("3_vjtbc")
