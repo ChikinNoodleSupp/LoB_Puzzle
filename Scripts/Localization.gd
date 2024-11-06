@@ -1,6 +1,6 @@
 extends Control
 
-var languageButtons = preload("res://MainMenu.tscn")
+var languageButtons = preload("res://Scenes/MainMenu.tscn")
 var setSwedish = false
 var setEnglish = false
 var setDanish = false

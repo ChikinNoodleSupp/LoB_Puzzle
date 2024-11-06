@@ -4,7 +4,7 @@ extends Control
 var array1 = [1, 2, 3, 4, 5, 6]
 var array2 = [1, 2, 3, 4, 5, 6]
 
-var sceneArray = ["res://Hide_Seek_control_test.tscn"]#, "res://Hide_Seek_control_test_2.tscn", "res://Hide_Seek_control_test_3.tscn"] # just add more scenes
+var sceneArray = ["res://Scenes/Strand/Hide_Seek_control_test.tscn"]#, "res://Hide_Seek_control_test_2.tscn", "res://Hide_Seek_control_test_3.tscn"] # just add more scenes
 
 static var sceneNumber = 0
 
@@ -12,43 +12,43 @@ static var sceneNumber = 0
 var LolloFound = false
 var BernieFound = false
 
-var EmptySpot = preload("res://empty_spot.tscn")
-var EmptySpot2 = preload("res://empty_spot2.tscn")
-var EmptySpot3 = preload("res://empty_spot3.tscn")
-var EmptySpot4 = preload("res://empty_spot4.tscn")
-var EmptySpot5 = preload("res://empty_spot5.tscn")
-var EmptySpot6 = preload("res://empty_spot6.tscn")
+var EmptySpot = preload("res://Scenes/Strand/Empty/empty_spot.tscn")
+var EmptySpot2 = preload("res://Scenes/Strand/Empty/empty_spot2.tscn")
+var EmptySpot3 = preload("res://Scenes/Strand/Empty/empty_spot3.tscn")
+var EmptySpot4 = preload("res://Scenes/Strand/Empty/empty_spot4.tscn")
+var EmptySpot5 = preload("res://Scenes/Strand/Empty/empty_spot5.tscn")
+var EmptySpot6 = preload("res://Scenes/Strand/Empty/empty_spot6.tscn")
 var hidingSpotArray = [EmptySpot, EmptySpot2, EmptySpot3, EmptySpot4, EmptySpot5, EmptySpot6]
 
-var LolloHiding = preload("res://LolloSpot.tscn") # make x6, put in array
-var LolloHiding2 = preload("res://LolloSpot2.tscn")
-var LolloHiding3 = preload("res://LolloSpot3.tscn")
-var LolloHiding4 = preload("res://LolloSpot4.tscn")
-var LolloHiding5 = preload("res://LolloSpot5.tscn")
-var LolloHiding6 = preload("res://LolloSpot6.tscn")
+var LolloHiding = preload("res://Scenes/Strand/Lollo/LolloSpot.tscn") # make x6, put in array
+var LolloHiding2 = preload("res://Scenes/Strand/Lollo/LolloSpot2.tscn")
+var LolloHiding3 = preload("res://Scenes/Strand/Lollo/LolloSpot3.tscn")
+var LolloHiding4 = preload("res://Scenes/Strand/Lollo/LolloSpot4.tscn")
+var LolloHiding5 = preload("res://Scenes/Strand/Lollo/LolloSpot5.tscn")
+var LolloHiding6 = preload("res://Scenes/Strand/Lollo/LolloSpot6.tscn")
 var lolloArray = [LolloHiding, LolloHiding2, LolloHiding3, LolloHiding4, LolloHiding5, LolloHiding6]
 
-var BernieHiding = preload("res://BernieSpot.tscn")
-var BernieHiding2 = preload("res://BernieSpot2.tscn")
-var BernieHiding3 = preload("res://BernieSpot3.tscn")
-var BernieHiding4 = preload("res://BernieSpot4.tscn")
-var BernieHiding5 = preload("res://BernieSpot5.tscn")
-var BernieHiding6 = preload("res://BernieSpot6.tscn")
+var BernieHiding = preload("res://Scenes/Strand/Bernie/BernieSpot.tscn")
+var BernieHiding2 = preload("res://Scenes/Strand/Bernie/BernieSpot2.tscn")
+var BernieHiding3 = preload("res://Scenes/Strand/Bernie/BernieSpot3.tscn")
+var BernieHiding4 = preload("res://Scenes/Strand/Bernie/BernieSpot4.tscn")
+var BernieHiding5 = preload("res://Scenes/Strand/Bernie/BernieSpot5.tscn")
+var BernieHiding6 = preload("res://Scenes/Strand/Bernie/BernieSpot6.tscn")
 var bernieArray = [BernieHiding, BernieHiding2, BernieHiding3, BernieHiding4, BernieHiding5, BernieHiding6]
 
-var Scene1 = preload("res://Hide_Seek_control_test.tscn")
+var Scene1 = preload("res://Scenes/Strand/Hide_Seek_control_test.tscn")
 var Scene1Bool
-var Scene2 = preload("res://Hide_Seek_control_test_2.tscn")
-var Scene2Bool
-var Scene3 = preload("res://Hide_Seek_control_test_3.tscn")
-var Scene3Bool
+#var Scene2 = preload("res://Hide_Seek_control_test_2.tscn")
+#var Scene2Bool
+#var Scene3 = preload("res://Hide_Seek_control_test_3.tscn")
+#var Scene3Bool
 
 @onready var BG_1 = $Strand_BG
 @onready var BG_2 = $Strand_BG2
 @onready var BG_3 = $Strand_BG3
 var BG = [BG_1, BG_2, BG_3]
 
-var HUD = preload("res://HUD.tscn")
+var HUD = preload("res://Scenes/Global/HUD.tscn")
 
 var LolloButton: TextureButton
 var BernieButton: TextureButton
@@ -304,7 +304,7 @@ func _on_back_btn_pressed() -> void:
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "Fade_out_2":
 		print("fade out")
-		get_tree().change_scene_to_file("res://MainMenu.tscn")
+		get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
 		# get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()])
 		#WHY ISNT IT WORKING REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
 

@@ -2,7 +2,7 @@ extends Control
 
 @onready var transition = $AnimationPlayer
 @onready var colorrect = $AnimationPlayer/ColorRect
-var localizationScene = preload("res://Localization_Scene.tscn")
+var localizationScene = preload("res://Scenes/Global/Localization_Scene.tscn")
 #@onready var menuButton = $MarginContainer/VBoxContainer2/HBoxContainer/MenuButton
 #@onready var popup = menuButton.get_popup()
 @onready var HnS = $MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek
