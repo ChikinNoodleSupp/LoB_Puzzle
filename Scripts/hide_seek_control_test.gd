@@ -239,7 +239,8 @@ func _on_empty_button_pressed():
 func spawnHUD():
 	HudButton = HUD.instantiate()
 	add_child(HudButton)
-	HudButton.connect("pressed", _on_back_btn_pressed)
+	var BackButton = HudButton.find_child("Back")
+	BackButton.connect("pressed", _on_back_btn_pressed)
 
 # Helper function to get a random number from an array
 func get_random_from_array(arr):

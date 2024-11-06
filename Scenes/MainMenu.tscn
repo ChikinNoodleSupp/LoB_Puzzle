@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://bfet2ccdjje2p"]
+[gd_scene load_steps=16 format=3 uid="uid://bfet2ccdjje2p"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_d7dnp"]
 [ext_resource type="Texture2D" uid="uid://tgkxhyx3uvua" path="res://TempImages/temp bg.png" id="2_8xxdn"]
@@ -11,8 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://rmkyjrmxw3l1" path="res://TempImages/NO_flag.png" id="9_o37m6"]
 [ext_resource type="Texture2D" uid="uid://dr0lffbdiw2x3" path="res://TempImages/FN_flag.png" id="10_4lycq"]
 [ext_resource type="Texture2D" uid="uid://cq01e2cjfcee" path="res://TempImages/EN_flag.png" id="11_6moyt"]
-[ext_resource type="PackedScene" uid="uid://tfnskewqicsp" path="res://Scenes/Global/Volume_Slider.tscn" id="12_0wo2y"]
-[ext_resource type="Texture2D" uid="uid://chmkovjpjvdnm" path="res://Assets/ICONS/icon_sound_mini.png" id="13_lhhos"]
 
 [sub_resource type="Animation" id="Animation_6d8hl"]
 resource_name = "Fade_in"
@@ -254,23 +252,6 @@ offset_right = 2916.0
 offset_bottom = 2312.0
 color = Color(0, 0, 0, 1)
 
-[node name="HSlider" parent="." instance=ExtResource("12_0wo2y")]
-layout_mode = 0
-offset_left = 850.0
-offset_top = 644.0
-offset_right = 1061.0
-offset_bottom = 660.0
-value = 0.5
-
-[node name="CheckBox" type="CheckBox" parent="HSlider"]
-layout_mode = 0
-offset_left = -95.0
-offset_top = -17.0
-offset_right = -52.0
-offset_bottom = 7.0
-scale = Vector2(2.05, 2.05)
-icon = ExtResource("13_lhhos")
-
 [connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_mouse_entered"]
 [connection signal="mouse_exited" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_mouse_exited"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_pressed"]
@@ -280,4 +261,3 @@ icon = ExtResource("13_lhhos")
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/FI_Btn" to="." method="_on_fi_btn_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/EN_Btn" to="." method="_on_en_btn_pressed"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
-[connection signal="toggled" from="HSlider/CheckBox" to="." method="_on_check_box_toggled"]

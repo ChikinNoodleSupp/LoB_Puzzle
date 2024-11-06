@@ -9,15 +9,19 @@ var localizationScene = preload("res://Scenes/Global/Localization_Scene.tscn")
 
 @onready var mouseHover = false
 
-@onready var _checkbox = $HSlider/CheckBox
+# @onready var _checkbox = $HSlider/CheckBox
+
+@onready var HUD = preload("res://Scenes/Global/HUD.tscn")
 
 #Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	#spawnSlider()
-	if AudioPlayer.mute == true:
-		_checkbox.button_pressed = true
-	elif AudioPlayer.mute == false:
-		_checkbox.button_pressed = false
+	#if AudioPlayer.mute == true:
+		#_checkbox.button_pressed = true
+	#elif AudioPlayer.mute == false:
+		#_checkbox.button_pressed = false
+	#else:
+		#pass
 	
 	AudioPlayer.play_music_menu()
 	
@@ -35,6 +39,16 @@ func _ready() -> void:
 	colorrect.visible = true
 	transition.play("Fade_in")
 	# popup.id_pressed.connect(changeLanguage)
+	
+	spawnHUD()
+
+func spawnHUD():
+	var HudButton = HUD.instantiate()
+	add_child(HudButton)
+	
+	
+
+
 
 #func spawnSlider():
 	#var SliderBtn = VS.instantiate() as HSlider
@@ -164,10 +178,10 @@ func _on_hide_seek_mouse_exited() -> void:
 		print("mouse hover false")
 
 
-func _on_check_box_toggled(toggled_on: bool) -> void:
-	AudioPlayer.play_FX(AudioPlayer.clickSFX, 0)
-	if toggled_on:
-		AudioPlayer.mute = true
-	else:
-		AudioPlayer.mute = false
-	AudioServer.set_bus_mute(AudioServer.get_bus_index("Master"), toggled_on)
+#func _on_mute_sound_toggled(toggled_on: bool) -> void:
+	#AudioPlayer.play_FX(AudioPlayer.clickSFX, 0)
+	#if toggled_on:
+		#AudioPlayer.mute = true
+	#else:
+		#AudioPlayer.mute = false
+	#AudioServer.set_bus_mute(AudioServer.get_bus_index("Master"), toggled_on)
