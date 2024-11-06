@@ -13,15 +13,6 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("5_d3yg3")
 
-[node name="Back" type="TextureButton" parent="."]
-offset_left = 25.0
-offset_top = 20.0
-offset_right = 134.0
-offset_bottom = 120.0
-button_mask = 7
-texture_normal = ExtResource("1_4hv5w")
-texture_hover = ExtResource("2_ie3c8")
-
 [node name="MuteSound" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 1818.0
@@ -31,5 +22,14 @@ offset_bottom = 107.0
 toggle_mode = true
 texture_normal = ExtResource("3_ynbti")
 texture_pressed = ExtResource("4_0bq3m")
+
+[node name="Back" type="TextureButton" parent="."]
+offset_left = 25.0
+offset_top = 20.0
+offset_right = 134.0
+offset_bottom = 120.0
+button_mask = 7
+texture_normal = ExtResource("1_4hv5w")
+texture_hover = ExtResource("2_ie3c8")
 
 [connection signal="toggled" from="MuteSound" to="." method="_on_mute_sound_toggled"]
