@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://eo2y3to8yrxe"]
+
+[ext_resource type="Texture2D" uid="uid://carqn3bithi0k" path="res://TempImages/go_back_B.png" id="1_4hv5w"]
+[ext_resource type="Texture2D" uid="uid://deooncn3t75wu" path="res://TempImages/go_back_W.png" id="2_ie3c8"]
+
+[node name="TextureButton" type="TextureButton"]
+offset_left = 25.0
+offset_top = 20.0
+offset_right = 134.0
+offset_bottom = 120.0
+button_mask = 7
+texture_normal = ExtResource("1_4hv5w")
+texture_hover = ExtResource("2_ie3c8")

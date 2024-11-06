@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpjbgo34aq24j"]
+
+[ext_resource type="Script" path="res://Scripts/audio_player.gd" id="1_sstim"]
+
+[node name="AudioPlayer" type="AudioStreamPlayer"]
+volume_db = -41.586
+script = ExtResource("1_sstim")
