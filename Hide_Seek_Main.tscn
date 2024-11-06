@@ -87,6 +87,21 @@ _data = {
 "RESET": SubResource("Animation_a08hm")
 }
 
+[sub_resource type="Animation" id="Animation_icldf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1758, 629)]
+}
+
 [sub_resource type="Animation" id="Animation_osj4m"]
 resource_name = "ball"
 length = 4.0
@@ -102,21 +117,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(1758, 629), Vector2(1758, 620)]
-}
-
-[sub_resource type="Animation" id="Animation_icldf"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1758, 629)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_1da4d"]
@@ -254,57 +254,6 @@ tracks/1/keys = {
 "values": [Vector2(483, 205), Vector2(483, 195)]
 }
 
-[sub_resource type="Animation" id="Animation_lmdnu"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(447, 236)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../Bird 2:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(483, 205)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath(".:visible")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("../Bird 2:visible")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
 [sub_resource type="Animation" id="Animation_ri7hn"]
 resource_name = "Bird_Fly_2"
 length = 20.0
@@ -356,6 +305,57 @@ tracks/3/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [true, false, true]
+}
+
+[sub_resource type="Animation" id="Animation_lmdnu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(447, 236)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Bird 2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(483, 205)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Bird 2:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_gvre5"]
@@ -520,6 +520,7 @@ offset_bottom = 540.0
 texture = ExtResource("4_6fbsd")
 
 [node name="Sun" type="TextureRect" parent="Strand_BG"]
+layout_mode = 0
 offset_left = 811.5
 offset_top = 66.0
 offset_right = 1028.5
@@ -549,7 +550,7 @@ root_node = NodePath("Cloud")
 libraries = {
 "": SubResource("AnimationLibrary_lwrjx")
 }
-speed_scale = 0.4
+speed_scale = 0.3
 script = ExtResource("9_rheol")
 
 [node name="Cloud" type="TextureRect" parent="Strand_BG/AnimationPlayer2"]
@@ -577,6 +578,7 @@ offset_bottom = 703.0
 texture = ExtResource("11_hui53")
 
 [node name="Waves6" type="TextureRect" parent="Strand_BG"]
+layout_mode = 0
 offset_left = 1774.5
 offset_top = 695.0
 offset_right = 1979.5
@@ -658,7 +660,7 @@ root_node = NodePath("Cloud2")
 libraries = {
 "": SubResource("AnimationLibrary_dol1s")
 }
-speed_scale = 0.3
+speed_scale = 0.2
 script = ExtResource("17_axmd3")
 
 [node name="Cloud2" type="TextureRect" parent="Strand_BG/AnimationPlayer"]
@@ -673,6 +675,7 @@ root_node = NodePath("Bird 1")
 libraries = {
 "": SubResource("AnimationLibrary_gvre5")
 }
+speed_scale = 0.5
 script = ExtResource("21_1rbo3")
 
 [node name="Bird 1" type="TextureRect" parent="Strand_BG/AnimationPlayer4"]
