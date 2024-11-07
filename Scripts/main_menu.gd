@@ -47,6 +47,7 @@ func spawnHUD():
 	add_child(HudButton)
 	
 	
+	
 
 
 
@@ -135,6 +136,7 @@ func _on_smoothie_mix_pressed() -> void:
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "Fade_out":
 		print("Fade_out played")
+		
 		get_tree().change_scene_to_file("res://Scenes/Strand/Hide_Seek_Main.tscn")
 		
 		
