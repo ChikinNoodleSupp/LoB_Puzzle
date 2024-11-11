@@ -1,14 +1,14 @@
 [gd_scene load_steps=14 format=3 uid="uid://cegvhvweole42"]
 
-[ext_resource type="Script" path="res://main_menu.gd" id="1_ntmjj"]
-[ext_resource type="Texture2D" path="res://Images/temp bg.png" id="2_gkhg8"]
-[ext_resource type="Texture2D" path="res://SE_flag.png" id="9_d140y"]
-[ext_resource type="Texture2D" path="res://EN_flag.png" id="10_jqhjr"]
-[ext_resource type="Texture2D" path="res://DE_flag.png" id="11_nnhqi"]
-[ext_resource type="PackedScene" path="res://Volume_Slider.tscn" id="12_1ubmn"]
-[ext_resource type="Texture2D" path="res://NO_flag.png" id="12_ngvbc"]
-[ext_resource type="Texture2D" path="res://FN_flag.png" id="13_2mnoq"]
-[ext_resource type="Texture2D" path="res://Assets/icon_sound_mini.png" id="13_nr8ox"]
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_ntmjj"]
+[ext_resource type="Texture2D" uid="uid://tgkxhyx3uvua" path="res://TempImages/temp bg.png" id="2_gkhg8"]
+[ext_resource type="Texture2D" uid="uid://dpdk0kwcfvtud" path="res://TempImages/SE_flag.png" id="9_d140y"]
+[ext_resource type="Texture2D" uid="uid://cq01e2cjfcee" path="res://TempImages/EN_flag.png" id="10_jqhjr"]
+[ext_resource type="Texture2D" uid="uid://ckptme1vb0bcp" path="res://TempImages/DE_flag.png" id="11_nnhqi"]
+[ext_resource type="PackedScene" uid="uid://tfnskewqicsp" path="res://Scenes/Global/Volume_Slider.tscn" id="12_1ubmn"]
+[ext_resource type="Texture2D" uid="uid://rmkyjrmxw3l1" path="res://TempImages/NO_flag.png" id="12_ngvbc"]
+[ext_resource type="Texture2D" uid="uid://dr0lffbdiw2x3" path="res://TempImages/FN_flag.png" id="13_2mnoq"]
+[ext_resource type="Texture2D" uid="uid://chmkovjpjvdnm" path="res://Assets/ICONS/icon_sound_mini.png" id="13_nr8ox"]
 
 [sub_resource type="Animation" id="Animation_6d8hl"]
 resource_name = "Fade_in"
