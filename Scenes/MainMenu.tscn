@@ -6,10 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://b2xpi4bn063m4" path="res://TempImages/puzzles hover.png" id="4_jd2sa"]
 [ext_resource type="Texture2D" uid="uid://cq4ttfuyllhia" path="res://TempImages/sm title.png" id="5_nwx2s"]
 [ext_resource type="Texture2D" uid="uid://cfm2mhxtd4ppu" path="res://TempImages/sm hover.png" id="6_ti2kp"]
-[ext_resource type="Texture2D" uid="uid://dpdk0kwcfvtud" path="res://TempImages/SE_flag.png" id="7_wu48c"]
-[ext_resource type="Texture2D" uid="uid://ckptme1vb0bcp" path="res://TempImages/DE_flag.png" id="8_2fwed"]
-[ext_resource type="Texture2D" uid="uid://rmkyjrmxw3l1" path="res://TempImages/NO_flag.png" id="9_o37m6"]
-[ext_resource type="Texture2D" uid="uid://dr0lffbdiw2x3" path="res://TempImages/FN_flag.png" id="10_4lycq"]
+[ext_resource type="Texture2D" uid="uid://b3u8bqyxq3i3y" path="res://Assets/ICONS/Flag_SE.png" id="7_llb0q"]
+[ext_resource type="Texture2D" uid="uid://chbdn5spybh2x" path="res://Assets/ICONS/Flag_DK.png" id="8_i1sm7"]
+[ext_resource type="Texture2D" uid="uid://c7xln86dh0sca" path="res://Assets/ICONS/Flag_NO.png" id="9_g3awl"]
+[ext_resource type="Texture2D" uid="uid://b01g3lmaqqg78" path="res://Assets/ICONS/Flag_FI.png" id="10_gd2g6"]
 [ext_resource type="Texture2D" uid="uid://cq01e2cjfcee" path="res://TempImages/EN_flag.png" id="11_6moyt"]
 
 [sub_resource type="Animation" id="Animation_6d8hl"]
@@ -166,7 +166,7 @@ theme_override_constants/separation = 23
 
 [node name="SE_Btn" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
-texture_normal = ExtResource("7_wu48c")
+texture_normal = ExtResource("7_llb0q")
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/SE_Btn"]
 visible = false
@@ -181,7 +181,7 @@ horizontal_alignment = 1
 
 [node name="DK_Btn" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
-texture_normal = ExtResource("8_2fwed")
+texture_normal = ExtResource("8_i1sm7")
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/DK_Btn"]
 visible = false
@@ -196,7 +196,7 @@ horizontal_alignment = 1
 
 [node name="NO_Btn" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
-texture_normal = ExtResource("9_o37m6")
+texture_normal = ExtResource("9_g3awl")
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/NO_Btn"]
 visible = false
@@ -211,7 +211,7 @@ horizontal_alignment = 1
 
 [node name="FI_Btn" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
-texture_normal = ExtResource("10_4lycq")
+texture_normal = ExtResource("10_gd2g6")
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/FI_Btn"]
 visible = false
@@ -225,6 +225,7 @@ text = "Suomi"
 horizontal_alignment = 1
 
 [node name="EN_Btn" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+visible = false
 layout_mode = 2
 texture_normal = ExtResource("11_6moyt")
 
