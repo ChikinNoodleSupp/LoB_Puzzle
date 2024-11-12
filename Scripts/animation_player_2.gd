@@ -1,6 +1,8 @@
 extends AnimationPlayer
 
+var SM = preload("res://Scripts/SceneManager.gd")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	play("CloudMovement2")
+	if SM.scene1 == true:
+		play("CloudMovement2")

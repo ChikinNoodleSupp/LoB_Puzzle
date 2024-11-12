@@ -6,12 +6,15 @@ var localizationScene = preload("res://Scenes/Global/Localization_Scene.tscn")
 #@onready var menuButton = $MarginContainer/VBoxContainer2/HBoxContainer/MenuButton
 #@onready var popup = menuButton.get_popup()
 @onready var HnS = $MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek
+@onready var HnS2 = $MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek2
+@onready var HnS3 = $MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek3
 
 @onready var mouseHover = false
 
 # @onready var _checkbox = $HSlider/CheckBox
 
 @onready var HUD = preload("res://Scenes/Global/HUD.tscn")
+@onready var SM = preload("res://Scripts/SceneManager.gd")
 
 #Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -70,7 +73,9 @@ func spawnHUD():
 func Swedish():
 	print("Svenska")
 	# menuButton.text = "Språk"
-	HnS.text = "Kurragömma"
+	HnS.text = "Kurragömma1"
+	HnS2.text = "Kurragömma2"
+	HnS3.text = "Kurragömma3"
 	Localization.setSwedish = true
 	Localization.setEnglish = false
 	Localization.setDanish = false
@@ -81,7 +86,9 @@ func Swedish():
 func English():
 	print("English")
 	# menuButton.text = "Language"
-	HnS.text = "Hide & Seek"
+	HnS.text = "Hide & Seek1"
+	HnS2.text = "Hide & Seek2"
+	HnS3.text = "Hide & Seek3"
 	Localization.setSwedish = false
 	Localization.setEnglish = true
 	Localization.setDanish = false
@@ -91,7 +98,9 @@ func English():
 func Danish():
 	print("Dansk")
 	# menuButton.text = "Sprog"
-	HnS.text = "Gemmeleg"
+	HnS.text = "Gemmeleg1"
+	HnS2.text = "Gemmeleg2"
+	HnS3.text = "Gemmeleg3"
 	Localization.setSwedish = false
 	Localization.setEnglish = false
 	Localization.setDanish = true
@@ -101,7 +110,9 @@ func Danish():
 func Norwegian():
 	print("Norsk")
 	# menuButton.text = "Språk"
-	HnS.text = "Gjemsel"
+	HnS.text = "Gjemsel1"
+	HnS2.text = "Gjemsel2"
+	HnS3.text = "Gjemsel3"
 	Localization.setSwedish = false
 	Localization.setEnglish = false
 	Localization.setDanish = false
@@ -111,7 +122,9 @@ func Norwegian():
 func Finnish():
 	print("Suomi")
 	# menuButton.text = "Kieli"
-	HnS.text = "Piiloleikki"
+	HnS.text = "Piiloleikki1"
+	HnS2.text = "Piiloleikki2"
+	HnS3.text = "Piiloleikki3"
 	Localization.setSwedish = false
 	Localization.setEnglish = false
 	Localization.setDanish = false
@@ -119,19 +132,23 @@ func Finnish():
 	Localization.setFinnish = true
 
 func _on_hide_seek_pressed() -> void:
+	SM.scene1 = true
+	# set a bool in a scene manager script. When main scene opens, check which bool is true and turn on correct BG.
+	#turn all bools to false if they're true when going back to main menu
+	playAnim()
+
+func _on_hide_seek_2_pressed() -> void:
+	SM.scene2 = true
+	playAnim()
+
+func _on_hide_seek_3_pressed() -> void:
+	SM.scene3 = true
+	playAnim()
+
+func playAnim():
 	AudioPlayer.play_FX(AudioPlayer.clickSFX, 0)
 	transition.play("Fade_out")
 	AudioPlayer.stop_music_level()
-	#await get_tree().create_timer(0.6).timeout
-	#get_tree().change_scene_to_file("res://Hide_Seek_Main.tscn")
-	
-	# call_deferred("_on_hide_seek_pressed")
-
-func _on_puzzles_pressed() -> void:
-	pass # Replace with function body.
-
-func _on_smoothie_mix_pressed() -> void:
-	pass # Replace with function body.
 
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "Fade_out":

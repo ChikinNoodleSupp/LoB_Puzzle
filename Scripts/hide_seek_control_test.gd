@@ -36,19 +36,13 @@ var BernieHiding5 = preload("res://Scenes/Strand/Bernie/BernieSpot5.tscn")
 var BernieHiding6 = preload("res://Scenes/Strand/Bernie/BernieSpot6.tscn")
 var bernieArray = [BernieHiding, BernieHiding2, BernieHiding3, BernieHiding4, BernieHiding5, BernieHiding6]
 
-var Scene1 = preload("res://Scenes/Strand/Hide_Seek_control_test.tscn")
-var Scene1Bool
-#var Scene2 = preload("res://Hide_Seek_control_test_2.tscn")
-#var Scene2Bool
-#var Scene3 = preload("res://Hide_Seek_control_test_3.tscn")
-#var Scene3Bool
-
 @onready var BG_1 = $Strand_BG
 @onready var BG_2 = $Strand_BG2
 @onready var BG_3 = $Strand_BG3
-var BG = [BG_1, BG_2, BG_3]
+# var BG = [BG_1, BG_2, BG_3]
 
 var HUD = preload("res://Scenes/Global/HUD.tscn")
+var SM = preload("res://Scripts/SceneManager.gd")
 
 var LolloButton: TextureButton
 var BernieButton: TextureButton
@@ -71,15 +65,28 @@ var current_scene: Node = null
 
 var HudButton
 
-
-
 func _ready() -> void:
+	BG_1.visible = false
+	BG_2.visible = false
+	BG_3.visible = false
+	if SM.scene1 == true:
+		BG_1.visible = true
+		SM.scene2 = false
+		SM.scene3 = false
+	elif SM.scene2 == true:
+		BG_2.visible = true
+		SM.scene1 = false
+		SM.scene3 = false
+	elif SM.scene3 == true:
+		BG_3.visible = true
+		SM.scene1 = false
+		SM.scene2 = false
+	
 	AudioPlayer.play_music_level()
 	newScene()
 	
 	transition.play("Fade_in")
 	print("fade in")
-	
 
 func mainCode(): # on start basically
 	print("Running mainCode(), current scene: ", current_scene.name)
@@ -95,7 +102,6 @@ func mainCode(): # on start basically
 	
 	# BG_Btn = current_scene.find_child("BG_Btn")
 	
-	
 	#HnS_1position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_1").position
 	#HnS_2position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_2").position
 	#HnS_3position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_3").position
@@ -103,10 +109,7 @@ func mainCode(): # on start basically
 	#HnS_5position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_5").position
 	#HnS_6position = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_6").position
 	
-	
-	
-	# func _on_test_btn_pressed() -> void:
-	reset_arrays() # temp
+	reset_arrays()
 	reset_hidingSpots()
 	
 	 # Roll a random number from array1
@@ -124,22 +127,7 @@ func mainCode(): # on start basically
 	print("First random number from array1: ", random_num1)
 	print("Second random number from array2 (after removal): ", random_num2)
 	
-	#var HnS_1 = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_1")
-	#var HnS_2 = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_2")
-	#var HnS_3 = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_3")
-	#var HnS_4 = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_4")
-	#var HnS_5 = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_5")
-	#var HnS_6 = get_node("ColorRect/MarginContainer/VBoxContainer/HBoxContainer/HnS_6")
-	
-	#var HnS_1position = HnS_1.position
-	#var HnS_2position = HnS_2.position
-	#var HnS_3position = HnS_3.position
-	#var HnS_4position = HnS_4.position
-	#var HnS_5position = HnS_5.position
-	#var HnS_6position = HnS_6.position
-	
 	var positionArray = [HnS_1position, HnS_2position, HnS_3position, HnS_4position, HnS_5position, HnS_6position]
-	
 	
 	for i in range(0, array1.size()): 
 		if random_num1 == i+1:
@@ -190,9 +178,6 @@ func mainCode(): # on start basically
 		#spawnBernieHidingSpot(HnS_6position)
 	#else:
 		#spawnHidingSpot1(HnS_6position)
-	
-	
-	
 
 func spawnLolloHidingSpot(pos, spot):
 	LolloButton = spot.instantiate() as TextureButton
@@ -200,7 +185,7 @@ func spawnLolloHidingSpot(pos, spot):
 	LolloButton.position = pos
 	instances.append(LolloButton)
 	LolloButton.connect("pressed", _on_lollo_spot_pressed)
-	
+
 func spawnBernieHidingSpot(pos, spot):
 	BernieButton = spot.instantiate() as TextureButton
 	add_child(BernieButton)
@@ -214,7 +199,7 @@ func _on_lollo_spot_pressed():
 	LolloButton.disabled = true
 	isLolloBernieFound()
 	AudioPlayer.play_FX(AudioPlayer.foundSFX, 0)
-	
+
 func _on_bernie_spot_pressed():
 	print("Bernie found!")
 	BernieFound = true
@@ -247,7 +232,7 @@ func get_random_from_array(arr):
 	# Get a random index within the bounds of the array
 	var random_index = randi() % arr.size()
 	return arr[random_index]
-	
+
 # Reset function to reinitialize the arrays
 func reset_arrays():
 	# Reset array1 and array2 to their original state
@@ -257,13 +242,13 @@ func reset_arrays():
 	LolloFound = false
 	BernieFound = false
 	print("Arrays reset!")
-	
+
 func reset_hidingSpots():
 	for instance in instances:
 		if instance and instance.is_inside_tree():
 			instance.queue_free()  # Safely remove the node from the scene
 	instances.clear()
-	
+
 func clearHUD():
 	if HudButton:
 		HudButton.queue_free()
@@ -272,7 +257,6 @@ func clearHUD():
 
 func isLolloBernieFound():
 	# Check if both LolloFound and BernieFound are true
-	
 	if LolloFound and BernieFound:
 		sceneNumber +=1
 		await get_tree().create_timer(1.0).timeout #wait for seconds
@@ -285,7 +269,7 @@ func isLolloBernieFound():
 		
 		transition.play("Fade_in")
 
-func newScene():
+func newScene(): # change it so that it does what it has to, but move the actual scene array stuff elsewhere,so it does x in scene y
 	# Change BG here
 	if current_scene:
 		current_scene.queue_free()  # Remove the previous scene
@@ -298,9 +282,6 @@ func newScene():
 func _on_back_btn_pressed() -> void:
 	transition.play("Fade_out_2")
 	AudioPlayer.stop_music_level()
-	
-	
-	
 
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "Fade_out_2":
@@ -308,7 +289,6 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 		get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
 		# get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()])
 		#WHY ISNT IT WORKING REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
-
 
 #func _on_bg_btn_pressed() -> void:
 	#AudioPlayer.play_FX(clickSFX, 0)

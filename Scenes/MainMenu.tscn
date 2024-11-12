@@ -1,11 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://bfet2ccdjje2p"]
+[gd_scene load_steps=12 format=3 uid="uid://bfet2ccdjje2p"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_d7dnp"]
 [ext_resource type="Texture2D" uid="uid://tgkxhyx3uvua" path="res://TempImages/temp bg.png" id="2_8xxdn"]
-[ext_resource type="Texture2D" uid="uid://o7taeeb65yor" path="res://TempImages/puzzles title.png" id="3_su7sw"]
-[ext_resource type="Texture2D" uid="uid://b2xpi4bn063m4" path="res://TempImages/puzzles hover.png" id="4_jd2sa"]
-[ext_resource type="Texture2D" uid="uid://cq4ttfuyllhia" path="res://TempImages/sm title.png" id="5_nwx2s"]
-[ext_resource type="Texture2D" uid="uid://cfm2mhxtd4ppu" path="res://TempImages/sm hover.png" id="6_ti2kp"]
 [ext_resource type="Texture2D" uid="uid://b3u8bqyxq3i3y" path="res://Assets/ICONS/Flag_SE.png" id="7_llb0q"]
 [ext_resource type="Texture2D" uid="uid://chbdn5spybh2x" path="res://Assets/ICONS/Flag_DK.png" id="8_i1sm7"]
 [ext_resource type="Texture2D" uid="uid://c7xln86dh0sca" path="res://Assets/ICONS/Flag_NO.png" id="9_g3awl"]
@@ -145,17 +141,13 @@ size_flags_vertical = 4
 layout_mode = 2
 theme_override_font_sizes/font_size = 42
 
-[node name="Puzzles" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-visible = false
+[node name="Hide_Seek2" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-texture_normal = ExtResource("3_su7sw")
-texture_hover = ExtResource("4_jd2sa")
+theme_override_font_sizes/font_size = 42
 
-[node name="SmoothieMix" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-visible = false
+[node name="Hide_Seek3" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-texture_normal = ExtResource("5_nwx2s")
-texture_hover = ExtResource("6_ti2kp")
+theme_override_font_sizes/font_size = 42
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 50)
@@ -256,6 +248,12 @@ color = Color(0, 0, 0, 1)
 [connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_mouse_entered"]
 [connection signal="mouse_exited" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_mouse_exited"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_pressed"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek2" to="." method="_on_hide_seek_mouse_entered"]
+[connection signal="mouse_exited" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek2" to="." method="_on_hide_seek_mouse_exited"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek2" to="." method="_on_hide_seek_2_pressed"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek3" to="." method="_on_hide_seek_mouse_entered"]
+[connection signal="mouse_exited" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek3" to="." method="_on_hide_seek_mouse_exited"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek3" to="." method="_on_hide_seek_3_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/SE_Btn" to="." method="_on_se_btn_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/DK_Btn" to="." method="_on_dk_btn_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/NO_Btn" to="." method="_on_no_btn_pressed"]

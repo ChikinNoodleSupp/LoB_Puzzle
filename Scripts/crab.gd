@@ -1,6 +1,7 @@
 extends AnimationPlayer
-
+var SM = preload("res://Scripts/SceneManager.gd")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	play("Crab_Anim")
+	if SM.scene1 == true:
+		play("Crab_Anim")
