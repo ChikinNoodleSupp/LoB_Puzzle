@@ -16,9 +16,9 @@ script = ExtResource("5_d3yg3")
 [node name="MuteSound" type="TextureButton" parent="."]
 z_index = 4
 layout_mode = 0
-offset_left = 1793.0
+offset_left = 1742.0
 offset_top = 18.0
-offset_right = 1893.0
+offset_right = 1842.0
 offset_bottom = 118.0
 toggle_mode = true
 texture_normal = ExtResource("3_ynbti")

@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://dodj1oqhbdfay"]
+
+[ext_resource type="Texture2D" uid="uid://dq4t2b7vqc4qe" path="res://TempImages/Asset 1.png" id="1_8kyc0"]
+
+[sub_resource type="Curve" id="Curve_smhcc"]
+_data = [Vector2(0.0449438, 1), 0.0, 0.0, 0, 0, Vector2(0.977528, 0.241758), -2.63641, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_yof33"]
+curve = SubResource("Curve_smhcc")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ypiul"]
+particle_flag_disable_z = true
+angle_max = 360.0
+spread = 180.0
+initial_velocity_min = 50.0
+initial_velocity_max = 100.0
+gravity = Vector3(0, 100, 0)
+scale_min = 0.01
+scale_max = 0.05
+scale_curve = SubResource("CurveTexture_yof33")
+
+[node name="VFX" type="Node2D"]
+
+[node name="CPUParticles2D" type="GPUParticles2D" parent="."]
+emitting = false
+amount = 15
+process_material = SubResource("ParticleProcessMaterial_ypiul")
+texture = ExtResource("1_8kyc0")
+one_shot = true
+explosiveness = 1.0
+fixed_fps = 0
+draw_order = 0
