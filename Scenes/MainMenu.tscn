@@ -153,87 +153,6 @@ theme_override_font_sizes/font_size = 42
 layout_mode = 2
 theme_override_font_sizes/font_size = 42
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer"]
-layout_mode = 2
-size_flags_horizontal = 8
-theme_override_constants/separation = 25
-
-[node name="SE_Btn" type="TextureButton" parent="MarginContainer/VBoxContainer2"]
-layout_mode = 2
-texture_normal = ExtResource("7_llb0q")
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer2/SE_Btn"]
-visible = false
-layout_mode = 0
-offset_left = 1.0
-offset_top = 60.0
-offset_right = 99.0
-offset_bottom = 95.0
-theme_override_font_sizes/font_size = 25
-text = "Svenska"
-horizontal_alignment = 1
-
-[node name="DK_Btn" type="TextureButton" parent="MarginContainer/VBoxContainer2"]
-layout_mode = 2
-texture_normal = ExtResource("8_i1sm7")
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer2/DK_Btn"]
-visible = false
-layout_mode = 0
-offset_left = 1.0
-offset_top = 60.0
-offset_right = 99.0
-offset_bottom = 95.0
-theme_override_font_sizes/font_size = 25
-text = "Dansk"
-horizontal_alignment = 1
-
-[node name="NO_Btn" type="TextureButton" parent="MarginContainer/VBoxContainer2"]
-layout_mode = 2
-texture_normal = ExtResource("9_g3awl")
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer2/NO_Btn"]
-visible = false
-layout_mode = 0
-offset_left = 1.0
-offset_top = 60.0
-offset_right = 99.0
-offset_bottom = 95.0
-theme_override_font_sizes/font_size = 25
-text = "Norsk"
-horizontal_alignment = 1
-
-[node name="FI_Btn" type="TextureButton" parent="MarginContainer/VBoxContainer2"]
-layout_mode = 2
-texture_normal = ExtResource("10_gd2g6")
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer2/FI_Btn"]
-visible = false
-layout_mode = 0
-offset_left = 1.0
-offset_top = 60.0
-offset_right = 99.0
-offset_bottom = 95.0
-theme_override_font_sizes/font_size = 25
-text = "Suomi"
-horizontal_alignment = 1
-
-[node name="EN_Btn" type="TextureButton" parent="MarginContainer/VBoxContainer2"]
-visible = false
-layout_mode = 2
-texture_normal = ExtResource("11_6moyt")
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer2/EN_Btn"]
-visible = false
-layout_mode = 0
-offset_left = 1.0
-offset_top = 60.0
-offset_right = 99.0
-offset_bottom = 95.0
-theme_override_font_sizes/font_size = 25
-text = "English"
-horizontal_alignment = 1
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_rlixt")
@@ -247,6 +166,107 @@ offset_right = 2916.0
 offset_bottom = 2312.0
 color = Color(0, 0, 0, 1)
 
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.907292
+anchor_top = 0.493519
+anchor_right = 0.976042
+anchor_bottom = 0.872685
+offset_right = -44.0
+offset_bottom = -136.5
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(2, 2)
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer2"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_constants/separation = 25
+
+[node name="SE_Btn" type="TextureButton" parent="MarginContainer2/VBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("7_llb0q")
+
+[node name="Label" type="Label" parent="MarginContainer2/VBoxContainer2/SE_Btn"]
+visible = false
+layout_mode = 0
+offset_left = 1.0
+offset_top = 60.0
+offset_right = 99.0
+offset_bottom = 95.0
+theme_override_font_sizes/font_size = 25
+text = "Svenska"
+horizontal_alignment = 1
+
+[node name="DK_Btn" type="TextureButton" parent="MarginContainer2/VBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("8_i1sm7")
+
+[node name="Label" type="Label" parent="MarginContainer2/VBoxContainer2/DK_Btn"]
+visible = false
+layout_mode = 0
+offset_left = 1.0
+offset_top = 60.0
+offset_right = 99.0
+offset_bottom = 95.0
+theme_override_font_sizes/font_size = 25
+text = "Dansk"
+horizontal_alignment = 1
+
+[node name="NO_Btn" type="TextureButton" parent="MarginContainer2/VBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("9_g3awl")
+
+[node name="Label" type="Label" parent="MarginContainer2/VBoxContainer2/NO_Btn"]
+visible = false
+layout_mode = 0
+offset_left = 1.0
+offset_top = 60.0
+offset_right = 99.0
+offset_bottom = 95.0
+theme_override_font_sizes/font_size = 25
+text = "Norsk"
+horizontal_alignment = 1
+
+[node name="FI_Btn" type="TextureButton" parent="MarginContainer2/VBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("10_gd2g6")
+
+[node name="Label" type="Label" parent="MarginContainer2/VBoxContainer2/FI_Btn"]
+visible = false
+layout_mode = 0
+offset_left = 1.0
+offset_top = 60.0
+offset_right = 99.0
+offset_bottom = 95.0
+theme_override_font_sizes/font_size = 25
+text = "Suomi"
+horizontal_alignment = 1
+
+[node name="EN_Btn" type="TextureButton" parent="MarginContainer2/VBoxContainer2"]
+visible = false
+layout_mode = 2
+texture_normal = ExtResource("11_6moyt")
+
+[node name="Label" type="Label" parent="MarginContainer2/VBoxContainer2/EN_Btn"]
+visible = false
+layout_mode = 0
+offset_left = 1.0
+offset_top = 60.0
+offset_right = 99.0
+offset_bottom = 95.0
+theme_override_font_sizes/font_size = 25
+text = "English"
+horizontal_alignment = 1
+
 [connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_mouse_entered"]
 [connection signal="mouse_exited" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_mouse_exited"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_pressed"]
@@ -256,9 +276,9 @@ color = Color(0, 0, 0, 1)
 [connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek3" to="." method="_on_hide_seek_mouse_entered"]
 [connection signal="mouse_exited" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek3" to="." method="_on_hide_seek_mouse_exited"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek3" to="." method="_on_hide_seek_3_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer2/SE_Btn" to="." method="_on_se_btn_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer2/DK_Btn" to="." method="_on_dk_btn_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer2/NO_Btn" to="." method="_on_no_btn_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer2/FI_Btn" to="." method="_on_fi_btn_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer2/EN_Btn" to="." method="_on_en_btn_pressed"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="pressed" from="MarginContainer2/VBoxContainer2/SE_Btn" to="." method="_on_se_btn_pressed"]
+[connection signal="pressed" from="MarginContainer2/VBoxContainer2/DK_Btn" to="." method="_on_dk_btn_pressed"]
+[connection signal="pressed" from="MarginContainer2/VBoxContainer2/NO_Btn" to="." method="_on_no_btn_pressed"]
+[connection signal="pressed" from="MarginContainer2/VBoxContainer2/FI_Btn" to="." method="_on_fi_btn_pressed"]
+[connection signal="pressed" from="MarginContainer2/VBoxContainer2/EN_Btn" to="." method="_on_en_btn_pressed"]

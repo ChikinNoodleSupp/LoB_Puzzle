@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://eo2y3to8yrxe"]
 
-[ext_resource type="Texture2D" uid="uid://carqn3bithi0k" path="res://TempImages/go_back_B.png" id="1_4hv5w"]
-[ext_resource type="Texture2D" uid="uid://deooncn3t75wu" path="res://TempImages/go_back_W.png" id="2_ie3c8"]
-[ext_resource type="Texture2D" uid="uid://1fwj0u065u0g" path="res://Assets/ICONS/icon_sound.png" id="3_ynbti"]
-[ext_resource type="Texture2D" uid="uid://6wd8jwlqmr6p" path="res://Assets/ICONS/icon_mute.png" id="4_0bq3m"]
+[ext_resource type="Texture2D" uid="uid://bcgi5xrxlebqs" path="res://Assets/ICONS/Asset 1.png" id="2_lxcqa"]
+[ext_resource type="Texture2D" uid="uid://bkurfue333gxa" path="res://Assets/ICONS/sound off.png" id="3_lutcg"]
+[ext_resource type="Texture2D" uid="uid://b2csqhrn64vpm" path="res://Assets/ICONS/home.png" id="4_q243g"]
 [ext_resource type="Script" path="res://Scenes/Global/mute_sound.gd" id="5_d3yg3"]
+[ext_resource type="Texture2D" uid="uid://k2i7jclej41s" path="res://Assets/ICONS/home2.png" id="5_jxm6r"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -16,23 +16,25 @@ script = ExtResource("5_d3yg3")
 [node name="MuteSound" type="TextureButton" parent="."]
 z_index = 4
 layout_mode = 0
-offset_left = 1742.0
-offset_top = 18.0
-offset_right = 1842.0
-offset_bottom = 118.0
+offset_left = 1820.0
+offset_top = 34.0
+offset_right = 1852.0
+offset_bottom = 62.0
+scale = Vector2(2.175, 2.175)
 toggle_mode = true
-texture_normal = ExtResource("3_ynbti")
-texture_pressed = ExtResource("4_0bq3m")
+texture_normal = ExtResource("2_lxcqa")
+texture_pressed = ExtResource("3_lutcg")
 
 [node name="Back" type="TextureButton" parent="."]
-visible = false
 layout_mode = 0
-offset_left = 25.0
-offset_top = 20.0
-offset_right = 134.0
-offset_bottom = 120.0
+offset_left = 22.0
+offset_top = 25.0
+offset_right = 54.0
+offset_bottom = 57.0
+scale = Vector2(2.5, 2.5)
 button_mask = 7
-texture_normal = ExtResource("1_4hv5w")
-texture_hover = ExtResource("2_ie3c8")
+texture_normal = ExtResource("5_jxm6r")
+texture_pressed = ExtResource("4_q243g")
+texture_hover = ExtResource("4_q243g")
 
 [connection signal="toggled" from="MuteSound" to="." method="_on_mute_sound_toggled"]

@@ -65,6 +65,9 @@ var current_scene: Node = null
 
 var HudButton
 
+var VFX = preload("res://Scenes/Global/vfx.tscn")
+var VFXbool = false
+
 func _ready() -> void:
 	BG_1.visible = false
 	BG_2.visible = false
@@ -185,6 +188,10 @@ func spawnLolloHidingSpot(pos, spot):
 	LolloButton.position = pos
 	instances.append(LolloButton)
 	LolloButton.connect("pressed", _on_lollo_spot_pressed)
+	#var VFX1 = VFX.instantiate() as CPUParticles2D
+	#add_child(VFX1)
+	# VFX1.position = pos
+	#VFXbool = true
 
 func spawnBernieHidingSpot(pos, spot):
 	BernieButton = spot.instantiate() as TextureButton
@@ -192,6 +199,10 @@ func spawnBernieHidingSpot(pos, spot):
 	BernieButton.position = pos
 	instances.append(BernieButton)
 	BernieButton.connect("pressed", _on_bernie_spot_pressed)
+	#var VFX1 = VFX.instantiate() as CPUParticles2D
+	#add_child(VFX1)
+	# VFX1.position = pos
+	
 
 func _on_lollo_spot_pressed():
 	print("Lollo found!")
@@ -199,6 +210,7 @@ func _on_lollo_spot_pressed():
 	LolloButton.disabled = true
 	isLolloBernieFound()
 	AudioPlayer.play_FX(AudioPlayer.foundSFX, 0)
+	#VFX.emitting = true
 
 func _on_bernie_spot_pressed():
 	print("Bernie found!")
@@ -206,6 +218,7 @@ func _on_bernie_spot_pressed():
 	BernieButton.disabled = true
 	isLolloBernieFound()
 	AudioPlayer.play_FX(AudioPlayer.foundSFX, 0)
+	#VFX.emitting = true
 
 func spawnHidingSpot1(pos, spot): # spawn L and B at random_num1 and 2, and spawn empty hiding spots at the rest
 	EmptyButton = spot.instantiate() as TextureButton # setting this to texture button breaks everything which is quite cringe
@@ -248,6 +261,8 @@ func reset_hidingSpots():
 		if instance and instance.is_inside_tree():
 			instance.queue_free()  # Safely remove the node from the scene
 	instances.clear()
+	if VFXbool == true:
+		VFX.queue_free()
 
 func clearHUD():
 	if HudButton:
