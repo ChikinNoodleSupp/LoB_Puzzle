@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://bfet2ccdjje2p"]
+[gd_scene load_steps=13 format=3 uid="uid://bfet2ccdjje2p"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_d7dnp"]
 [ext_resource type="Texture2D" uid="uid://tgkxhyx3uvua" path="res://TempImages/temp bg.png" id="2_8xxdn"]
+[ext_resource type="Texture2D" uid="uid://d36snbljv2qwx" path="res://Assets/ICONS/Temp_Thumbnail_small.jpg" id="3_fuv7f"]
 [ext_resource type="Texture2D" uid="uid://b3u8bqyxq3i3y" path="res://Assets/ICONS/Flag_SE.png" id="7_llb0q"]
 [ext_resource type="Texture2D" uid="uid://chbdn5spybh2x" path="res://Assets/ICONS/Flag_DK.png" id="8_i1sm7"]
 [ext_resource type="Texture2D" uid="uid://c7xln86dh0sca" path="res://Assets/ICONS/Flag_NO.png" id="9_g3awl"]
@@ -140,18 +141,19 @@ theme_override_constants/separation = 50
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+theme_override_constants/separation = 20
 
-[node name="Hide_Seek" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="Hide_Seek" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 42
+texture_normal = ExtResource("3_fuv7f")
 
-[node name="Hide_Seek2" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="Hide_Seek2" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 42
+texture_normal = ExtResource("3_fuv7f")
 
-[node name="Hide_Seek3" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="Hide_Seek3" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 42
+texture_normal = ExtResource("3_fuv7f")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

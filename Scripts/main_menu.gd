@@ -73,9 +73,9 @@ func spawnHUD():
 func Swedish():
 	print("Svenska")
 	# menuButton.text = "Språk"
-	HnS.text = "Kurragömma1"
-	HnS2.text = "Kurragömma2"
-	HnS3.text = "Kurragömma3"
+	#HnS.text = "Kurragömma1"
+	#HnS2.text = "Kurragömma2"
+	#HnS3.text = "Kurragömma3"
 	Localization.setSwedish = true
 	Localization.setEnglish = false
 	Localization.setDanish = false
@@ -86,9 +86,9 @@ func Swedish():
 func English():
 	print("English")
 	# menuButton.text = "Language"
-	HnS.text = "Hide & Seek1"
-	HnS2.text = "Hide & Seek2"
-	HnS3.text = "Hide & Seek3"
+	#HnS.text = "Hide & Seek1"
+	#HnS2.text = "Hide & Seek2"
+	#HnS3.text = "Hide & Seek3"
 	Localization.setSwedish = false
 	Localization.setEnglish = true
 	Localization.setDanish = false
@@ -98,9 +98,9 @@ func English():
 func Danish():
 	print("Dansk")
 	# menuButton.text = "Sprog"
-	HnS.text = "Gemmeleg1"
-	HnS2.text = "Gemmeleg2"
-	HnS3.text = "Gemmeleg3"
+	#HnS.text = "Gemmeleg1"
+	#HnS2.text = "Gemmeleg2"
+	#HnS3.text = "Gemmeleg3"
 	Localization.setSwedish = false
 	Localization.setEnglish = false
 	Localization.setDanish = true
@@ -110,9 +110,9 @@ func Danish():
 func Norwegian():
 	print("Norsk")
 	# menuButton.text = "Språk"
-	HnS.text = "Gjemsel1"
-	HnS2.text = "Gjemsel2"
-	HnS3.text = "Gjemsel3"
+	#HnS.text = "Gjemsel1"
+	#HnS2.text = "Gjemsel2"
+	#HnS3.text = "Gjemsel3"
 	Localization.setSwedish = false
 	Localization.setEnglish = false
 	Localization.setDanish = false
@@ -122,9 +122,9 @@ func Norwegian():
 func Finnish():
 	print("Suomi")
 	# menuButton.text = "Kieli"
-	HnS.text = "Piiloleikki1"
-	HnS2.text = "Piiloleikki2"
-	HnS3.text = "Piiloleikki3"
+	#HnS.text = "Piiloleikki1"
+	#HnS2.text = "Piiloleikki2"
+	#HnS3.text = "Piiloleikki3"
 	Localization.setSwedish = false
 	Localization.setEnglish = false
 	Localization.setDanish = false
