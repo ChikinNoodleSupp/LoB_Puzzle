@@ -1,8 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://bfet2ccdjje2p"]
+[gd_scene load_steps=15 format=3 uid="uid://bfet2ccdjje2p"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_d7dnp"]
-[ext_resource type="Texture2D" uid="uid://tgkxhyx3uvua" path="res://TempImages/temp bg.png" id="2_8xxdn"]
-[ext_resource type="Texture2D" uid="uid://d36snbljv2qwx" path="res://Assets/ICONS/Temp_Thumbnail_small.jpg" id="3_fuv7f"]
+[ext_resource type="Texture2D" uid="uid://dqac8pf0beers" path="res://Assets/LB_mobilspel_bg.png" id="2_0hddr"]
+[ext_resource type="Texture2D" uid="uid://jmgel7osttof" path="res://Assets/LB_YT_cover_kurragomma_2560x1440_bergetstopp.png" id="3_qf4a6"]
+[ext_resource type="Texture2D" uid="uid://bqxpeb64j00lh" path="res://Assets/LB_YT_cover_kurragomma_2560x1440_disco.png" id="4_4b2aw"]
+[ext_resource type="Texture2D" uid="uid://c276ec80rv317" path="res://Assets/LB_YT_cover_kurragomma_2560x1440_djungeln.png" id="5_4jwty"]
 [ext_resource type="Texture2D" uid="uid://b3u8bqyxq3i3y" path="res://Assets/ICONS/Flag_SE.png" id="7_llb0q"]
 [ext_resource type="Texture2D" uid="uid://chbdn5spybh2x" path="res://Assets/ICONS/Flag_DK.png" id="8_i1sm7"]
 [ext_resource type="Texture2D" uid="uid://c7xln86dh0sca" path="res://Assets/ICONS/Flag_NO.png" id="9_g3awl"]
@@ -110,50 +112,52 @@ script = ExtResource("1_d7dnp")
 metadata/_edit_use_anchors_ = true
 
 [node name="Background" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("2_8xxdn")
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_0hddr")
+expand_mode = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 378.0
+offset_top = 417.0
+offset_right = 6738.0
+offset_bottom = 1177.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 25
-theme_override_constants/margin_top = 25
-theme_override_constants/margin_right = 25
-theme_override_constants/margin_bottom = 25
-metadata/_edit_use_anchors_ = true
+scale = Vector2(0.15, 0.15)
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 200
+theme_override_constants/margin_right = 200
+theme_override_constants/margin_bottom = 200
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_constants/separation = 50
+theme_override_constants/separation = 100
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_constants/separation = 20
+theme_override_constants/separation = 100
 
 [node name="Hide_Seek" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-texture_normal = ExtResource("3_fuv7f")
+texture_normal = ExtResource("3_qf4a6")
 
 [node name="Hide_Seek2" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-texture_normal = ExtResource("3_fuv7f")
+texture_normal = ExtResource("4_4b2aw")
 
 [node name="Hide_Seek3" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-texture_normal = ExtResource("3_fuv7f")
+texture_normal = ExtResource("5_4jwty")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -171,25 +175,26 @@ color = Color(0, 0, 0, 1)
 [node name="MarginContainer2" type="MarginContainer" parent="."]
 clip_contents = true
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.907292
-anchor_top = 0.493519
-anchor_right = 0.976042
-anchor_bottom = 0.872685
-offset_right = -44.0
-offset_bottom = -136.5
-grow_horizontal = 0
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -214.0
+offset_top = -152.0
+offset_right = 62.0
+offset_bottom = -65.0
+grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(2, 2)
 theme_override_constants/margin_left = 25
 theme_override_constants/margin_top = 25
 theme_override_constants/margin_right = 25
 theme_override_constants/margin_bottom = 25
-metadata/_edit_use_anchors_ = true
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer2"]
+[node name="VBoxContainer2" type="HBoxContainer" parent="MarginContainer2"]
 layout_mode = 2
-size_flags_horizontal = 8
+size_flags_horizontal = 4
 size_flags_vertical = 8
 theme_override_constants/separation = 25
 
