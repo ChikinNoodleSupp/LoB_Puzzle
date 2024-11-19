@@ -194,6 +194,7 @@ offset_bottom = 2312.0
 color = Color(0, 0, 0, 1)
 
 [node name="MarginContainer2" type="MarginContainer" parent="."]
+visible = false
 clip_contents = true
 layout_mode = 1
 anchors_preset = 7

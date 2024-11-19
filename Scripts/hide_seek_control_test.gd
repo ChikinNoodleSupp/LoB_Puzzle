@@ -37,8 +37,8 @@ var BernieHiding6 = preload("res://Scenes/Strand/Bernie/BernieSpot6.tscn")
 var bernieArray = [BernieHiding, BernieHiding2, BernieHiding3, BernieHiding4, BernieHiding5, BernieHiding6]
 
 @onready var BG_1 = $Strand_BG
-@onready var BG_2 = $Strand_BG2
-@onready var BG_3 = $Strand_BG3
+@onready var BG_2 = $UnderVatten_BG
+@onready var BG_3 = $InomHus_BG
 # var BG = [BG_1, BG_2, BG_3]
 
 var HUD = preload("res://Scenes/Global/HUD.tscn")

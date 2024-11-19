@@ -859,6 +859,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="UnderVatten_BG" type="TextureRect" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1574,6 +1575,7 @@ offset_bottom = 1042.5
 texture = ExtResource("106_wr3nh")
 
 [node name="Whale1" type="TextureRect" parent="UnderVatten_BG"]
+visible = false
 layout_mode = 0
 offset_left = 764.5
 offset_top = 159.5
@@ -1582,6 +1584,7 @@ offset_bottom = 569.5
 texture = ExtResource("107_jd3bv")
 
 [node name="SailBoat1" type="TextureRect" parent="UnderVatten_BG"]
+visible = false
 layout_mode = 0
 offset_left = -63.5
 offset_top = -1153.5
