@@ -24,91 +24,91 @@
 [ext_resource type="Script" path="res://Scripts/bird.gd" id="22_vigdc"]
 [ext_resource type="Texture2D" uid="uid://dv0tj1jnjwhhl" path="res://Assets/Strand/BG/Fågel 1.png" id="23_qryss"]
 [ext_resource type="Texture2D" uid="uid://lv4pcc550eqp" path="res://Assets/Strand/BG/Fågel 2.png" id="24_ablaq"]
-[ext_resource type="Texture2D" uid="uid://ifvtind4coyw" path="res://Assets/Under Vatten/BG/Asset 111.png" id="25_uektx"]
-[ext_resource type="Texture2D" uid="uid://db6ply1ta60lh" path="res://Assets/Under Vatten/BG/Asset 108.png" id="26_dpmq8"]
-[ext_resource type="Texture2D" uid="uid://b3h8ast3fmxc8" path="res://Assets/Under Vatten/BG/Asset 101.png" id="27_tq2kn"]
-[ext_resource type="Texture2D" uid="uid://clhjlx8e32glc" path="res://Assets/Under Vatten/BG/Asset 110.png" id="28_p1k5s"]
-[ext_resource type="Texture2D" uid="uid://dhjlaaufsaxmp" path="res://Assets/Under Vatten/BG/Asset 109.png" id="29_61q5g"]
-[ext_resource type="Texture2D" uid="uid://pbi6deo7aecy" path="res://Assets/Under Vatten/BG/Asset 100.png" id="30_ngedv"]
-[ext_resource type="Texture2D" uid="uid://dyo4sch44nxs2" path="res://Assets/Under Vatten/BG/Asset 99.png" id="31_3c4gs"]
-[ext_resource type="Texture2D" uid="uid://ven3cdi3jgje" path="res://Assets/Under Vatten/BG/Asset 98.png" id="32_cxgxs"]
-[ext_resource type="Texture2D" uid="uid://c1p6byjxgkiwn" path="res://Assets/Under Vatten/BG/Asset 97.png" id="33_owcfx"]
-[ext_resource type="Texture2D" uid="uid://cbq3um8ikitq4" path="res://Assets/Under Vatten/BG/Asset 87.png" id="33_v4gx6"]
-[ext_resource type="Texture2D" uid="uid://bs4rku6o6nii2" path="res://Assets/Under Vatten/BG/Asset 86.png" id="34_sfanb"]
-[ext_resource type="Texture2D" uid="uid://dk87iwx3pj4re" path="res://Assets/Under Vatten/BG/Asset 96.png" id="34_wtm52"]
-[ext_resource type="Texture2D" uid="uid://1yuijp3iw27w" path="res://Assets/Under Vatten/BG/Asset 95.png" id="35_jksd5"]
-[ext_resource type="Texture2D" uid="uid://cxo2r1ubyqg4b" path="res://Assets/Under Vatten/BG/Asset 85.png" id="35_pjlcp"]
-[ext_resource type="Texture2D" uid="uid://b3n2dm05mu2pw" path="res://Assets/Under Vatten/BG/Asset 79.png" id="36_tiev7"]
-[ext_resource type="Texture2D" uid="uid://wym4m3ewqf53" path="res://Assets/Under Vatten/BG/Asset 77.png" id="37_uomsw"]
-[ext_resource type="Texture2D" uid="uid://cs1wru3nhohxt" path="res://Assets/Under Vatten/BG/Asset 74.png" id="38_e6thy"]
-[ext_resource type="Texture2D" uid="uid://dqbssv6jqylme" path="res://Assets/Under Vatten/BG/Asset 73.png" id="39_uth07"]
-[ext_resource type="Texture2D" uid="uid://y2q4yv4udu3v" path="res://Assets/Under Vatten/BG/Asset 72.png" id="40_vddaj"]
-[ext_resource type="Texture2D" uid="uid://bfohanda3pefb" path="res://Assets/Under Vatten/BG/Asset 71.png" id="41_y7yde"]
-[ext_resource type="Texture2D" uid="uid://eqfit3652ng1" path="res://Assets/Under Vatten/BG/Asset 67.png" id="42_la4fp"]
-[ext_resource type="Texture2D" uid="uid://dhsnnpru15g8i" path="res://Assets/Under Vatten/BG/Asset 83.png" id="45_uo5i8"]
-[ext_resource type="Texture2D" uid="uid://bbdxe6qox6ia5" path="res://Assets/Under Vatten/BG/Asset 70.png" id="46_itp12"]
-[ext_resource type="Texture2D" uid="uid://b88vfgkg7wygl" path="res://Assets/Under Vatten/BG/Asset 94.png" id="47_c45ny"]
-[ext_resource type="Texture2D" uid="uid://b5j83tf5dtwc4" path="res://Assets/Under Vatten/BG/Asset 93.png" id="48_1gcrm"]
-[ext_resource type="Texture2D" uid="uid://23smqed5bw5t" path="res://Assets/Under Vatten/BG/Asset 92.png" id="49_rx3w1"]
-[ext_resource type="Texture2D" uid="uid://bd483wknndl7m" path="res://Assets/Under Vatten/BG/Asset 91.png" id="50_m7s7j"]
-[ext_resource type="Texture2D" uid="uid://cclco3mh7pm2u" path="res://Assets/Under Vatten/BG/Asset 90.png" id="51_e030r"]
-[ext_resource type="Texture2D" uid="uid://sav1kfpqdfsh" path="res://Assets/Under Vatten/BG/Asset 89.png" id="52_x5so7"]
-[ext_resource type="Texture2D" uid="uid://r2w0rnys7u1d" path="res://Assets/Under Vatten/BG/Asset 69.png" id="53_l2td7"]
-[ext_resource type="Texture2D" uid="uid://c1dincof6wlhu" path="res://Assets/Under Vatten/BG/Asset 68.png" id="54_ucqlo"]
-[ext_resource type="Texture2D" uid="uid://dy6x5bafeyyvx" path="res://Assets/Under Vatten/BG/Asset 60.png" id="55_jpw6p"]
-[ext_resource type="Texture2D" uid="uid://ccpyget2jqa5u" path="res://Assets/Under Vatten/BG/Asset 66.png" id="56_5fuf0"]
-[ext_resource type="Texture2D" uid="uid://drjpfirk4v55" path="res://Assets/Under Vatten/BG/Asset 65.png" id="57_wd4gv"]
-[ext_resource type="Texture2D" uid="uid://d2fea3n11grlb" path="res://Assets/Under Vatten/BG/Asset 64.png" id="58_e0gak"]
-[ext_resource type="Texture2D" uid="uid://c4mduj77cd0y2" path="res://Assets/Under Vatten/BG/Asset 63.png" id="59_nyfkq"]
-[ext_resource type="Texture2D" uid="uid://4xjiw180uny7" path="res://Assets/Under Vatten/BG/Asset 61.png" id="60_0s25p"]
-[ext_resource type="Texture2D" uid="uid://cbo1ufqdkejjy" path="res://Assets/Under Vatten/BG/Asset 59.png" id="61_i3dvr"]
-[ext_resource type="Texture2D" uid="uid://b1vqfj5aw742d" path="res://Assets/Under Vatten/BG/Asset 58.png" id="62_bl2r3"]
-[ext_resource type="Texture2D" uid="uid://bds16whkkatx1" path="res://Assets/Under Vatten/BG/Asset 57.png" id="63_d5a0t"]
-[ext_resource type="Texture2D" uid="uid://cvwtmnsmhtci8" path="res://Assets/Under Vatten/BG/Asset 56.png" id="64_enl3x"]
-[ext_resource type="Texture2D" uid="uid://dbkads65a3d4d" path="res://Assets/Under Vatten/BG/Asset 55.png" id="65_13wst"]
-[ext_resource type="Texture2D" uid="uid://ce1gwu3y2mf5p" path="res://Assets/Under Vatten/BG/Asset 54.png" id="66_di6wt"]
-[ext_resource type="Texture2D" uid="uid://l8dj8gnnyk18" path="res://Assets/Under Vatten/BG/Asset 52.png" id="67_ov855"]
-[ext_resource type="Texture2D" uid="uid://daxbw8jkmfh05" path="res://Assets/Under Vatten/BG/Asset 51.png" id="68_a2gqw"]
-[ext_resource type="Texture2D" uid="uid://cqq23x510652y" path="res://Assets/Under Vatten/BG/Asset 50.png" id="69_mv28g"]
-[ext_resource type="Texture2D" uid="uid://dxr7065wb7qtg" path="res://Assets/Under Vatten/BG/Asset 49.png" id="70_8klm7"]
-[ext_resource type="Texture2D" uid="uid://7fpjn6w1xs8a" path="res://Assets/Under Vatten/BG/Asset 48.png" id="71_wrxy6"]
-[ext_resource type="Texture2D" uid="uid://do4ac0b2nmisk" path="res://Assets/Under Vatten/BG/Asset 46.png" id="72_kuju7"]
-[ext_resource type="Texture2D" uid="uid://dp5sa6m0ldaih" path="res://Assets/Under Vatten/BG/Asset 45.png" id="73_l82rx"]
-[ext_resource type="Texture2D" uid="uid://c3nv0flqhnrgx" path="res://Assets/Under Vatten/BG/Asset 44.png" id="74_q7187"]
-[ext_resource type="Texture2D" uid="uid://bnovo0agovbgv" path="res://Assets/Under Vatten/BG/Asset 43.png" id="75_r6h4r"]
-[ext_resource type="Texture2D" uid="uid://buouhqdv120be" path="res://Assets/Under Vatten/BG/Asset 42.png" id="76_u8p2m"]
-[ext_resource type="Texture2D" uid="uid://c3wn0n7lvoqo1" path="res://Assets/Under Vatten/BG/Asset 41.png" id="77_i6qfe"]
-[ext_resource type="Texture2D" uid="uid://boqoo47c60f10" path="res://Assets/Under Vatten/BG/Asset 40.png" id="78_r8ro7"]
-[ext_resource type="Texture2D" uid="uid://3rua7v80nlge" path="res://Assets/Under Vatten/BG/Asset 39.png" id="79_bcfey"]
-[ext_resource type="Texture2D" uid="uid://c4f4ht1vc0gbi" path="res://Assets/Under Vatten/BG/Asset 38.png" id="80_yytdb"]
-[ext_resource type="Texture2D" uid="uid://cmwy5i5455886" path="res://Assets/Under Vatten/BG/Asset 36.png" id="81_oq7g1"]
-[ext_resource type="Texture2D" uid="uid://we5cwhyefrp5" path="res://Assets/Under Vatten/BG/Asset 35.png" id="82_0qe6i"]
-[ext_resource type="Texture2D" uid="uid://baicq1khh8m4t" path="res://Assets/Under Vatten/BG/Asset 34.png" id="83_p710h"]
-[ext_resource type="Texture2D" uid="uid://dm4ri7se87pi0" path="res://Assets/Under Vatten/BG/Asset 33.png" id="84_0t2bm"]
-[ext_resource type="Texture2D" uid="uid://hhe7pkd5rxp5" path="res://Assets/Under Vatten/BG/Asset 31.png" id="85_sp5ls"]
-[ext_resource type="Texture2D" uid="uid://chr7qeib8hcjm" path="res://Assets/Under Vatten/BG/Asset 29.png" id="86_73k77"]
-[ext_resource type="Texture2D" uid="uid://r62c7api21qj" path="res://Assets/Under Vatten/BG/Asset 28.png" id="87_3c4ui"]
-[ext_resource type="Texture2D" uid="uid://cgbw3awto703h" path="res://Assets/Under Vatten/BG/Asset 25.png" id="88_tp6c4"]
-[ext_resource type="Texture2D" uid="uid://bf41wa7qxle4g" path="res://Assets/Under Vatten/BG/Asset 23.png" id="89_iyqio"]
-[ext_resource type="Texture2D" uid="uid://t1nopnbrux12" path="res://Assets/Under Vatten/BG/Asset 22.png" id="90_j438w"]
-[ext_resource type="Texture2D" uid="uid://dpsy2j33epn1k" path="res://Assets/Under Vatten/BG/Asset 20.png" id="91_bhcg0"]
-[ext_resource type="Texture2D" uid="uid://dj4vsn3q1uo80" path="res://Assets/Under Vatten/BG/Asset 19.png" id="92_7dpbb"]
-[ext_resource type="Texture2D" uid="uid://cxl3vmjl86bf4" path="res://Assets/Under Vatten/BG/Asset 18.png" id="93_336wb"]
-[ext_resource type="Texture2D" uid="uid://k2n6aeik0k2f" path="res://Assets/Under Vatten/BG/Asset 17.png" id="94_nqxa0"]
-[ext_resource type="Texture2D" uid="uid://cieqy1he0ej1o" path="res://Assets/Under Vatten/BG/Asset 16.png" id="95_o3j1v"]
-[ext_resource type="Texture2D" uid="uid://n77m07oywn0v" path="res://Assets/Under Vatten/BG/Asset 13.png" id="96_63luc"]
-[ext_resource type="Texture2D" uid="uid://gjm36c0ghuuq" path="res://Assets/Under Vatten/BG/Asset 12.png" id="97_japgc"]
-[ext_resource type="Texture2D" uid="uid://c5tyb64eckcqg" path="res://Assets/Under Vatten/BG/Asset 11.png" id="98_741d4"]
-[ext_resource type="Texture2D" uid="uid://drpcdfuw4pu3x" path="res://Assets/Under Vatten/BG/Asset 10.png" id="99_kxwh0"]
-[ext_resource type="Texture2D" uid="uid://dlyhye034s521" path="res://Assets/Under Vatten/BG/Asset 9.png" id="100_g6f37"]
-[ext_resource type="Texture2D" uid="uid://dg0wqkgqxw06e" path="res://Assets/Under Vatten/BG/Asset 8.png" id="101_srikv"]
-[ext_resource type="Texture2D" uid="uid://d2ri5p1qve6b1" path="res://Assets/Under Vatten/BG/Asset 7.png" id="102_y878u"]
-[ext_resource type="Texture2D" uid="uid://bgrku5ioayq5s" path="res://Assets/Under Vatten/BG/Asset 6.png" id="103_fvqwt"]
-[ext_resource type="Texture2D" uid="uid://bc2ujs4rxt1mw" path="res://Assets/Under Vatten/BG/Asset 5.png" id="104_3l8bb"]
-[ext_resource type="Texture2D" uid="uid://clxw84va84x84" path="res://Assets/Under Vatten/BG/Asset 4.png" id="105_28orh"]
-[ext_resource type="Texture2D" uid="uid://dr554qrr1fb5j" path="res://Assets/Under Vatten/BG/Asset 3.png" id="106_wr3nh"]
-[ext_resource type="Texture2D" uid="uid://bp5225x1h6m42" path="res://Assets/Under Vatten/BG/Asset 2.png" id="107_jd3bv"]
-[ext_resource type="Texture2D" uid="uid://ly7sfmnhx0d4" path="res://Assets/Under Vatten/BG/Asset 1.png" id="108_mtnqy"]
+[ext_resource type="Texture2D" uid="uid://ifvtind4coyw" path="res://Assets/Under Vatten/BG/Static/Asset 111.png" id="25_uektx"]
+[ext_resource type="Texture2D" uid="uid://db6ply1ta60lh" path="res://Assets/Under Vatten/BG/Static/Asset 108.png" id="26_dpmq8"]
+[ext_resource type="Texture2D" uid="uid://b3h8ast3fmxc8" path="res://Assets/Under Vatten/BG/Static/Asset 101.png" id="27_tq2kn"]
+[ext_resource type="Texture2D" uid="uid://clhjlx8e32glc" path="res://Assets/Under Vatten/BG/Static/Asset 110.png" id="28_p1k5s"]
+[ext_resource type="Texture2D" uid="uid://dhjlaaufsaxmp" path="res://Assets/Under Vatten/BG/Static/Asset 109.png" id="29_61q5g"]
+[ext_resource type="Texture2D" uid="uid://pbi6deo7aecy" path="res://Assets/Under Vatten/BG/Static/Asset 100.png" id="30_ngedv"]
+[ext_resource type="Texture2D" uid="uid://dyo4sch44nxs2" path="res://Assets/Under Vatten/BG/Static/Asset 99.png" id="31_3c4gs"]
+[ext_resource type="Texture2D" uid="uid://ven3cdi3jgje" path="res://Assets/Under Vatten/BG/Static/Asset 98.png" id="32_cxgxs"]
+[ext_resource type="Texture2D" uid="uid://c1p6byjxgkiwn" path="res://Assets/Under Vatten/BG/Static/Asset 97.png" id="33_owcfx"]
+[ext_resource type="Texture2D" uid="uid://cbq3um8ikitq4" path="res://Assets/Under Vatten/BG/Static/Asset 87.png" id="33_v4gx6"]
+[ext_resource type="Texture2D" uid="uid://bs4rku6o6nii2" path="res://Assets/Under Vatten/BG/Static/Asset 86.png" id="34_sfanb"]
+[ext_resource type="Texture2D" uid="uid://dk87iwx3pj4re" path="res://Assets/Under Vatten/BG/Static/Asset 96.png" id="34_wtm52"]
+[ext_resource type="Texture2D" uid="uid://1yuijp3iw27w" path="res://Assets/Under Vatten/BG/Static/Asset 95.png" id="35_jksd5"]
+[ext_resource type="Texture2D" uid="uid://cxo2r1ubyqg4b" path="res://Assets/Under Vatten/BG/Static/Asset 85.png" id="35_pjlcp"]
+[ext_resource type="Texture2D" uid="uid://b3n2dm05mu2pw" path="res://Assets/Under Vatten/BG/Static/Asset 79.png" id="36_tiev7"]
+[ext_resource type="Texture2D" uid="uid://wym4m3ewqf53" path="res://Assets/Under Vatten/BG/Static/Asset 77.png" id="37_uomsw"]
+[ext_resource type="Texture2D" uid="uid://cs1wru3nhohxt" path="res://Assets/Under Vatten/BG/Static/Asset 74.png" id="38_e6thy"]
+[ext_resource type="Texture2D" uid="uid://dqbssv6jqylme" path="res://Assets/Under Vatten/BG/Static/Asset 73.png" id="39_uth07"]
+[ext_resource type="Texture2D" uid="uid://y2q4yv4udu3v" path="res://Assets/Under Vatten/BG/Static/Asset 72.png" id="40_vddaj"]
+[ext_resource type="Texture2D" uid="uid://bfohanda3pefb" path="res://Assets/Under Vatten/BG/Static/Asset 71.png" id="41_y7yde"]
+[ext_resource type="Texture2D" uid="uid://eqfit3652ng1" path="res://Assets/Under Vatten/BG/Static/Asset 67.png" id="42_la4fp"]
+[ext_resource type="Texture2D" uid="uid://dhsnnpru15g8i" path="res://Assets/Under Vatten/BG/Static/Asset 83.png" id="45_uo5i8"]
+[ext_resource type="Texture2D" uid="uid://bbdxe6qox6ia5" path="res://Assets/Under Vatten/BG/Static/Asset 70.png" id="46_itp12"]
+[ext_resource type="Texture2D" uid="uid://b88vfgkg7wygl" path="res://Assets/Under Vatten/BG/Static/Asset 94.png" id="47_c45ny"]
+[ext_resource type="Texture2D" uid="uid://b5j83tf5dtwc4" path="res://Assets/Under Vatten/BG/Static/Asset 93.png" id="48_1gcrm"]
+[ext_resource type="Texture2D" uid="uid://23smqed5bw5t" path="res://Assets/Under Vatten/BG/Static/Asset 92.png" id="49_rx3w1"]
+[ext_resource type="Texture2D" uid="uid://bd483wknndl7m" path="res://Assets/Under Vatten/BG/Static/Asset 91.png" id="50_m7s7j"]
+[ext_resource type="Texture2D" uid="uid://cclco3mh7pm2u" path="res://Assets/Under Vatten/BG/Static/Asset 90.png" id="51_e030r"]
+[ext_resource type="Texture2D" uid="uid://sav1kfpqdfsh" path="res://Assets/Under Vatten/BG/Static/Asset 89.png" id="52_x5so7"]
+[ext_resource type="Texture2D" uid="uid://r2w0rnys7u1d" path="res://Assets/Under Vatten/BG/Static/Asset 69.png" id="53_l2td7"]
+[ext_resource type="Texture2D" uid="uid://c1dincof6wlhu" path="res://Assets/Under Vatten/BG/Static/Asset 68.png" id="54_ucqlo"]
+[ext_resource type="Texture2D" uid="uid://dy6x5bafeyyvx" path="res://Assets/Under Vatten/BG/Static/Asset 60.png" id="55_jpw6p"]
+[ext_resource type="Texture2D" uid="uid://ccpyget2jqa5u" path="res://Assets/Under Vatten/BG/Static/Asset 66.png" id="56_5fuf0"]
+[ext_resource type="Texture2D" uid="uid://drjpfirk4v55" path="res://Assets/Under Vatten/BG/Static/Asset 65.png" id="57_wd4gv"]
+[ext_resource type="Texture2D" uid="uid://d2fea3n11grlb" path="res://Assets/Under Vatten/BG/Static/Asset 64.png" id="58_e0gak"]
+[ext_resource type="Texture2D" uid="uid://c4mduj77cd0y2" path="res://Assets/Under Vatten/BG/Static/Asset 63.png" id="59_nyfkq"]
+[ext_resource type="Texture2D" uid="uid://4xjiw180uny7" path="res://Assets/Under Vatten/BG/Static/Asset 61.png" id="60_0s25p"]
+[ext_resource type="Texture2D" uid="uid://cbo1ufqdkejjy" path="res://Assets/Under Vatten/BG/Static/Asset 59.png" id="61_i3dvr"]
+[ext_resource type="Texture2D" uid="uid://b1vqfj5aw742d" path="res://Assets/Under Vatten/BG/Static/Asset 58.png" id="62_bl2r3"]
+[ext_resource type="Texture2D" uid="uid://bds16whkkatx1" path="res://Assets/Under Vatten/BG/Static/Asset 57.png" id="63_d5a0t"]
+[ext_resource type="Texture2D" uid="uid://cvwtmnsmhtci8" path="res://Assets/Under Vatten/BG/Animatable/Asset 56.png" id="64_enl3x"]
+[ext_resource type="Texture2D" uid="uid://dbkads65a3d4d" path="res://Assets/Under Vatten/BG/Animatable/Asset 55.png" id="65_13wst"]
+[ext_resource type="Texture2D" uid="uid://ce1gwu3y2mf5p" path="res://Assets/Under Vatten/BG/Animatable/Asset 54.png" id="66_di6wt"]
+[ext_resource type="Texture2D" uid="uid://l8dj8gnnyk18" path="res://Assets/Under Vatten/BG/Static/Asset 52.png" id="67_ov855"]
+[ext_resource type="Texture2D" uid="uid://daxbw8jkmfh05" path="res://Assets/Under Vatten/BG/Static/Asset 51.png" id="68_a2gqw"]
+[ext_resource type="Texture2D" uid="uid://cqq23x510652y" path="res://Assets/Under Vatten/BG/Static/Asset 50.png" id="69_mv28g"]
+[ext_resource type="Texture2D" uid="uid://dxr7065wb7qtg" path="res://Assets/Under Vatten/BG/Static/Asset 49.png" id="70_8klm7"]
+[ext_resource type="Texture2D" uid="uid://7fpjn6w1xs8a" path="res://Assets/Under Vatten/BG/Static/Asset 48.png" id="71_wrxy6"]
+[ext_resource type="Texture2D" uid="uid://do4ac0b2nmisk" path="res://Assets/Under Vatten/BG/Static/Asset 46.png" id="72_kuju7"]
+[ext_resource type="Texture2D" uid="uid://dp5sa6m0ldaih" path="res://Assets/Under Vatten/BG/Static/Asset 45.png" id="73_l82rx"]
+[ext_resource type="Texture2D" uid="uid://c3nv0flqhnrgx" path="res://Assets/Under Vatten/BG/Static/Asset 44.png" id="74_q7187"]
+[ext_resource type="Texture2D" uid="uid://bnovo0agovbgv" path="res://Assets/Under Vatten/BG/Static/Asset 43.png" id="75_r6h4r"]
+[ext_resource type="Texture2D" uid="uid://buouhqdv120be" path="res://Assets/Under Vatten/BG/Static/Asset 42.png" id="76_u8p2m"]
+[ext_resource type="Texture2D" uid="uid://c3wn0n7lvoqo1" path="res://Assets/Under Vatten/BG/Static/Asset 41.png" id="77_i6qfe"]
+[ext_resource type="Texture2D" uid="uid://boqoo47c60f10" path="res://Assets/Under Vatten/BG/Static/Asset 40.png" id="78_r8ro7"]
+[ext_resource type="Texture2D" uid="uid://3rua7v80nlge" path="res://Assets/Under Vatten/BG/Static/Asset 39.png" id="79_bcfey"]
+[ext_resource type="Texture2D" uid="uid://c4f4ht1vc0gbi" path="res://Assets/Under Vatten/BG/Static/Asset 38.png" id="80_yytdb"]
+[ext_resource type="Texture2D" uid="uid://cmwy5i5455886" path="res://Assets/Under Vatten/BG/Static/Asset 36.png" id="81_oq7g1"]
+[ext_resource type="Texture2D" uid="uid://we5cwhyefrp5" path="res://Assets/Under Vatten/BG/Static/Asset 35.png" id="82_0qe6i"]
+[ext_resource type="Texture2D" uid="uid://baicq1khh8m4t" path="res://Assets/Under Vatten/BG/Static/Asset 34.png" id="83_p710h"]
+[ext_resource type="Texture2D" uid="uid://dm4ri7se87pi0" path="res://Assets/Under Vatten/BG/Static/Asset 33.png" id="84_0t2bm"]
+[ext_resource type="Texture2D" uid="uid://hhe7pkd5rxp5" path="res://Assets/Under Vatten/BG/Static/Asset 31.png" id="85_sp5ls"]
+[ext_resource type="Texture2D" uid="uid://chr7qeib8hcjm" path="res://Assets/Under Vatten/BG/Static/Asset 29.png" id="86_73k77"]
+[ext_resource type="Texture2D" uid="uid://r62c7api21qj" path="res://Assets/Under Vatten/BG/Static/Asset 28.png" id="87_3c4ui"]
+[ext_resource type="Texture2D" uid="uid://cgbw3awto703h" path="res://Assets/Under Vatten/BG/Static/Asset 25.png" id="88_tp6c4"]
+[ext_resource type="Texture2D" uid="uid://bf41wa7qxle4g" path="res://Assets/Under Vatten/BG/Static/Asset 23.png" id="89_iyqio"]
+[ext_resource type="Texture2D" uid="uid://t1nopnbrux12" path="res://Assets/Under Vatten/BG/Static/Asset 22.png" id="90_j438w"]
+[ext_resource type="Texture2D" uid="uid://dpsy2j33epn1k" path="res://Assets/Under Vatten/BG/Static/Asset 20.png" id="91_bhcg0"]
+[ext_resource type="Texture2D" uid="uid://dj4vsn3q1uo80" path="res://Assets/Under Vatten/BG/Static/Asset 19.png" id="92_7dpbb"]
+[ext_resource type="Texture2D" uid="uid://cxl3vmjl86bf4" path="res://Assets/Under Vatten/BG/Static/Asset 18.png" id="93_336wb"]
+[ext_resource type="Texture2D" uid="uid://k2n6aeik0k2f" path="res://Assets/Under Vatten/BG/Static/Asset 17.png" id="94_nqxa0"]
+[ext_resource type="Texture2D" uid="uid://cieqy1he0ej1o" path="res://Assets/Under Vatten/BG/Static/Asset 16.png" id="95_o3j1v"]
+[ext_resource type="Texture2D" uid="uid://n77m07oywn0v" path="res://Assets/Under Vatten/BG/Static/Asset 13.png" id="96_63luc"]
+[ext_resource type="Texture2D" uid="uid://gjm36c0ghuuq" path="res://Assets/Under Vatten/BG/Static/Asset 12.png" id="97_japgc"]
+[ext_resource type="Texture2D" uid="uid://c5tyb64eckcqg" path="res://Assets/Under Vatten/BG/Animatable/Asset 11.png" id="98_741d4"]
+[ext_resource type="Texture2D" uid="uid://drpcdfuw4pu3x" path="res://Assets/Under Vatten/BG/Animatable/Asset 10.png" id="99_kxwh0"]
+[ext_resource type="Texture2D" uid="uid://dlyhye034s521" path="res://Assets/Under Vatten/BG/Animatable/Asset 9.png" id="100_g6f37"]
+[ext_resource type="Texture2D" uid="uid://dg0wqkgqxw06e" path="res://Assets/Under Vatten/BG/Animatable/Asset 8.png" id="101_srikv"]
+[ext_resource type="Texture2D" uid="uid://d2ri5p1qve6b1" path="res://Assets/Under Vatten/BG/Animatable/Asset 7.png" id="102_y878u"]
+[ext_resource type="Texture2D" uid="uid://bgrku5ioayq5s" path="res://Assets/Under Vatten/BG/Animatable/Asset 6.png" id="103_fvqwt"]
+[ext_resource type="Texture2D" uid="uid://bc2ujs4rxt1mw" path="res://Assets/Under Vatten/BG/Animatable/Asset 5.png" id="104_3l8bb"]
+[ext_resource type="Texture2D" uid="uid://clxw84va84x84" path="res://Assets/Under Vatten/BG/Animatable/Asset 4.png" id="105_28orh"]
+[ext_resource type="Texture2D" uid="uid://dr554qrr1fb5j" path="res://Assets/Under Vatten/BG/Animatable/Asset 3.png" id="106_wr3nh"]
+[ext_resource type="Texture2D" uid="uid://bp5225x1h6m42" path="res://Assets/Under Vatten/BG/Animatable/Asset 2.png" id="107_jd3bv"]
+[ext_resource type="Texture2D" uid="uid://ly7sfmnhx0d4" path="res://Assets/Under Vatten/BG/Animatable/Asset 1.png" id="108_mtnqy"]
 
 [sub_resource type="Animation" id="Animation_s1kf6"]
 resource_name = "CloudMovement2"
@@ -712,6 +712,7 @@ libraries = {
 script = ExtResource("15_8aqc4")
 
 [node name="Ball" type="TextureRect" parent="Strand_BG/AnimationPlayer5"]
+visible = false
 offset_left = 1758.0
 offset_top = 629.0
 offset_right = 1825.0
@@ -735,6 +736,7 @@ libraries = {
 script = ExtResource("18_eabu2")
 
 [node name="Crab" type="TextureRect" parent="Strand_BG/AnimationPlayer3"]
+visible = false
 offset_left = 915.0
 offset_top = 911.0
 offset_right = 982.0
@@ -750,6 +752,7 @@ speed_scale = 0.2
 script = ExtResource("20_6ajtc")
 
 [node name="Cloud2" type="TextureRect" parent="Strand_BG/AnimationPlayer"]
+visible = false
 offset_left = -194.0
 offset_top = 184.0
 offset_right = -48.0
@@ -892,270 +895,274 @@ texture = ExtResource("28_p1k5s")
 
 [node name="Sand2" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = -9.5
-offset_top = 924.5
-offset_right = 2014.5
-offset_bottom = 1193.5
+offset_left = -13.5
+offset_top = 963.5
+offset_right = 2010.5
+offset_bottom = 1232.5
 texture = ExtResource("29_61q5g")
-
-[node name="Coral1" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 457.5
-offset_top = 511.5
-offset_right = 533.5
-offset_bottom = 589.5
-texture = ExtResource("30_ngedv")
-
-[node name="Coral2" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 539.5
-offset_top = 453.5
-offset_right = 677.5
-offset_bottom = 593.5
-texture = ExtResource("31_3c4gs")
-
-[node name="Coral3" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 266.5
-offset_top = 288.5
-offset_right = 367.5
-offset_bottom = 384.5
-texture = ExtResource("35_jksd5")
-
-[node name="Coral4" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 458.5
-offset_top = 593.5
-offset_right = 570.5
-offset_bottom = 683.5
-texture = ExtResource("33_v4gx6")
-
-[node name="Coral5" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 774.5
-offset_top = 593.5
-offset_right = 912.5
-offset_bottom = 684.5
-texture = ExtResource("34_sfanb")
-
-[node name="Coral6" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 714.5
-offset_top = 688.5
-offset_right = 765.5
-offset_bottom = 760.5
-texture = ExtResource("35_pjlcp")
-
-[node name="Coral7" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 590.5
-offset_top = 269.5
-offset_right = 729.5
-offset_bottom = 413.5
-texture = ExtResource("36_tiev7")
-
-[node name="Coral8" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 793.5
-offset_top = 692.5
-offset_right = 855.5
-offset_bottom = 755.5
-texture = ExtResource("37_uomsw")
-
-[node name="Coral9" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 911.5
-offset_top = 615.5
-offset_right = 1068.5
-offset_bottom = 800.5
-texture = ExtResource("38_e6thy")
-
-[node name="Coral10" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 800.5
-offset_top = 469.5
-offset_right = 870.5
-offset_bottom = 567.5
-texture = ExtResource("39_uth07")
-
-[node name="Coral11" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 546.5
-offset_top = 663.5
-offset_right = 657.5
-offset_bottom = 757.5
-texture = ExtResource("40_vddaj")
-
-[node name="Coral12" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 271.5
-offset_top = 371.5
-offset_right = 372.5
-offset_bottom = 466.5
-texture = ExtResource("41_y7yde")
-
-[node name="Coral13" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 465.5
-offset_top = 692.5
-offset_right = 532.5
-offset_bottom = 771.5
-texture = ExtResource("42_la4fp")
-
-[node name="SeaGrass1" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 355.5
-offset_top = 403.5
-offset_right = 793.5
-offset_bottom = 657.5
-texture = ExtResource("32_cxgxs")
-
-[node name="SeaGrass2" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 765.5
-offset_top = 253.5
-offset_right = 938.5
-offset_bottom = 463.5
-texture = ExtResource("34_wtm52")
-
-[node name="SeaGrass3" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 927.5
-offset_top = 346.5
-offset_right = 1094.5
-offset_bottom = 600.5
-texture = ExtResource("45_uo5i8")
-
-[node name="SeaGrass4" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 691.5
-offset_top = 248.5
-offset_right = 863.5
-offset_bottom = 458.5
-texture = ExtResource("46_itp12")
-
-[node name="SeaFern1" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 476.5
-offset_top = 244.5
-offset_right = 549.5
-offset_bottom = 439.5
-texture = ExtResource("47_c45ny")
-
-[node name="SeaFern2" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("48_1gcrm")
-
-[node name="SeaFern3" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("49_rx3w1")
-
-[node name="MediumRock1" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 1590.5
-offset_top = 850.5
-offset_right = 1836.5
-offset_bottom = 994.5
-texture = ExtResource("50_m7s7j")
-
-[node name="StoneCrevis2" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 441.5
-offset_top = 654.5
-offset_right = 626.5
-offset_bottom = 694.5
-texture = ExtResource("51_e030r")
-
-[node name="StoneCrevis3" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 260.5
-offset_top = 612.5
-offset_right = 387.5
-offset_bottom = 652.5
-texture = ExtResource("52_x5so7")
 
 [node name="Pebble1" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 354.5
-offset_top = 792.5
-offset_right = 394.5
-offset_bottom = 832.5
+offset_left = 546.5
+offset_top = 131.5
+offset_right = 586.5
+offset_bottom = 171.5
 texture = ExtResource("53_l2td7")
 
 [node name="Pebble2" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 245.5
-offset_top = 795.5
-offset_right = 330.5
-offset_bottom = 835.5
+offset_left = 1045.5
+offset_top = 146.5
+offset_right = 1130.5
+offset_bottom = 186.5
 texture = ExtResource("54_ucqlo")
 
 [node name="Pebble3" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 409.5
-offset_top = 805.5
-offset_right = 449.5
-offset_bottom = 845.5
+offset_left = 498.5
+offset_top = 146.5
+offset_right = 538.5
+offset_bottom = 186.5
 texture = ExtResource("55_jpw6p")
+
+[node name="Pebble4" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 682.5
+offset_top = 127.5
+offset_right = 754.5
+offset_bottom = 167.5
+texture = ExtResource("81_oq7g1")
+
+[node name="Pebble6" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 614.5
+offset_top = 122.5
+offset_right = 660.5
+offset_bottom = 162.5
+texture = ExtResource("92_7dpbb")
+
+[node name="SmallRock1" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 902.5
+offset_top = 100.5
+offset_right = 1010.5
+offset_bottom = 178.5
+texture = ExtResource("72_kuju7")
+
+[node name="SmallRock2" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 409.5
+offset_top = 253.5
+offset_right = 524.5
+offset_bottom = 313.5
+texture = ExtResource("88_tp6c4")
+
+[node name="MediumRock1" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1527.5
+offset_top = 866.5
+offset_right = 1773.5
+offset_bottom = 1010.5
+texture = ExtResource("50_m7s7j")
+
+[node name="MediumRock2" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 531.5
+offset_top = 843.5
+offset_right = 869.5
+offset_bottom = 1013.5
+texture = ExtResource("68_a2gqw")
+
+[node name="StoneCorals1" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1115.5
+offset_top = 670.5
+offset_right = 1448.5
+offset_bottom = 923.5
+texture = ExtResource("60_0s25p")
+
+[node name="StoneCrevis1" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 430.5
+offset_top = 618.5
+offset_right = 615.5
+offset_bottom = 658.5
+texture = ExtResource("51_e030r")
+
+[node name="StoneCrevis2" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 296.5
+offset_top = 691.5
+offset_right = 423.5
+offset_bottom = 731.5
+texture = ExtResource("52_x5so7")
+
+[node name="Coral1" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1555.5
+offset_top = 770.5
+offset_right = 1631.5
+offset_bottom = 848.5
+texture = ExtResource("30_ngedv")
+
+[node name="Coral2" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1431.5
+offset_top = 714.5
+offset_right = 1569.5
+offset_bottom = 854.5
+texture = ExtResource("31_3c4gs")
+
+[node name="Coral3" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 143.5
+offset_top = 682.5
+offset_right = 244.5
+offset_bottom = 778.5
+texture = ExtResource("35_jksd5")
+
+[node name="Coral4" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 452.5
+offset_top = 616.5
+offset_right = 564.5
+offset_bottom = 706.5
+texture = ExtResource("33_v4gx6")
+
+[node name="Coral5" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 306.5
+offset_top = 409.5
+offset_right = 444.5
+offset_bottom = 500.5
+texture = ExtResource("34_sfanb")
+
+[node name="Coral6" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 604.5
+offset_top = 588.5
+offset_right = 655.5
+offset_bottom = 660.5
+texture = ExtResource("35_pjlcp")
+
+[node name="Coral7" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 255.5
+offset_top = 740.5
+offset_right = 322.5
+offset_bottom = 790.5
+texture = ExtResource("36_tiev7")
+
+[node name="Coral8" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 537.5
+offset_top = 597.5
+offset_right = 599.5
+offset_bottom = 660.5
+texture = ExtResource("37_uomsw")
+
+[node name="Coral9" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 280.5
+offset_top = 532.5
+offset_right = 437.5
+offset_bottom = 717.5
+texture = ExtResource("38_e6thy")
+
+[node name="Coral10" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 179.5
+offset_top = 516.5
+offset_right = 249.5
+offset_bottom = 614.5
+texture = ExtResource("39_uth07")
+
+[node name="Coral11" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1727.5
+offset_top = 654.5
+offset_right = 1838.5
+offset_bottom = 748.5
+texture = ExtResource("40_vddaj")
+
+[node name="Coral12" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1822.5
+offset_top = 673.5
+offset_right = 1923.5
+offset_bottom = 768.5
+texture = ExtResource("41_y7yde")
+
+[node name="Coral13" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 782.5
+offset_top = 834.5
+offset_right = 849.5
+offset_bottom = 913.5
+texture = ExtResource("42_la4fp")
 
 [node name="Coral14" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 755.5
-offset_top = 753.5
-offset_right = 822.5
-offset_bottom = 817.5
+offset_left = 1902.5
+offset_top = 713.5
+offset_right = 1969.5
+offset_bottom = 777.5
 texture = ExtResource("56_5fuf0")
 
 [node name="Coral15" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 854.5
-offset_top = 495.5
-offset_right = 924.5
-offset_bottom = 594.5
+offset_left = 1574.5
+offset_top = 921.5
+offset_right = 1644.5
+offset_bottom = 1020.5
+texture = ExtResource("57_wd4gv")
+
+[node name="Coral41" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1729.5
+offset_top = 826.5
+offset_right = 1799.5
+offset_bottom = 925.5
+texture = ExtResource("57_wd4gv")
+
+[node name="Coral40" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 544.5
+offset_top = 999.5
+offset_right = 614.5
+offset_bottom = 1098.5
 texture = ExtResource("57_wd4gv")
 
 [node name="Coral16" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 374.5
-offset_top = 691.5
-offset_right = 441.5
-offset_bottom = 741.5
+offset_left = 1736.5
+offset_top = 945.5
+offset_right = 1803.5
+offset_bottom = 995.5
 texture = ExtResource("58_e0gak")
 
 [node name="Coral17" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 468.5
-offset_top = 452.5
-offset_right = 543.5
-offset_bottom = 530.5
+offset_left = 269.5
+offset_top = 471.5
+offset_right = 344.5
+offset_bottom = 549.5
 texture = ExtResource("59_nyfkq")
-
-[node name="StoneCorals1" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 524.5
-offset_top = 801.5
-offset_right = 857.5
-offset_bottom = 1054.5
-texture = ExtResource("60_0s25p")
 
 [node name="Coral18" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 305.5
-offset_top = 620.5
-offset_right = 367.5
-offset_bottom = 683.5
+offset_left = 608.5
+offset_top = 982.5
+offset_right = 670.5
+offset_bottom = 1045.5
 texture = ExtResource("61_i3dvr")
 
 [node name="Coral19" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 206.5
-offset_top = 675.5
-offset_right = 300.5
-offset_bottom = 740.5
+offset_left = 1251.5
+offset_top = 921.5
+offset_right = 1345.5
+offset_bottom = 986.5
 texture = ExtResource("62_bl2r3")
 
 [node name="Coral20" type="TextureRect" parent="UnderVatten_BG"]
@@ -1166,164 +1173,52 @@ offset_right = 309.5
 offset_bottom = 648.5
 texture = ExtResource("63_d5a0t")
 
-[node name="Shark" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 99.5
-offset_top = 506.5
-offset_right = 230.5
-offset_bottom = 556.5
-texture = ExtResource("64_enl3x")
-
-[node name="MantaRay" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 203.5
-offset_top = 623.5
-offset_right = 243.5
-offset_bottom = 663.5
-texture = ExtResource("65_13wst")
-
-[node name="JellyFish" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 106.5
-offset_top = 627.5
-offset_right = 146.5
-offset_bottom = 696.5
-texture = ExtResource("66_di6wt")
-
 [node name="Coral21" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 1097.5
-offset_top = 340.5
-offset_right = 1264.5
-offset_bottom = 594.5
+offset_left = 571.5
+offset_top = 740.5
+offset_right = 677.5
+offset_bottom = 871.5
 texture = ExtResource("67_ov855")
-
-[node name="MediumRock2" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 955.5
-offset_top = 765.5
-offset_right = 1293.5
-offset_bottom = 935.5
-texture = ExtResource("68_a2gqw")
 
 [node name="Coral22" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 374.5
-offset_top = 857.5
-offset_right = 467.5
-offset_bottom = 971.5
+offset_left = 522.5
+offset_top = 773.5
+offset_right = 615.5
+offset_bottom = 887.5
 texture = ExtResource("69_mv28g")
 
 [node name="Coral23" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 126.5
-offset_top = 778.5
-offset_right = 236.5
-offset_bottom = 920.5
+offset_left = 508.5
+offset_top = 724.5
+offset_right = 618.5
+offset_bottom = 866.5
 texture = ExtResource("70_8klm7")
-
-[node name="SeaGrass5" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 1010.5
-offset_top = 262.5
-offset_right = 1050.5
-offset_bottom = 381.5
-texture = ExtResource("71_wrxy6")
-
-[node name="SmallRock1" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 232.5
-offset_top = 894.5
-offset_right = 340.5
-offset_bottom = 972.5
-texture = ExtResource("72_kuju7")
-
-[node name="SeaGrass6" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 988.5
-offset_top = 270.5
-offset_right = 1033.5
-offset_bottom = 382.5
-texture = ExtResource("73_l82rx")
-
-[node name="SeaGrass7" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 974.5
-offset_top = 336.5
-offset_right = 1019.5
-offset_bottom = 378.5
-texture = ExtResource("74_q7187")
-
-[node name="SeaGrass8" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 1076.5
-offset_top = 267.5
-offset_right = 1116.5
-offset_bottom = 381.5
-texture = ExtResource("75_r6h4r")
 
 [node name="Coral24" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 472.5
-offset_top = 716.5
-offset_right = 538.5
-offset_bottom = 795.5
+offset_left = 639.5
+offset_top = 919.5
+offset_right = 705.5
+offset_bottom = 998.5
 texture = ExtResource("76_u8p2m")
-
-[node name="Clam" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 325.5
-offset_top = 553.5
-offset_right = 365.5
-offset_bottom = 593.5
-texture = ExtResource("77_i6qfe")
-
-[node name="Treasure" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 1154.5
-offset_top = 664.5
-offset_right = 1467.5
-offset_bottom = 1009.5
-texture = ExtResource("78_r8ro7")
 
 [node name="Coral25" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 844.5
-offset_top = 812.5
-offset_right = 993.5
-offset_bottom = 1006.5
+offset_left = 822.5
+offset_top = 807.5
+offset_right = 971.5
+offset_bottom = 1001.5
 texture = ExtResource("79_bcfey")
-
-[node name="SeaGrass9" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 1254.5
-offset_top = 360.5
-offset_right = 1421.5
-offset_bottom = 614.5
-texture = ExtResource("80_yytdb")
-
-[node name="Pebble4" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 459.5
-offset_top = 825.5
-offset_right = 531.5
-offset_bottom = 865.5
-texture = ExtResource("81_oq7g1")
-
-[node name="Pebble5" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 324.5
-offset_top = 979.5
-offset_right = 433.5
-offset_bottom = 1019.5
-texture = ExtResource("82_0qe6i")
 
 [node name="Coral26" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 1047.5
-offset_top = 901.5
-offset_right = 1149.5
-offset_bottom = 1001.5
+offset_left = 685.5
+offset_top = 784.5
+offset_right = 787.5
+offset_bottom = 884.5
 texture = ExtResource("83_p710h")
 
 [node name="Coral27" type="TextureRect" parent="UnderVatten_BG"]
@@ -1336,109 +1231,209 @@ texture = ExtResource("84_0t2bm")
 
 [node name="Coral28" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 835.5
-offset_top = 762.5
-offset_right = 897.5
-offset_bottom = 833.5
+offset_left = 517.5
+offset_top = 936.5
+offset_right = 560.5
+offset_bottom = 1007.5
 texture = ExtResource("85_sp5ls")
 
 [node name="Coral29" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 642.5
-offset_top = 742.5
-offset_right = 708.5
-offset_bottom = 807.5
+offset_left = 612.5
+offset_top = 803.5
+offset_right = 678.5
+offset_bottom = 868.5
 texture = ExtResource("86_73k77")
-
-[node name="Coral30" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 39.5
-offset_top = 903.5
-offset_right = 210.5
-offset_bottom = 1097.5
-texture = ExtResource("87_3c4ui")
-
-[node name="SmallRock2" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 405.5
-offset_top = 1025.5
-offset_right = 520.5
-offset_bottom = 1085.5
-texture = ExtResource("88_tp6c4")
 
 [node name="Coral31" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 173.5
-offset_top = 363.5
-offset_right = 275.5
-offset_bottom = 459.5
+offset_left = 1701.5
+offset_top = 1008.5
+offset_right = 1803.5
+offset_bottom = 1104.5
 texture = ExtResource("89_iyqio")
 
 [node name="Coral32" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 825.5
-offset_top = 1010.5
-offset_right = 898.5
-offset_bottom = 1084.5
+offset_left = 1175.5
+offset_top = 1008.5
+offset_right = 1248.5
+offset_bottom = 1082.5
 texture = ExtResource("90_j438w")
 
 [node name="Coral33" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 440.5
-offset_top = 459.5
-offset_right = 515.5
-offset_bottom = 536.5
+offset_left = 1506.5
+offset_top = 930.5
+offset_right = 1581.5
+offset_bottom = 1007.5
 texture = ExtResource("91_bhcg0")
-
-[node name="Pebble6" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 325.5
-offset_top = 833.5
-offset_right = 371.5
-offset_bottom = 873.5
-texture = ExtResource("92_7dpbb")
 
 [node name="Coral34" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 1382.5
-offset_top = 874.5
-offset_right = 1564.5
-offset_bottom = 1109.5
+offset_left = 1820.5
+offset_top = 870.5
+offset_right = 2002.5
+offset_bottom = 1105.5
 texture = ExtResource("93_336wb")
 
 [node name="Coral35" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 81.5
-offset_top = 794.5
-offset_right = 121.5
-offset_bottom = 834.5
+offset_left = 1559.5
+offset_top = 1055.5
+offset_right = 1599.5
+offset_bottom = 1095.5
 texture = ExtResource("94_nqxa0")
-
-[node name="Coral36" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 104.5
-offset_top = 759.5
-offset_right = 144.5
-offset_bottom = 799.5
-texture = ExtResource("95_o3j1v")
-
-[node name="Coral37" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 1105.5
-offset_top = 953.5
-offset_right = 1242.5
-offset_bottom = 1090.5
-texture = ExtResource("96_63luc")
 
 [node name="Coral38" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 726.5
-offset_top = 590.5
-offset_right = 864.5
-offset_bottom = 681.5
+offset_left = 452.5
+offset_top = 1001.5
+offset_right = 590.5
+offset_bottom = 1092.5
 texture = ExtResource("97_japgc")
 
+[node name="SeaGrass1" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 180.5
+offset_top = 403.5
+offset_right = 618.5
+offset_bottom = 657.5
+texture = ExtResource("32_cxgxs")
+
+[node name="SeaGrass2" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 104.5
+offset_top = 621.5
+offset_right = 277.5
+offset_bottom = 831.5
+texture = ExtResource("34_wtm52")
+
+[node name="SeaGrass3" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 180.5
+offset_top = 750.5
+offset_right = 347.5
+offset_bottom = 1004.5
+texture = ExtResource("45_uo5i8")
+
+[node name="SeaGrass4" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1861.5
+offset_top = 558.5
+offset_right = 2033.5
+offset_bottom = 768.5
+texture = ExtResource("46_itp12")
+
+[node name="SeaGrass5" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1086.5
+offset_top = 370.5
+offset_right = 1126.5
+offset_bottom = 489.5
+texture = ExtResource("71_wrxy6")
+
+[node name="SeaGrass6" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 918.5
+offset_top = 397.5
+offset_right = 963.5
+offset_bottom = 509.5
+texture = ExtResource("73_l82rx")
+
+[node name="SeaGrass7" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 978.5
+offset_top = 446.5
+offset_right = 1023.5
+offset_bottom = 488.5
+texture = ExtResource("74_q7187")
+
+[node name="SeaGrass8" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1161.5
+offset_top = 288.5
+offset_right = 1201.5
+offset_bottom = 402.5
+texture = ExtResource("75_r6h4r")
+
+[node name="SeaGrass9" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1273.5
+offset_top = 845.5
+offset_right = 1440.5
+offset_bottom = 1099.5
+texture = ExtResource("80_yytdb")
+
+[node name="SeaFern1" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 40.5
+offset_top = 630.5
+offset_right = 113.5
+offset_bottom = 825.5
+texture = ExtResource("47_c45ny")
+
+[node name="SeaFern2" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1428.5
+offset_top = 652.5
+offset_right = 1601.5
+offset_bottom = 840.5
+texture = ExtResource("48_1gcrm")
+
+[node name="SeaFern3" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 185.5
+offset_top = 647.5
+offset_right = 336.5
+offset_bottom = 830.5
+texture = ExtResource("49_rx3w1")
+
+[node name="Clam" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 704.5
+offset_top = 1006.5
+offset_right = 744.5
+offset_bottom = 1046.5
+texture = ExtResource("77_i6qfe")
+
+[node name="Treasure" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = -3.5
+offset_top = 766.5
+offset_right = 309.5
+offset_bottom = 1111.5
+texture = ExtResource("78_r8ro7")
+
+[node name="Shark" type="TextureRect" parent="UnderVatten_BG"]
+visible = false
+layout_mode = 0
+offset_left = 99.5
+offset_top = 506.5
+offset_right = 230.5
+offset_bottom = 556.5
+texture = ExtResource("64_enl3x")
+
+[node name="MantaRay" type="TextureRect" parent="UnderVatten_BG"]
+visible = false
+layout_mode = 0
+offset_left = 203.5
+offset_top = 623.5
+offset_right = 243.5
+offset_bottom = 663.5
+texture = ExtResource("65_13wst")
+
+[node name="JellyFish" type="TextureRect" parent="UnderVatten_BG"]
+visible = false
+layout_mode = 0
+offset_left = 106.5
+offset_top = 627.5
+offset_right = 146.5
+offset_bottom = 696.5
+texture = ExtResource("66_di6wt")
+
 [node name="Fish1" type="TextureRect" parent="UnderVatten_BG"]
+visible = false
 layout_mode = 0
 offset_left = 64.5
 offset_top = 404.5
@@ -1447,6 +1442,7 @@ offset_bottom = 489.5
 texture = ExtResource("98_741d4")
 
 [node name="Fish2" type="TextureRect" parent="UnderVatten_BG"]
+visible = false
 layout_mode = 0
 offset_left = 62.5
 offset_top = 314.5
@@ -1455,6 +1451,7 @@ offset_bottom = 399.5
 texture = ExtResource("99_kxwh0")
 
 [node name="Fish3" type="TextureRect" parent="UnderVatten_BG"]
+visible = false
 layout_mode = 0
 offset_left = 140.5
 offset_top = 264.5
@@ -1463,6 +1460,7 @@ offset_bottom = 350.5
 texture = ExtResource("100_g6f37")
 
 [node name="Fish4" type="TextureRect" parent="UnderVatten_BG"]
+visible = false
 layout_mode = 0
 offset_left = 38.5
 offset_top = 234.5
@@ -1471,6 +1469,7 @@ offset_bottom = 319.5
 texture = ExtResource("101_srikv")
 
 [node name="Squid" type="TextureRect" parent="UnderVatten_BG"]
+visible = false
 layout_mode = 0
 offset_left = 156.5
 offset_top = 56.5
@@ -1479,6 +1478,7 @@ offset_bottom = 288.5
 texture = ExtResource("102_y878u")
 
 [node name="FishSchool1" type="TextureRect" parent="UnderVatten_BG"]
+visible = false
 layout_mode = 0
 offset_left = 529.5
 offset_top = 74.5
@@ -1487,6 +1487,7 @@ offset_bottom = 259.5
 texture = ExtResource("103_fvqwt")
 
 [node name="FishSchool2" type="TextureRect" parent="UnderVatten_BG"]
+visible = false
 layout_mode = 0
 offset_left = 871.5
 offset_top = 136.5
@@ -1495,6 +1496,7 @@ offset_bottom = 225.5
 texture = ExtResource("104_3l8bb")
 
 [node name="Crab1" type="TextureRect" parent="UnderVatten_BG"]
+visible = false
 layout_mode = 0
 offset_left = 1217.5
 offset_top = 992.5
@@ -1503,6 +1505,7 @@ offset_bottom = 1132.5
 texture = ExtResource("105_28orh")
 
 [node name="Starfish1" type="TextureRect" parent="UnderVatten_BG"]
+visible = false
 layout_mode = 0
 offset_left = 613.5
 offset_top = 1030.5
@@ -1511,6 +1514,7 @@ offset_bottom = 1106.5
 texture = ExtResource("106_wr3nh")
 
 [node name="Whale1" type="TextureRect" parent="UnderVatten_BG"]
+visible = false
 layout_mode = 0
 offset_left = 1250.5
 offset_top = 280.5
@@ -1519,6 +1523,7 @@ offset_bottom = 690.5
 texture = ExtResource("107_jd3bv")
 
 [node name="SailBoat1" type="TextureRect" parent="UnderVatten_BG"]
+visible = false
 layout_mode = 0
 offset_left = 977.5
 offset_top = -1169.5
@@ -1526,12 +1531,60 @@ offset_right = 1909.5
 offset_bottom = 119.5
 texture = ExtResource("108_mtnqy")
 
-[node name="Rays" type="TextureRect" parent="UnderVatten_BG"]
+[node name="Coral30" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = -247.5
-offset_top = 3.5
-offset_right = 2368.5
-offset_bottom = 1037.5
+offset_left = 12.5
+offset_top = 926.5
+offset_right = 183.5
+offset_bottom = 1120.5
+texture = ExtResource("87_3c4ui")
+
+[node name="Pebble5" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 257.5
+offset_top = 1040.5
+offset_right = 366.5
+offset_bottom = 1080.5
+texture = ExtResource("82_0qe6i")
+
+[node name="Coral39" type="TextureRect" parent="UnderVatten_BG"]
+offset_left = 558.5
+offset_top = 1072.5
+offset_right = 598.5
+offset_bottom = 1100.5
+texture = ExtResource("95_o3j1v")
+
+[node name="Coral36" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 259.5
+offset_top = 1063.5
+offset_right = 299.5
+offset_bottom = 1091.5
+texture = ExtResource("95_o3j1v")
+
+[node name="Coral42" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1624.5
+offset_top = 1046.5
+offset_right = 1664.5
+offset_bottom = 1074.5
+texture = ExtResource("95_o3j1v")
+
+[node name="Coral37" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 295.5
+offset_top = 962.5
+offset_right = 432.5
+offset_bottom = 1099.5
+texture = ExtResource("96_63luc")
+
+[node name="Rays" type="TextureRect" parent="UnderVatten_BG"]
+visible = false
+layout_mode = 0
+offset_left = -231.5
+offset_top = 5.5
+offset_right = 2384.5
+offset_bottom = 1039.5
 texture = ExtResource("26_dpmq8")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
