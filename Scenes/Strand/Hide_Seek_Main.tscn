@@ -869,117 +869,21 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("25_uektx")
 
+[node name="SeaGrass1" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 262.5
+offset_top = 378.5
+offset_right = 700.5
+offset_bottom = 632.5
+texture = ExtResource("32_cxgxs")
+
 [node name="BigRock" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 150.5
-offset_top = 491.5
-offset_right = 758.5
-offset_bottom = 929.5
+offset_left = 212.5
+offset_top = 496.5
+offset_right = 820.5
+offset_bottom = 934.5
 texture = ExtResource("33_owcfx")
-
-[node name="BlueRock" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 1546.5
-offset_top = 453.5
-offset_right = 1988.5
-offset_bottom = 873.5
-texture = ExtResource("27_tq2kn")
-
-[node name="Sand1" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = -34.5
-offset_top = 674.5
-offset_right = 2005.5
-offset_bottom = 1086.5
-texture = ExtResource("28_p1k5s")
-
-[node name="Sand2" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = -13.5
-offset_top = 963.5
-offset_right = 2010.5
-offset_bottom = 1232.5
-texture = ExtResource("29_61q5g")
-
-[node name="Pebble1" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 546.5
-offset_top = 131.5
-offset_right = 586.5
-offset_bottom = 171.5
-texture = ExtResource("53_l2td7")
-
-[node name="Pebble2" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 1045.5
-offset_top = 146.5
-offset_right = 1130.5
-offset_bottom = 186.5
-texture = ExtResource("54_ucqlo")
-
-[node name="Pebble3" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 498.5
-offset_top = 146.5
-offset_right = 538.5
-offset_bottom = 186.5
-texture = ExtResource("55_jpw6p")
-
-[node name="Pebble4" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 682.5
-offset_top = 127.5
-offset_right = 754.5
-offset_bottom = 167.5
-texture = ExtResource("81_oq7g1")
-
-[node name="Pebble6" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 614.5
-offset_top = 122.5
-offset_right = 660.5
-offset_bottom = 162.5
-texture = ExtResource("92_7dpbb")
-
-[node name="SmallRock1" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 902.5
-offset_top = 100.5
-offset_right = 1010.5
-offset_bottom = 178.5
-texture = ExtResource("72_kuju7")
-
-[node name="SmallRock2" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 409.5
-offset_top = 253.5
-offset_right = 524.5
-offset_bottom = 313.5
-texture = ExtResource("88_tp6c4")
-
-[node name="MediumRock1" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 1527.5
-offset_top = 866.5
-offset_right = 1773.5
-offset_bottom = 1010.5
-texture = ExtResource("50_m7s7j")
-
-[node name="MediumRock2" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 531.5
-offset_top = 843.5
-offset_right = 869.5
-offset_bottom = 1013.5
-texture = ExtResource("68_a2gqw")
-
-[node name="StoneCorals1" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 1115.5
-offset_top = 670.5
-offset_right = 1448.5
-offset_bottom = 923.5
-texture = ExtResource("60_0s25p")
 
 [node name="StoneCrevis1" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
@@ -997,6 +901,143 @@ offset_right = 423.5
 offset_bottom = 731.5
 texture = ExtResource("52_x5so7")
 
+[node name="BlueRock" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1546.5
+offset_top = 421.5
+offset_right = 1988.5
+offset_bottom = 841.5
+texture = ExtResource("27_tq2kn")
+
+[node name="Sand1" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = -26.5
+offset_top = 676.5
+offset_right = 2013.5
+offset_bottom = 1088.5
+texture = ExtResource("28_p1k5s")
+
+[node name="Sand2" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = -6.5
+offset_top = 936.5
+offset_right = 2017.5
+offset_bottom = 1205.5
+texture = ExtResource("29_61q5g")
+
+[node name="Coral8" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 608.5
+offset_top = 600.5
+offset_right = 670.5
+offset_bottom = 663.5
+texture = ExtResource("37_uomsw")
+
+[node name="Coral47" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 283.5
+offset_top = 524.5
+offset_right = 345.5
+offset_bottom = 587.5
+texture = ExtResource("37_uomsw")
+
+[node name="SeaGrass13" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 582.5
+offset_top = 600.5
+offset_right = 749.5
+offset_bottom = 854.5
+texture = ExtResource("45_uo5i8")
+
+[node name="SeaGrass14" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 571.5
+offset_top = 680.5
+offset_right = 744.5
+offset_bottom = 890.5
+texture = ExtResource("34_wtm52")
+flip_h = true
+
+[node name="Coral21" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 571.5
+offset_top = 740.5
+offset_right = 677.5
+offset_bottom = 871.5
+texture = ExtResource("67_ov855")
+
+[node name="Coral23" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 508.5
+offset_top = 724.5
+offset_right = 618.5
+offset_bottom = 866.5
+texture = ExtResource("70_8klm7")
+
+[node name="MediumRock2" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 531.5
+offset_top = 843.5
+offset_right = 869.5
+offset_bottom = 1013.5
+texture = ExtResource("68_a2gqw")
+
+[node name="SmallRock1" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 648.5
+offset_top = 954.5
+offset_right = 756.5
+offset_bottom = 1032.5
+texture = ExtResource("72_kuju7")
+
+[node name="Pebble1" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1892.5
+offset_top = 773.5
+offset_right = 1928.5
+offset_bottom = 794.5
+texture = ExtResource("53_l2td7")
+
+[node name="Pebble2" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1152.5
+offset_top = 966.5
+offset_right = 1237.5
+offset_bottom = 1002.5
+texture = ExtResource("54_ucqlo")
+
+[node name="Pebble3" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1209.5
+offset_top = 982.5
+offset_right = 1249.5
+offset_bottom = 1000.5
+texture = ExtResource("55_jpw6p")
+
+[node name="SmallRock2" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1789.5
+offset_top = 1033.5
+offset_right = 1904.5
+offset_bottom = 1093.5
+texture = ExtResource("88_tp6c4")
+
+[node name="MediumRock1" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1616.5
+offset_top = 850.5
+offset_right = 1862.5
+offset_bottom = 994.5
+texture = ExtResource("50_m7s7j")
+
+[node name="StoneCorals1" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1115.5
+offset_top = 670.5
+offset_right = 1448.5
+offset_bottom = 923.5
+texture = ExtResource("60_0s25p")
+
 [node name="Coral1" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
 offset_left = 1555.5
@@ -1013,6 +1054,15 @@ offset_right = 1569.5
 offset_bottom = 854.5
 texture = ExtResource("31_3c4gs")
 
+[node name="Coral43" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 585.5
+offset_top = 405.5
+offset_right = 723.5
+offset_bottom = 545.5
+rotation = 0.56453
+texture = ExtResource("31_3c4gs")
+
 [node name="Coral3" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
 offset_left = 143.5
@@ -1023,26 +1073,26 @@ texture = ExtResource("35_jksd5")
 
 [node name="Coral4" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 452.5
-offset_top = 616.5
-offset_right = 564.5
-offset_bottom = 706.5
+offset_left = 375.5
+offset_top = 618.5
+offset_right = 487.5
+offset_bottom = 708.5
 texture = ExtResource("33_v4gx6")
 
 [node name="Coral5" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 306.5
-offset_top = 409.5
-offset_right = 444.5
-offset_bottom = 500.5
+offset_left = 410.5
+offset_top = 416.5
+offset_right = 548.5
+offset_bottom = 507.5
 texture = ExtResource("34_sfanb")
 
 [node name="Coral6" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 604.5
-offset_top = 588.5
-offset_right = 655.5
-offset_bottom = 660.5
+offset_left = 667.5
+offset_top = 595.5
+offset_right = 718.5
+offset_bottom = 667.5
 texture = ExtResource("35_pjlcp")
 
 [node name="Coral7" type="TextureRect" parent="UnderVatten_BG"]
@@ -1053,28 +1103,28 @@ offset_right = 322.5
 offset_bottom = 790.5
 texture = ExtResource("36_tiev7")
 
-[node name="Coral8" type="TextureRect" parent="UnderVatten_BG"]
+[node name="Coral45" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 537.5
-offset_top = 597.5
-offset_right = 599.5
-offset_bottom = 660.5
-texture = ExtResource("37_uomsw")
+offset_left = 1632.5
+offset_top = 762.5
+offset_right = 1699.5
+offset_bottom = 812.5
+texture = ExtResource("36_tiev7")
 
 [node name="Coral9" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 280.5
-offset_top = 532.5
-offset_right = 437.5
-offset_bottom = 717.5
+offset_left = 283.5
+offset_top = 535.5
+offset_right = 440.5
+offset_bottom = 720.5
 texture = ExtResource("38_e6thy")
 
 [node name="Coral10" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 179.5
-offset_top = 516.5
-offset_right = 249.5
-offset_bottom = 614.5
+offset_left = 250.5
+offset_top = 501.5
+offset_right = 320.5
+offset_bottom = 599.5
 texture = ExtResource("39_uth07")
 
 [node name="Coral11" type="TextureRect" parent="UnderVatten_BG"]
@@ -1111,18 +1161,18 @@ texture = ExtResource("56_5fuf0")
 
 [node name="Coral15" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 1574.5
-offset_top = 921.5
-offset_right = 1644.5
-offset_bottom = 1020.5
+offset_left = 1656.5
+offset_top = 897.5
+offset_right = 1726.5
+offset_bottom = 996.5
 texture = ExtResource("57_wd4gv")
 
 [node name="Coral41" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 1729.5
-offset_top = 826.5
-offset_right = 1799.5
-offset_bottom = 925.5
+offset_left = 1801.5
+offset_top = 794.5
+offset_right = 1871.5
+offset_bottom = 893.5
 texture = ExtResource("57_wd4gv")
 
 [node name="Coral40" type="TextureRect" parent="UnderVatten_BG"]
@@ -1135,51 +1185,35 @@ texture = ExtResource("57_wd4gv")
 
 [node name="Coral16" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 1736.5
-offset_top = 945.5
-offset_right = 1803.5
-offset_bottom = 995.5
+offset_left = 1803.5
+offset_top = 972.5
+offset_right = 1870.5
+offset_bottom = 1022.5
 texture = ExtResource("58_e0gak")
 
 [node name="Coral17" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 269.5
-offset_top = 471.5
-offset_right = 344.5
-offset_bottom = 549.5
+offset_left = 350.5
+offset_top = 451.5
+offset_right = 425.5
+offset_bottom = 529.5
 texture = ExtResource("59_nyfkq")
-
-[node name="Coral18" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 608.5
-offset_top = 982.5
-offset_right = 670.5
-offset_bottom = 1045.5
-texture = ExtResource("61_i3dvr")
 
 [node name="Coral19" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 1251.5
-offset_top = 921.5
-offset_right = 1345.5
-offset_bottom = 986.5
+offset_left = 1149.5
+offset_top = 909.5
+offset_right = 1243.5
+offset_bottom = 974.5
 texture = ExtResource("62_bl2r3")
 
 [node name="Coral20" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 244.5
-offset_top = 580.5
-offset_right = 309.5
-offset_bottom = 648.5
+offset_left = 486.5
+offset_top = 576.5
+offset_right = 551.5
+offset_bottom = 644.5
 texture = ExtResource("63_d5a0t")
-
-[node name="Coral21" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 571.5
-offset_top = 740.5
-offset_right = 677.5
-offset_bottom = 871.5
-texture = ExtResource("67_ov855")
 
 [node name="Coral22" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
@@ -1188,14 +1222,6 @@ offset_top = 773.5
 offset_right = 615.5
 offset_bottom = 887.5
 texture = ExtResource("69_mv28g")
-
-[node name="Coral23" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 508.5
-offset_top = 724.5
-offset_right = 618.5
-offset_bottom = 866.5
-texture = ExtResource("70_8klm7")
 
 [node name="Coral24" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
@@ -1221,14 +1247,6 @@ offset_right = 787.5
 offset_bottom = 884.5
 texture = ExtResource("83_p710h")
 
-[node name="Coral27" type="TextureRect" parent="UnderVatten_BG"]
-layout_mode = 0
-offset_left = 249.5
-offset_top = 535.5
-offset_right = 315.5
-offset_bottom = 603.5
-texture = ExtResource("84_0t2bm")
-
 [node name="Coral28" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
 offset_left = 517.5
@@ -1236,6 +1254,22 @@ offset_top = 936.5
 offset_right = 560.5
 offset_bottom = 1007.5
 texture = ExtResource("85_sp5ls")
+
+[node name="Coral44" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1427.5
+offset_top = 946.5
+offset_right = 1470.5
+offset_bottom = 1017.5
+texture = ExtResource("85_sp5ls")
+
+[node name="SeaFern3" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 165.5
+offset_top = 594.5
+offset_right = 316.5
+offset_bottom = 777.5
+texture = ExtResource("49_rx3w1")
 
 [node name="Coral29" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
@@ -1255,18 +1289,27 @@ texture = ExtResource("89_iyqio")
 
 [node name="Coral32" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 1175.5
-offset_top = 1008.5
-offset_right = 1248.5
-offset_bottom = 1082.5
+offset_left = 1141.5
+offset_top = 1011.5
+offset_right = 1214.5
+offset_bottom = 1085.5
 texture = ExtResource("90_j438w")
+
+[node name="Coral49" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 279.5
+offset_top = 939.5
+offset_right = 352.5
+offset_bottom = 1013.5
+texture = ExtResource("90_j438w")
+flip_h = true
 
 [node name="Coral33" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 1506.5
-offset_top = 930.5
-offset_right = 1581.5
-offset_bottom = 1007.5
+offset_left = 1590.5
+offset_top = 917.5
+offset_right = 1665.5
+offset_bottom = 994.5
 texture = ExtResource("91_bhcg0")
 
 [node name="Coral34" type="TextureRect" parent="UnderVatten_BG"]
@@ -1279,10 +1322,10 @@ texture = ExtResource("93_336wb")
 
 [node name="Coral35" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 1559.5
-offset_top = 1055.5
-offset_right = 1599.5
-offset_bottom = 1095.5
+offset_left = 1529.5
+offset_top = 1058.5
+offset_right = 1569.5
+offset_bottom = 1098.5
 texture = ExtResource("94_nqxa0")
 
 [node name="Coral38" type="TextureRect" parent="UnderVatten_BG"]
@@ -1293,28 +1336,36 @@ offset_right = 590.5
 offset_bottom = 1092.5
 texture = ExtResource("97_japgc")
 
-[node name="SeaGrass1" type="TextureRect" parent="UnderVatten_BG"]
+[node name="Coral48" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 180.5
-offset_top = 403.5
-offset_right = 618.5
-offset_bottom = 657.5
-texture = ExtResource("32_cxgxs")
+offset_left = 1211.5
+offset_top = 926.5
+offset_right = 1273.5
+offset_bottom = 989.5
+texture = ExtResource("61_i3dvr")
 
 [node name="SeaGrass2" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 104.5
-offset_top = 621.5
-offset_right = 277.5
-offset_bottom = 831.5
+offset_left = 72.5
+offset_top = 584.5
+offset_right = 245.5
+offset_bottom = 794.5
 texture = ExtResource("34_wtm52")
 
 [node name="SeaGrass3" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 180.5
-offset_top = 750.5
-offset_right = 347.5
-offset_bottom = 1004.5
+offset_left = 1279.5
+offset_top = 863.5
+offset_right = 1446.5
+offset_bottom = 1117.5
+texture = ExtResource("45_uo5i8")
+
+[node name="SeaGrass11" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 136.5
+offset_top = 693.5
+offset_right = 303.5
+offset_bottom = 947.5
 texture = ExtResource("45_uo5i8")
 
 [node name="SeaGrass4" type="TextureRect" parent="UnderVatten_BG"]
@@ -1325,44 +1376,61 @@ offset_right = 2033.5
 offset_bottom = 768.5
 texture = ExtResource("46_itp12")
 
+[node name="SeaGrass10" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1402.5
+offset_top = 805.5
+offset_right = 1574.5
+offset_bottom = 1015.5
+texture = ExtResource("46_itp12")
+flip_h = true
+
 [node name="SeaGrass5" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 1086.5
-offset_top = 370.5
-offset_right = 1126.5
-offset_bottom = 489.5
+offset_left = 619.5
+offset_top = 906.5
+offset_right = 659.5
+offset_bottom = 1025.5
 texture = ExtResource("71_wrxy6")
 
 [node name="SeaGrass6" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 918.5
-offset_top = 397.5
-offset_right = 963.5
-offset_bottom = 509.5
+offset_left = 592.5
+offset_top = 910.5
+offset_right = 637.5
+offset_bottom = 1022.5
 texture = ExtResource("73_l82rx")
 
 [node name="SeaGrass7" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 978.5
-offset_top = 446.5
-offset_right = 1023.5
-offset_bottom = 488.5
+offset_left = 590.5
+offset_top = 984.5
+offset_right = 635.5
+offset_bottom = 1026.5
 texture = ExtResource("74_q7187")
 
 [node name="SeaGrass8" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 1161.5
-offset_top = 288.5
-offset_right = 1201.5
-offset_bottom = 402.5
+offset_left = 619.5
+offset_top = 908.5
+offset_right = 659.5
+offset_bottom = 1022.5
 texture = ExtResource("75_r6h4r")
 
 [node name="SeaGrass9" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 1273.5
-offset_top = 845.5
-offset_right = 1440.5
-offset_bottom = 1099.5
+offset_left = 1239.5
+offset_top = 878.5
+offset_right = 1406.5
+offset_bottom = 1132.5
+texture = ExtResource("80_yytdb")
+
+[node name="SeaGrass12" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 719.5
+offset_top = 763.5
+offset_right = 886.5
+offset_bottom = 1017.5
 texture = ExtResource("80_yytdb")
 
 [node name="SeaFern1" type="TextureRect" parent="UnderVatten_BG"]
@@ -1381,13 +1449,15 @@ offset_right = 1601.5
 offset_bottom = 840.5
 texture = ExtResource("48_1gcrm")
 
-[node name="SeaFern3" type="TextureRect" parent="UnderVatten_BG"]
+[node name="SeaGrass15" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 185.5
-offset_top = 647.5
-offset_right = 336.5
-offset_bottom = 830.5
-texture = ExtResource("49_rx3w1")
+offset_left = 441.5
+offset_top = 523.5
+offset_right = 608.5
+offset_bottom = 777.5
+rotation = 0.336007
+texture = ExtResource("45_uo5i8")
+flip_h = true
 
 [node name="Clam" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
@@ -1399,136 +1469,124 @@ texture = ExtResource("77_i6qfe")
 
 [node name="Treasure" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = -3.5
-offset_top = 766.5
-offset_right = 309.5
-offset_bottom = 1111.5
+offset_left = -35.5
+offset_top = 727.5
+offset_right = 277.5
+offset_bottom = 1072.5
 texture = ExtResource("78_r8ro7")
 
 [node name="Shark" type="TextureRect" parent="UnderVatten_BG"]
-visible = false
 layout_mode = 0
-offset_left = 99.5
-offset_top = 506.5
-offset_right = 230.5
-offset_bottom = 556.5
+offset_left = -151.5
+offset_top = 556.5
+offset_right = -20.5
+offset_bottom = 606.5
 texture = ExtResource("64_enl3x")
+flip_h = true
 
 [node name="MantaRay" type="TextureRect" parent="UnderVatten_BG"]
-visible = false
 layout_mode = 0
-offset_left = 203.5
-offset_top = 623.5
-offset_right = 243.5
-offset_bottom = 663.5
+offset_left = 2124.5
+offset_top = 105.5
+offset_right = 2164.5
+offset_bottom = 145.5
 texture = ExtResource("65_13wst")
 
 [node name="JellyFish" type="TextureRect" parent="UnderVatten_BG"]
-visible = false
 layout_mode = 0
-offset_left = 106.5
-offset_top = 627.5
-offset_right = 146.5
-offset_bottom = 696.5
+offset_left = 66.5
+offset_top = 510.5
+offset_right = 106.5
+offset_bottom = 579.5
 texture = ExtResource("66_di6wt")
 
 [node name="Fish1" type="TextureRect" parent="UnderVatten_BG"]
-visible = false
 layout_mode = 0
-offset_left = 64.5
-offset_top = 404.5
-offset_right = 155.5
-offset_bottom = 489.5
+offset_left = 2218.5
+offset_top = 361.5
+offset_right = 2309.5
+offset_bottom = 446.5
 texture = ExtResource("98_741d4")
 
 [node name="Fish2" type="TextureRect" parent="UnderVatten_BG"]
-visible = false
 layout_mode = 0
-offset_left = 62.5
-offset_top = 314.5
-offset_right = 153.5
-offset_bottom = 399.5
+offset_left = 2072.5
+offset_top = 502.5
+offset_right = 2163.5
+offset_bottom = 587.5
 texture = ExtResource("99_kxwh0")
 
 [node name="Fish3" type="TextureRect" parent="UnderVatten_BG"]
-visible = false
 layout_mode = 0
-offset_left = 140.5
-offset_top = 264.5
-offset_right = 232.5
-offset_bottom = 350.5
+offset_left = 2237.5
+offset_top = 535.5
+offset_right = 2329.5
+offset_bottom = 621.5
 texture = ExtResource("100_g6f37")
 
 [node name="Fish4" type="TextureRect" parent="UnderVatten_BG"]
-visible = false
 layout_mode = 0
-offset_left = 38.5
-offset_top = 234.5
-offset_right = 129.5
-offset_bottom = 319.5
+offset_left = 2165.5
+offset_top = 450.5
+offset_right = 2256.5
+offset_bottom = 535.5
 texture = ExtResource("101_srikv")
 
 [node name="Squid" type="TextureRect" parent="UnderVatten_BG"]
-visible = false
 layout_mode = 0
-offset_left = 156.5
-offset_top = 56.5
-offset_right = 474.5
-offset_bottom = 288.5
+offset_left = 1428.5
+offset_top = 83.5
+offset_right = 1746.5
+offset_bottom = 315.5
 texture = ExtResource("102_y878u")
 
 [node name="FishSchool1" type="TextureRect" parent="UnderVatten_BG"]
-visible = false
 layout_mode = 0
-offset_left = 529.5
-offset_top = 74.5
-offset_right = 946.5
-offset_bottom = 259.5
+offset_left = -464.5
+offset_top = 169.5
+offset_right = -47.5
+offset_bottom = 354.5
 texture = ExtResource("103_fvqwt")
+flip_h = true
 
 [node name="FishSchool2" type="TextureRect" parent="UnderVatten_BG"]
-visible = false
 layout_mode = 0
-offset_left = 871.5
-offset_top = 136.5
-offset_right = 1072.5
-offset_bottom = 225.5
+offset_left = 2034.5
+offset_top = 295.5
+offset_right = 2235.5
+offset_bottom = 384.5
 texture = ExtResource("104_3l8bb")
 
 [node name="Crab1" type="TextureRect" parent="UnderVatten_BG"]
-visible = false
 layout_mode = 0
-offset_left = 1217.5
-offset_top = 992.5
-offset_right = 1358.5
-offset_bottom = 1132.5
+offset_left = 971.5
+offset_top = 952.5
+offset_right = 1112.5
+offset_bottom = 1092.5
 texture = ExtResource("105_28orh")
 
 [node name="Starfish1" type="TextureRect" parent="UnderVatten_BG"]
-visible = false
 layout_mode = 0
-offset_left = 613.5
-offset_top = 1030.5
-offset_right = 690.5
-offset_bottom = 1106.5
+offset_left = 815.5
+offset_top = 966.5
+offset_right = 892.5
+offset_bottom = 1042.5
 texture = ExtResource("106_wr3nh")
 
 [node name="Whale1" type="TextureRect" parent="UnderVatten_BG"]
-visible = false
 layout_mode = 0
-offset_left = 1250.5
-offset_top = 280.5
-offset_right = 1762.5
-offset_bottom = 690.5
+offset_left = 764.5
+offset_top = 159.5
+offset_right = 1276.5
+offset_bottom = 569.5
 texture = ExtResource("107_jd3bv")
 
 [node name="SailBoat1" type="TextureRect" parent="UnderVatten_BG"]
-visible = false
 layout_mode = 0
-offset_left = 977.5
-offset_top = -1169.5
-offset_right = 1909.5
-offset_bottom = 119.5
+offset_left = -63.5
+offset_top = -1153.5
+offset_right = 868.5
+offset_bottom = 135.5
 texture = ExtResource("108_mtnqy")
 
 [node name="Coral30" type="TextureRect" parent="UnderVatten_BG"]
@@ -1541,50 +1599,92 @@ texture = ExtResource("87_3c4ui")
 
 [node name="Pebble5" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 257.5
-offset_top = 1040.5
-offset_right = 366.5
-offset_bottom = 1080.5
+offset_left = 224.0
+offset_top = 1024.0
+offset_right = 333.0
+offset_bottom = 1062.0
 texture = ExtResource("82_0qe6i")
 
 [node name="Coral39" type="TextureRect" parent="UnderVatten_BG"]
-offset_left = 558.5
-offset_top = 1072.5
-offset_right = 598.5
-offset_bottom = 1100.5
+offset_left = 575.5
+offset_top = 1074.5
+offset_right = 615.5
+offset_bottom = 1102.5
 texture = ExtResource("95_o3j1v")
 
 [node name="Coral36" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 259.5
-offset_top = 1063.5
-offset_right = 299.5
-offset_bottom = 1091.5
+offset_left = 215.5
+offset_top = 1050.5
+offset_right = 255.5
+offset_bottom = 1078.5
 texture = ExtResource("95_o3j1v")
 
 [node name="Coral42" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 1624.5
+offset_left = 1575.5
 offset_top = 1046.5
-offset_right = 1664.5
+offset_right = 1615.5
 offset_bottom = 1074.5
 texture = ExtResource("95_o3j1v")
 
 [node name="Coral37" type="TextureRect" parent="UnderVatten_BG"]
 layout_mode = 0
-offset_left = 295.5
-offset_top = 962.5
-offset_right = 432.5
-offset_bottom = 1099.5
+offset_left = 300.5
+offset_top = 967.5
+offset_right = 437.5
+offset_bottom = 1104.5
 texture = ExtResource("96_63luc")
+
+[node name="Coral18" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 631.5
+offset_top = 992.5
+offset_right = 693.5
+offset_bottom = 1055.5
+texture = ExtResource("61_i3dvr")
+
+[node name="Pebble6" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 513.5
+offset_top = 1080.5
+offset_right = 559.5
+offset_bottom = 1099.5
+texture = ExtResource("92_7dpbb")
+
+[node name="Coral27" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1437.5
+offset_top = 944.5
+offset_right = 1503.5
+offset_bottom = 1012.5
+texture = ExtResource("84_0t2bm")
+
+[node name="Pebble4" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 1459.5
+offset_top = 999.5
+offset_right = 1531.5
+offset_bottom = 1029.5
+texture = ExtResource("81_oq7g1")
+
+[node name="Coral46" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
+offset_left = 390.5
+offset_top = 669.5
+offset_right = 528.5
+offset_bottom = 809.5
+rotation = -0.0480779
+texture = ExtResource("31_3c4gs")
+flip_h = true
 
 [node name="Rays" type="TextureRect" parent="UnderVatten_BG"]
 visible = false
 layout_mode = 0
-offset_left = -231.5
-offset_top = 5.5
-offset_right = 2384.5
-offset_bottom = 1039.5
+offset_left = -227.5
+offset_top = -12.5
+offset_right = 2388.5
+offset_bottom = 1021.5
 texture = ExtResource("26_dpmq8")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
