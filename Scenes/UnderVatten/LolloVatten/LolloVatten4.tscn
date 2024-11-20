@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://b8uohox5bt3cl"]
 
-[ext_resource type="Texture2D" uid="uid://pkqn6c5yfoba" path="res://Assets/Under Vatten/LnB/L_Chest_H.png" id="1_0iffu"]
-[ext_resource type="Texture2D" uid="uid://b7g7ntia4sywx" path="res://Assets/Under Vatten/LnB/L_Chest_F.png" id="2_7eppt"]
-[ext_resource type="BitMap" uid="uid://ddy5eaws0xumq" path="res://Assets/Under Vatten/Mask/M_Chest.png" id="3_kwy80"]
+[ext_resource type="Texture2D" uid="uid://s6q68sqx3eri" path="res://Assets/Under Vatten/LnB/L_Chest_H.png" id="1_0iffu"]
+[ext_resource type="Texture2D" uid="uid://dio20qucr7moo" path="res://Assets/Under Vatten/LnB/L_Chest_F.png" id="2_7eppt"]
+[ext_resource type="BitMap" uid="uid://btrt8e1m1rpjv" path="res://Assets/Under Vatten/Mask/M_Chest.png" id="3_kwy80"]
 
 [sub_resource type="GDScript" id="GDScript_hdxlj"]
 script/source = "extends TextureButton
