@@ -39,7 +39,7 @@ position = Vector2(1236, 233)
 position = Vector2(-387, 250)
 
 [node name="HnS_5" type="Node2D" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(-77, 209)
+position = Vector2(-13.5, 261.5)
 
 [node name="HnS_6" type="Node2D" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 position = Vector2(841, 408)
