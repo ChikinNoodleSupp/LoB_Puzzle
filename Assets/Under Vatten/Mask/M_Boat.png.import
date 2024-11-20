@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bciox1e276sja"
+path="res://.godot/imported/M_Boat.png-89f0d75474ac333e4664e97c06381347.res"
+
+[deps]
+
+source_file="res://Assets/Under Vatten/Mask/M_Boat.png"
+dest_files=["res://.godot/imported/M_Boat.png-89f0d75474ac333e4664e97c06381347.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

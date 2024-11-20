@@ -1681,7 +1681,6 @@ texture = ExtResource("31_3c4gs")
 flip_h = true
 
 [node name="Rays" type="TextureRect" parent="UnderVatten_BG"]
-visible = false
 layout_mode = 0
 offset_left = -227.5
 offset_top = -12.5

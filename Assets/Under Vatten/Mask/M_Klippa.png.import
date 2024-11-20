@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://ck1r148ul67bs"
+path="res://.godot/imported/M_Klippa.png-82dc7771358ae46d49c41f4512ac5101.res"
+
+[deps]
+
+source_file="res://Assets/Under Vatten/Mask/M_Klippa.png"
+dest_files=["res://.godot/imported/M_Klippa.png-82dc7771358ae46d49c41f4512ac5101.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

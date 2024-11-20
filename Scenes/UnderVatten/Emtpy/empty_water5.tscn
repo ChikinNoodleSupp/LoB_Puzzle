@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://4ioknsn6d84x"]
+
+[ext_resource type="Texture2D" uid="uid://dtuyr3wc3w1xj" path="res://Assets/Under Vatten/Hover/H_BigRock.png" id="1_xpvm5"]
+[ext_resource type="Texture2D" uid="uid://cw3vhmkktt8ja" path="res://Assets/Under Vatten/Pressed/P_BigRock.png" id="2_exgts"]
+[ext_resource type="BitMap" uid="uid://eau8tdbj0i6w" path="res://Assets/Under Vatten/Mask/M_BigRock.png" id="3_dl5w3"]
+
+[node name="empty_spot" type="TextureButton"]
+z_index = 1
+offset_right = 263.0
+offset_bottom = 465.0
+texture_normal = ExtResource("1_xpvm5")
+texture_pressed = ExtResource("2_exgts")
+texture_hover = ExtResource("1_xpvm5")
+texture_disabled = ExtResource("2_exgts")
+texture_click_mask = ExtResource("3_dl5w3")
+stretch_mode = 3

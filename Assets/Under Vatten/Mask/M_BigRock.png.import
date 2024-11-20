@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://eau8tdbj0i6w"
+path="res://.godot/imported/M_BigRock.png-14f6ad0d7deefd292e57c8cf9ae404e3.res"
+
+[deps]
+
+source_file="res://Assets/Under Vatten/Mask/M_BigRock.png"
+dest_files=["res://.godot/imported/M_BigRock.png-14f6ad0d7deefd292e57c8cf9ae404e3.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

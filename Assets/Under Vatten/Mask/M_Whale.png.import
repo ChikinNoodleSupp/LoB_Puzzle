@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://b84mlhqmp48xr"
+path="res://.godot/imported/M_Whale.png-f64aa72065d7c5c13b960082072337ee.res"
+
+[deps]
+
+source_file="res://Assets/Under Vatten/Mask/M_Whale.png"
+dest_files=["res://.godot/imported/M_Whale.png-f64aa72065d7c5c13b960082072337ee.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://ctyofo4kq7u5y"
+path="res://.godot/imported/M_SmallRock.png-cfcfd2a28662b97958f4e7053d9f56e1.res"
+
+[deps]
+
+source_file="res://Assets/Under Vatten/Mask/M_SmallRock.png"
+dest_files=["res://.godot/imported/M_SmallRock.png-cfcfd2a28662b97958f4e7053d9f56e1.res"]
+
+[params]
+
+create_from=0
+threshold=0.5
