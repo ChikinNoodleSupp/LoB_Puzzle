@@ -1,4 +1,4 @@
-[gd_scene load_steps=131 format=3 uid="uid://bcyokg3fmgifd"]
+[gd_scene load_steps=130 format=3 uid="uid://bcyokg3fmgifd"]
 
 [ext_resource type="Script" path="res://Scripts/hide_seek_control_test.gd" id="1_yap3s"]
 [ext_resource type="Texture2D" uid="uid://djj3oolji5gd8" path="res://Assets/Strand/BG/Asset 11.png" id="2_clt68"]
@@ -27,7 +27,6 @@
 [ext_resource type="Texture2D" uid="uid://ifvtind4coyw" path="res://Assets/Under Vatten/BG/Static/Asset 111.png" id="25_uektx"]
 [ext_resource type="Texture2D" uid="uid://db6ply1ta60lh" path="res://Assets/Under Vatten/BG/Static/Asset 108.png" id="26_dpmq8"]
 [ext_resource type="Texture2D" uid="uid://b3h8ast3fmxc8" path="res://Assets/Under Vatten/BG/Static/Asset 101.png" id="27_tq2kn"]
-[ext_resource type="Texture2D" uid="uid://dtuyr3wc3w1xj" path="res://Assets/Under Vatten/Hover/H_BigRock.png" id="27_v7q0r"]
 [ext_resource type="Texture2D" uid="uid://clhjlx8e32glc" path="res://Assets/Under Vatten/BG/Static/Asset 110.png" id="28_p1k5s"]
 [ext_resource type="Texture2D" uid="uid://dhjlaaufsaxmp" path="res://Assets/Under Vatten/BG/Static/Asset 109.png" id="29_61q5g"]
 [ext_resource type="Texture2D" uid="uid://pbi6deo7aecy" path="res://Assets/Under Vatten/BG/Static/Asset 100.png" id="30_ngedv"]
@@ -859,7 +858,6 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="UnderVatten_BG" type="TextureRect" parent="."]
-z_index = -2
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -877,15 +875,6 @@ offset_top = 378.5
 offset_right = 700.5
 offset_bottom = 632.5
 texture = ExtResource("32_cxgxs")
-
-[node name="BigRock" type="TextureRect" parent="UnderVatten_BG"]
-z_index = 1
-layout_mode = 0
-offset_left = -13.5
-offset_top = 261.5
-offset_right = 942.5
-offset_bottom = 1004.5
-texture = ExtResource("27_v7q0r")
 
 [node name="StoneCrevis1" type="TextureRect" parent="UnderVatten_BG"]
 z_index = 2
