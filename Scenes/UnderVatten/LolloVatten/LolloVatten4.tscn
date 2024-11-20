@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://b8uohox5bt3cl"]
+
+[ext_resource type="Texture2D" uid="uid://pkqn6c5yfoba" path="res://Assets/Under Vatten/LnB/L_Chest_H.png" id="1_0iffu"]
+[ext_resource type="Texture2D" uid="uid://b7g7ntia4sywx" path="res://Assets/Under Vatten/LnB/L_Chest_F.png" id="2_7eppt"]
+[ext_resource type="BitMap" uid="uid://ddy5eaws0xumq" path="res://Assets/Under Vatten/Mask/M_Chest.png" id="3_kwy80"]
+
+[sub_resource type="GDScript" id="GDScript_hdxlj"]
+script/source = "extends TextureButton
+"
+
+[node name="LolloSpot" type="TextureButton"]
+z_index = 1
+texture_normal = ExtResource("1_0iffu")
+texture_pressed = ExtResource("2_7eppt")
+texture_hover = ExtResource("1_0iffu")
+texture_disabled = ExtResource("2_7eppt")
+texture_click_mask = ExtResource("3_kwy80")
+script = SubResource("GDScript_hdxlj")

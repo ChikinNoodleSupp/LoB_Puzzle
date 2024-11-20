@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://etk4txuo643q"]
+
+[ext_resource type="Texture2D" uid="uid://bw4g6doxx76gw" path="res://Assets/Under Vatten/LnB/B_SmallRock_H.png" id="1_8aifc"]
+[ext_resource type="Texture2D" uid="uid://x0j5x66r2u48" path="res://Assets/Under Vatten/LnB/B_SmallRock_F.png" id="2_fc2rp"]
+[ext_resource type="BitMap" uid="uid://ctyofo4kq7u5y" path="res://Assets/Under Vatten/Mask/M_SmallRock.png" id="3_64pkb"]
+
+[node name="BernieSpot" type="TextureButton"]
+z_index = 1
+offset_right = 176.0
+offset_bottom = 230.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource("1_8aifc")
+texture_pressed = ExtResource("2_fc2rp")
+texture_hover = ExtResource("1_8aifc")
+texture_disabled = ExtResource("2_fc2rp")
+texture_click_mask = ExtResource("3_64pkb")

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://p2i1rrtkcyv6"]
+
+[ext_resource type="Texture2D" uid="uid://df5165vsuvxuh" path="res://Assets/Under Vatten/LnB/B_Chest_H.png" id="1_0g0wv"]
+[ext_resource type="Texture2D" uid="uid://cvhpechbfmv5g" path="res://Assets/Under Vatten/LnB/B_Chest_F.png" id="2_wdmqx"]
+[ext_resource type="BitMap" uid="uid://ddy5eaws0xumq" path="res://Assets/Under Vatten/Mask/M_Chest.png" id="3_622v8"]
+
+[node name="BernieSpot" type="TextureButton"]
+z_index = 1
+offset_right = 176.0
+offset_bottom = 230.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource("1_0g0wv")
+texture_pressed = ExtResource("2_wdmqx")
+texture_hover = ExtResource("1_0g0wv")
+texture_disabled = ExtResource("2_wdmqx")
+texture_click_mask = ExtResource("3_622v8")
