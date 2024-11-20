@@ -36,6 +36,15 @@ var BernieHiding5 = preload("res://Scenes/Strand/Bernie/BernieSpot5.tscn")
 var BernieHiding6 = preload("res://Scenes/Strand/Bernie/BernieSpot6.tscn")
 var bernieArray = [BernieHiding, BernieHiding2, BernieHiding3, BernieHiding4, BernieHiding5, BernieHiding6]
 
+var EmptyVatten = preload("res://Scenes/UnderVatten/Emtpy/empty_water.tscn")
+var VattenSpotArray = [EmptyVatten]
+
+var LolloVatten = preload("res://Scenes/UnderVatten/LolloVatten/LolloVatten.tscn")
+var lolloVattenArray = [LolloVatten]
+
+var BernieVatten = preload("res://Scenes/UnderVatten/BernieVatten/BernieVatten.tscn")
+var bernieVattenArray = [BernieVatten]
+
 @onready var BG_1 = $Strand_BG
 @onready var BG_2 = $UnderVatten_BG
 @onready var BG_3 = $InomHus_BG
