@@ -4,6 +4,6 @@ var rotateSun = 1
 
 
 func _process(_delta: float) -> void:
-	if SM.scene1 == true:
+	if SM.scene == 1:
 		rotateSun += .1
 		rotation_degrees = rotateSun

@@ -4,7 +4,7 @@ extends Control
 var array1 = [1, 2, 3, 4, 5, 6]
 var array2 = [1, 2, 3, 4, 5, 6]
 
-var sceneArray = ["res://Scenes/Strand/Hide_Seek_control_test.tscn"]#, "res://Hide_Seek_control_test_2.tscn", "res://Hide_Seek_control_test_3.tscn"] # just add more scenes
+var locationArray = ["res://Scenes/Strand/Hide_Seek_control_test.tscn","res://Scenes/UnderVatten/Hide_Seek_control_test_2.tscn", "res://Hide_Seek_control_test_3.tscn"] # just add more scenes
 
 static var sceneNumber = 0
 
@@ -36,14 +36,36 @@ var BernieHiding5 = preload("res://Scenes/Strand/Bernie/BernieSpot5.tscn")
 var BernieHiding6 = preload("res://Scenes/Strand/Bernie/BernieSpot6.tscn")
 var bernieArray = [BernieHiding, BernieHiding2, BernieHiding3, BernieHiding4, BernieHiding5, BernieHiding6]
 
+var strandArray = [lolloArray, bernieArray, hidingSpotArray]
+
 var EmptyVatten = preload("res://Scenes/UnderVatten/Emtpy/empty_water.tscn")
-var VattenSpotArray = [EmptyVatten]
+var EmptyVatten2 = preload("res://Scenes/UnderVatten/Emtpy/empty_water2.tscn")
+var EmptyVatten3 = preload("res://Scenes/UnderVatten/Emtpy/empty_water3.tscn")
+var EmptyVatten4 = preload("res://Scenes/UnderVatten/Emtpy/empty_water4.tscn")
+var EmptyVatten5 = preload("res://Scenes/UnderVatten/Emtpy/empty_water5.tscn")
+var EmptyVatten6 = preload("res://Scenes/UnderVatten/Emtpy/empty_water6.tscn")
+var VattenSpotArray = [EmptyVatten, EmptyVatten2, EmptyVatten3, EmptyVatten4, EmptyVatten5, EmptyVatten6]
 
 var LolloVatten = preload("res://Scenes/UnderVatten/LolloVatten/LolloVatten.tscn")
-var lolloVattenArray = [LolloVatten]
+var LolloVatten2 = preload("res://Scenes/UnderVatten/LolloVatten/LolloVatten2.tscn")
+var LolloVatten3 = preload("res://Scenes/UnderVatten/LolloVatten/LolloVatten3.tscn")
+var LolloVatten4 = preload("res://Scenes/UnderVatten/LolloVatten/LolloVatten4.tscn")
+var LolloVatten5 = preload("res://Scenes/UnderVatten/LolloVatten/LolloVatten5.tscn")
+var LolloVatten6 = preload("res://Scenes/UnderVatten/LolloVatten/LolloVatten6.tscn")
+var lolloVattenArray = [LolloVatten, LolloVatten2, LolloVatten3, LolloVatten4, LolloVatten5, LolloVatten6]
 
 var BernieVatten = preload("res://Scenes/UnderVatten/BernieVatten/BernieVatten.tscn")
-var bernieVattenArray = [BernieVatten]
+var BernieVatten2 = preload("res://Scenes/UnderVatten/BernieVatten/BernieVatten2.tscn")
+var BernieVatten3 = preload("res://Scenes/UnderVatten/BernieVatten/BernieVatten3.tscn")
+var BernieVatten4 = preload("res://Scenes/UnderVatten/BernieVatten/BernieVatten4.tscn")
+var BernieVatten5 = preload("res://Scenes/UnderVatten/BernieVatten/BernieVatten5.tscn")
+var BernieVatten6 = preload("res://Scenes/UnderVatten/BernieVatten/BernieVatten6.tscn")
+var bernieVattenArray = [BernieVatten, BernieVatten2, BernieVatten3, BernieVatten4, BernieVatten5, BernieVatten6]
+
+var vattenArray = [lolloVattenArray, bernieVattenArray, VattenSpotArray]
+
+#Put "packages" in this one
+var sceneArray = [strandArray, vattenArray]
 
 @onready var BG_1 = $Strand_BG
 @onready var BG_2 = $UnderVatten_BG
@@ -81,18 +103,15 @@ func _ready() -> void:
 	BG_1.visible = false
 	BG_2.visible = false
 	BG_3.visible = false
-	if SM.scene1 == true:
+	if SM.scene == 1:
 		BG_1.visible = true
-		SM.scene2 = false
-		SM.scene3 = false
-	elif SM.scene2 == true:
+	
+	elif SM.scene == 2:
 		BG_2.visible = true
-		SM.scene1 = false
-		SM.scene3 = false
-	elif SM.scene3 == true:
+	
+	elif SM.scene == 3:
 		BG_3.visible = true
-		SM.scene1 = false
-		SM.scene2 = false
+
 	
 	AudioPlayer.play_music_level()
 	newScene()
@@ -143,11 +162,11 @@ func mainCode(): # on start basically
 	
 	for i in range(0, array1.size()): 
 		if random_num1 == i+1:
-			spawnLolloHidingSpot(positionArray[i], lolloArray[i]) # do same thign as spawn hiding spot thing
+			spawnLolloHidingSpot(positionArray[i], sceneArray[SM.scene-1][0][i]) # do same thign as spawn hiding spot thing
 		elif random_num2 == i+1:
-			spawnBernieHidingSpot(positionArray[i], bernieArray[i])
+			spawnBernieHidingSpot(positionArray[i], sceneArray[SM.scene-1][1][i])
 		else:
-			spawnHidingSpot1(positionArray[i], hidingSpotArray[i])
+			spawnHidingSpot1(positionArray[i], sceneArray[SM.scene-1][2][i])
 	
 	#if random_num1 == 1:
 		#spawnLolloHidingSpot(HnS_1position) #initiate lollo hiding spot
@@ -297,8 +316,8 @@ func newScene(): # change it so that it does what it has to, but move the actual
 	# Change BG here
 	if current_scene:
 		current_scene.queue_free()  # Remove the previous scene
-	var scene_path = sceneArray[sceneNumber % sceneArray.size()]
-	var new_scene = load(scene_path).instantiate()
+	# var scene_path = locationArray[sceneNumber % locationArray.size()]
+	var new_scene = load(locationArray[SM.scene-1]).instantiate()
 	get_tree().current_scene.add_child(new_scene)
 	current_scene = new_scene
 	call_deferred("mainCode")

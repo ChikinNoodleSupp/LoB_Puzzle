@@ -132,17 +132,17 @@ func Finnish():
 	Localization.setFinnish = true
 
 func _on_hide_seek_pressed() -> void:
-	SM.scene1 = true
+	SM.scene = 1
 	# set a bool in a scene manager script. When main scene opens, check which bool is true and turn on correct BG.
 	#turn all bools to false if they're true when going back to main menu
 	playAnim()
 
 func _on_hide_seek_2_pressed() -> void:
-	SM.scene2 = true
+	SM.scene = 2
 	playAnim()
 
 func _on_hide_seek_3_pressed() -> void:
-	SM.scene3 = true
+	SM.scene = 3
 	playAnim()
 
 func playAnim():

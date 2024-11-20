@@ -1,8 +1,7 @@
 extends Node
 
-static var scene1 = false
-static var scene2 = false
-static var scene3 = false
+static var scene = 0
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

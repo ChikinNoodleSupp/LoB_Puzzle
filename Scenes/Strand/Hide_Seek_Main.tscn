@@ -1608,6 +1608,7 @@ offset_bottom = 1062.0
 texture = ExtResource("82_0qe6i")
 
 [node name="Coral39" type="TextureRect" parent="UnderVatten_BG"]
+layout_mode = 0
 offset_left = 575.5
 offset_top = 1074.5
 offset_right = 615.5
