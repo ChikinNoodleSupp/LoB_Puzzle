@@ -9,7 +9,7 @@ script/source = "extends TextureButton
 "
 
 [node name="LolloSpot" type="TextureButton"]
-z_index = 1
+z_index = 2
 texture_normal = ExtResource("1_0iffu")
 texture_pressed = ExtResource("2_7eppt")
 texture_hover = ExtResource("1_0iffu")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=130 format=3 uid="uid://bcyokg3fmgifd"]
+[gd_scene load_steps=127 format=3 uid="uid://bcyokg3fmgifd"]
 
 [ext_resource type="Script" path="res://Scripts/hide_seek_control_test.gd" id="1_yap3s"]
 [ext_resource type="Texture2D" uid="uid://djj3oolji5gd8" path="res://Assets/Strand/BG/Asset 11.png" id="2_clt68"]
@@ -26,7 +26,6 @@
 [ext_resource type="Texture2D" uid="uid://lv4pcc550eqp" path="res://Assets/Strand/BG/Fågel 2.png" id="24_ablaq"]
 [ext_resource type="Texture2D" uid="uid://ifvtind4coyw" path="res://Assets/Under Vatten/BG/Static/Asset 111.png" id="25_uektx"]
 [ext_resource type="Texture2D" uid="uid://db6ply1ta60lh" path="res://Assets/Under Vatten/BG/Static/Asset 108.png" id="26_dpmq8"]
-[ext_resource type="Texture2D" uid="uid://b3h8ast3fmxc8" path="res://Assets/Under Vatten/BG/Static/Asset 101.png" id="27_tq2kn"]
 [ext_resource type="Texture2D" uid="uid://clhjlx8e32glc" path="res://Assets/Under Vatten/BG/Static/Asset 110.png" id="28_p1k5s"]
 [ext_resource type="Texture2D" uid="uid://dhjlaaufsaxmp" path="res://Assets/Under Vatten/BG/Static/Asset 109.png" id="29_61q5g"]
 [ext_resource type="Texture2D" uid="uid://pbi6deo7aecy" path="res://Assets/Under Vatten/BG/Static/Asset 100.png" id="30_ngedv"]
@@ -59,7 +58,6 @@
 [ext_resource type="Texture2D" uid="uid://drjpfirk4v55" path="res://Assets/Under Vatten/BG/Static/Asset 65.png" id="57_wd4gv"]
 [ext_resource type="Texture2D" uid="uid://d2fea3n11grlb" path="res://Assets/Under Vatten/BG/Static/Asset 64.png" id="58_e0gak"]
 [ext_resource type="Texture2D" uid="uid://c4mduj77cd0y2" path="res://Assets/Under Vatten/BG/Static/Asset 63.png" id="59_nyfkq"]
-[ext_resource type="Texture2D" uid="uid://4xjiw180uny7" path="res://Assets/Under Vatten/BG/Static/Asset 61.png" id="60_0s25p"]
 [ext_resource type="Texture2D" uid="uid://cbo1ufqdkejjy" path="res://Assets/Under Vatten/BG/Static/Asset 59.png" id="61_i3dvr"]
 [ext_resource type="Texture2D" uid="uid://b1vqfj5aw742d" path="res://Assets/Under Vatten/BG/Static/Asset 58.png" id="62_bl2r3"]
 [ext_resource type="Texture2D" uid="uid://bds16whkkatx1" path="res://Assets/Under Vatten/BG/Static/Asset 57.png" id="63_d5a0t"]
@@ -77,7 +75,6 @@
 [ext_resource type="Texture2D" uid="uid://bnovo0agovbgv" path="res://Assets/Under Vatten/BG/Static/Asset 43.png" id="75_r6h4r"]
 [ext_resource type="Texture2D" uid="uid://buouhqdv120be" path="res://Assets/Under Vatten/BG/Static/Asset 42.png" id="76_u8p2m"]
 [ext_resource type="Texture2D" uid="uid://c3wn0n7lvoqo1" path="res://Assets/Under Vatten/BG/Static/Asset 41.png" id="77_i6qfe"]
-[ext_resource type="Texture2D" uid="uid://boqoo47c60f10" path="res://Assets/Under Vatten/BG/Static/Asset 40.png" id="78_r8ro7"]
 [ext_resource type="Texture2D" uid="uid://3rua7v80nlge" path="res://Assets/Under Vatten/BG/Static/Asset 39.png" id="79_bcfey"]
 [ext_resource type="Texture2D" uid="uid://c4f4ht1vc0gbi" path="res://Assets/Under Vatten/BG/Static/Asset 38.png" id="80_yytdb"]
 [ext_resource type="Texture2D" uid="uid://cmwy5i5455886" path="res://Assets/Under Vatten/BG/Static/Asset 36.png" id="81_oq7g1"]
@@ -894,15 +891,6 @@ offset_right = 423.5
 offset_bottom = 731.5
 texture = ExtResource("52_x5so7")
 
-[node name="BlueRock" type="TextureRect" parent="UnderVatten_BG"]
-z_index = 2
-layout_mode = 0
-offset_left = 1546.5
-offset_top = 421.5
-offset_right = 1988.5
-offset_bottom = 841.5
-texture = ExtResource("27_tq2kn")
-
 [node name="Sand1" type="TextureRect" parent="UnderVatten_BG"]
 z_index = 2
 layout_mode = 0
@@ -1038,15 +1026,6 @@ offset_top = 850.5
 offset_right = 1862.5
 offset_bottom = 994.5
 texture = ExtResource("50_m7s7j")
-
-[node name="StoneCorals1" type="TextureRect" parent="UnderVatten_BG"]
-z_index = 2
-layout_mode = 0
-offset_left = 1115.5
-offset_top = 670.5
-offset_right = 1448.5
-offset_bottom = 923.5
-texture = ExtResource("60_0s25p")
 
 [node name="Coral1" type="TextureRect" parent="UnderVatten_BG"]
 z_index = 2
@@ -1530,15 +1509,6 @@ offset_right = 744.5
 offset_bottom = 1046.5
 texture = ExtResource("77_i6qfe")
 
-[node name="Treasure" type="TextureRect" parent="UnderVatten_BG"]
-z_index = 2
-layout_mode = 0
-offset_left = -35.5
-offset_top = 727.5
-offset_right = 277.5
-offset_bottom = 1072.5
-texture = ExtResource("78_r8ro7")
-
 [node name="Shark" type="TextureRect" parent="UnderVatten_BG"]
 z_index = 2
 layout_mode = 0
@@ -1771,6 +1741,7 @@ texture = ExtResource("31_3c4gs")
 flip_h = true
 
 [node name="Rays" type="TextureRect" parent="UnderVatten_BG"]
+visible = false
 z_index = 2
 layout_mode = 0
 offset_left = -227.5

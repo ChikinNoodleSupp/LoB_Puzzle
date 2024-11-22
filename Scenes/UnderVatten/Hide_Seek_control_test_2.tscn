@@ -29,13 +29,13 @@ position = Vector2(-72, -1209)
 position = Vector2(654, 51)
 
 [node name="HnS_3" type="Node2D" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(1236, 233)
+position = Vector2(1261, 259)
 
 [node name="HnS_4" type="Node2D" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(-387, 250)
+position = Vector2(-333, 301)
 
 [node name="HnS_5" type="Node2D" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 position = Vector2(-56, 231)
 
 [node name="HnS_6" type="Node2D" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(841, 408)
+position = Vector2(859, 425)
