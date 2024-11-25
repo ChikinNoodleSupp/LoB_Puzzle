@@ -2,7 +2,8 @@ extends AudioStreamPlayer
 
 # signal audio_started
 
-const bg_music = preload("res://Music/AB_Bubble_BACKING.mp3")
+const bg_music1 = preload("res://Music/ES_Ocean, Rhythmic Waves, Crashing In On Beach, Distant Birds 02 - Epidemic Sound.mp3")
+const bg_music2 = preload("res://Music/ES_Complex 01 - Epidemic Sound.mp3")
 const menu_music = preload("res://Music/Lollo Bernie Song_SCAN_SHORT_Backing_WAV_2020.mp3")
 
 var mute = false
@@ -23,8 +24,10 @@ func _play_music(music: AudioStream, volume = -8.0):
 	# emit_signal("audio_started")
 	
 func play_music_level():
-	_play_music(bg_music)
+	_play_music(bg_music1)
 	playing = true
+func play_music_level2():
+	_play_music(bg_music2)
 func play_music_menu():
 	_play_music(menu_music)
 func stop_music_level():

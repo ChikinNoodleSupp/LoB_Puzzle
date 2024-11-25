@@ -105,15 +105,15 @@ func _ready() -> void:
 	BG_3.visible = false
 	if SM.scene == 1:
 		BG_1.visible = true
+		AudioPlayer.play_music_level()
 	
 	elif SM.scene == 2:
 		BG_2.visible = true
+		AudioPlayer.play_music_level2()
 	
 	elif SM.scene == 3:
 		BG_3.visible = true
 
-	
-	AudioPlayer.play_music_level()
 	newScene()
 	
 	transition.play("Fade_in")
