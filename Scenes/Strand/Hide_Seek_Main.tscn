@@ -1,4 +1,4 @@
-[gd_scene load_steps=127 format=3 uid="uid://bcyokg3fmgifd"]
+[gd_scene load_steps=164 format=3 uid="uid://bcyokg3fmgifd"]
 
 [ext_resource type="Script" path="res://Scripts/hide_seek_control_test.gd" id="1_yap3s"]
 [ext_resource type="Texture2D" uid="uid://djj3oolji5gd8" path="res://Assets/Strand/BG/Asset 11.png" id="2_clt68"]
@@ -81,16 +81,25 @@
 [ext_resource type="Texture2D" uid="uid://we5cwhyefrp5" path="res://Assets/Under Vatten/BG/Static/Asset 35.png" id="82_0qe6i"]
 [ext_resource type="Texture2D" uid="uid://baicq1khh8m4t" path="res://Assets/Under Vatten/BG/Static/Asset 34.png" id="83_p710h"]
 [ext_resource type="Texture2D" uid="uid://dm4ri7se87pi0" path="res://Assets/Under Vatten/BG/Static/Asset 33.png" id="84_0t2bm"]
+[ext_resource type="Script" path="res://Scenes/Strand/manta.gd" id="84_lpe0t"]
+[ext_resource type="Script" path="res://Scenes/Strand/manyfish.gd" id="85_kod8e"]
 [ext_resource type="Texture2D" uid="uid://hhe7pkd5rxp5" path="res://Assets/Under Vatten/BG/Static/Asset 31.png" id="85_sp5ls"]
 [ext_resource type="Texture2D" uid="uid://chr7qeib8hcjm" path="res://Assets/Under Vatten/BG/Static/Asset 29.png" id="86_73k77"]
 [ext_resource type="Texture2D" uid="uid://r62c7api21qj" path="res://Assets/Under Vatten/BG/Static/Asset 28.png" id="87_3c4ui"]
 [ext_resource type="Texture2D" uid="uid://cgbw3awto703h" path="res://Assets/Under Vatten/BG/Static/Asset 25.png" id="88_tp6c4"]
+[ext_resource type="Script" path="res://Scenes/Strand/VattenScript.gd" id="89_5a85i"]
 [ext_resource type="Texture2D" uid="uid://bf41wa7qxle4g" path="res://Assets/Under Vatten/BG/Static/Asset 23.png" id="89_iyqio"]
+[ext_resource type="Script" path="res://Scenes/Strand/dancecrab.gd" id="89_m1x65"]
 [ext_resource type="Texture2D" uid="uid://t1nopnbrux12" path="res://Assets/Under Vatten/BG/Static/Asset 22.png" id="90_j438w"]
+[ext_resource type="Script" path="res://Scenes/Strand/shark.gd" id="90_qud01"]
 [ext_resource type="Texture2D" uid="uid://dpsy2j33epn1k" path="res://Assets/Under Vatten/BG/Static/Asset 20.png" id="91_bhcg0"]
+[ext_resource type="Script" path="res://Scenes/Strand/jelly.gd" id="91_inxbo"]
 [ext_resource type="Texture2D" uid="uid://dj4vsn3q1uo80" path="res://Assets/Under Vatten/BG/Static/Asset 19.png" id="92_7dpbb"]
+[ext_resource type="Script" path="res://Scenes/Strand/starfish.gd" id="92_87ade"]
 [ext_resource type="Texture2D" uid="uid://cxl3vmjl86bf4" path="res://Assets/Under Vatten/BG/Static/Asset 18.png" id="93_336wb"]
+[ext_resource type="Script" path="res://Scenes/Strand/squid.gd" id="93_lam0n"]
 [ext_resource type="Texture2D" uid="uid://k2n6aeik0k2f" path="res://Assets/Under Vatten/BG/Static/Asset 17.png" id="94_nqxa0"]
+[ext_resource type="Script" path="res://Scenes/Strand/animation_player_7.gd" id="94_s6rhw"]
 [ext_resource type="Texture2D" uid="uid://cieqy1he0ej1o" path="res://Assets/Under Vatten/BG/Static/Asset 16.png" id="95_o3j1v"]
 [ext_resource type="Texture2D" uid="uid://n77m07oywn0v" path="res://Assets/Under Vatten/BG/Static/Asset 13.png" id="96_63luc"]
 [ext_resource type="Texture2D" uid="uid://gjm36c0ghuuq" path="res://Assets/Under Vatten/BG/Static/Asset 12.png" id="97_japgc"]
@@ -306,35 +315,6 @@ _data = {
 "RESET": SubResource("Animation_xtehj")
 }
 
-[sub_resource type="Animation" id="Animation_7u1f7"]
-resource_name = "Bird_Fly"
-length = 2.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.966667),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(447, 236), Vector2(447, 240)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../Bird 2:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.966667),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(483, 205), Vector2(483, 195)]
-}
-
 [sub_resource type="Animation" id="Animation_ri7hn"]
 resource_name = "Bird_Fly_2"
 length = 20.0
@@ -441,9 +421,585 @@ tracks/3/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_gvre5"]
 _data = {
-"Bird_Fly": SubResource("Animation_7u1f7"),
 "Bird_Fly_2": SubResource("Animation_ri7hn"),
 "RESET": SubResource("Animation_lmdnu")
+}
+
+[sub_resource type="Animation" id="Animation_3w0dv"]
+resource_name = "manta"
+length = 80.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 80),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2082, 75), Vector2(-159, 75)]
+}
+
+[sub_resource type="Animation" id="Animation_o2lbe"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2082, 75)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_28uu8"]
+_data = {
+"RESET": SubResource("Animation_o2lbe"),
+"manta": SubResource("Animation_3w0dv")
+}
+
+[sub_resource type="Animation" id="Animation_gngq1"]
+resource_name = "manyfish"
+length = 20.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../AnimationPlayer8/Fish1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5, 5, 7.5, 10, 12.5, 15, 17.5, 20),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2179, 610), Vector2(1881.38, 590), Vector2(1583.75, 610), Vector2(1286.13, 590), Vector2(988.5, 610), Vector2(690.875, 590), Vector2(393.25, 610), Vector2(95.625, 590), Vector2(-202, 610)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../AnimationPlayer8/Fish2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 3, 6, 9, 12, 15, 19, 20),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2033, 750), Vector2(1675.85, 800), Vector2(1318.7, 750), Vector2(961.55, 800), Vector2(604.4, 750), Vector2(247.25, 800), Vector2(-228.95, 750), Vector2(-348, 800)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../AnimationPlayer8/Fish3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2198, 780), Vector2(1959.9, 800), Vector2(1721.8, 803.111), Vector2(1483.7, 806.222), Vector2(1245.6, 780), Vector2(1007.5, 800), Vector2(769.4, 780), Vector2(531.3, 800), Vector2(293.2, 780), Vector2(55.1, 800), Vector2(-183, 780)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../AnimationPlayer8/Fish4:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 2.5, 5, 7.5, 10, 12.5, 15, 17.5, 20),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2126, 700), Vector2(1828.38, 670), Vector2(1530.75, 700), Vector2(1233.13, 670), Vector2(935.5, 700), Vector2(637.875, 670), Vector2(340.25, 700), Vector2(42.625, 670), Vector2(-255, 700)]
+}
+
+[sub_resource type="Animation" id="Animation_xy2ix"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../AnimationPlayer8/Fish1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2176, 331)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../AnimationPlayer8/Fish2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2030, 472)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../AnimationPlayer8/Fish3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2195, 505)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../AnimationPlayer8/Fish4:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2123, 420)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_n4u6g"]
+_data = {
+"RESET": SubResource("Animation_xy2ix"),
+"manyfish": SubResource("Animation_gngq1")
+}
+
+[sub_resource type="Animation" id="Animation_on2gc"]
+resource_name = "crab"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../AnimationPlayer2/Crab1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 3, 4, 6, 9, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(929, 922), Vector2(929, 922), Vector2(965, 893), Vector2(965, 893), Vector2(858, 929), Vector2(858, 929), Vector2(929, 922)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../AnimationPlayer2/Crab1:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 3.5, 8.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../AnimationPlayer2/Crab1:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 6.26667, 6.76667, 7.36667, 7.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 0.243066, -0.289471, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_xdpvu"]
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_thdt5"]
+_data = {
+"RESET": SubResource("Animation_xdpvu"),
+"crab": SubResource("Animation_on2gc")
+}
+
+[sub_resource type="Animation" id="Animation_ogrrw"]
+resource_name = "shark"
+length = 30.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../AnimationPlayer3/Shark:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 30),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-194, 526), Vector2(2000, 526)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lf8lu"]
+_data = {
+"shark": SubResource("Animation_ogrrw")
+}
+
+[sub_resource type="Animation" id="Animation_3any1"]
+resource_name = "jellyfish"
+length = 6.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../AnimationPlayer4/JellyFish:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3, 6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(24, 480), Vector2(24, 518), Vector2(24, 480)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bmtht"]
+_data = {
+"jellyfish": SubResource("Animation_3any1")
+}
+
+[sub_resource type="Animation" id="Animation_f1raq"]
+resource_name = "starfish"
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../AnimationPlayer5/Starfish1:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 3, 4, 4.03333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.586047, 0.602348, 0.0, -0.532846]
+}
+
+[sub_resource type="Animation" id="Animation_56fn6"]
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vwhai"]
+_data = {
+"RESET": SubResource("Animation_56fn6"),
+"starfish": SubResource("Animation_f1raq")
+}
+
+[sub_resource type="Animation" id="Animation_e4v6m"]
+resource_name = "squid"
+length = 6.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../AnimationPlayer6/Squid:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3, 5.96667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1386, 53), Vector2(1386, 133), Vector2(1386, 53)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sqlor"]
+_data = {
+"squid": SubResource("Animation_e4v6m")
+}
+
+[sub_resource type="Animation" id="Animation_1ob4m"]
+resource_name = "school2"
+length = 40.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../AnimationPlayer7/FishSchool2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10, 20, 30, 40),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1992, 265), Vector2(1419, 200), Vector2(846, 265), Vector2(273, 200), Vector2(-300, 265)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wsjre"]
+_data = {
+"school2": SubResource("Animation_1ob4m")
+}
+
+[sub_resource type="Animation" id="Animation_1pgpu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-507, 139)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../AnimationPlayer7/FishSchool2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1992, 265)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../AnimationPlayer2/Crab1:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(929, 922)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../../AnimationPlayer2/Crab1:flip_h")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../../AnimationPlayer2/Crab1:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../../AnimationPlayer5/Starfish1:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../../AnimationPlayer6/Squid:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1386, 53)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../../AnimationPlayer4/JellyFish:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(24, 480)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../../AnimationPlayer3/Shark:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-194, 526)]
+}
+
+[sub_resource type="Animation" id="Animation_r0g7q"]
+resource_name = "School1"
+length = 20.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5, 10, 15, 20),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-507, 139), Vector2(119.75, 169), Vector2(746.5, 139), Vector2(1373.25, 169), Vector2(2000, 139)]
+}
+
+[sub_resource type="Animation" id="Animation_76xyg"]
+resource_name = "School2"
+length = 40.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../AnimationPlayer7/FishSchool2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10, 20, 30, 40),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1992, 265), Vector2(1419, 200), Vector2(846, 265), Vector2(273, 200), Vector2(-300, 265)]
+}
+
+[sub_resource type="Animation" id="Animation_i6yk5"]
+resource_name = "Crab"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../AnimationPlayer2/Crab1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 3, 4, 6, 9, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(929, 922), Vector2(929, 922), Vector2(965, 893), Vector2(965, 893), Vector2(858, 929), Vector2(858, 929), Vector2(929, 922)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../AnimationPlayer2/Crab1:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 3.5, 8.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../AnimationPlayer2/Crab1:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 6.26667, 6.76667, 7.36667, 7.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 0.243066, -0.289471, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_8ff18"]
+resource_name = "starfish"
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../AnimationPlayer5/Starfish1:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 3, 4, 4.03333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.586047, 0.602348, 0.0, -0.532846]
+}
+
+[sub_resource type="Animation" id="Animation_xccwy"]
+resource_name = "squid"
+length = 6.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../AnimationPlayer6/Squid:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3, 5.96667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1386, 53), Vector2(1386, 133), Vector2(1386, 53)]
+}
+
+[sub_resource type="Animation" id="Animation_qpity"]
+resource_name = "jellyfish"
+length = 6.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../AnimationPlayer4/JellyFish:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3, 6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(24, 480), Vector2(24, 518), Vector2(24, 480)]
+}
+
+[sub_resource type="Animation" id="Animation_jqguo"]
+resource_name = "shark"
+length = 30.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../AnimationPlayer3/Shark:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 30),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-194, 526), Vector2(2000, 526)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_13d0y"]
+_data = {
+"Crab": SubResource("Animation_i6yk5"),
+"RESET": SubResource("Animation_1pgpu"),
+"School1": SubResource("Animation_r0g7q"),
+"School2": SubResource("Animation_76xyg"),
+"jellyfish": SubResource("Animation_qpity"),
+"shark": SubResource("Animation_jqguo"),
+"squid": SubResource("Animation_xccwy"),
+"starfish": SubResource("Animation_8ff18")
 }
 
 [sub_resource type="Animation" id="Animation_k8xn7"]
@@ -637,10 +1193,10 @@ script = ExtResource("9_62nut")
 
 [node name="Cloud" type="TextureRect" parent="Strand_BG/AnimationPlayer2"]
 visible = false
-offset_left = -299.0
-offset_top = 249.0
-offset_right = -54.0
-offset_bottom = 360.0
+offset_left = 500.0
+offset_top = 200.0
+offset_right = 745.0
+offset_bottom = 311.0
 texture = ExtResource("10_8nijr")
 
 [node name="Waves" type="TextureRect" parent="Strand_BG"]
@@ -708,7 +1264,6 @@ libraries = {
 script = ExtResource("15_8aqc4")
 
 [node name="Ball" type="TextureRect" parent="Strand_BG/AnimationPlayer5"]
-visible = false
 offset_left = 1758.0
 offset_top = 629.0
 offset_right = 1825.0
@@ -732,7 +1287,6 @@ libraries = {
 script = ExtResource("18_eabu2")
 
 [node name="Crab" type="TextureRect" parent="Strand_BG/AnimationPlayer3"]
-visible = false
 offset_left = 915.0
 offset_top = 911.0
 offset_right = 982.0
@@ -748,7 +1302,6 @@ speed_scale = 0.2
 script = ExtResource("20_6ajtc")
 
 [node name="Cloud2" type="TextureRect" parent="Strand_BG/AnimationPlayer"]
-visible = false
 offset_left = -194.0
 offset_top = 184.0
 offset_right = -48.0
@@ -771,9 +1324,9 @@ offset_bottom = 252.0
 texture = ExtResource("23_qryss")
 
 [node name="Bird 2" type="TextureRect" parent="Strand_BG/AnimationPlayer4"]
-offset_left = 483.0
+offset_left = 467.0
 offset_top = 205.0
-offset_right = 527.0
+offset_right = 511.0
 offset_bottom = 230.0
 texture = ExtResource("24_ablaq")
 
@@ -855,6 +1408,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="UnderVatten_BG" type="TextureRect" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1509,115 +2063,165 @@ offset_right = 744.5
 offset_bottom = 1046.5
 texture = ExtResource("77_i6qfe")
 
-[node name="Shark" type="TextureRect" parent="UnderVatten_BG"]
+[node name="AnimationPlayer9" type="AnimationPlayer" parent="UnderVatten_BG"]
+root_node = NodePath("MantaRay")
+libraries = {
+"": SubResource("AnimationLibrary_28uu8")
+}
+script = ExtResource("84_lpe0t")
+
+[node name="MantaRay" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer9"]
+offset_left = 2082.0
+offset_top = 75.0
+offset_right = 2122.0
+offset_bottom = 115.0
+texture = ExtResource("65_13wst")
+
+[node name="AnimationPlayer8" type="AnimationPlayer" parent="UnderVatten_BG"]
+root_node = NodePath("../AnimationPlayer2")
+libraries = {
+"": SubResource("AnimationLibrary_n4u6g")
+}
+script = ExtResource("85_kod8e")
+
+[node name="Fish1" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer8"]
 z_index = 2
-layout_mode = 0
-offset_left = -151.5
-offset_top = 556.5
-offset_right = -20.5
-offset_bottom = 606.5
+offset_left = 2179.0
+offset_top = 610.0
+offset_right = 2270.0
+offset_bottom = 695.0
+texture = ExtResource("98_741d4")
+
+[node name="Fish2" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer8"]
+z_index = 2
+offset_left = 2033.0
+offset_top = 750.0
+offset_right = 2124.0
+offset_bottom = 835.0
+texture = ExtResource("99_kxwh0")
+
+[node name="Fish3" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer8"]
+z_index = 2
+offset_left = 2198.0
+offset_top = 780.0
+offset_right = 2290.0
+offset_bottom = 866.0
+texture = ExtResource("100_g6f37")
+
+[node name="Fish4" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer8"]
+z_index = 2
+offset_left = 2126.0
+offset_top = 700.0
+offset_right = 2217.0
+offset_bottom = 785.0
+texture = ExtResource("101_srikv")
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="UnderVatten_BG"]
+root_node = NodePath("../AnimationPlayer")
+libraries = {
+"": SubResource("AnimationLibrary_thdt5")
+}
+script = ExtResource("89_m1x65")
+
+[node name="Crab1" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer2"]
+z_index = 2
+offset_left = 929.0
+offset_top = 922.0
+offset_right = 1070.0
+offset_bottom = 1062.0
+pivot_offset = Vector2(74, 73)
+texture = ExtResource("105_28orh")
+
+[node name="AnimationPlayer3" type="AnimationPlayer" parent="UnderVatten_BG"]
+root_node = NodePath("../AnimationPlayer")
+libraries = {
+"": SubResource("AnimationLibrary_lf8lu")
+}
+script = ExtResource("90_qud01")
+
+[node name="Shark" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer3"]
+offset_left = -194.0
+offset_top = 526.0
+offset_right = -63.0
+offset_bottom = 576.0
 texture = ExtResource("64_enl3x")
 flip_h = true
 
-[node name="MantaRay" type="TextureRect" parent="UnderVatten_BG"]
-z_index = 2
-layout_mode = 0
-offset_left = 2124.5
-offset_top = 105.5
-offset_right = 2164.5
-offset_bottom = 145.5
-texture = ExtResource("65_13wst")
+[node name="AnimationPlayer4" type="AnimationPlayer" parent="UnderVatten_BG"]
+root_node = NodePath("../AnimationPlayer")
+libraries = {
+"": SubResource("AnimationLibrary_bmtht")
+}
+script = ExtResource("91_inxbo")
 
-[node name="JellyFish" type="TextureRect" parent="UnderVatten_BG"]
-z_index = 2
-layout_mode = 0
-offset_left = 66.5
-offset_top = 510.5
-offset_right = 106.5
-offset_bottom = 579.5
+[node name="JellyFish" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer4"]
+visible = false
+offset_left = 24.0
+offset_top = 480.0
+offset_right = 64.0
+offset_bottom = 549.0
 texture = ExtResource("66_di6wt")
 
-[node name="Fish1" type="TextureRect" parent="UnderVatten_BG"]
-z_index = 2
-layout_mode = 0
-offset_left = 2218.5
-offset_top = 361.5
-offset_right = 2309.5
-offset_bottom = 446.5
-texture = ExtResource("98_741d4")
+[node name="AnimationPlayer5" type="AnimationPlayer" parent="UnderVatten_BG"]
+root_node = NodePath("../AnimationPlayer")
+libraries = {
+"": SubResource("AnimationLibrary_vwhai")
+}
+script = ExtResource("92_87ade")
 
-[node name="Fish2" type="TextureRect" parent="UnderVatten_BG"]
+[node name="Starfish1" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer5"]
 z_index = 2
-layout_mode = 0
-offset_left = 2072.5
-offset_top = 502.5
-offset_right = 2163.5
-offset_bottom = 587.5
-texture = ExtResource("99_kxwh0")
+offset_left = 773.0
+offset_top = 936.0
+offset_right = 850.0
+offset_bottom = 1012.0
+pivot_offset = Vector2(40, 41)
+texture = ExtResource("106_wr3nh")
 
-[node name="Fish3" type="TextureRect" parent="UnderVatten_BG"]
-z_index = 2
-layout_mode = 0
-offset_left = 2237.5
-offset_top = 535.5
-offset_right = 2329.5
-offset_bottom = 621.5
-texture = ExtResource("100_g6f37")
+[node name="AnimationPlayer6" type="AnimationPlayer" parent="UnderVatten_BG"]
+root_node = NodePath("../AnimationPlayer")
+libraries = {
+"": SubResource("AnimationLibrary_sqlor")
+}
+script = ExtResource("93_lam0n")
 
-[node name="Fish4" type="TextureRect" parent="UnderVatten_BG"]
+[node name="Squid" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer6"]
 z_index = 2
-layout_mode = 0
-offset_left = 2165.5
-offset_top = 450.5
-offset_right = 2256.5
-offset_bottom = 535.5
-texture = ExtResource("101_srikv")
-
-[node name="Squid" type="TextureRect" parent="UnderVatten_BG"]
-z_index = 2
-layout_mode = 0
-offset_left = 1428.5
-offset_top = 83.5
-offset_right = 1746.5
-offset_bottom = 315.5
+offset_left = 1386.0
+offset_top = 53.0
+offset_right = 1704.0
+offset_bottom = 285.0
 texture = ExtResource("102_y878u")
 
-[node name="FishSchool1" type="TextureRect" parent="UnderVatten_BG"]
-z_index = 2
-layout_mode = 0
-offset_left = -464.5
-offset_top = 169.5
-offset_right = -47.5
-offset_bottom = 354.5
-texture = ExtResource("103_fvqwt")
-flip_h = true
+[node name="AnimationPlayer7" type="AnimationPlayer" parent="UnderVatten_BG"]
+root_node = NodePath("../AnimationPlayer")
+libraries = {
+"": SubResource("AnimationLibrary_wsjre")
+}
+script = ExtResource("94_s6rhw")
 
-[node name="FishSchool2" type="TextureRect" parent="UnderVatten_BG"]
-z_index = 2
-layout_mode = 0
-offset_left = 2034.5
-offset_top = 295.5
-offset_right = 2235.5
-offset_bottom = 384.5
+[node name="FishSchool2" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer7"]
+offset_left = 1992.0
+offset_top = 265.0
+offset_right = 2193.0
+offset_bottom = 354.0
 texture = ExtResource("104_3l8bb")
 
-[node name="Crab1" type="TextureRect" parent="UnderVatten_BG"]
-z_index = 2
-layout_mode = 0
-offset_left = 971.5
-offset_top = 952.5
-offset_right = 1112.5
-offset_bottom = 1092.5
-texture = ExtResource("105_28orh")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="UnderVatten_BG"]
+root_node = NodePath("FishSchool1")
+libraries = {
+"": SubResource("AnimationLibrary_13d0y")
+}
+script = ExtResource("89_5a85i")
 
-[node name="Starfish1" type="TextureRect" parent="UnderVatten_BG"]
+[node name="FishSchool1" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer"]
 z_index = 2
-layout_mode = 0
-offset_left = 815.5
-offset_top = 966.5
-offset_right = 892.5
-offset_bottom = 1042.5
-texture = ExtResource("106_wr3nh")
+offset_left = -507.0
+offset_top = 139.0
+offset_right = -90.0
+offset_bottom = 324.0
+texture = ExtResource("103_fvqwt")
+flip_h = true
 
 [node name="Whale1" type="TextureRect" parent="UnderVatten_BG"]
 visible = false
@@ -1756,7 +2360,7 @@ libraries = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="AnimationPlayer"]
-z_index = 3
+z_index = 10
 offset_left = -457.0
 offset_top = -368.0
 offset_right = 2401.0

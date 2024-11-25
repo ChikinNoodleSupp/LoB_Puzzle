@@ -1,10 +1,13 @@
 extends AnimationPlayer
 
-var SM = preload("res://Scripts/SceneManager.gd")
 
+var SM = preload("res://Scripts/SceneManager.gd")
 # Called when the node enters the scene tree for the first time.
+
+
 func _ready() -> void:
-	if SM.scene == 1:
-		play("CloudMovement2")
+	
+	if SM.scene == 2:
+		play("manta")
 	else:
-		$Cloud.visible = false
+		$MantaRay.visible = false
