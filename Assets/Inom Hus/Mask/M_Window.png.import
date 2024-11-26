@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://m7r44f8vvtng"
+path="res://.godot/imported/M_Window.png-7414abc074352eee083f2d82bf4cb384.res"
+
+[deps]
+
+source_file="res://Assets/Inom Hus/Mask/M_Window.png"
+dest_files=["res://.godot/imported/M_Window.png-7414abc074352eee083f2d82bf4cb384.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

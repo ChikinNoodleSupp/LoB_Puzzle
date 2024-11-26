@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://d3mgyqjqu2ciq"
+path="res://.godot/imported/M_Bed.png-7f823ddbbce8fa62e90b21c82b6c6d4b.res"
+
+[deps]
+
+source_file="res://Assets/Inom Hus/Mask/M_Bed.png"
+dest_files=["res://.godot/imported/M_Bed.png-7f823ddbbce8fa62e90b21c82b6c6d4b.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

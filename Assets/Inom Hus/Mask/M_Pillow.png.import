@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://ckbu1kv3ect7d"
+path="res://.godot/imported/M_Pillow.png-599b1c9afc6d1340c5f65241fa896f8e.res"
+
+[deps]
+
+source_file="res://Assets/Inom Hus/Mask/M_Pillow.png"
+dest_files=["res://.godot/imported/M_Pillow.png-599b1c9afc6d1340c5f65241fa896f8e.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

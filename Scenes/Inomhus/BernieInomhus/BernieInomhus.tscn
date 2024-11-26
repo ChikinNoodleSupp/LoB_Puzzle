@@ -1,17 +1,17 @@
 [gd_scene load_steps=4 format=3 uid="uid://cehci5tdm7lvv"]
 
-[ext_resource type="Texture2D" uid="uid://6vsc8pfnvqbi" path="res://Assets/Under Vatten/LnB/B_Boat_H.png" id="1_ovygo"]
-[ext_resource type="Texture2D" uid="uid://by0ebx150f03k" path="res://Assets/Under Vatten/LnB/B_Boat_F.png" id="2_mi36w"]
-[ext_resource type="BitMap" uid="uid://bciox1e276sja" path="res://Assets/Under Vatten/Mask/M_Boat.png" id="3_w8v6l"]
+[ext_resource type="Texture2D" uid="uid://dthiwo3utj43m" path="res://Assets/Inom Hus/LnB/B_Tent_H.png" id="1_kusnp"]
+[ext_resource type="Texture2D" uid="uid://clfxenrosqsao" path="res://Assets/Inom Hus/LnB/B_Tent_F.png" id="2_uhkut"]
+[ext_resource type="BitMap" uid="uid://bt2tc0672wrm4" path="res://Assets/Inom Hus/Mask/M_Tent.png" id="3_1w710"]
 
 [node name="BernieSpot" type="TextureButton"]
 z_index = 1
-offset_right = 1054.0
-offset_bottom = 1698.0
+offset_right = 653.0
+offset_bottom = 1119.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
-texture_normal = ExtResource("1_ovygo")
-texture_pressed = ExtResource("2_mi36w")
-texture_hover = ExtResource("1_ovygo")
-texture_disabled = ExtResource("2_mi36w")
-texture_click_mask = ExtResource("3_w8v6l")
+texture_normal = ExtResource("1_kusnp")
+texture_pressed = ExtResource("2_uhkut")
+texture_hover = ExtResource("1_kusnp")
+texture_disabled = ExtResource("2_uhkut")
+texture_click_mask = ExtResource("3_1w710")

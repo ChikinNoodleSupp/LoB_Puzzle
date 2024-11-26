@@ -1,4 +1,4 @@
-[gd_scene load_steps=190 format=3 uid="uid://bcyokg3fmgifd"]
+[gd_scene load_steps=183 format=3 uid="uid://bcyokg3fmgifd"]
 
 [ext_resource type="Script" path="res://Scripts/hide_seek_control_test.gd" id="1_yap3s"]
 [ext_resource type="Texture2D" uid="uid://djj3oolji5gd8" path="res://Assets/Strand/BG/Asset 11.png" id="2_clt68"]
@@ -33,12 +33,9 @@
 [ext_resource type="Texture2D" uid="uid://caik218gerhwi" path="res://Assets/Inom Hus/BG/InomhusBG_Asset 23.png" id="28_r4jvi"]
 [ext_resource type="Texture2D" uid="uid://o4n4lm8kpkum" path="res://Assets/Inom Hus/BG/InomhusBG_Asset 22.png" id="29_8thyw"]
 [ext_resource type="Texture2D" uid="uid://dhjlaaufsaxmp" path="res://Assets/Under Vatten/BG/Static/Asset 109.png" id="29_61q5g"]
-[ext_resource type="Texture2D" uid="uid://dy6swqs5yumxn" path="res://Assets/Inom Hus/BG/InomhusBG_Asset 20.png" id="30_e1f1d"]
 [ext_resource type="Texture2D" uid="uid://pbi6deo7aecy" path="res://Assets/Under Vatten/BG/Static/Asset 100.png" id="30_ngedv"]
 [ext_resource type="Texture2D" uid="uid://dyo4sch44nxs2" path="res://Assets/Under Vatten/BG/Static/Asset 99.png" id="31_3c4gs"]
-[ext_resource type="Texture2D" uid="uid://djwfi14nxja14" path="res://Assets/Inom Hus/BG/InomhusBG_Asset 19.png" id="31_t185h"]
 [ext_resource type="Texture2D" uid="uid://ven3cdi3jgje" path="res://Assets/Under Vatten/BG/Static/Asset 98.png" id="32_cxgxs"]
-[ext_resource type="Texture2D" uid="uid://bmi8tj7fx613g" path="res://Assets/Inom Hus/BG/InomhusBG_Asset 18.png" id="32_vpd7c"]
 [ext_resource type="Texture2D" uid="uid://bsodlltby02fa" path="res://Assets/Inom Hus/BG/InomhusBG_Asset 17.png" id="33_qkb7m"]
 [ext_resource type="Texture2D" uid="uid://cbq3um8ikitq4" path="res://Assets/Under Vatten/BG/Static/Asset 87.png" id="33_v4gx6"]
 [ext_resource type="Texture2D" uid="uid://bs4rku6o6nii2" path="res://Assets/Under Vatten/BG/Static/Asset 86.png" id="34_sfanb"]
@@ -49,7 +46,6 @@
 [ext_resource type="Texture2D" uid="uid://c8rhmhcep34es" path="res://Assets/Inom Hus/BG/InomhusBG_Asset 15.png" id="35_x58gg"]
 [ext_resource type="Texture2D" uid="uid://bgnbya15yvt6w" path="res://Assets/Inom Hus/BG/InomhusBG_Asset 14.png" id="36_q05jm"]
 [ext_resource type="Texture2D" uid="uid://b3n2dm05mu2pw" path="res://Assets/Under Vatten/BG/Static/Asset 79.png" id="36_tiev7"]
-[ext_resource type="Texture2D" uid="uid://dqkme4slevomf" path="res://Assets/Inom Hus/BG/InomhusBG_Asset 13.png" id="37_gwfiq"]
 [ext_resource type="Texture2D" uid="uid://wym4m3ewqf53" path="res://Assets/Under Vatten/BG/Static/Asset 77.png" id="37_uomsw"]
 [ext_resource type="Texture2D" uid="uid://cs1wru3nhohxt" path="res://Assets/Under Vatten/BG/Static/Asset 74.png" id="38_e6thy"]
 [ext_resource type="Texture2D" uid="uid://c8koysckwx0bc" path="res://Assets/Inom Hus/BG/InomhusBG_Asset 12.png" id="38_jaytb"]
@@ -61,15 +57,12 @@
 [ext_resource type="Texture2D" uid="uid://bkwt5g631b44" path="res://Assets/Inom Hus/BG/InomhusBG_Asset 9.png" id="41_ysqur"]
 [ext_resource type="Texture2D" uid="uid://btvh3v4gee2ow" path="res://Assets/Inom Hus/BG/InomhusBG_Asset 8.png" id="42_3tyka"]
 [ext_resource type="Texture2D" uid="uid://eqfit3652ng1" path="res://Assets/Under Vatten/BG/Static/Asset 67.png" id="42_la4fp"]
-[ext_resource type="Texture2D" uid="uid://jw8f27ymd48b" path="res://Assets/Inom Hus/BG/InomhusBG_Asset 7.png" id="43_3r3jg"]
 [ext_resource type="Texture2D" uid="uid://7mtbx31onvwt" path="res://Assets/Inom Hus/BG/InomhusBG_Asset 6.png" id="44_p3226"]
 [ext_resource type="Texture2D" uid="uid://cdqd7ns38mxbj" path="res://Assets/Inom Hus/BG/InomhusBG_Asset 5.png" id="45_5bex3"]
 [ext_resource type="Texture2D" uid="uid://dhsnnpru15g8i" path="res://Assets/Under Vatten/BG/Static/Asset 83.png" id="45_uo5i8"]
 [ext_resource type="Texture2D" uid="uid://bbdxe6qox6ia5" path="res://Assets/Under Vatten/BG/Static/Asset 70.png" id="46_itp12"]
-[ext_resource type="Texture2D" uid="uid://c7ykv6uha1hr2" path="res://Assets/Inom Hus/BG/InomhusBG_Asset 4.png" id="46_suhfy"]
 [ext_resource type="Texture2D" uid="uid://bkgq3i4br8uhb" path="res://Assets/Inom Hus/BG/InomhusBG_Asset 3.png" id="47_0r675"]
 [ext_resource type="Texture2D" uid="uid://b88vfgkg7wygl" path="res://Assets/Under Vatten/BG/Static/Asset 94.png" id="47_c45ny"]
-[ext_resource type="Texture2D" uid="uid://7o1s075ppujm" path="res://Assets/Inom Hus/BG/InomhusBG_Asset 2.png" id="48_0quxg"]
 [ext_resource type="Texture2D" uid="uid://b5j83tf5dtwc4" path="res://Assets/Under Vatten/BG/Static/Asset 93.png" id="48_1gcrm"]
 [ext_resource type="Texture2D" uid="uid://cfy70y88ppiwq" path="res://Assets/Inom Hus/BG/InomhusBG_Asset 1.png" id="49_ei247"]
 [ext_resource type="Texture2D" uid="uid://23smqed5bw5t" path="res://Assets/Under Vatten/BG/Static/Asset 92.png" id="49_rx3w1"]
@@ -1357,7 +1350,6 @@ offset_bottom = 230.0
 texture = ExtResource("24_ablaq")
 
 [node name="InomHus_BG" type="TextureRect" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1402,30 +1394,6 @@ offset_right = 1825.0
 offset_bottom = 148.0
 texture = ExtResource("29_8thyw")
 
-[node name="Window" type="TextureRect" parent="InomHus_BG"]
-layout_mode = 0
-offset_left = 1149.0
-offset_top = 178.0
-offset_right = 1520.0
-offset_bottom = 554.0
-texture = ExtResource("30_e1f1d")
-
-[node name="Blinds" type="TextureRect" parent="InomHus_BG/Window"]
-layout_mode = 0
-offset_left = -76.0
-offset_top = -14.0
-offset_right = 445.0
-offset_bottom = 545.0
-texture = ExtResource("31_t185h")
-
-[node name="Pillow" type="TextureRect" parent="InomHus_BG"]
-layout_mode = 0
-offset_left = 1358.0
-offset_top = 460.0
-offset_right = 1823.0
-offset_bottom = 885.0
-texture = ExtResource("32_vpd7c")
-
 [node name="CloudLamp" type="TextureRect" parent="InomHus_BG"]
 layout_mode = 0
 offset_left = 346.0
@@ -1457,14 +1425,6 @@ offset_top = 980.0
 offset_right = 1669.0
 offset_bottom = 1056.0
 texture = ExtResource("36_q05jm")
-
-[node name="Tent" type="TextureRect" parent="InomHus_BG"]
-layout_mode = 0
-offset_left = -210.0
-offset_top = -98.0
-offset_right = 325.0
-offset_bottom = 893.0
-texture = ExtResource("37_gwfiq")
 
 [node name="Lamp" type="TextureRect" parent="InomHus_BG"]
 layout_mode = 0
@@ -1499,6 +1459,7 @@ offset_bottom = 785.0
 texture = ExtResource("41_ysqur")
 
 [node name="Drawer" type="TextureRect" parent="InomHus_BG"]
+z_index = 1
 layout_mode = 0
 offset_left = 1001.0
 offset_top = 607.0
@@ -1506,37 +1467,22 @@ offset_right = 1198.0
 offset_bottom = 792.0
 texture = ExtResource("42_3tyka")
 
-[node name="Bed" type="TextureRect" parent="InomHus_BG"]
+[node name="BedLamp" type="TextureRect" parent="InomHus_BG/Drawer"]
+z_index = 1
 layout_mode = 0
-offset_left = 509.0
-offset_top = 473.0
-offset_right = 1009.0
-offset_bottom = 850.0
-texture = ExtResource("43_3r3jg")
-
-[node name="BedLamp" type="TextureRect" parent="InomHus_BG"]
-layout_mode = 0
-offset_left = 1001.0
-offset_top = 476.0
-offset_right = 1102.0
-offset_bottom = 617.0
+offset_top = -131.0
+offset_right = 101.0
+offset_bottom = 10.0
 texture = ExtResource("44_p3226")
 
-[node name="FlowerPot" type="TextureRect" parent="InomHus_BG"]
+[node name="FlowerPot" type="TextureRect" parent="InomHus_BG/Drawer"]
+z_index = 1
 layout_mode = 0
-offset_left = 1089.0
-offset_top = 523.0
-offset_right = 1174.0
-offset_bottom = 666.0
+offset_left = 88.0
+offset_top = -84.0
+offset_right = 173.0
+offset_bottom = 59.0
 texture = ExtResource("45_5bex3")
-
-[node name="Chest" type="TextureRect" parent="InomHus_BG"]
-layout_mode = 0
-offset_left = 1010.0
-offset_top = 712.0
-offset_right = 1326.0
-offset_bottom = 1058.0
-texture = ExtResource("46_suhfy")
 
 [node name="TeaSet" type="TextureRect" parent="InomHus_BG"]
 layout_mode = 0
@@ -1545,14 +1491,6 @@ offset_top = 962.0
 offset_right = 673.0
 offset_bottom = 1046.0
 texture = ExtResource("47_0r675")
-
-[node name="Stove" type="TextureRect" parent="InomHus_BG"]
-layout_mode = 0
-offset_left = 298.0
-offset_top = 768.0
-offset_right = 509.0
-offset_bottom = 1067.0
-texture = ExtResource("48_0quxg")
 
 [node name="Pot" type="TextureRect" parent="InomHus_BG"]
 layout_mode = 0

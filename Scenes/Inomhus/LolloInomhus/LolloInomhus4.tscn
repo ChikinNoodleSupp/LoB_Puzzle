@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://dy4fj1a6v4nuh"]
+
+[ext_resource type="Texture2D" uid="uid://bn7y4brsc5nrx" path="res://Assets/Inom Hus/LnB/L_Stove_H.png" id="1_fdb1l"]
+[ext_resource type="Texture2D" uid="uid://0huxn3vrgoxr" path="res://Assets/Inom Hus/LnB/L_Stove_F.png" id="2_puwhw"]
+[ext_resource type="BitMap" uid="uid://cpeye4oniuld" path="res://Assets/Inom Hus/Mask/M_Stove.png" id="3_1r4ev"]
+
+[sub_resource type="GDScript" id="GDScript_hdxlj"]
+script/source = "extends TextureButton
+"
+
+[node name="LolloSpot" type="TextureButton"]
+z_index = 1
+offset_right = 681.0
+offset_bottom = 875.0
+texture_normal = ExtResource("1_fdb1l")
+texture_pressed = ExtResource("2_puwhw")
+texture_hover = ExtResource("1_fdb1l")
+texture_disabled = ExtResource("2_puwhw")
+texture_click_mask = ExtResource("3_1r4ev")
+script = SubResource("GDScript_hdxlj")

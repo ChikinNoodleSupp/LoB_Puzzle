@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbhtmbktwikhr"]
+
+[ext_resource type="Texture2D" uid="uid://c626hv04trul8" path="res://Assets/Inom Hus/Hover/H_Window.png" id="1_p2jw6"]
+[ext_resource type="Texture2D" uid="uid://c1njdrfdevi7m" path="res://Assets/Inom Hus/Pressed/P_Window.png" id="2_2j1mp"]
+[ext_resource type="BitMap" uid="uid://m7r44f8vvtng" path="res://Assets/Inom Hus/Mask/M_Window.png" id="3_hoaaj"]
+
+[node name="empty_spot" type="TextureButton"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -960.0
+offset_top = -540.0
+offset_right = 182.0
+offset_bottom = 237.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("1_p2jw6")
+texture_pressed = ExtResource("2_2j1mp")
+texture_hover = ExtResource("1_p2jw6")
+texture_disabled = ExtResource("2_2j1mp")
+texture_click_mask = ExtResource("3_hoaaj")
+stretch_mode = 3

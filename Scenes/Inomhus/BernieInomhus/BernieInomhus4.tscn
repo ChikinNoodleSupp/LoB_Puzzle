@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://durwkrk611sde"]
+
+[ext_resource type="Texture2D" uid="uid://dh787afj1uos5" path="res://Assets/Inom Hus/LnB/B_Stove_H.png" id="1_nicx8"]
+[ext_resource type="Texture2D" uid="uid://b1p2x7nj6nuav" path="res://Assets/Inom Hus/LnB/B_Stove_F.png" id="2_ai1jg"]
+[ext_resource type="BitMap" uid="uid://cpeye4oniuld" path="res://Assets/Inom Hus/Mask/M_Stove.png" id="3_jr6nu"]
+
+[node name="BernieSpot" type="TextureButton"]
+z_index = 1
+offset_right = 681.0
+offset_bottom = 875.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource("1_nicx8")
+texture_pressed = ExtResource("2_ai1jg")
+texture_hover = ExtResource("1_nicx8")
+texture_disabled = ExtResource("2_ai1jg")
+texture_click_mask = ExtResource("3_jr6nu")

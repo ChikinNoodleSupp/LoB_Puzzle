@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bt2tc0672wrm4"
+path="res://.godot/imported/M_Tent.png-7da8e27a998d118a132d48302b64c9ad.res"
+
+[deps]
+
+source_file="res://Assets/Inom Hus/Mask/M_Tent.png"
+dest_files=["res://.godot/imported/M_Tent.png-7da8e27a998d118a132d48302b64c9ad.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

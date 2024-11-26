@@ -4,7 +4,7 @@ extends Control
 var array1 = [1, 2, 3, 4, 5, 6]
 var array2 = [1, 2, 3, 4, 5, 6]
 
-var locationArray = ["res://Scenes/Strand/Hide_Seek_control_test.tscn","res://Scenes/UnderVatten/Hide_Seek_control_test_2.tscn", "res://Hide_Seek_control_test_3.tscn"] # just add more scenes
+var locationArray = ["res://Scenes/Strand/Hide_Seek_control_test.tscn","res://Scenes/UnderVatten/Hide_Seek_control_test_2.tscn", "res://Scenes/Inomhus/Hide_Seek_control_test_3.tscn"] # just add more scenes
 
 static var sceneNumber = 0
 
@@ -64,11 +64,34 @@ var bernieVattenArray = [BernieVatten, BernieVatten2, BernieVatten3, BernieVatte
 
 var vattenArray = [lolloVattenArray, bernieVattenArray, VattenSpotArray]
 
+var emptyInomhus = preload("res://Scenes/Inomhus/EmptyInomhus/emptyInomhus.tscn")
+var emptyInomhus2 = preload("res://Scenes/Inomhus/EmptyInomhus/emptyInomhus2.tscn")
+var emptyInomhus3 = preload("res://Scenes/Inomhus/EmptyInomhus/emptyInomhus3.tscn")
+var emptyInomhus4 = preload("res://Scenes/Inomhus/EmptyInomhus/emptyInomhus4.tscn")
+var emptyInomhus5 = preload("res://Scenes/Inomhus/EmptyInomhus/emptyInomhus5.tscn")
+var emptyInomhus6 = preload("res://Scenes/Inomhus/EmptyInomhus/emptyInomhus6.tscn")
+var emptyInomhusArray = [emptyInomhus, emptyInomhus2, emptyInomhus3, emptyInomhus4, emptyInomhus5, emptyInomhus6]
 
+var LolloInomhus = preload("res://Scenes/Inomhus/LolloInomhus/LolloInomhus.tscn")
+var LolloInomhus2 = preload("res://Scenes/Inomhus/LolloInomhus/LolloInomhus2.tscn")
+var LolloInomhus3 = preload("res://Scenes/Inomhus/LolloInomhus/LolloInomhus3.tscn")
+var LolloInomhus4 = preload("res://Scenes/Inomhus/LolloInomhus/LolloInomhus4.tscn")
+var LolloInomhus5 = preload("res://Scenes/Inomhus/LolloInomhus/LolloInomhus5.tscn")
+var LolloInomhus6 = preload("res://Scenes/Inomhus/LolloInomhus/LolloInomhus6.tscn")
+var lolloInomhusArray =[LolloInomhus, LolloInomhus2, LolloInomhus3, LolloInomhus4, LolloInomhus5, LolloInomhus6]
 
+var BernieInomhus = preload("res://Scenes/Inomhus/BernieInomhus/BernieInomhus.tscn")
+var BernieInomhus2 = preload("res://Scenes/Inomhus/BernieInomhus/BernieInomhus2.tscn")
+var BernieInomhus3 = preload("res://Scenes/Inomhus/BernieInomhus/BernieInomhus3.tscn")
+var BernieInomhus4 = preload("res://Scenes/Inomhus/BernieInomhus/BernieInomhus4.tscn")
+var BernieInomhus5 = preload("res://Scenes/Inomhus/BernieInomhus/BernieInomhus5.tscn")
+var BernieInomhus6 = preload("res://Scenes/Inomhus/BernieInomhus/BernieInomhus6.tscn")
+var bernieInomhusArray = [BernieInomhus, BernieInomhus2, BernieInomhus3, BernieInomhus4, BernieInomhus5, BernieInomhus6]
+
+var inomhusArray = [lolloInomhusArray, bernieInomhusArray, emptyInomhusArray]
 
 #Put "packages" in this one
-var sceneArray = [strandArray, vattenArray]
+var sceneArray = [strandArray, vattenArray, inomhusArray]
 
 @onready var BG_1 = $Strand_BG
 @onready var BG_2 = $UnderVatten_BG

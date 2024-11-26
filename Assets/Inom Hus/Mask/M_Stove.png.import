@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://cpeye4oniuld"
+path="res://.godot/imported/M_Stove.png-e9d2f37377f069f73b838c4b595e450a.res"
+
+[deps]
+
+source_file="res://Assets/Inom Hus/Mask/M_Stove.png"
+dest_files=["res://.godot/imported/M_Stove.png-e9d2f37377f069f73b838c4b595e450a.res"]
+
+[params]
+
+create_from=0
+threshold=0.5
