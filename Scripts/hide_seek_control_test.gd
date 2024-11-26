@@ -139,6 +139,7 @@ func _ready() -> void:
 	
 	elif SM.scene == 3:
 		BG_3.visible = true
+		AudioPlayer.play_music_level3()
 
 	newScene()
 	
