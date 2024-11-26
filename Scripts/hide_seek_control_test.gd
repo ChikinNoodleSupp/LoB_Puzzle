@@ -64,6 +64,9 @@ var bernieVattenArray = [BernieVatten, BernieVatten2, BernieVatten3, BernieVatte
 
 var vattenArray = [lolloVattenArray, bernieVattenArray, VattenSpotArray]
 
+
+
+
 #Put "packages" in this one
 var sceneArray = [strandArray, vattenArray]
 
