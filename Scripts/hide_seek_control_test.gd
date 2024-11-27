@@ -12,6 +12,7 @@ static var sceneNumber = 0
 var LolloFound = false
 var BernieFound = false
 
+# Strand hiding spots
 var EmptySpot = preload("res://Scenes/Strand/Empty/empty_spot.tscn")
 var EmptySpot2 = preload("res://Scenes/Strand/Empty/empty_spot2.tscn")
 var EmptySpot3 = preload("res://Scenes/Strand/Empty/empty_spot3.tscn")
@@ -38,6 +39,7 @@ var bernieArray = [BernieHiding, BernieHiding2, BernieHiding3, BernieHiding4, Be
 
 var strandArray = [lolloArray, bernieArray, hidingSpotArray]
 
+# under vatten hiding spots
 var EmptyVatten = preload("res://Scenes/UnderVatten/Emtpy/empty_water.tscn")
 var EmptyVatten2 = preload("res://Scenes/UnderVatten/Emtpy/empty_water2.tscn")
 var EmptyVatten3 = preload("res://Scenes/UnderVatten/Emtpy/empty_water3.tscn")
@@ -64,6 +66,7 @@ var bernieVattenArray = [BernieVatten, BernieVatten2, BernieVatten3, BernieVatte
 
 var vattenArray = [lolloVattenArray, bernieVattenArray, VattenSpotArray]
 
+# inomhus hiding spots
 var emptyInomhus = preload("res://Scenes/Inomhus/EmptyInomhus/emptyInomhus.tscn")
 var emptyInomhus2 = preload("res://Scenes/Inomhus/EmptyInomhus/emptyInomhus2.tscn")
 var emptyInomhus3 = preload("res://Scenes/Inomhus/EmptyInomhus/emptyInomhus3.tscn")
@@ -90,6 +93,7 @@ var bernieInomhusArray = [BernieInomhus, BernieInomhus2, BernieInomhus3, BernieI
 
 var inomhusArray = [lolloInomhusArray, bernieInomhusArray, emptyInomhusArray]
 
+# berg hiding spots
 var emptyBerg = preload("res://Scenes/Berg/Empty_Berg/emptyBerg.tscn")
 var emptyBerg2 = preload("res://Scenes/Berg/Empty_Berg/emptyBerg2.tscn")
 var emptyBerg3 = preload("res://Scenes/Berg/Empty_Berg/emptyBerg3.tscn")
@@ -116,8 +120,35 @@ var bernieBergArray = [BernieBerg, BernieBerg2, BernieBerg3, BernieBerg4, Bernie
 
 var bergArray = [lolloBergArray, bernieBergArray, emptyBergArray]
 
+# djungel hiding spots
+var emptyDjungel = preload("res://Scenes/Djungel/Empty_Djungel/emptyDjungel.tscn")
+var emptyDjungel2 = preload("res://Scenes/Djungel/Empty_Djungel/emptyDjungel2.tscn")
+var emptyDjungel3 = preload("res://Scenes/Djungel/Empty_Djungel/emptyDjungel3.tscn")
+var emptyDjungel4 = preload("res://Scenes/Djungel/Empty_Djungel/emptyDjungel4.tscn")
+var emptyDjungel5 = preload("res://Scenes/Djungel/Empty_Djungel/emptyDjungel5.tscn")
+var emptyDjungel6 = preload("res://Scenes/Djungel/Empty_Djungel/emptyDjungel6.tscn")
+var emptyDjungelArray = [emptyDjungel, emptyDjungel2, emptyDjungel3, emptyDjungel4, emptyDjungel5, emptyDjungel6]
+
+var LolloDjungel = preload("res://Scenes/Djungel/Lollo_Djungel/LolloDjungel.tscn")
+var LolloDjungel2 = preload("res://Scenes/Djungel/Lollo_Djungel/LolloDjungel2.tscn")
+var LolloDjungel3 = preload("res://Scenes/Djungel/Lollo_Djungel/LolloDjungel3.tscn")
+var LolloDjungel4 = preload("res://Scenes/Djungel/Lollo_Djungel/LolloDjungel4.tscn")
+var LolloDjungel5 = preload("res://Scenes/Djungel/Lollo_Djungel/LolloDjungel5.tscn")
+var LolloDjungel6 = preload("res://Scenes/Djungel/Lollo_Djungel/LolloDjungel6.tscn")
+var lolloDjungelArray = [LolloDjungel, LolloDjungel2, LolloDjungel3, LolloDjungel4, LolloDjungel5, LolloDjungel6]
+
+var BernieDjungel = preload("res://Scenes/Djungel/Bernie_Djungel/BernieDjungel.tscn")
+var BernieDjungel2 = preload("res://Scenes/Djungel/Bernie_Djungel/BernieDjungel2.tscn")
+var BernieDjungel3 = preload("res://Scenes/Djungel/Bernie_Djungel/BernieDjungel3.tscn")
+var BernieDjungel4 = preload("res://Scenes/Djungel/Bernie_Djungel/BernieDjungel4.tscn")
+var BernieDjungel5 = preload("res://Scenes/Djungel/Bernie_Djungel/BernieDjungel5.tscn")
+var BernieDjungel6 = preload("res://Scenes/Djungel/Bernie_Djungel/BernieDjungel6.tscn")
+var bernieDjungelArray = [BernieDjungel, BernieDjungel2, BernieDjungel3, BernieDjungel4, BernieDjungel5, BernieDjungel6]
+
+var djungelArray = [lolloDjungelArray, bernieDjungelArray, emptyDjungelArray]
+
 #Put "packages" in this one
-var sceneArray = [strandArray, vattenArray, inomhusArray, bergArray]
+var sceneArray = [strandArray, vattenArray, inomhusArray, bergArray, djungelArray]
 
 @onready var BG_1 = $Strand_BG
 @onready var BG_2 = $UnderVatten_BG
