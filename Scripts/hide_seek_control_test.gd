@@ -334,7 +334,7 @@ func isLolloBernieFound():
 		# add fade out, when fade out is done, then switch scene
 		transition.play("Fade_out")
 		
-		await get_tree().create_timer(0.6).timeout
+		
 		newScene()
 		
 		transition.play("Fade_in")
