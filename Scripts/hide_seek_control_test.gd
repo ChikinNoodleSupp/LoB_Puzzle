@@ -90,12 +90,41 @@ var bernieInomhusArray = [BernieInomhus, BernieInomhus2, BernieInomhus3, BernieI
 
 var inomhusArray = [lolloInomhusArray, bernieInomhusArray, emptyInomhusArray]
 
+var emptyBerg = preload("res://Scenes/Berg/Empty_Berg/emptyBerg.tscn")
+var emptyBerg2 = preload("res://Scenes/Berg/Empty_Berg/emptyBerg2.tscn")
+var emptyBerg3 = preload("res://Scenes/Berg/Empty_Berg/emptyBerg3.tscn")
+var emptyBerg4 = preload("res://Scenes/Berg/Empty_Berg/emptyBerg4.tscn")
+var emptyBerg5 = preload("res://Scenes/Berg/Empty_Berg/emptyBerg5.tscn")
+var emptyBerg6 = preload("res://Scenes/Berg/Empty_Berg/emptyBerg6.tscn")
+var emptyBergArray = [emptyBerg, emptyBerg2, emptyBerg3, emptyBerg4, emptyBerg5, emptyBerg6]
+
+var LolloBerg = preload("res://Scenes/Berg/Lollo_Berg/LolloBerg.tscn")
+var LolloBerg2 = preload("res://Scenes/Berg/Lollo_Berg/LolloBerg2.tscn")
+var LolloBerg3 = preload("res://Scenes/Berg/Lollo_Berg/LolloBerg3.tscn")
+var LolloBerg4 = preload("res://Scenes/Berg/Lollo_Berg/LolloBerg4.tscn")
+var LolloBerg5 = preload("res://Scenes/Berg/Lollo_Berg/LolloBerg5.tscn")
+var LolloBerg6 = preload("res://Scenes/Berg/Lollo_Berg/LolloBerg6.tscn")
+var lolloBergArray = [LolloBerg, LolloBerg2, LolloBerg3, LolloBerg4, LolloBerg5, LolloBerg6]
+
+var BernieBerg = preload("res://Scenes/Berg/Bernie_Berg/BernieBerg.tscn")
+var BernieBerg2 = preload("res://Scenes/Berg/Bernie_Berg/BernieBerg2.tscn")
+var BernieBerg3 = preload("res://Scenes/Berg/Bernie_Berg/BernieBerg3.tscn")
+var BernieBerg4 = preload("res://Scenes/Berg/Bernie_Berg/BernieBerg4.tscn")
+var BernieBerg5 = preload("res://Scenes/Berg/Bernie_Berg/BernieBerg5.tscn")
+var BernieBerg6 = preload("res://Scenes/Berg/Bernie_Berg/BernieBerg6.tscn")
+var bernieBergArray = [BernieBerg, BernieBerg2, BernieBerg3, BernieBerg4, BernieBerg5, BernieBerg6]
+
+var bergArray = [lolloBergArray, bernieBergArray, emptyBergArray]
+
 #Put "packages" in this one
-var sceneArray = [strandArray, vattenArray, inomhusArray]
+var sceneArray = [strandArray, vattenArray, inomhusArray, bergArray]
 
 @onready var BG_1 = $Strand_BG
 @onready var BG_2 = $UnderVatten_BG
 @onready var BG_3 = $InomHus_BG
+@onready var BG_4 = $Berg_BG
+@onready var BG_5 = $Disco_BG
+@onready var BG_6 = $Djungel_BG
 # var BG = [BG_1, BG_2, BG_3]
 
 var HUD = preload("res://Scenes/Global/HUD.tscn")
@@ -129,6 +158,9 @@ func _ready() -> void:
 	BG_1.visible = false
 	BG_2.visible = false
 	BG_3.visible = false
+	BG_4.visible = false
+	BG_5.visible = false
+	BG_6.visible = false
 	if SM.scene == 1:
 		BG_1.visible = true
 		AudioPlayer.play_music_level()
@@ -139,6 +171,18 @@ func _ready() -> void:
 	
 	elif SM.scene == 3:
 		BG_3.visible = true
+		AudioPlayer.play_music_level3()
+	
+	elif SM.scene == 4:
+		BG_4.visible = true
+		AudioPlayer.play_music_level3()
+	
+	elif SM.scene == 5:
+		BG_5.visible = true
+		AudioPlayer.play_music_level3()
+	
+	elif SM.scene == 6:
+		BG_6.visible = true
 		AudioPlayer.play_music_level3()
 
 	newScene()
