@@ -1239,10 +1239,10 @@ script = ExtResource("9_62nut")
 
 [node name="Cloud" type="TextureRect" parent="Strand_BG/AnimationPlayer2"]
 visible = false
-offset_left = 500.0
-offset_top = 200.0
-offset_right = 745.0
-offset_bottom = 311.0
+offset_left = -299.0
+offset_top = 249.0
+offset_right = -54.0
+offset_bottom = 360.0
 texture = ExtResource("10_8nijr")
 
 [node name="Waves" type="TextureRect" parent="Strand_BG"]
@@ -1370,9 +1370,9 @@ offset_bottom = 252.0
 texture = ExtResource("23_qryss")
 
 [node name="Bird 2" type="TextureRect" parent="Strand_BG/AnimationPlayer4"]
-offset_left = 467.0
+offset_left = 483.0
 offset_top = 205.0
-offset_right = 511.0
+offset_right = 527.0
 offset_bottom = 230.0
 texture = ExtResource("24_ablaq")
 
@@ -2217,34 +2217,34 @@ script = ExtResource("85_kod8e")
 
 [node name="Fish1" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer8"]
 z_index = 2
-offset_left = 2179.0
-offset_top = 610.0
-offset_right = 2270.0
-offset_bottom = 695.0
+offset_left = 2176.0
+offset_top = 331.0
+offset_right = 2267.0
+offset_bottom = 416.0
 texture = ExtResource("98_741d4")
 
 [node name="Fish2" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer8"]
 z_index = 2
-offset_left = 2033.0
-offset_top = 750.0
-offset_right = 2124.0
-offset_bottom = 835.0
+offset_left = 2030.0
+offset_top = 472.0
+offset_right = 2121.0
+offset_bottom = 557.0
 texture = ExtResource("99_kxwh0")
 
 [node name="Fish3" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer8"]
 z_index = 2
-offset_left = 2198.0
-offset_top = 780.0
-offset_right = 2290.0
-offset_bottom = 866.0
+offset_left = 2195.0
+offset_top = 505.0
+offset_right = 2287.0
+offset_bottom = 591.0
 texture = ExtResource("100_g6f37")
 
 [node name="Fish4" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer8"]
 z_index = 2
-offset_left = 2126.0
-offset_top = 700.0
-offset_right = 2217.0
-offset_bottom = 785.0
+offset_left = 2123.0
+offset_top = 420.0
+offset_right = 2214.0
+offset_bottom = 505.0
 texture = ExtResource("101_srikv")
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="UnderVatten_BG"]
@@ -2658,7 +2658,17 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
+[node name="TextureRect" type="TextureRect" parent="Disco_BG"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
 [node name="Djungel_BG" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="Djungel_BG"]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
