@@ -1,4 +1,4 @@
-[gd_scene load_steps=196 format=3 uid="uid://bcyokg3fmgifd"]
+[gd_scene load_steps=205 format=3 uid="uid://bcyokg3fmgifd"]
 
 [ext_resource type="Script" path="res://Scripts/hide_seek_control_test.gd" id="1_yap3s"]
 [ext_resource type="Texture2D" uid="uid://djj3oolji5gd8" path="res://Assets/Strand/BG/Asset 11.png" id="2_clt68"]
@@ -145,6 +145,15 @@
 [ext_resource type="Texture2D" uid="uid://bsdcgbndwshr2" path="res://Assets/Berg/BG/Berg_Asset 20.png" id="143_nrhil"]
 [ext_resource type="Texture2D" uid="uid://wit4uajuxpwq" path="res://Assets/Berg/BG/Anim/eagle_f1.png" id="144_u8o5y"]
 [ext_resource type="Texture2D" uid="uid://dy4vxn883pfxr" path="res://Assets/Berg/BG/Anim/eagle_f2.png" id="145_1yyei"]
+[ext_resource type="Texture2D" uid="uid://d2008mp0yr3ky" path="res://Assets/Berg/BG/Berg_Asset 16.png" id="145_a5eyb"]
+[ext_resource type="Texture2D" uid="uid://dduts4myryh0e" path="res://Assets/Berg/BG/Berg_Asset 17.png" id="146_nhkye"]
+[ext_resource type="Texture2D" uid="uid://bt6jwgdu0qch6" path="res://Assets/Berg/BG/Berg_Asset 18.png" id="147_0t3ds"]
+[ext_resource type="Texture2D" uid="uid://chyjiajkbiwe5" path="res://Assets/Berg/BG/Berg_Asset 15.png" id="148_bb825"]
+[ext_resource type="Texture2D" uid="uid://nvg2nv0pbk55" path="res://Assets/Berg/BG/Berg_Asset 1.png" id="150_8l4c8"]
+[ext_resource type="Texture2D" uid="uid://btcig7kl67iw1" path="res://Assets/Berg/BG/Berg_Asset 4.png" id="151_ktbx3"]
+[ext_resource type="Texture2D" uid="uid://c27g30qw0wy45" path="res://Assets/Berg/BG/Berg_Asset 19.png" id="152_kl8rl"]
+[ext_resource type="Texture2D" uid="uid://efcfbq1qxrgf" path="res://Assets/Berg/BG/Berg_Asset 6.png" id="153_1i17v"]
+[ext_resource type="Texture2D" uid="uid://cq7nayiv4kim" path="res://Assets/Berg/BG/Berg_Asset 3.png" id="154_nuqt5"]
 
 [sub_resource type="Animation" id="Animation_s1kf6"]
 resource_name = "CloudMovement2"
@@ -1230,10 +1239,10 @@ script = ExtResource("9_62nut")
 
 [node name="Cloud" type="TextureRect" parent="Strand_BG/AnimationPlayer2"]
 visible = false
-offset_left = -299.0
-offset_top = 249.0
-offset_right = -54.0
-offset_bottom = 360.0
+offset_left = 500.0
+offset_top = 200.0
+offset_right = 745.0
+offset_bottom = 311.0
 texture = ExtResource("10_8nijr")
 
 [node name="Waves" type="TextureRect" parent="Strand_BG"]
@@ -1361,9 +1370,9 @@ offset_bottom = 252.0
 texture = ExtResource("23_qryss")
 
 [node name="Bird 2" type="TextureRect" parent="Strand_BG/AnimationPlayer4"]
-offset_left = 483.0
+offset_left = 467.0
 offset_top = 205.0
-offset_right = 527.0
+offset_right = 511.0
 offset_bottom = 230.0
 texture = ExtResource("24_ablaq")
 
@@ -2208,34 +2217,34 @@ script = ExtResource("85_kod8e")
 
 [node name="Fish1" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer8"]
 z_index = 2
-offset_left = 2176.0
-offset_top = 331.0
-offset_right = 2267.0
-offset_bottom = 416.0
+offset_left = 2179.0
+offset_top = 610.0
+offset_right = 2270.0
+offset_bottom = 695.0
 texture = ExtResource("98_741d4")
 
 [node name="Fish2" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer8"]
 z_index = 2
-offset_left = 2030.0
-offset_top = 472.0
-offset_right = 2121.0
-offset_bottom = 557.0
+offset_left = 2033.0
+offset_top = 750.0
+offset_right = 2124.0
+offset_bottom = 835.0
 texture = ExtResource("99_kxwh0")
 
 [node name="Fish3" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer8"]
 z_index = 2
-offset_left = 2195.0
-offset_top = 505.0
-offset_right = 2287.0
-offset_bottom = 591.0
+offset_left = 2198.0
+offset_top = 780.0
+offset_right = 2290.0
+offset_bottom = 866.0
 texture = ExtResource("100_g6f37")
 
 [node name="Fish4" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer8"]
 z_index = 2
-offset_left = 2123.0
-offset_top = 420.0
-offset_right = 2214.0
-offset_bottom = 505.0
+offset_left = 2126.0
+offset_top = 700.0
+offset_right = 2217.0
+offset_bottom = 785.0
 texture = ExtResource("101_srikv")
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="UnderVatten_BG"]
@@ -2477,6 +2486,7 @@ offset_bottom = 1021.5
 texture = ExtResource("26_dpmq8")
 
 [node name="Berg_BG" type="TextureRect" parent="."]
+visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -2506,6 +2516,95 @@ offset_right = 5602.0
 offset_bottom = 1353.0
 texture = ExtResource("136_57mo0")
 
+[node name="Cloud1" type="TextureRect" parent="Berg_BG"]
+layout_mode = 0
+offset_left = 1196.0
+offset_top = 393.0
+offset_right = 1372.0
+offset_bottom = 473.0
+texture = ExtResource("138_1whvh")
+
+[node name="Cloud2" type="TextureRect" parent="Berg_BG"]
+layout_mode = 0
+offset_left = -15.0
+offset_top = 423.0
+offset_right = 357.0
+offset_bottom = 591.0
+texture = ExtResource("139_v8rmg")
+
+[node name="Cloud3" type="TextureRect" parent="Berg_BG"]
+layout_mode = 0
+offset_left = 1528.0
+offset_top = 333.0
+offset_right = 1900.0
+offset_bottom = 501.0
+texture = ExtResource("140_hunfe")
+
+[node name="Cloud4" type="TextureRect" parent="Berg_BG"]
+layout_mode = 0
+offset_left = 794.0
+offset_top = 273.0
+offset_right = 970.0
+offset_bottom = 353.0
+texture = ExtResource("141_k3vdk")
+
+[node name="Cloud5" type="TextureRect" parent="Berg_BG"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 246.0
+offset_right = 186.0
+offset_bottom = 327.0
+texture = ExtResource("142_fjxvd")
+
+[node name="Birds" type="TextureRect" parent="Berg_BG"]
+layout_mode = 0
+offset_left = -384.0
+offset_top = 87.0
+offset_right = -274.0
+offset_bottom = 127.0
+texture = ExtResource("143_nrhil")
+
+[node name="Eagle1" type="TextureRect" parent="Berg_BG"]
+layout_mode = 0
+offset_left = -633.0
+offset_top = 120.0
+offset_right = -212.0
+offset_bottom = 356.0
+texture = SubResource("AnimatedTexture_rdyn7")
+stretch_mode = 2
+
+[node name="Tree5" type="TextureRect" parent="Berg_BG"]
+layout_mode = 0
+offset_left = 158.0
+offset_top = 610.0
+offset_right = 469.0
+offset_bottom = 1051.0
+texture = ExtResource("145_a5eyb")
+
+[node name="Tree6" type="TextureRect" parent="Berg_BG"]
+layout_mode = 0
+offset_left = 1407.0
+offset_top = 769.0
+offset_right = 1591.0
+offset_bottom = 1030.0
+texture = ExtResource("146_nhkye")
+
+[node name="Tree7" type="TextureRect" parent="Berg_BG"]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 765.0
+offset_right = 546.0
+offset_bottom = 1025.0
+texture = ExtResource("147_0t3ds")
+
+[node name="Tree4" type="TextureRect" parent="Berg_BG"]
+layout_mode = 0
+offset_left = 438.0
+offset_top = 737.0
+offset_right = 636.0
+offset_bottom = 1017.0
+texture = ExtResource("148_bb825")
+
 [node name="Grass" type="TextureRect" parent="Berg_BG"]
 layout_mode = 0
 offset_left = -244.0
@@ -2514,73 +2613,45 @@ offset_right = 2101.0
 offset_bottom = 1424.0
 texture = ExtResource("137_x7joa")
 
-[node name="Cloud1" type="TextureRect" parent="Berg_BG"]
+[node name="Tree1" type="TextureRect" parent="Berg_BG"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("138_1whvh")
+offset_left = 1506.0
+offset_top = 558.0
+offset_right = 1856.0
+offset_bottom = 1058.0
+texture = ExtResource("150_8l4c8")
 
-[node name="Cloud2" type="TextureRect" parent="Berg_BG"]
+[node name="Tree2" type="TextureRect" parent="Berg_BG"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("139_v8rmg")
+offset_left = 1163.0
+offset_top = 649.0
+offset_right = 1450.0
+offset_bottom = 1063.0
+texture = ExtResource("151_ktbx3")
 
-[node name="Cloud3" type="TextureRect" parent="Berg_BG"]
+[node name="DualTree" type="TextureRect" parent="Berg_BG"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("140_hunfe")
+offset_left = -288.0
+offset_top = 595.0
+offset_right = 325.0
+offset_bottom = 1180.0
+texture = ExtResource("152_kl8rl")
 
-[node name="Cloud4" type="TextureRect" parent="Berg_BG"]
+[node name="Tree3" type="TextureRect" parent="Berg_BG"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("141_k3vdk")
+offset_left = 77.0
+offset_top = 680.0
+offset_right = 427.0
+offset_bottom = 1179.0
+texture = ExtResource("153_1i17v")
 
-[node name="Cloud5" type="TextureRect" parent="Berg_BG"]
+[node name="Grass2" type="TextureRect" parent="Berg_BG"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("142_fjxvd")
-
-[node name="Birds" type="TextureRect" parent="Berg_BG"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("143_nrhil")
-
-[node name="Eagle1" type="TextureRect" parent="Berg_BG"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = SubResource("AnimatedTexture_rdyn7")
-stretch_mode = 2
-
-[node name="TextureRect12" type="TextureRect" parent="Berg_BG"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="TextureRect13" type="TextureRect" parent="Berg_BG"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="TextureRect14" type="TextureRect" parent="Berg_BG"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="TextureRect15" type="TextureRect" parent="Berg_BG"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="TextureRect16" type="TextureRect" parent="Berg_BG"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 523.0
+offset_top = 1012.0
+offset_right = 700.0
+offset_bottom = 1080.0
+texture = ExtResource("154_nuqt5")
 
 [node name="Disco_BG" type="TextureRect" parent="."]
 layout_mode = 0
