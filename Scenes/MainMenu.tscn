@@ -1,18 +1,15 @@
-[gd_scene load_steps=18 format=3 uid="uid://bfet2ccdjje2p"]
+[gd_scene load_steps=15 format=3 uid="uid://bfet2ccdjje2p"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_d7dnp"]
 [ext_resource type="Texture2D" uid="uid://dqac8pf0beers" path="res://Assets/Thumbnails/LB_mobilspel_bg.png" id="2_0hddr"]
 [ext_resource type="Texture2D" uid="uid://c80ynapn6sfhn" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_stranden.png" id="3_0bkn4"]
 [ext_resource type="Texture2D" uid="uid://bqxpeb64j00lh" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_disco.png" id="4_4b2aw"]
 [ext_resource type="Texture2D" uid="uid://cv2b65pcbgxd0" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_havetsbotten.png" id="4_60hwu"]
+[ext_resource type="Texture2D" uid="uid://c44kd874loklv" path="res://TempImages/FhFIk--VIAEZVNx.jpg" id="4_c3fvj"]
+[ext_resource type="Script" path="res://Scenes/ui-nav.gd" id="4_j817u"]
 [ext_resource type="Texture2D" uid="uid://c276ec80rv317" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_djungeln.png" id="5_4jwty"]
 [ext_resource type="Texture2D" uid="uid://bmevtdmesdr4c" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_hemma.png" id="5_i8i5v"]
 [ext_resource type="Texture2D" uid="uid://jmgel7osttof" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_bergetstopp.png" id="6_w1ql8"]
-[ext_resource type="Texture2D" uid="uid://b3u8bqyxq3i3y" path="res://Assets/ICONS/Flag_SE.png" id="7_llb0q"]
-[ext_resource type="Texture2D" uid="uid://chbdn5spybh2x" path="res://Assets/ICONS/Flag_DK.png" id="8_i1sm7"]
-[ext_resource type="Texture2D" uid="uid://c7xln86dh0sca" path="res://Assets/ICONS/Flag_NO.png" id="9_g3awl"]
-[ext_resource type="Texture2D" uid="uid://b01g3lmaqqg78" path="res://Assets/ICONS/Flag_FI.png" id="10_gd2g6"]
-[ext_resource type="Texture2D" uid="uid://cq01e2cjfcee" path="res://TempImages/EN_flag.png" id="11_6moyt"]
 
 [sub_resource type="Animation" id="Animation_6d8hl"]
 resource_name = "Fade_in"
@@ -152,15 +149,31 @@ theme_override_constants/separation = 100
 
 [node name="Hide_Seek" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+focus_neighbor_left = NodePath("../Hide_Seek3")
+focus_neighbor_top = NodePath("../../HBoxContainer2/Hide_Seek")
+focus_neighbor_right = NodePath("../Hide_Seek2")
+focus_neighbor_bottom = NodePath("../../HBoxContainer2/Hide_Seek")
 texture_normal = ExtResource("3_0bkn4")
+texture_focused = ExtResource("4_c3fvj")
+script = ExtResource("4_j817u")
 
 [node name="Hide_Seek2" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+focus_neighbor_left = NodePath("../Hide_Seek")
+focus_neighbor_top = NodePath("../../HBoxContainer2/Hide_Seek2")
+focus_neighbor_right = NodePath("../Hide_Seek3")
+focus_neighbor_bottom = NodePath("../../HBoxContainer2/Hide_Seek2")
 texture_normal = ExtResource("4_60hwu")
+texture_focused = ExtResource("4_c3fvj")
 
 [node name="Hide_Seek3" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+focus_neighbor_left = NodePath("../Hide_Seek2")
+focus_neighbor_top = NodePath("../../HBoxContainer2/Hide_Seek3")
+focus_neighbor_right = NodePath("../Hide_Seek")
+focus_neighbor_bottom = NodePath("../../HBoxContainer2/Hide_Seek3")
 texture_normal = ExtResource("5_i8i5v")
+texture_focused = ExtResource("4_c3fvj")
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -170,15 +183,30 @@ theme_override_constants/separation = 100
 
 [node name="Hide_Seek" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
+focus_neighbor_left = NodePath("../Hide_Seek3")
+focus_neighbor_top = NodePath("../../HBoxContainer/Hide_Seek")
+focus_neighbor_right = NodePath("../Hide_Seek2")
+focus_neighbor_bottom = NodePath("../../HBoxContainer/Hide_Seek")
 texture_normal = ExtResource("6_w1ql8")
+texture_focused = ExtResource("4_c3fvj")
 
 [node name="Hide_Seek2" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
+focus_neighbor_left = NodePath("../Hide_Seek")
+focus_neighbor_top = NodePath("../../HBoxContainer/Hide_Seek2")
+focus_neighbor_right = NodePath("../Hide_Seek3")
+focus_neighbor_bottom = NodePath("../../HBoxContainer/Hide_Seek2")
 texture_normal = ExtResource("5_4jwty")
+texture_focused = ExtResource("4_c3fvj")
 
 [node name="Hide_Seek3" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
+focus_neighbor_left = NodePath("../Hide_Seek2")
+focus_neighbor_top = NodePath("../../HBoxContainer/Hide_Seek3")
+focus_neighbor_right = NodePath("../Hide_Seek")
+focus_neighbor_bottom = NodePath("../../HBoxContainer/Hide_Seek3")
 texture_normal = ExtResource("4_4b2aw")
+texture_focused = ExtResource("4_c3fvj")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -192,109 +220,6 @@ offset_top = -797.0
 offset_right = 2916.0
 offset_bottom = 2312.0
 color = Color(0, 0, 0, 1)
-
-[node name="MarginContainer2" type="MarginContainer" parent="."]
-visible = false
-clip_contents = true
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -214.0
-offset_top = -152.0
-offset_right = 62.0
-offset_bottom = -65.0
-grow_horizontal = 2
-grow_vertical = 0
-scale = Vector2(2, 2)
-theme_override_constants/margin_left = 25
-theme_override_constants/margin_top = 25
-theme_override_constants/margin_right = 25
-theme_override_constants/margin_bottom = 25
-
-[node name="VBoxContainer2" type="HBoxContainer" parent="MarginContainer2"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 8
-theme_override_constants/separation = 25
-
-[node name="SE_Btn" type="TextureButton" parent="MarginContainer2/VBoxContainer2"]
-layout_mode = 2
-texture_normal = ExtResource("7_llb0q")
-
-[node name="Label" type="Label" parent="MarginContainer2/VBoxContainer2/SE_Btn"]
-visible = false
-layout_mode = 0
-offset_left = 1.0
-offset_top = 60.0
-offset_right = 99.0
-offset_bottom = 95.0
-theme_override_font_sizes/font_size = 25
-text = "Svenska"
-horizontal_alignment = 1
-
-[node name="DK_Btn" type="TextureButton" parent="MarginContainer2/VBoxContainer2"]
-layout_mode = 2
-texture_normal = ExtResource("8_i1sm7")
-
-[node name="Label" type="Label" parent="MarginContainer2/VBoxContainer2/DK_Btn"]
-visible = false
-layout_mode = 0
-offset_left = 1.0
-offset_top = 60.0
-offset_right = 99.0
-offset_bottom = 95.0
-theme_override_font_sizes/font_size = 25
-text = "Dansk"
-horizontal_alignment = 1
-
-[node name="NO_Btn" type="TextureButton" parent="MarginContainer2/VBoxContainer2"]
-layout_mode = 2
-texture_normal = ExtResource("9_g3awl")
-
-[node name="Label" type="Label" parent="MarginContainer2/VBoxContainer2/NO_Btn"]
-visible = false
-layout_mode = 0
-offset_left = 1.0
-offset_top = 60.0
-offset_right = 99.0
-offset_bottom = 95.0
-theme_override_font_sizes/font_size = 25
-text = "Norsk"
-horizontal_alignment = 1
-
-[node name="FI_Btn" type="TextureButton" parent="MarginContainer2/VBoxContainer2"]
-layout_mode = 2
-texture_normal = ExtResource("10_gd2g6")
-
-[node name="Label" type="Label" parent="MarginContainer2/VBoxContainer2/FI_Btn"]
-visible = false
-layout_mode = 0
-offset_left = 1.0
-offset_top = 60.0
-offset_right = 99.0
-offset_bottom = 95.0
-theme_override_font_sizes/font_size = 25
-text = "Suomi"
-horizontal_alignment = 1
-
-[node name="EN_Btn" type="TextureButton" parent="MarginContainer2/VBoxContainer2"]
-visible = false
-layout_mode = 2
-texture_normal = ExtResource("11_6moyt")
-
-[node name="Label" type="Label" parent="MarginContainer2/VBoxContainer2/EN_Btn"]
-visible = false
-layout_mode = 0
-offset_left = 1.0
-offset_top = 60.0
-offset_right = 99.0
-offset_bottom = 95.0
-theme_override_font_sizes/font_size = 25
-text = "English"
-horizontal_alignment = 1
 
 [connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_mouse_entered"]
 [connection signal="mouse_exited" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_mouse_exited"]
@@ -315,8 +240,3 @@ horizontal_alignment = 1
 [connection signal="mouse_exited" from="MarginContainer/VBoxContainer/HBoxContainer2/Hide_Seek3" to="." method="_on_hide_seek_mouse_exited"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/Hide_Seek3" to="." method="_on_hide_seek_3_pressed"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
-[connection signal="pressed" from="MarginContainer2/VBoxContainer2/SE_Btn" to="." method="_on_se_btn_pressed"]
-[connection signal="pressed" from="MarginContainer2/VBoxContainer2/DK_Btn" to="." method="_on_dk_btn_pressed"]
-[connection signal="pressed" from="MarginContainer2/VBoxContainer2/NO_Btn" to="." method="_on_no_btn_pressed"]
-[connection signal="pressed" from="MarginContainer2/VBoxContainer2/FI_Btn" to="." method="_on_fi_btn_pressed"]
-[connection signal="pressed" from="MarginContainer2/VBoxContainer2/EN_Btn" to="." method="_on_en_btn_pressed"]

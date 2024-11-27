@@ -48,6 +48,8 @@ func _ready() -> void:
 func spawnHUD():
 	var HudButton = HUD.instantiate()
 	add_child(HudButton)
+	var BackButton = HudButton.find_child("Back")
+	BackButton.visible = false
 	
 	
 	
