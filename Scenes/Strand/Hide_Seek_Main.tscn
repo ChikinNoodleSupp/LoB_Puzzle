@@ -1377,6 +1377,7 @@ offset_bottom = 230.0
 texture = ExtResource("24_ablaq")
 
 [node name="InomHus_BG" type="TextureRect" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
