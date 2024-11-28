@@ -5,7 +5,7 @@
 [ext_resource type="BitMap" uid="uid://dqr02xmn8vqbm" path="res://Assets/Inom Hus/Mask/M_Chest.png" id="3_pfp03"]
 
 [node name="empty_spot" type="TextureButton"]
-z_index = 1
+z_index = 3
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
