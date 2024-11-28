@@ -147,6 +147,20 @@ func _on_hide_seek_3_pressed() -> void:
 	SM.scene = 3
 	playAnim()
 
+func _on_hide_seek_4_pressed() -> void:
+	SM.scene = 4
+	playAnim()
+
+
+func _on_hide_seek_5_pressed() -> void:
+	SM.scene = 5
+	playAnim()
+
+
+func _on_hide_seek_6_pressed() -> void:
+	SM.scene = 6
+	playAnim()
+
 func playAnim():
 	AudioPlayer.play_FX(AudioPlayer.clickSFX, 0)
 	transition.play("Fade_out")
