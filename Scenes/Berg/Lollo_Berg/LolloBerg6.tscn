@@ -9,7 +9,7 @@ script/source = "extends TextureButton
 "
 
 [node name="LolloSpot" type="TextureButton"]
-z_index = 1
+z_index = 4
 offset_right = 1026.0
 offset_bottom = 747.0
 texture_normal = ExtResource("1_08hf7")

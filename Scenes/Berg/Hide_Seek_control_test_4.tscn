@@ -27,19 +27,19 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="HnS_1" type="Node2D" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(-162, -171)
+position = Vector2(-345, 452)
 
 [node name="HnS_2" type="Node2D" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(600, 375)
+position = Vector2(333, 488)
 
 [node name="HnS_3" type="Node2D" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(948, 99)
+position = Vector2(747, 635)
 
 [node name="HnS_4" type="Node2D" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(225, 245)
+position = Vector2(1173, 606)
 
 [node name="HnS_5" type="Node2D" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(954, 382)
+position = Vector2(630, 90)
 
 [node name="HnS_6" type="Node2D" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(1408, 263)
+position = Vector2(1261, 633)
