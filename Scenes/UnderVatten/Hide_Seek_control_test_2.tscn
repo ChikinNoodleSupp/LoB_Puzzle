@@ -23,7 +23,7 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="HnS_1" type="Node2D" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(-72, -1209)
+position = Vector2(77, -1209)
 
 [node name="HnS_2" type="Node2D" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 position = Vector2(654, 51)

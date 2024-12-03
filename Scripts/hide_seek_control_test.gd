@@ -8,7 +8,8 @@ var locationArray = [
 	"res://Scenes/Strand/Hide_Seek_control_test.tscn",
 	"res://Scenes/UnderVatten/Hide_Seek_control_test_2.tscn", 
 	"res://Scenes/Inomhus/Hide_Seek_control_test_3.tscn",
-	"res://Scenes/Berg/Hide_Seek_control_test_4.tscn"
+	"res://Scenes/Berg/Hide_Seek_control_test_4.tscn",
+	"res://Scenes/Djungel/Hide_Seek_control_test_5.tscn"
 	] # just add more scenes
 
 static var sceneNumber = 0

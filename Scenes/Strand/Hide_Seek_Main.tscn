@@ -1,4 +1,4 @@
-[gd_scene load_steps=233 format=3 uid="uid://bcyokg3fmgifd"]
+[gd_scene load_steps=234 format=3 uid="uid://bcyokg3fmgifd"]
 
 [ext_resource type="Script" path="res://Scripts/hide_seek_control_test.gd" id="1_yap3s"]
 [ext_resource type="Texture2D" uid="uid://djj3oolji5gd8" path="res://Assets/Strand/BG/Asset 11.png" id="2_clt68"]
@@ -148,6 +148,7 @@
 [ext_resource type="Texture2D" uid="uid://dy4vxn883pfxr" path="res://Assets/Berg/BG/Anim/eagle_f2.png" id="145_1yyei"]
 [ext_resource type="Texture2D" uid="uid://d2008mp0yr3ky" path="res://Assets/Berg/BG/Berg_Asset 16.png" id="145_a5eyb"]
 [ext_resource type="Texture2D" uid="uid://dduts4myryh0e" path="res://Assets/Berg/BG/Berg_Asset 17.png" id="146_nhkye"]
+[ext_resource type="Script" path="res://Scenes/Strand/EagleMovemnt.gd" id="146_nkkgo"]
 [ext_resource type="Texture2D" uid="uid://bt6jwgdu0qch6" path="res://Assets/Berg/BG/Berg_Asset 18.png" id="147_0t3ds"]
 [ext_resource type="Texture2D" uid="uid://chyjiajkbiwe5" path="res://Assets/Berg/BG/Berg_Asset 15.png" id="148_bb825"]
 [ext_resource type="Texture2D" uid="uid://nvg2nv0pbk55" path="res://Assets/Berg/BG/Berg_Asset 1.png" id="150_8l4c8"]
@@ -1073,8 +1074,9 @@ _data = {
 [sub_resource type="AnimatedTexture" id="AnimatedTexture_rdyn7"]
 frames = 2
 frame_0/texture = ExtResource("144_u8o5y")
+frame_0/duration = 0.4
 frame_1/texture = ExtResource("145_1yyei")
-frame_1/duration = 1.0
+frame_1/duration = 0.4
 
 [sub_resource type="Animation" id="Animation_k8xn7"]
 resource_name = "Fade_in"
@@ -2635,13 +2637,15 @@ offset_bottom = 127.0
 texture = ExtResource("143_nrhil")
 
 [node name="Eagle1" type="TextureRect" parent="Berg_BG"]
+z_index = 5
 layout_mode = 0
-offset_left = -633.0
-offset_top = 120.0
-offset_right = -212.0
-offset_bottom = 356.0
+offset_left = 97.0
+offset_top = 165.0
+offset_right = 518.0
+offset_bottom = 401.0
 texture = SubResource("AnimatedTexture_rdyn7")
 stretch_mode = 2
+script = ExtResource("146_nkkgo")
 
 [node name="Tree5" type="TextureRect" parent="Berg_BG"]
 layout_mode = 0
