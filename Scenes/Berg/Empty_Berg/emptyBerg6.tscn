@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://cedx8cncwjd5e"]
 
-[ext_resource type="Texture2D" uid="uid://dtqutihykkpn4" path="res://Assets/Inom Hus/Hover/H_Tent.png" id="1_nae2w"]
-[ext_resource type="Texture2D" uid="uid://clhlwfgh3loxh" path="res://Assets/Inom Hus/Pressed/P_Tent.png" id="2_ilm8g"]
-[ext_resource type="BitMap" uid="uid://bt2tc0672wrm4" path="res://Assets/Inom Hus/Mask/M_Tent.png" id="3_jt7w8"]
+[ext_resource type="Texture2D" uid="uid://bubt24qvp6oyh" path="res://Assets/Berg/Hover/H_Mountain2.png" id="1_6sxlk"]
+[ext_resource type="Texture2D" uid="uid://b5a7gxvapuitw" path="res://Assets/Berg/Pressed/P_Mountain2.png" id="2_ssqrg"]
+[ext_resource type="BitMap" uid="uid://dow10blmqdwap" path="res://Assets/Berg/Mask/M_Mountain2.png" id="3_r8b67"]
 
 [node name="empty_spot" type="TextureButton"]
 z_index = 1
@@ -13,14 +13,13 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -960.0
 offset_top = -540.0
-offset_right = -307.0
-offset_bottom = 579.0
+offset_right = 66.0
+offset_bottom = 207.0
 grow_horizontal = 2
 grow_vertical = 2
-pivot_offset = Vector2(532, 1288)
-texture_normal = ExtResource("1_nae2w")
-texture_pressed = ExtResource("2_ilm8g")
-texture_hover = ExtResource("1_nae2w")
-texture_disabled = ExtResource("2_ilm8g")
-texture_click_mask = ExtResource("3_jt7w8")
+texture_normal = ExtResource("1_6sxlk")
+texture_pressed = ExtResource("2_ssqrg")
+texture_hover = ExtResource("1_6sxlk")
+texture_disabled = ExtResource("2_ssqrg")
+texture_click_mask = ExtResource("3_r8b67")
 stretch_mode = 3

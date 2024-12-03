@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://dnfp1tbv4b777"
+path="res://.godot/imported/M_Rocks.png-c5ec8ae950a8786bbc027480892973d8.res"
+
+[deps]
+
+source_file="res://Assets/Berg/Mask/M_Rocks.png"
+dest_files=["res://.godot/imported/M_Rocks.png-c5ec8ae950a8786bbc027480892973d8.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

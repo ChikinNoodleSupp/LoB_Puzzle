@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bx1phyasu8425"
+path="res://.godot/imported/M_Tree1.png-dcba5535385c58855bfae8449354385d.res"
+
+[deps]
+
+source_file="res://Assets/Berg/Mask/M_Tree1.png"
+dest_files=["res://.godot/imported/M_Tree1.png-dcba5535385c58855bfae8449354385d.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

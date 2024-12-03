@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://dow10blmqdwap"
+path="res://.godot/imported/M_Mountain2.png-f149d012106d737ce855924aa86addad.res"
+
+[deps]
+
+source_file="res://Assets/Berg/Mask/M_Mountain2.png"
+dest_files=["res://.godot/imported/M_Mountain2.png-f149d012106d737ce855924aa86addad.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

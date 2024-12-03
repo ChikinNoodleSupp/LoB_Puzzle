@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://c36agilsff1wp"
+path="res://.godot/imported/M_Tent.png-54ab1a39285d7c1efc533151a19a7835.res"
+
+[deps]
+
+source_file="res://Assets/Berg/Mask/M_Tent.png"
+dest_files=["res://.godot/imported/M_Tent.png-54ab1a39285d7c1efc533151a19a7835.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

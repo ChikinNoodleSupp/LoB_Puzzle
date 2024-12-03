@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://c65dmjgpymvfq"
+path="res://.godot/imported/M_Balloon.png-e04d7b8edaa306f97fa82927e61e1a63.res"
+
+[deps]
+
+source_file="res://Assets/Berg/Mask/M_Balloon.png"
+dest_files=["res://.godot/imported/M_Balloon.png-e04d7b8edaa306f97fa82927e61e1a63.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

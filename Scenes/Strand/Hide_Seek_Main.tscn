@@ -1204,6 +1204,7 @@ grow_vertical = 2
 script = ExtResource("1_yap3s")
 
 [node name="Strand_BG" type="TextureRect" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -2512,7 +2513,6 @@ offset_bottom = 1021.5
 texture = ExtResource("26_dpmq8")
 
 [node name="Berg_BG" type="TextureRect" parent="."]
-visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
