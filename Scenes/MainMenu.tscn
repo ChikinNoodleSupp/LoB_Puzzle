@@ -193,7 +193,6 @@ texture_normal = ExtResource("6_w1ql8")
 texture_focused = ExtResource("4_c3fvj")
 
 [node name="Hide_Seek5" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
-visible = false
 layout_mode = 2
 focus_neighbor_left = NodePath("../Hide_Seek4")
 focus_neighbor_top = NodePath("../../HBoxContainer/Hide_Seek2")
@@ -203,7 +202,6 @@ texture_normal = ExtResource("5_4jwty")
 texture_focused = ExtResource("4_c3fvj")
 
 [node name="Hide_Seek6" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
-visible = false
 layout_mode = 2
 focus_neighbor_left = NodePath("../Hide_Seek5")
 focus_neighbor_top = NodePath("../../HBoxContainer/Hide_Seek3")

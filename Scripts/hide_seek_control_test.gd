@@ -160,8 +160,8 @@ var sceneArray = [strandArray, vattenArray, inomhusArray, bergArray, djungelArra
 @onready var BG_2 = $UnderVatten_BG
 @onready var BG_3 = $InomHus_BG
 @onready var BG_4 = $Berg_BG
-@onready var BG_5 = $Gym_BG
-@onready var BG_6 = $Djungel_BG
+@onready var BG_5 = $Djungel_BG
+@onready var BG_6 = $Gym_BG
 # var BG = [BG_1, BG_2, BG_3]
 
 var HUD = preload("res://Scenes/Global/HUD.tscn")
