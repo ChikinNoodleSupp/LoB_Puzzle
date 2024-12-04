@@ -3120,10 +3120,10 @@ texture = ExtResource("195_tflq0")
 
 [node name="Flower_o2" type="TextureRect" parent="Djungel_BG"]
 layout_mode = 0
-offset_left = 2895.0
-offset_top = 193.0
-offset_right = 2991.0
-offset_bottom = 331.0
+offset_left = 816.0
+offset_top = 58.0
+offset_right = 912.0
+offset_bottom = 196.0
 texture = ExtResource("196_4lauo")
 
 [node name="Flower_o3" type="TextureRect" parent="Djungel_BG"]
@@ -3376,10 +3376,10 @@ texture = ExtResource("213_8utyc")
 
 [node name="Bush1" type="TextureRect" parent="Djungel_BG"]
 layout_mode = 0
-offset_left = 1049.0
-offset_top = 511.0
-offset_right = 1249.0
-offset_bottom = 603.0
+offset_left = 1048.0
+offset_top = 526.0
+offset_right = 1248.0
+offset_bottom = 618.0
 texture = ExtResource("181_djh0y")
 
 [node name="Bush2" type="TextureRect" parent="Djungel_BG"]
@@ -3961,10 +3961,10 @@ texture = ExtResource("273_5sw2w")
 
 [node name="Coconut" type="TextureRect" parent="Djungel_BG"]
 layout_mode = 0
-offset_left = 1602.0
-offset_top = 750.0
-offset_right = 1745.0
-offset_bottom = 852.0
+offset_left = 1581.0
+offset_top = 766.0
+offset_right = 1724.0
+offset_bottom = 868.0
 texture = ExtResource("274_sufak")
 
 [node name="BigGrass4" type="TextureRect" parent="Djungel_BG"]
