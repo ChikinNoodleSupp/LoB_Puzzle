@@ -4012,57 +4012,56 @@ offset_bottom = 1162.0
 texture = ExtResource("279_l3lma")
 
 [node name="Gym_BG" type="TextureRect" parent="."]
-visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Walls" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = -16.0
-offset_top = -108.0
-offset_right = 1959.0
-offset_bottom = 1091.0
+offset_left = -24.0
+offset_top = -104.0
+offset_right = 1951.0
+offset_bottom = 1095.0
 texture = ExtResource("155_k8u0m")
 
 [node name="backwall" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = 188.0
-offset_top = 44.0
-offset_right = 1710.0
-offset_bottom = 730.0
+offset_left = 180.0
+offset_top = 48.0
+offset_right = 1702.0
+offset_bottom = 734.0
 texture = ExtResource("156_52d7j")
 
 [node name="floor" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = -24.0
-offset_top = 728.0
-offset_right = 1952.0
-offset_bottom = 1085.0
+offset_left = -32.0
+offset_top = 732.0
+offset_right = 1944.0
+offset_bottom = 1089.0
 texture = ExtResource("157_mllpx")
 
 [node name="Roof" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = -20.0
-offset_top = -101.0
-offset_right = 1961.0
-offset_bottom = 62.0
+offset_left = -28.0
+offset_top = -97.0
+offset_right = 1953.0
+offset_bottom = 66.0
 texture = ExtResource("158_sj268")
 
 [node name="Clock" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = 909.0
-offset_top = 119.0
-offset_right = 1038.0
-offset_bottom = 248.0
+offset_left = 901.0
+offset_top = 123.0
+offset_right = 1030.0
+offset_bottom = 252.0
 texture = ExtResource("159_b3456")
 
 [node name="Carpet" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = 4.0
-offset_top = 960.0
-offset_right = 978.0
-offset_bottom = 1053.0
+offset_left = -4.0
+offset_top = 964.0
+offset_right = 970.0
+offset_bottom = 1057.0
 texture = ExtResource("160_104xq")
 
 [node name="Carpet2" type="TextureRect" parent="Gym_BG/Carpet"]
@@ -4075,106 +4074,106 @@ texture = ExtResource("161_1psnw")
 
 [node name="Ladder" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = 243.0
-offset_top = 65.0
-offset_right = 512.0
-offset_bottom = 726.0
+offset_left = 235.0
+offset_top = 69.0
+offset_right = 504.0
+offset_bottom = 730.0
 texture = ExtResource("162_ly327")
 
 [node name="Rings" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = 1530.0
-offset_top = -18.0
-offset_right = 1648.0
-offset_bottom = 411.0
+offset_left = 1522.0
+offset_top = -14.0
+offset_right = 1640.0
+offset_bottom = 415.0
 texture = ExtResource("163_grny1")
 
 [node name="Rope" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = 720.0
-offset_top = -82.0
-offset_right = 916.0
-offset_bottom = 837.0
+offset_left = 712.0
+offset_top = -78.0
+offset_right = 908.0
+offset_bottom = 841.0
 texture = ExtResource("164_vqkem")
 
 [node name="Hoop" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = 1724.0
-offset_top = 172.0
-offset_right = 1905.0
-offset_bottom = 424.0
+offset_left = 1716.0
+offset_top = 176.0
+offset_right = 1897.0
+offset_bottom = 428.0
 texture = ExtResource("165_pd8fr")
 
 [node name="HoolaHoop" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = 31.0
-offset_top = 300.0
-offset_right = 167.0
-offset_bottom = 713.0
+offset_left = 23.0
+offset_top = 304.0
+offset_right = 159.0
+offset_bottom = 717.0
 texture = ExtResource("168_pgs1y")
 
 [node name="HoolaHoop2" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = 56.0
-offset_top = 366.0
-offset_right = 151.0
-offset_bottom = 655.0
+offset_left = 48.0
+offset_top = 370.0
+offset_right = 143.0
+offset_bottom = 659.0
 texture = ExtResource("169_binw3")
 
 [node name="Peg" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = 101.0
-offset_top = 372.0
-offset_right = 123.0
-offset_bottom = 384.0
+offset_left = 93.0
+offset_top = 376.0
+offset_right = 115.0
+offset_bottom = 388.0
 texture = ExtResource("166_23bmm")
 
 [node name="Peg2" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = 96.0
-offset_top = 311.0
-offset_right = 117.0
-offset_bottom = 323.0
+offset_left = 88.0
+offset_top = 315.0
+offset_right = 109.0
+offset_bottom = 327.0
 texture = ExtResource("167_8v3ns")
 
 [node name="Ball" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = 82.0
-offset_top = 946.0
-offset_right = 190.0
-offset_bottom = 1028.0
+offset_left = 74.0
+offset_top = 950.0
+offset_right = 182.0
+offset_bottom = 1032.0
 texture = ExtResource("170_gybcu")
 
 [node name="Ball2" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = 205.0
-offset_top = 965.0
-offset_right = 281.0
-offset_bottom = 1019.0
+offset_left = 197.0
+offset_top = 969.0
+offset_right = 273.0
+offset_bottom = 1023.0
 texture = ExtResource("171_hdlh0")
 
 [node name="BasketBall" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = 1606.0
-offset_top = 688.0
-offset_right = 1733.0
-offset_bottom = 814.0
+offset_left = 1598.0
+offset_top = 692.0
+offset_right = 1725.0
+offset_bottom = 818.0
 texture = ExtResource("172_mvftg")
 
 [node name="Speaker" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = 110.0
-offset_top = 10.0
-offset_right = 234.0
-offset_bottom = 181.0
+offset_left = 102.0
+offset_top = 14.0
+offset_right = 226.0
+offset_bottom = 185.0
 texture = ExtResource("172_yd4nh")
 
 [node name="Lamp" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = 719.0
-offset_top = 15.0
-offset_right = 759.0
-offset_bottom = 73.0
+offset_left = 711.0
+offset_top = 19.0
+offset_right = 751.0
+offset_bottom = 77.0
 texture = ExtResource("173_ub5cc")
 
 [node name="Light" type="TextureRect" parent="Gym_BG/Lamp"]
@@ -4187,10 +4186,10 @@ texture = ExtResource("175_veahe")
 
 [node name="Lamp2" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = 1223.0
-offset_top = 22.0
-offset_right = 1263.0
-offset_bottom = 80.0
+offset_left = 1215.0
+offset_top = 26.0
+offset_right = 1255.0
+offset_bottom = 84.0
 texture = ExtResource("176_5bf63")
 
 [node name="Light2" type="TextureRect" parent="Gym_BG/Lamp2"]
@@ -4203,10 +4202,10 @@ texture = ExtResource("177_o0oq7")
 
 [node name="Lamp3" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = 1693.0
-offset_top = 13.0
-offset_right = 1733.0
-offset_bottom = 71.0
+offset_left = 1685.0
+offset_top = 17.0
+offset_right = 1725.0
+offset_bottom = 75.0
 texture = ExtResource("178_04x4m")
 
 [node name="Light4" type="TextureRect" parent="Gym_BG/Lamp3"]
@@ -4219,10 +4218,10 @@ texture = ExtResource("179_h5jwq")
 
 [node name="Lamp4" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = 260.0
-offset_top = 8.0
-offset_right = 300.0
-offset_bottom = 66.0
+offset_left = 252.0
+offset_top = 12.0
+offset_right = 292.0
+offset_bottom = 70.0
 texture = ExtResource("180_jaupf")
 
 [node name="Light3" type="TextureRect" parent="Gym_BG/Lamp4"]
