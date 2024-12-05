@@ -1,4 +1,4 @@
-[gd_scene load_steps=361 format=3 uid="uid://bcyokg3fmgifd"]
+[gd_scene load_steps=360 format=3 uid="uid://bcyokg3fmgifd"]
 
 [ext_resource type="Script" path="res://Scripts/hide_seek_control_test.gd" id="1_yap3s"]
 [ext_resource type="Texture2D" uid="uid://djj3oolji5gd8" path="res://Assets/Strand/BG/Asset 11.png" id="2_clt68"]
@@ -304,7 +304,6 @@
 [ext_resource type="Texture2D" uid="uid://col4ekkso6v1o" path="res://Assets/Djungel/BG/Djungel_BG_Asset 8.png" id="274_sufak"]
 [ext_resource type="Texture2D" uid="uid://6l6uvsl0wqcv" path="res://Assets/Djungel/BG/Djungel_BG_Asset 6.png" id="275_k4v4n"]
 [ext_resource type="Texture2D" uid="uid://dago3d6ljk21c" path="res://Assets/Djungel/BG/Djungel_BG_Asset 5.png" id="276_hupdt"]
-[ext_resource type="Texture2D" uid="uid://dyt0uvedn2vor" path="res://Assets/Djungel/BG/Djungel_BG_Asset 4.png" id="277_uocg8"]
 [ext_resource type="Texture2D" uid="uid://c7tp2yhefwpf0" path="res://Assets/Djungel/BG/Djungel_BG_Asset 3.png" id="278_g6etc"]
 [ext_resource type="Texture2D" uid="uid://c1m1vts2mosfm" path="res://Assets/Djungel/BG/Djungel_BG_Asset 2.png" id="279_l3lma"]
 
@@ -1433,10 +1432,10 @@ script = ExtResource("9_62nut")
 
 [node name="Cloud" type="TextureRect" parent="Strand_BG/AnimationPlayer2"]
 visible = false
-offset_left = -299.0
-offset_top = 249.0
-offset_right = -54.0
-offset_bottom = 360.0
+offset_left = 500.0
+offset_top = 200.0
+offset_right = 745.0
+offset_bottom = 311.0
 texture = ExtResource("10_8nijr")
 
 [node name="Waves" type="TextureRect" parent="Strand_BG"]
@@ -2984,10 +2983,10 @@ texture = ExtResource("180_0sq78")
 
 [node name="Rock4" type="TextureRect" parent="Djungel_BG"]
 layout_mode = 0
-offset_left = 340.0
-offset_top = 358.0
-offset_right = 671.0
-offset_bottom = 560.0
+offset_left = 332.0
+offset_top = 377.0
+offset_right = 663.0
+offset_bottom = 579.0
 texture = ExtResource("179_glr4k")
 
 [node name="GrassFloor2" type="TextureRect" parent="Djungel_BG"]
@@ -3280,9 +3279,9 @@ texture = ExtResource("233_7cgc4")
 
 [node name="Mountain" type="TextureRect" parent="Djungel_BG"]
 layout_mode = 0
-offset_left = -22.0
+offset_left = -62.0
 offset_top = 146.0
-offset_right = 452.0
+offset_right = 412.0
 offset_bottom = 555.0
 texture = ExtResource("173_4hwyg")
 
@@ -3328,10 +3327,10 @@ texture = ExtResource("183_uruji")
 
 [node name="ManyLeaves3" type="TextureRect" parent="Djungel_BG"]
 layout_mode = 0
-offset_left = 422.0
-offset_top = 477.0
-offset_right = 622.0
-offset_bottom = 569.0
+offset_left = 393.0
+offset_top = 457.0
+offset_right = 593.0
+offset_bottom = 549.0
 texture = ExtResource("245_d86yf")
 
 [node name="Tree4" type="TextureRect" parent="Djungel_BG"]
@@ -3408,9 +3407,9 @@ texture = ExtResource("185_nju8q")
 
 [node name="Fern2" type="TextureRect" parent="Djungel_BG"]
 layout_mode = 0
-offset_left = 584.0
+offset_left = 537.0
 offset_top = 312.0
-offset_right = 681.0
+offset_right = 634.0
 offset_bottom = 571.0
 texture = ExtResource("204_hmd6s")
 
@@ -3624,13 +3623,14 @@ texture = ExtResource("231_17bc2")
 
 [node name="WaterShine" type="TextureRect" parent="Djungel_BG"]
 layout_mode = 0
-offset_left = 56.0
-offset_top = 565.0
-offset_right = 447.0
-offset_bottom = 767.0
+offset_left = 39.0
+offset_top = 552.0
+offset_right = 430.0
+offset_bottom = 754.0
 texture = ExtResource("234_tjn1t")
 
 [node name="SmallRock" type="TextureRect" parent="Djungel_BG"]
+z_index = 3
 layout_mode = 0
 offset_left = -37.0
 offset_top = 202.0
@@ -3639,11 +3639,12 @@ offset_bottom = 269.0
 texture = ExtResource("235_nttwm")
 
 [node name="Foam" type="TextureRect" parent="Djungel_BG"]
+z_index = 3
 layout_mode = 0
-offset_left = 58.0
-offset_top = 531.0
-offset_right = 413.0
-offset_bottom = 600.0
+offset_left = 10.0
+offset_top = 502.0
+offset_right = 365.0
+offset_bottom = 571.0
 texture = ExtResource("236_k0i6p")
 
 [node name="Grass" type="TextureRect" parent="Djungel_BG"]
@@ -3687,6 +3688,7 @@ offset_bottom = 229.0
 texture = ExtResource("240_vsdh4")
 
 [node name="SmallGrass2" type="TextureRect" parent="Djungel_BG"]
+z_index = 4
 layout_mode = 0
 offset_left = 6.0
 offset_top = 236.0
@@ -3863,18 +3865,18 @@ texture = ExtResource("262_nakhx")
 
 [node name="Flamingo" type="TextureRect" parent="Djungel_BG"]
 layout_mode = 0
-offset_left = 300.0
-offset_top = 511.0
-offset_right = 396.0
-offset_bottom = 693.0
+offset_left = 424.0
+offset_top = 494.0
+offset_right = 520.0
+offset_bottom = 676.0
 texture = ExtResource("263_f248b")
 
 [node name="Flamingo2" type="TextureRect" parent="Djungel_BG"]
 layout_mode = 0
-offset_left = 112.0
-offset_top = 566.0
-offset_right = 219.0
-offset_bottom = 770.0
+offset_left = 245.0
+offset_top = 591.0
+offset_right = 352.0
+offset_bottom = 795.0
 texture = ExtResource("264_hsg0h")
 
 [node name="Fern5" type="TextureRect" parent="Djungel_BG"]
@@ -3886,7 +3888,6 @@ offset_bottom = 806.0
 texture = ExtResource("232_7ofd2")
 
 [node name="Vine" type="TextureRect" parent="Djungel_BG"]
-z_index = 2
 layout_mode = 0
 offset_left = 1105.0
 offset_top = -106.0
@@ -3895,7 +3896,6 @@ offset_bottom = 340.0
 texture = ExtResource("265_lw847")
 
 [node name="Vine3" type="TextureRect" parent="Djungel_BG"]
-z_index = 2
 layout_mode = 0
 offset_left = 1106.0
 offset_top = -106.0
@@ -3904,6 +3904,7 @@ offset_bottom = 335.0
 texture = ExtResource("266_ij36n")
 
 [node name="Vine4" type="TextureRect" parent="Djungel_BG"]
+z_index = 2
 layout_mode = 0
 offset_left = -98.0
 offset_top = -36.0
@@ -3928,6 +3929,7 @@ offset_bottom = 1180.0
 texture = ExtResource("270_n1ef2")
 
 [node name="Vine6" type="TextureRect" parent="Djungel_BG"]
+z_index = 2
 layout_mode = 0
 offset_left = -131.0
 offset_top = -81.0
@@ -3977,10 +3979,10 @@ texture = ExtResource("275_k4v4n")
 
 [node name="BigGrass5" type="TextureRect" parent="Djungel_BG"]
 layout_mode = 0
-offset_left = 1390.0
-offset_top = 846.0
-offset_right = 1680.0
-offset_bottom = 1195.0
+offset_left = 541.0
+offset_top = 818.0
+offset_right = 831.0
+offset_bottom = 1167.0
 texture = ExtResource("276_hupdt")
 
 [node name="BigGrass9" type="TextureRect" parent="Djungel_BG"]
@@ -3991,20 +3993,12 @@ offset_right = 1360.0
 offset_bottom = 1211.0
 texture = ExtResource("276_hupdt")
 
-[node name="BigGrass6" type="TextureRect" parent="Djungel_BG"]
-layout_mode = 0
-offset_left = 1256.0
-offset_top = 780.0
-offset_right = 1547.0
-offset_bottom = 1123.0
-texture = ExtResource("277_uocg8")
-
 [node name="BigGrass7" type="TextureRect" parent="Djungel_BG"]
 layout_mode = 0
-offset_left = 1185.0
-offset_top = 832.0
-offset_right = 1476.0
-offset_bottom = 1175.0
+offset_left = 1069.0
+offset_top = 862.0
+offset_right = 1360.0
+offset_bottom = 1205.0
 texture = ExtResource("278_g6etc")
 
 [node name="BigGrass8" type="TextureRect" parent="Djungel_BG"]

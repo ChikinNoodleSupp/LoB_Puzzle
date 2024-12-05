@@ -6,8 +6,5 @@ var SM = preload("res://Scripts/SceneManager.gd")
 func _ready() -> void:
 	if SM.scene == 5:
 		play("Monkey")
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+	else:
+			$Monkey.visible = false

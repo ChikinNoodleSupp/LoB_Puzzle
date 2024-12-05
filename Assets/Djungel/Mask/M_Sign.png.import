@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://cbkivvhkvrbrt"
+path="res://.godot/imported/M_Sign.png-226bec2aa8e858558c94ef576dd6b374.res"
+
+[deps]
+
+source_file="res://Assets/Djungel/Mask/M_Sign.png"
+dest_files=["res://.godot/imported/M_Sign.png-226bec2aa8e858558c94ef576dd6b374.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

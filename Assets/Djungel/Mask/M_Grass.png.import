@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bwo7jycaid7gt"
+path="res://.godot/imported/M_Grass.png-71d584f76e2db51c05877a3ecf170197.res"
+
+[deps]
+
+source_file="res://Assets/Djungel/Mask/M_Grass.png"
+dest_files=["res://.godot/imported/M_Grass.png-71d584f76e2db51c05877a3ecf170197.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

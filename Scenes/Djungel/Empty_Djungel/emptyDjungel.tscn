@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://b4je4tvbh2ekh"]
 
-[ext_resource type="Texture2D" uid="uid://dtqutihykkpn4" path="res://Assets/Inom Hus/Hover/H_Tent.png" id="1_ri6dm"]
-[ext_resource type="Texture2D" uid="uid://clhlwfgh3loxh" path="res://Assets/Inom Hus/Pressed/P_Tent.png" id="2_6a2yd"]
-[ext_resource type="BitMap" uid="uid://bt2tc0672wrm4" path="res://Assets/Inom Hus/Mask/M_Tent.png" id="3_0sejm"]
+[ext_resource type="Texture2D" uid="uid://bxgct6qsx1jme" path="res://Assets/Djungel/Hover/H_Waterfall.png" id="1_vgjh2"]
+[ext_resource type="Texture2D" uid="uid://bcuejsdgtjf0y" path="res://Assets/Djungel/Pressed/P_Waterfall.png" id="2_5e5jp"]
+[ext_resource type="BitMap" uid="uid://xlvljg2thljk" path="res://Assets/Djungel/Mask/M_Waterfall.png" id="3_nl8lo"]
 
 [node name="empty_spot" type="TextureButton"]
 z_index = 1
@@ -13,14 +13,14 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -960.0
 offset_top = -540.0
-offset_right = -307.0
-offset_bottom = 579.0
+offset_right = -511.0
+offset_bottom = -70.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(532, 1288)
-texture_normal = ExtResource("1_ri6dm")
-texture_pressed = ExtResource("2_6a2yd")
-texture_hover = ExtResource("1_ri6dm")
-texture_disabled = ExtResource("2_6a2yd")
-texture_click_mask = ExtResource("3_0sejm")
+texture_normal = ExtResource("1_vgjh2")
+texture_pressed = ExtResource("2_5e5jp")
+texture_hover = ExtResource("1_vgjh2")
+texture_disabled = ExtResource("2_5e5jp")
+texture_click_mask = ExtResource("3_nl8lo")
 stretch_mode = 3

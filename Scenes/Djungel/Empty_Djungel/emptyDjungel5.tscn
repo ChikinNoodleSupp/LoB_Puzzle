@@ -1,11 +1,11 @@
 [gd_scene load_steps=4 format=3 uid="uid://cf6jmljgs5hd6"]
 
-[ext_resource type="Texture2D" uid="uid://dtqutihykkpn4" path="res://Assets/Inom Hus/Hover/H_Tent.png" id="1_cnkto"]
-[ext_resource type="Texture2D" uid="uid://clhlwfgh3loxh" path="res://Assets/Inom Hus/Pressed/P_Tent.png" id="2_tmpcw"]
-[ext_resource type="BitMap" uid="uid://bt2tc0672wrm4" path="res://Assets/Inom Hus/Mask/M_Tent.png" id="3_bgwd4"]
+[ext_resource type="Texture2D" uid="uid://xbc15i7fms7j" path="res://Assets/Djungel/Hover/H_Grass.png" id="1_gbyur"]
+[ext_resource type="Texture2D" uid="uid://b1q2l86jjfxdc" path="res://Assets/Djungel/Pressed/P_Grass.png" id="2_2iqlm"]
+[ext_resource type="BitMap" uid="uid://bwo7jycaid7gt" path="res://Assets/Djungel/Mask/M_Grass.png" id="3_kvenc"]
 
 [node name="empty_spot" type="TextureButton"]
-z_index = 1
+z_index = 5
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -13,14 +13,14 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -960.0
 offset_top = -540.0
-offset_right = -307.0
-offset_bottom = 579.0
+offset_right = -403.0
+offset_bottom = 166.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(532, 1288)
-texture_normal = ExtResource("1_cnkto")
-texture_pressed = ExtResource("2_tmpcw")
-texture_hover = ExtResource("1_cnkto")
-texture_disabled = ExtResource("2_tmpcw")
-texture_click_mask = ExtResource("3_bgwd4")
+texture_normal = ExtResource("1_gbyur")
+texture_pressed = ExtResource("2_2iqlm")
+texture_hover = ExtResource("1_gbyur")
+texture_disabled = ExtResource("2_2iqlm")
+texture_click_mask = ExtResource("3_kvenc")
 stretch_mode = 3

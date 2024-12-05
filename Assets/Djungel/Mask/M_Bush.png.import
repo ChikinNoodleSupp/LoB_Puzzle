@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://btmfr4gc5pgeu"
+path="res://.godot/imported/M_Bush.png-ca4c158b460eb933af3927d0ff9b4953.res"
+
+[deps]
+
+source_file="res://Assets/Djungel/Mask/M_Bush.png"
+dest_files=["res://.godot/imported/M_Bush.png-ca4c158b460eb933af3927d0ff9b4953.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

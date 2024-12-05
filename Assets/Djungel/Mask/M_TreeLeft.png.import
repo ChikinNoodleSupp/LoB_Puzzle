@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://cgek5eihsqldv"
+path="res://.godot/imported/M_TreeLeft.png-d9bdbc9c375b326f64c7bbb6e8fbad9b.res"
+
+[deps]
+
+source_file="res://Assets/Djungel/Mask/M_TreeLeft.png"
+dest_files=["res://.godot/imported/M_TreeLeft.png-d9bdbc9c375b326f64c7bbb6e8fbad9b.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

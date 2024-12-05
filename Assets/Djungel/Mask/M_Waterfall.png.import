@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://xlvljg2thljk"
+path="res://.godot/imported/M_Waterfall.png-0e3c376f0e41047f22df9d0952123758.res"
+
+[deps]
+
+source_file="res://Assets/Djungel/Mask/M_Waterfall.png"
+dest_files=["res://.godot/imported/M_Waterfall.png-0e3c376f0e41047f22df9d0952123758.res"]
+
+[params]
+
+create_from=0
+threshold=0.5
