@@ -1432,10 +1432,10 @@ script = ExtResource("9_62nut")
 
 [node name="Cloud" type="TextureRect" parent="Strand_BG/AnimationPlayer2"]
 visible = false
-offset_left = 500.0
-offset_top = 200.0
-offset_right = 745.0
-offset_bottom = 311.0
+offset_left = -299.0
+offset_top = 249.0
+offset_right = -54.0
+offset_bottom = 360.0
 texture = ExtResource("10_8nijr")
 
 [node name="Waves" type="TextureRect" parent="Strand_BG"]
@@ -1503,7 +1503,6 @@ libraries = {
 script = ExtResource("15_8aqc4")
 
 [node name="Ball" type="TextureRect" parent="Strand_BG/AnimationPlayer5"]
-visible = false
 offset_left = 1758.0
 offset_top = 629.0
 offset_right = 1825.0
@@ -1527,7 +1526,6 @@ libraries = {
 script = ExtResource("18_eabu2")
 
 [node name="Crab" type="TextureRect" parent="Strand_BG/AnimationPlayer3"]
-visible = false
 offset_left = 915.0
 offset_top = 911.0
 offset_right = 982.0
@@ -1543,7 +1541,6 @@ speed_scale = 0.2
 script = ExtResource("20_6ajtc")
 
 [node name="Cloud2" type="TextureRect" parent="Strand_BG/AnimationPlayer"]
-visible = false
 offset_left = -194.0
 offset_top = 184.0
 offset_right = -48.0
@@ -2398,7 +2395,6 @@ libraries = {
 script = ExtResource("84_lpe0t")
 
 [node name="MantaRay" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer9"]
-visible = false
 offset_left = 2082.0
 offset_top = 75.0
 offset_right = 2122.0
@@ -2413,7 +2409,6 @@ libraries = {
 script = ExtResource("85_kod8e")
 
 [node name="Fish1" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer8"]
-visible = false
 z_index = 2
 offset_left = 2176.0
 offset_top = 331.0
@@ -2422,7 +2417,6 @@ offset_bottom = 416.0
 texture = ExtResource("98_741d4")
 
 [node name="Fish2" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer8"]
-visible = false
 z_index = 2
 offset_left = 2030.0
 offset_top = 472.0
@@ -2431,7 +2425,6 @@ offset_bottom = 557.0
 texture = ExtResource("99_kxwh0")
 
 [node name="Fish3" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer8"]
-visible = false
 z_index = 2
 offset_left = 2195.0
 offset_top = 505.0
@@ -2440,7 +2433,6 @@ offset_bottom = 591.0
 texture = ExtResource("100_g6f37")
 
 [node name="Fish4" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer8"]
-visible = false
 z_index = 2
 offset_left = 2123.0
 offset_top = 420.0
@@ -2456,7 +2448,6 @@ libraries = {
 script = ExtResource("89_m1x65")
 
 [node name="Crab1" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer2"]
-visible = false
 z_index = 2
 offset_left = 929.0
 offset_top = 922.0
@@ -2473,7 +2464,6 @@ libraries = {
 script = ExtResource("90_qud01")
 
 [node name="Shark" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer3"]
-visible = false
 offset_left = -194.0
 offset_top = 526.0
 offset_right = -63.0
@@ -2489,7 +2479,6 @@ libraries = {
 script = ExtResource("91_inxbo")
 
 [node name="JellyFish" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer4"]
-visible = false
 offset_left = 24.0
 offset_top = 480.0
 offset_right = 64.0
@@ -2504,7 +2493,6 @@ libraries = {
 script = ExtResource("92_87ade")
 
 [node name="Starfish1" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer5"]
-visible = false
 z_index = 2
 offset_left = 773.0
 offset_top = 936.0
@@ -2521,7 +2509,6 @@ libraries = {
 script = ExtResource("93_lam0n")
 
 [node name="Squid" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer6"]
-visible = false
 z_index = 2
 offset_left = 1386.0
 offset_top = 53.0
@@ -2537,7 +2524,6 @@ libraries = {
 script = ExtResource("94_s6rhw")
 
 [node name="FishSchool2" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer7"]
-visible = false
 offset_left = 1992.0
 offset_top = 265.0
 offset_right = 2193.0
@@ -2552,7 +2538,6 @@ libraries = {
 script = ExtResource("89_5a85i")
 
 [node name="FishSchool1" type="TextureRect" parent="UnderVatten_BG/AnimationPlayer"]
-visible = false
 z_index = 2
 offset_left = -507.0
 offset_top = 139.0
@@ -2562,7 +2547,6 @@ texture = ExtResource("103_fvqwt")
 flip_h = true
 
 [node name="Whale1" type="TextureRect" parent="UnderVatten_BG"]
-visible = false
 z_index = 2
 layout_mode = 0
 offset_left = 764.5
@@ -2572,7 +2556,6 @@ offset_bottom = 569.5
 texture = ExtResource("107_jd3bv")
 
 [node name="SailBoat1" type="TextureRect" parent="UnderVatten_BG"]
-visible = false
 z_index = 2
 layout_mode = 0
 offset_left = -63.5
@@ -2683,7 +2666,6 @@ texture = ExtResource("31_3c4gs")
 flip_h = true
 
 [node name="Rays" type="TextureRect" parent="UnderVatten_BG"]
-visible = false
 z_index = 2
 layout_mode = 0
 offset_left = -227.5
@@ -3745,7 +3727,6 @@ libraries = {
 script = ExtResource("249_l2x4a")
 
 [node name="Monkey" type="TextureRect" parent="Djungel_BG/AnimationPlayer"]
-visible = false
 offset_left = 1722.0
 offset_top = 317.0
 offset_right = 1889.0
@@ -4012,6 +3993,7 @@ offset_bottom = 1162.0
 texture = ExtResource("279_l3lma")
 
 [node name="Gym_BG" type="TextureRect" parent="."]
+visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
