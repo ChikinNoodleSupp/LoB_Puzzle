@@ -2,8 +2,9 @@ extends TextureButton
 
 
 
+func escapePressed():
+	pass #when press escape, go back to main menu / call the back btn script. if back button isnt visible, do nothing
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _ready():
+	pass 

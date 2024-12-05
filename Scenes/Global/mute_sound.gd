@@ -4,6 +4,7 @@ extends Control
 static var toggled_on
 @onready var button = $MuteSound
 
+# add if press m, mute sound
 
 func _ready() -> void:
 	checkButton()
