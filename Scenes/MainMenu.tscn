@@ -223,6 +223,11 @@ offset_right = 2916.0
 offset_bottom = 2312.0
 color = Color(0, 0, 0, 1)
 
+[node name="TempThumbnail" type="Sprite2D" parent="."]
+position = Vector2(966, 192)
+scale = Vector2(0.428125, 0.131019)
+texture = ExtResource("4_gburu")
+
 [connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_mouse_entered"]
 [connection signal="mouse_exited" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_mouse_exited"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_pressed"]
