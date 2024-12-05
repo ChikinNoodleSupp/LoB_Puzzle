@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dqac8pf0beers" path="res://Assets/Thumbnails/LB_mobilspel_bg.png" id="2_0hddr"]
 [ext_resource type="Texture2D" uid="uid://c80ynapn6sfhn" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_stranden.png" id="3_0bkn4"]
 [ext_resource type="Texture2D" uid="uid://cv2b65pcbgxd0" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_havetsbotten.png" id="4_60hwu"]
-[ext_resource type="Texture2D" uid="uid://c44kd874loklv" path="res://TempImages/FhFIk--VIAEZVNx.jpg" id="4_c3fvj"]
+[ext_resource type="Texture2D" uid="uid://coy6owndisvqn" path="res://TempImages/temp_thumbnail.png" id="4_gburu"]
 [ext_resource type="Script" path="res://Scenes/ui-nav.gd" id="4_j817u"]
 [ext_resource type="Texture2D" uid="uid://c276ec80rv317" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_djungeln.png" id="5_4jwty"]
 [ext_resource type="Texture2D" uid="uid://bmevtdmesdr4c" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_hemma.png" id="5_i8i5v"]
@@ -156,7 +156,7 @@ focus_neighbor_top = NodePath("../../HBoxContainer2/Hide_Seek4")
 focus_neighbor_right = NodePath("../Hide_Seek2")
 focus_neighbor_bottom = NodePath("../../HBoxContainer2/Hide_Seek4")
 texture_normal = ExtResource("3_0bkn4")
-texture_focused = ExtResource("4_c3fvj")
+texture_focused = ExtResource("4_gburu")
 script = ExtResource("4_j817u")
 
 [node name="Hide_Seek2" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
@@ -166,7 +166,7 @@ focus_neighbor_top = NodePath("../../HBoxContainer2/Hide_Seek5")
 focus_neighbor_right = NodePath("../Hide_Seek3")
 focus_neighbor_bottom = NodePath("../../HBoxContainer2/Hide_Seek5")
 texture_normal = ExtResource("4_60hwu")
-texture_focused = ExtResource("4_c3fvj")
+texture_focused = ExtResource("4_gburu")
 
 [node name="Hide_Seek3" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -175,7 +175,7 @@ focus_neighbor_top = NodePath("../../HBoxContainer2/Hide_Seek6")
 focus_neighbor_right = NodePath("../Hide_Seek")
 focus_neighbor_bottom = NodePath("../../HBoxContainer2/Hide_Seek6")
 texture_normal = ExtResource("5_i8i5v")
-texture_focused = ExtResource("4_c3fvj")
+texture_focused = ExtResource("4_gburu")
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -190,7 +190,7 @@ focus_neighbor_top = NodePath("../../HBoxContainer/Hide_Seek")
 focus_neighbor_right = NodePath("../Hide_Seek5")
 focus_neighbor_bottom = NodePath("../../HBoxContainer/Hide_Seek")
 texture_normal = ExtResource("6_w1ql8")
-texture_focused = ExtResource("4_c3fvj")
+texture_focused = ExtResource("4_gburu")
 
 [node name="Hide_Seek5" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
@@ -199,7 +199,7 @@ focus_neighbor_top = NodePath("../../HBoxContainer/Hide_Seek2")
 focus_neighbor_right = NodePath("../Hide_Seek6")
 focus_neighbor_bottom = NodePath("../../HBoxContainer/Hide_Seek2")
 texture_normal = ExtResource("5_4jwty")
-texture_focused = ExtResource("4_c3fvj")
+texture_focused = ExtResource("4_gburu")
 
 [node name="Hide_Seek6" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
@@ -208,7 +208,7 @@ focus_neighbor_top = NodePath("../../HBoxContainer/Hide_Seek3")
 focus_neighbor_right = NodePath("../Hide_Seek4")
 focus_neighbor_bottom = NodePath("../../HBoxContainer/Hide_Seek3")
 texture_normal = ExtResource("10_c1n7o")
-texture_focused = ExtResource("4_c3fvj")
+texture_focused = ExtResource("4_gburu")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
