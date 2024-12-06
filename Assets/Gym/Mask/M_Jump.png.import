@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://lc1kju2f10a8"
+path="res://.godot/imported/M_Jump.png-04477822517aee5a16927ea3aa43c607.res"
+
+[deps]
+
+source_file="res://Assets/Gym/Mask/M_Jump.png"
+dest_files=["res://.godot/imported/M_Jump.png-04477822517aee5a16927ea3aa43c607.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

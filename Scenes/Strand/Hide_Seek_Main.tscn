@@ -1723,6 +1723,7 @@ offset_bottom = 778.0
 texture = ExtResource("49_ei247")
 
 [node name="UnderVatten_BG" type="TextureRect" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -3994,7 +3995,6 @@ offset_bottom = 1162.0
 texture = ExtResource("279_l3lma")
 
 [node name="Gym_BG" type="TextureRect" parent="."]
-visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -4033,10 +4033,10 @@ texture = ExtResource("158_sj268")
 
 [node name="Clock" type="TextureRect" parent="Gym_BG"]
 layout_mode = 0
-offset_left = 901.0
-offset_top = 123.0
-offset_right = 1030.0
-offset_bottom = 252.0
+offset_left = 835.0
+offset_top = 72.0
+offset_right = 964.0
+offset_bottom = 201.0
 texture = ExtResource("159_b3456")
 
 [node name="Carpet" type="TextureRect" parent="Gym_BG"]

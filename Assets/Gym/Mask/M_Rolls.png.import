@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bxuxfofnbydk1"
+path="res://.godot/imported/M_Rolls.png-d8fe6c3b8ea4033424aeb8cc9dff8425.res"
+
+[deps]
+
+source_file="res://Assets/Gym/Mask/M_Rolls.png"
+dest_files=["res://.godot/imported/M_Rolls.png-d8fe6c3b8ea4033424aeb8cc9dff8425.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://c78on3ed2lwgk"
+path="res://.godot/imported/M_Matta.png-78ca2ef0fef848fba4452108de6bd292.res"
+
+[deps]
+
+source_file="res://Assets/Gym/Mask/M_Matta.png"
+dest_files=["res://.godot/imported/M_Matta.png-78ca2ef0fef848fba4452108de6bd292.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

@@ -9,7 +9,8 @@ var locationArray = [
 	"res://Scenes/UnderVatten/Hide_Seek_control_test_2.tscn", 
 	"res://Scenes/Inomhus/Hide_Seek_control_test_3.tscn",
 	"res://Scenes/Berg/Hide_Seek_control_test_4.tscn",
-	"res://Scenes/Djungel/Hide_Seek_control_test_5.tscn"
+	"res://Scenes/Djungel/Hide_Seek_control_test_5.tscn",
+	"res://Scenes/Gym/Hide_Seek_control_test_6.tscn"
 	] # just add more scenes
 
 static var sceneNumber = 0
@@ -153,8 +154,34 @@ var bernieDjungelArray = [BernieDjungel, BernieDjungel2, BernieDjungel3, BernieD
 
 var djungelArray = [lolloDjungelArray, bernieDjungelArray, emptyDjungelArray]
 
+var emptyGym = preload("res://Scenes/Gym/EmptyGym/emptyGym.tscn")
+var emptyGym2 = preload("res://Scenes/Gym/EmptyGym/emptyGym2.tscn")
+var emptyGym3 = preload("res://Scenes/Gym/EmptyGym/emptyGym3.tscn")
+var emptyGym4 = preload("res://Scenes/Gym/EmptyGym/emptyGym4.tscn")
+var emptyGym5 = preload("res://Scenes/Gym/EmptyGym/emptyGym5.tscn")
+var emptyGym6 = preload("res://Scenes/Gym/EmptyGym/emptyGym6.tscn")
+var emptyGymArray = [emptyGym, emptyGym2, emptyGym3, emptyGym4, emptyGym5, emptyGym6]
+
+var LolloGym = preload("res://Scenes/Gym/LolloGym/LolloGym.tscn")
+var LolloGym2 = preload("res://Scenes/Gym/LolloGym/LolloGym2.tscn")
+var LolloGym3 = preload("res://Scenes/Gym/LolloGym/LolloGym3.tscn")
+var LolloGym4 = preload("res://Scenes/Gym/LolloGym/LolloGym4.tscn")
+var LolloGym5 = preload("res://Scenes/Gym/LolloGym/LolloGym5.tscn")
+var LolloGym6 = preload("res://Scenes/Gym/LolloGym/LolloGym6.tscn")
+var lolloGymArray = [LolloGym, LolloGym2, LolloGym3, LolloGym4, LolloGym5, LolloGym6]
+
+var bernieGym = preload("res://Scenes/Gym/BernieGym/BernieGym.tscn")
+var bernieGym2 = preload("res://Scenes/Gym/BernieGym/BernieGym2.tscn")
+var bernieGym3 = preload("res://Scenes/Gym/BernieGym/BernieGym3.tscn")
+var bernieGym4 = preload("res://Scenes/Gym/BernieGym/BernieGym4.tscn")
+var bernieGym5 = preload("res://Scenes/Gym/BernieGym/BernieGym5.tscn")
+var bernieGym6 = preload("res://Scenes/Gym/BernieGym/BernieGym6.tscn")
+var bernieGymArray = [bernieGym, bernieGym2, bernieGym3, bernieGym4, bernieGym5, bernieGym6]
+
+var gymArray = [lolloGymArray, bernieGymArray, emptyGymArray]
+
 #Put "packages" in this one
-var sceneArray = [strandArray, vattenArray, inomhusArray, bergArray, djungelArray]
+var sceneArray = [strandArray, vattenArray, inomhusArray, bergArray, djungelArray, gymArray]
 
 @onready var BG_1 = $Strand_BG
 @onready var BG_2 = $UnderVatten_BG

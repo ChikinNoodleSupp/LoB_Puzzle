@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://duyps2b8geytu"
+path="res://.godot/imported/M_Window.png-d57aaeee20918a1ba250ddf6b9f28a7f.res"
+
+[deps]
+
+source_file="res://Assets/Gym/Mask/M_Window.png"
+dest_files=["res://.godot/imported/M_Window.png-d57aaeee20918a1ba250ddf6b9f28a7f.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

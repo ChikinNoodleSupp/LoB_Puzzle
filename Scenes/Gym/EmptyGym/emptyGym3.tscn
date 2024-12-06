@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://e2c515w0gpo6"]
+
+[ext_resource type="Texture2D" uid="uid://chai2jcu7424a" path="res://Assets/Gym/Hover/H_Window.png" id="1_7wqe4"]
+[ext_resource type="Texture2D" uid="uid://r6t17obapyyl" path="res://Assets/Gym/Pressed/P_Window.png" id="2_f4p6e"]
+[ext_resource type="BitMap" uid="uid://duyps2b8geytu" path="res://Assets/Gym/Mask/M_Window.png" id="3_6u7bj"]
+
+[node name="empty_spot" type="TextureButton"]
+z_index = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -960.0
+offset_top = -540.0
+offset_right = -247.0
+offset_bottom = -286.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("1_7wqe4")
+texture_pressed = ExtResource("2_f4p6e")
+texture_hover = ExtResource("1_7wqe4")
+texture_disabled = ExtResource("2_f4p6e")
+texture_click_mask = ExtResource("3_6u7bj")
+stretch_mode = 3

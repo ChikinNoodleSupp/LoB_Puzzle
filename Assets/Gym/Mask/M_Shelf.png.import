@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://du0iu44akwj5l"
+path="res://.godot/imported/M_Shelf.png-ad0acb449e8f736c3e57190d7f2f90db.res"
+
+[deps]
+
+source_file="res://Assets/Gym/Mask/M_Shelf.png"
+dest_files=["res://.godot/imported/M_Shelf.png-ad0acb449e8f736c3e57190d7f2f90db.res"]
+
+[params]
+
+create_from=0
+threshold=0.5
