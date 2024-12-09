@@ -5,9 +5,13 @@ extends Control
 var localizationScene = preload("res://Scenes/Global/Localization_Scene.tscn")
 #@onready var menuButton = $MarginContainer/VBoxContainer2/HBoxContainer/MenuButton
 #@onready var popup = menuButton.get_popup()
-@onready var HnS = $MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek
-@onready var HnS2 = $MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek2
-@onready var HnS3 = $MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek3
+
+@onready var HnS = $MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/Label
+@onready var HnS2 = $MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/Label2
+@onready var HnS3 = $MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/Label3
+@onready var HnS4 = $MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/Label
+@onready var HnS5 = $MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2/Label2
+@onready var HnS6 = $MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer3/Label3
 
 @onready var mouseHover = false
 
@@ -28,7 +32,7 @@ func _ready() -> void:
 	
 	AudioPlayer.play_music_menu()
 	
-	Localization.setSwedish = true
+	# Localization.setSwedish = true
 	if Localization.setSwedish:
 		Swedish()
 	elif Localization.setDanish:
@@ -74,10 +78,12 @@ func spawnHUD():
 
 func Swedish():
 	print("Svenska")
-	# menuButton.text = "Språk"
-	#HnS.text = "Kurragömma1"
-	#HnS2.text = "Kurragömma2"
-	#HnS3.text = "Kurragömma3"
+	HnS.text = "Kurragömma1"
+	HnS2.text = "Kurragömma2"
+	HnS3.text = "Kurragömma3"
+	HnS4.text = "Kurragömma4"
+	HnS5.text = "Kurragömma5"
+	HnS6.text = "Kurragömma6"
 	Localization.setSwedish = true
 	Localization.setEnglish = false
 	Localization.setDanish = false
@@ -88,9 +94,9 @@ func Swedish():
 func English():
 	print("English")
 	# menuButton.text = "Language"
-	#HnS.text = "Hide & Seek1"
-	#HnS2.text = "Hide & Seek2"
-	#HnS3.text = "Hide & Seek3"
+	HnS.text = "Hide & Seek1"
+	HnS2.text = "Hide & Seek2"
+	HnS3.text = "Hide & Seek3"
 	Localization.setSwedish = false
 	Localization.setEnglish = true
 	Localization.setDanish = false
@@ -100,9 +106,12 @@ func English():
 func Danish():
 	print("Dansk")
 	# menuButton.text = "Sprog"
-	#HnS.text = "Gemmeleg1"
-	#HnS2.text = "Gemmeleg2"
-	#HnS3.text = "Gemmeleg3"
+	HnS.text = "Gemmeleg1"
+	HnS2.text = "Gemmeleg2"
+	HnS3.text = "Gemmeleg3"
+	HnS4.text = "Gemmeleg4"
+	HnS5.text = "Gemmeleg5"
+	HnS6.text = "Gemmeleg6"
 	Localization.setSwedish = false
 	Localization.setEnglish = false
 	Localization.setDanish = true
@@ -112,9 +121,12 @@ func Danish():
 func Norwegian():
 	print("Norsk")
 	# menuButton.text = "Språk"
-	#HnS.text = "Gjemsel1"
-	#HnS2.text = "Gjemsel2"
-	#HnS3.text = "Gjemsel3"
+	HnS.text = "Gjemsel1"
+	HnS2.text = "Gjemsel2"
+	HnS3.text = "Gjemsel3"
+	HnS4.text = "Gjemsel4"
+	HnS5.text = "Gjemsel5"
+	HnS6.text = "Gjemsel6"
 	Localization.setSwedish = false
 	Localization.setEnglish = false
 	Localization.setDanish = false
@@ -124,9 +136,12 @@ func Norwegian():
 func Finnish():
 	print("Suomi")
 	# menuButton.text = "Kieli"
-	#HnS.text = "Piiloleikki1"
-	#HnS2.text = "Piiloleikki2"
-	#HnS3.text = "Piiloleikki3"
+	HnS.text = "Piiloleikki1"
+	HnS2.text = "Piiloleikki2"
+	HnS3.text = "Piiloleikki3"
+	HnS4.text = "Piiloleikki4"
+	HnS5.text = "Piiloleikki5"
+	HnS6.text = "Piiloleikki6"
 	Localization.setSwedish = false
 	Localization.setEnglish = false
 	Localization.setDanish = false
