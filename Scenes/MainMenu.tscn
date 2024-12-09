@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://bfet2ccdjje2p"]
+[gd_scene load_steps=22 format=3 uid="uid://bfet2ccdjje2p"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_d7dnp"]
 [ext_resource type="Texture2D" uid="uid://dqac8pf0beers" path="res://Assets/Thumbnails/LB_mobilspel_bg.png" id="2_0hddr"]
@@ -13,6 +13,10 @@
 [ext_resource type="Texture2D" uid="uid://dc6v8m2wqpq06" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_bergetstopp_hover.png" id="11_u6vy4"]
 [ext_resource type="Texture2D" uid="uid://mpm2kbx26ok6" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_djungeln (1).png" id="12_16ccb"]
 [ext_resource type="Texture2D" uid="uid://l41ovhgjkxgm" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_gympasalen (1).png" id="13_l7xhq"]
+[ext_resource type="Texture2D" uid="uid://b3u8bqyxq3i3y" path="res://Assets/ICONS/Flag_SE.png" id="14_inu5c"]
+[ext_resource type="Texture2D" uid="uid://chbdn5spybh2x" path="res://Assets/ICONS/Flag_DK.png" id="15_h30e2"]
+[ext_resource type="Texture2D" uid="uid://c7xln86dh0sca" path="res://Assets/ICONS/Flag_NO.png" id="16_lbo8h"]
+[ext_resource type="Texture2D" uid="uid://b01g3lmaqqg78" path="res://Assets/ICONS/Flag_FI.png" id="17_kyvl8"]
 
 [sub_resource type="Animation" id="Animation_6d8hl"]
 resource_name = "Fade_in"
@@ -235,6 +239,43 @@ color = Color(0, 0, 0, 1)
 position = Vector2(966, 192)
 scale = Vector2(0.428125, 0.131019)
 texture = ExtResource("4_gburu")
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 693.0
+offset_top = 905.0
+offset_right = -931.0
+offset_bottom = -98.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 35
+
+[node name="Swedish" type="TextureButton" parent="MarginContainer2/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("14_inu5c")
+
+[node name="Danish" type="TextureButton" parent="MarginContainer2/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("15_h30e2")
+
+[node name="Norwegian" type="TextureButton" parent="MarginContainer2/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("16_lbo8h")
+
+[node name="Finnish" type="TextureButton" parent="MarginContainer2/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("17_kyvl8")
 
 [connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_mouse_entered"]
 [connection signal="mouse_exited" from="MarginContainer/VBoxContainer/HBoxContainer/Hide_Seek" to="." method="_on_hide_seek_mouse_exited"]

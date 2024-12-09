@@ -1,20 +1,20 @@
 [gd_scene load_steps=5 format=3 uid="uid://cmv002jgr8w75"]
 
-[ext_resource type="Texture2D" uid="uid://m6ynvutmwjj1" path="res://Assets/Inom Hus/LnB/L_Tent_H.png" id="1_53nhx"]
-[ext_resource type="Texture2D" uid="uid://l7yv508vna81" path="res://Assets/Inom Hus/LnB/L_Tent_F.png" id="2_jghgu"]
-[ext_resource type="BitMap" uid="uid://bt2tc0672wrm4" path="res://Assets/Inom Hus/Mask/M_Tent.png" id="3_4uyhe"]
+[ext_resource type="Texture2D" uid="uid://bm16fwb1glk6b" path="res://Assets/Gym/LnB/L_Matta_H.png" id="1_kgas1"]
+[ext_resource type="Texture2D" uid="uid://dd2c4v1b2js1d" path="res://Assets/Gym/LnB/L_Matta_F.png" id="2_ntxiy"]
+[ext_resource type="BitMap" uid="uid://c78on3ed2lwgk" path="res://Assets/Gym/Mask/M_Matta.png" id="3_62qft"]
 
 [sub_resource type="GDScript" id="GDScript_hdxlj"]
 script/source = "extends TextureButton
 "
 
 [node name="LolloSpot" type="TextureButton"]
-z_index = 1
-offset_right = 653.0
-offset_bottom = 1119.0
-texture_normal = ExtResource("1_53nhx")
-texture_pressed = ExtResource("2_jghgu")
-texture_hover = ExtResource("1_53nhx")
-texture_disabled = ExtResource("2_jghgu")
-texture_click_mask = ExtResource("3_4uyhe")
+z_index = 5
+offset_right = 1101.0
+offset_bottom = 1036.0
+texture_normal = ExtResource("1_kgas1")
+texture_pressed = ExtResource("2_ntxiy")
+texture_hover = ExtResource("1_kgas1")
+texture_disabled = ExtResource("2_ntxiy")
+texture_click_mask = ExtResource("3_62qft")
 script = SubResource("GDScript_hdxlj")

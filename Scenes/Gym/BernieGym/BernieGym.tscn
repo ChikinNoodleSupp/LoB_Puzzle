@@ -1,17 +1,17 @@
 [gd_scene load_steps=4 format=3 uid="uid://nwvuvb0ysa87"]
 
-[ext_resource type="Texture2D" uid="uid://dthiwo3utj43m" path="res://Assets/Inom Hus/LnB/B_Tent_H.png" id="1_65wcv"]
-[ext_resource type="Texture2D" uid="uid://clfxenrosqsao" path="res://Assets/Inom Hus/LnB/B_Tent_F.png" id="2_kec7m"]
-[ext_resource type="BitMap" uid="uid://bt2tc0672wrm4" path="res://Assets/Inom Hus/Mask/M_Tent.png" id="3_vyj57"]
+[ext_resource type="Texture2D" uid="uid://bhatao6uhnyu8" path="res://Assets/Gym/LnB/B_Rolls_H.png" id="1_7yf50"]
+[ext_resource type="Texture2D" uid="uid://diek1lnf8o4bd" path="res://Assets/Gym/LnB/B_Rolls_F.png" id="2_k04ct"]
+[ext_resource type="BitMap" uid="uid://bxuxfofnbydk1" path="res://Assets/Gym/Mask/M_Rolls.png" id="3_fu4w6"]
 
 [node name="BernieSpot" type="TextureButton"]
-z_index = 1
-offset_right = 653.0
-offset_bottom = 1119.0
+z_index = 5
+offset_right = 587.0
+offset_bottom = 725.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
-texture_normal = ExtResource("1_65wcv")
-texture_pressed = ExtResource("2_kec7m")
-texture_hover = ExtResource("1_65wcv")
-texture_disabled = ExtResource("2_kec7m")
-texture_click_mask = ExtResource("3_vyj57")
+texture_normal = ExtResource("1_7yf50")
+texture_pressed = ExtResource("2_k04ct")
+texture_hover = ExtResource("1_7yf50")
+texture_disabled = ExtResource("2_k04ct")
+texture_click_mask = ExtResource("3_fu4w6")
