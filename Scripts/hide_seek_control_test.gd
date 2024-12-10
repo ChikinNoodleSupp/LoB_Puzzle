@@ -457,7 +457,14 @@ func newScene(): # change it so that it does what it has to, but move the actual
 	current_scene = new_scene
 	call_deferred("mainCode")
 
-func _on_back_btn_pressed() -> void:
+func _on_back_btn_pressed():
+	toMainMenu()
+
+func _input(event):
+	if event.is_action_pressed("Quit"):
+		toMainMenu()
+
+func toMainMenu():
 	transition.play("Fade_out_2")
 	AudioPlayer.stop_music_level()
 

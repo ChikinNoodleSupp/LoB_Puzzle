@@ -1,30 +1,32 @@
-[gd_scene load_steps=35 format=3 uid="uid://bfet2ccdjje2p"]
+[gd_scene load_steps=37 format=3 uid="uid://bfet2ccdjje2p"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_d7dnp"]
 [ext_resource type="Texture2D" uid="uid://rgdbxvabmhh6" path="res://Assets/MainMenu/MainMenu_Asset 3.png" id="2_b5ewc"]
 [ext_resource type="Texture2D" uid="uid://bdj4orewn1fmk" path="res://Assets/MainMenu/MainMenu_Asset 4.png" id="3_7l8ay"]
-[ext_resource type="Texture2D" uid="uid://offbbqaxbyfv" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_stranden (1).png" id="3_wq343"]
-[ext_resource type="Texture2D" uid="uid://coy6owndisvqn" path="res://TempImages/temp_thumbnail.png" id="4_gburu"]
-[ext_resource type="Texture2D" uid="uid://cakjmwh7skhq0" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_stranden_hover.png" id="4_iec5h"]
 [ext_resource type="Script" path="res://Scenes/ui-nav.gd" id="4_j817u"]
 [ext_resource type="Texture2D" uid="uid://dbhtvj83yod0o" path="res://Assets/MainMenu/MainMenu_Asset 2.png" id="4_nsucy"]
 [ext_resource type="Texture2D" uid="uid://dg2n4dv420cnd" path="res://Assets/MainMenu/MainMenu_Asset 5.png" id="5_xoxnp"]
-[ext_resource type="Texture2D" uid="uid://dvph1jj0u7phs" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_havetsbotten (1).png" id="6_f4dcn"]
 [ext_resource type="Texture2D" uid="uid://2efmpyhfxhcq" path="res://Assets/MainMenu/MainMenu_Asset 6.png" id="6_ikh2d"]
 [ext_resource type="Script" path="res://Scenes/sun2.gd" id="6_t02ey"]
 [ext_resource type="Texture2D" uid="uid://bkkulfbhyivpo" path="res://Assets/MainMenu/MainMenu_Asset 9.png" id="7_2o1ie"]
 [ext_resource type="Texture2D" uid="uid://dfgbft8gff0c6" path="res://Assets/MainMenu/MainMenu_Asset 10.png" id="8_0urtp"]
-[ext_resource type="Texture2D" uid="uid://cq5ju3dt6urm8" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_hemma (1).png" id="8_22mtx"]
-[ext_resource type="Texture2D" uid="uid://b2w0eqxmpary2" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_hemma_hover.png" id="9_2ysyi"]
 [ext_resource type="Texture2D" uid="uid://mt2d0ona8pu7" path="res://Assets/MainMenu/MainMenu_Bernie.png" id="9_uw3jf"]
 [ext_resource type="Texture2D" uid="uid://u0we6o6of1l7" path="res://Assets/MainMenu/MainMenu_Lollo.png" id="10_pgcaj"]
-[ext_resource type="Texture2D" uid="uid://b3yrvwlgjskos" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_bergetstopp (1).png" id="10_ucahx"]
-[ext_resource type="Texture2D" uid="uid://dc6v8m2wqpq06" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_bergetstopp_hover.png" id="11_u6vy4"]
-[ext_resource type="Texture2D" uid="uid://mpm2kbx26ok6" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_djungeln (1).png" id="12_16ccb"]
-[ext_resource type="Texture2D" uid="uid://l41ovhgjkxgm" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_gympasalen (1).png" id="13_l7xhq"]
+[ext_resource type="Texture2D" uid="uid://yug8selsb4tk" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_stranden(1).png" id="12_m6okd"]
+[ext_resource type="Texture2D" uid="uid://boahqldok84ui" path="res://Assets/Thumbnails/hover/LB_YT_cover_kurragomma_2560x1440_stranden_hover.png" id="13_3ac63"]
+[ext_resource type="Texture2D" uid="uid://crw15dio8fioy" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_havetsbotten(1).png" id="15_sygv6"]
+[ext_resource type="Texture2D" uid="uid://uutcjii8w1lf" path="res://Assets/Thumbnails/hover/LB_YT_cover_kurragomma_2560x1440_havetsbotten_hover.png" id="16_aaohr"]
+[ext_resource type="Texture2D" uid="uid://cd1ioyo8h7s0o" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_hemma(1).png" id="17_3aygs"]
+[ext_resource type="Texture2D" uid="uid://dxgfihw1fmchf" path="res://Assets/Thumbnails/hover/LB_YT_cover_kurragomma_2560x1440_hemma_hover.png" id="18_n4vac"]
+[ext_resource type="Texture2D" uid="uid://d0kophlye616c" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_bergetstopp(1).png" id="19_ypdkl"]
+[ext_resource type="Texture2D" uid="uid://cgerosdeh7t6n" path="res://Assets/Thumbnails/hover/LB_YT_cover_kurragomma_2560x1440_bergetstopp_hover.png" id="20_uff8f"]
+[ext_resource type="Texture2D" uid="uid://bgscb7kml4rvw" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_djungeln(1).png" id="21_ue1ew"]
 [ext_resource type="Texture2D" uid="uid://c03setn1ge0lh" path="res://Assets/ICONS/Flags_H_Asset 21.png" id="22_edpct"]
+[ext_resource type="Texture2D" uid="uid://c551ppwyie37l" path="res://Assets/Thumbnails/hover/LB_YT_cover_kurragomma_2560x1440_djungeln_hover.png" id="22_ua1jp"]
+[ext_resource type="Texture2D" uid="uid://0tsft3l6fdkr" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_gympasalen(1).png" id="23_82ii4"]
 [ext_resource type="Texture2D" uid="uid://dhgksdmk8hdyu" path="res://Assets/ICONS/Flags_P_Asset 17.png" id="23_xspqi"]
 [ext_resource type="Texture2D" uid="uid://y8xdxt6es7m7" path="res://Assets/ICONS/Flags_H_Asset 19.png" id="24_cign0"]
+[ext_resource type="Texture2D" uid="uid://bqvt4rtim77wx" path="res://Assets/Thumbnails/hover/LB_YT_cover_kurragomma_2560x1440_gympasalen_hover.png" id="24_ge408"]
 [ext_resource type="Texture2D" uid="uid://b8c5y7adgkarw" path="res://Assets/ICONS/Flags_P_Asset 15.png" id="25_4s46x"]
 [ext_resource type="Texture2D" uid="uid://dhh48hs00enve" path="res://Assets/ICONS/Flags_H_Asset 20.png" id="26_l8h25"]
 [ext_resource type="Texture2D" uid="uid://yimg5se28731" path="res://Assets/ICONS/Flags_P_Asset 16.png" id="27_kj86s"]
@@ -269,9 +271,11 @@ focus_neighbor_left = NodePath("../../VBoxContainer3/Hide_Seek3")
 focus_neighbor_top = NodePath("../../../HBoxContainer2/VBoxContainer/Hide_Seek4")
 focus_neighbor_right = NodePath("../../VBoxContainer2/Hide_Seek2")
 focus_neighbor_bottom = NodePath("../../../HBoxContainer2/VBoxContainer/Hide_Seek4")
-texture_normal = ExtResource("3_wq343")
-texture_hover = ExtResource("4_iec5h")
-texture_focused = ExtResource("4_iec5h")
+focus_next = NodePath("../../VBoxContainer2/Hide_Seek2")
+texture_normal = ExtResource("12_m6okd")
+texture_pressed = ExtResource("13_3ac63")
+texture_hover = ExtResource("13_3ac63")
+texture_focused = ExtResource("13_3ac63")
 script = ExtResource("4_j817u")
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
@@ -291,8 +295,11 @@ focus_neighbor_left = NodePath("../../VBoxContainer/Hide_Seek")
 focus_neighbor_top = NodePath("../../../HBoxContainer2/VBoxContainer2/Hide_Seek5")
 focus_neighbor_right = NodePath("../../VBoxContainer3/Hide_Seek3")
 focus_neighbor_bottom = NodePath("../../../HBoxContainer2/VBoxContainer2/Hide_Seek5")
-texture_normal = ExtResource("6_f4dcn")
-texture_focused = ExtResource("4_gburu")
+focus_next = NodePath("../../VBoxContainer3/Hide_Seek3")
+texture_normal = ExtResource("15_sygv6")
+texture_pressed = ExtResource("16_aaohr")
+texture_hover = ExtResource("16_aaohr")
+texture_focused = ExtResource("16_aaohr")
 
 [node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
@@ -311,9 +318,11 @@ focus_neighbor_left = NodePath("../../VBoxContainer2/Hide_Seek2")
 focus_neighbor_top = NodePath("../../../HBoxContainer2/VBoxContainer3/Hide_Seek6")
 focus_neighbor_right = NodePath("../../VBoxContainer/Hide_Seek")
 focus_neighbor_bottom = NodePath("../../../HBoxContainer2/VBoxContainer3/Hide_Seek6")
-texture_normal = ExtResource("8_22mtx")
-texture_hover = ExtResource("9_2ysyi")
-texture_focused = ExtResource("9_2ysyi")
+focus_next = NodePath("../../../HBoxContainer2/VBoxContainer/Hide_Seek4")
+texture_normal = ExtResource("17_3aygs")
+texture_pressed = ExtResource("18_n4vac")
+texture_hover = ExtResource("18_n4vac")
+texture_focused = ExtResource("18_n4vac")
 
 [node name="Label3" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3"]
 layout_mode = 2
@@ -337,10 +346,12 @@ layout_mode = 2
 focus_neighbor_left = NodePath("../../VBoxContainer3/Hide_Seek6")
 focus_neighbor_top = NodePath("../../../HBoxContainer/VBoxContainer/Hide_Seek")
 focus_neighbor_right = NodePath("../../VBoxContainer2/Hide_Seek5")
-focus_neighbor_bottom = NodePath("../../../HBoxContainer/VBoxContainer/Hide_Seek")
-texture_normal = ExtResource("10_ucahx")
-texture_hover = ExtResource("11_u6vy4")
-texture_focused = ExtResource("11_u6vy4")
+focus_neighbor_bottom = NodePath("../../../../../MarginContainer2/HBoxContainer/Swedish")
+focus_next = NodePath("../../VBoxContainer2/Hide_Seek5")
+texture_normal = ExtResource("19_ypdkl")
+texture_pressed = ExtResource("20_uff8f")
+texture_hover = ExtResource("20_uff8f")
+texture_focused = ExtResource("20_uff8f")
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
 layout_mode = 2
@@ -358,9 +369,12 @@ layout_mode = 2
 focus_neighbor_left = NodePath("../../VBoxContainer/Hide_Seek4")
 focus_neighbor_top = NodePath("../../../HBoxContainer/VBoxContainer2/Hide_Seek2")
 focus_neighbor_right = NodePath("../../VBoxContainer3/Hide_Seek6")
-focus_neighbor_bottom = NodePath("../../../HBoxContainer/VBoxContainer2/Hide_Seek2")
-texture_normal = ExtResource("12_16ccb")
-texture_focused = ExtResource("4_gburu")
+focus_neighbor_bottom = NodePath("../../../../../MarginContainer2/HBoxContainer/Swedish")
+focus_next = NodePath("../../VBoxContainer3/Hide_Seek6")
+texture_normal = ExtResource("21_ue1ew")
+texture_pressed = ExtResource("22_ua1jp")
+texture_hover = ExtResource("22_ua1jp")
+texture_focused = ExtResource("22_ua1jp")
 
 [node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2"]
 layout_mode = 2
@@ -378,9 +392,12 @@ layout_mode = 2
 focus_neighbor_left = NodePath("../../VBoxContainer2/Hide_Seek5")
 focus_neighbor_top = NodePath("../../../HBoxContainer/VBoxContainer3/Hide_Seek3")
 focus_neighbor_right = NodePath("../../VBoxContainer/Hide_Seek4")
-focus_neighbor_bottom = NodePath("../../../HBoxContainer/VBoxContainer3/Hide_Seek3")
-texture_normal = ExtResource("13_l7xhq")
-texture_focused = ExtResource("4_gburu")
+focus_neighbor_bottom = NodePath("../../../../../MarginContainer2/HBoxContainer/Swedish")
+focus_next = NodePath("../../../../../MarginContainer2/HBoxContainer/Swedish")
+texture_normal = ExtResource("23_82ii4")
+texture_pressed = ExtResource("24_ge408")
+texture_hover = ExtResource("24_ge408")
+texture_focused = ExtResource("24_ge408")
 
 [node name="Label3" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer3"]
 layout_mode = 2
@@ -426,23 +443,51 @@ theme_override_constants/separation = 60
 
 [node name="Swedish" type="TextureButton" parent="MarginContainer2/HBoxContainer"]
 layout_mode = 2
+focus_neighbor_left = NodePath("../Finnish")
+focus_neighbor_top = NodePath("../../../MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/Hide_Seek4")
+focus_neighbor_right = NodePath("../Danish")
+focus_neighbor_bottom = NodePath(".")
+focus_next = NodePath("../Danish")
 texture_normal = ExtResource("22_edpct")
 texture_pressed = ExtResource("23_xspqi")
+texture_hover = ExtResource("23_xspqi")
+texture_focused = ExtResource("23_xspqi")
 
 [node name="Danish" type="TextureButton" parent="MarginContainer2/HBoxContainer"]
 layout_mode = 2
+focus_neighbor_left = NodePath("../Swedish")
+focus_neighbor_top = NodePath("../../../MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/Hide_Seek4")
+focus_neighbor_right = NodePath("../Norwegian")
+focus_neighbor_bottom = NodePath(".")
+focus_next = NodePath("../Norwegian")
 texture_normal = ExtResource("24_cign0")
 texture_pressed = ExtResource("25_4s46x")
+texture_hover = ExtResource("25_4s46x")
+texture_focused = ExtResource("25_4s46x")
 
 [node name="Norwegian" type="TextureButton" parent="MarginContainer2/HBoxContainer"]
 layout_mode = 2
+focus_neighbor_left = NodePath("../Danish")
+focus_neighbor_top = NodePath("../../../MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/Hide_Seek4")
+focus_neighbor_right = NodePath("../Finnish")
+focus_neighbor_bottom = NodePath(".")
+focus_next = NodePath("../Finnish")
 texture_normal = ExtResource("26_l8h25")
 texture_pressed = ExtResource("27_kj86s")
+texture_hover = ExtResource("27_kj86s")
+texture_focused = ExtResource("27_kj86s")
 
 [node name="Finnish" type="TextureButton" parent="MarginContainer2/HBoxContainer"]
 layout_mode = 2
+focus_neighbor_left = NodePath("../Norwegian")
+focus_neighbor_top = NodePath("../../../MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/Hide_Seek4")
+focus_neighbor_right = NodePath("../Swedish")
+focus_neighbor_bottom = NodePath(".")
+focus_next = NodePath("../../../MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/Hide_Seek")
 texture_normal = ExtResource("28_f2dvh")
 texture_pressed = ExtResource("29_r3t1q")
+texture_hover = ExtResource("29_r3t1q")
+texture_focused = ExtResource("29_r3t1q")
 
 [connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/Hide_Seek" to="." method="_on_hide_seek_mouse_entered"]
 [connection signal="mouse_exited" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/Hide_Seek" to="." method="_on_hide_seek_mouse_exited"]

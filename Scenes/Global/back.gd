@@ -1,10 +1,13 @@
 extends TextureButton
 
-
-
-func escapePressed():
-	pass #when press escape, go back to main menu / call the back btn script. if back button isnt visible, do nothing
-
-
-func _ready():
-	pass 
+#var mainCode = preload("res://Scenes/Strand/Hide_Seek_Main.tscn")
+#
+#
+#func _input(event):
+	#if event.is_action_pressed("Quit"):
+		#mainCode.toMainMenu()
+	#else:
+		#pass
+#
+#func _ready():
+	#pass 

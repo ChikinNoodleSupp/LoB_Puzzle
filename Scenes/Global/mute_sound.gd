@@ -17,6 +17,14 @@ func checkButton():
 	else:
 		pass
 
+func _input(event):
+	if event.is_action_pressed("Mute"):
+		if AudioPlayer.mute == true:
+			AudioPlayer.mute = false
+		elif AudioPlayer.mute == false:
+			AudioPlayer.mute = true
+		checkButton()
+
 func _on_mute_sound_toggled(toggled_on: bool) -> void:
 	# AudioPlayer.play_FX(AudioPlayer.clickSFX, 0)
 	if toggled_on:

@@ -8,7 +8,7 @@ static var setNorwegian = false
 static var setFinnish = false
 
 func _input(_ev): #Remove before building, risk of crashing when played in browser
-	if Input.is_key_pressed(KEY_ESCAPE):
+	if Input.is_key_pressed(KEY_C):
 		get_tree().quit()
 		
 
