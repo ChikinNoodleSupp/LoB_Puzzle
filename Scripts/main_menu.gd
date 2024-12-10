@@ -31,7 +31,8 @@ func _ready() -> void:
 		#pass
 	
 	AudioPlayer.play_music_menu()
-	
+	AudioPlayer.mute = true
+		
 	# Localization.setSwedish = true
 	if Localization.setSwedish:
 		Swedish()

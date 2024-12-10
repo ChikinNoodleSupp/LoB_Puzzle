@@ -1,11 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://eo2y3to8yrxe"]
+[gd_scene load_steps=7 format=3 uid="uid://eo2y3to8yrxe"]
 
-[ext_resource type="Texture2D" uid="uid://bcgi5xrxlebqs" path="res://Assets/ICONS/Asset 1.png" id="2_lxcqa"]
-[ext_resource type="Texture2D" uid="uid://bkurfue333gxa" path="res://Assets/ICONS/sound off.png" id="3_lutcg"]
+[ext_resource type="Texture2D" uid="uid://d3lhuw2sg0kln" path="res://Assets/MainMenu/MainMenu_Asset 12.png" id="2_1qqhm"]
+[ext_resource type="Texture2D" uid="uid://dua58jinmpm6k" path="res://Assets/MainMenu/MainMenu_Asset 11.png" id="3_0rbjq"]
 [ext_resource type="BitMap" uid="uid://beq5i87dw7o02" path="res://Assets/ICONS/M_sound.png" id="4_obl3u"]
-[ext_resource type="Texture2D" uid="uid://b2csqhrn64vpm" path="res://Assets/ICONS/home.png" id="4_q243g"]
+[ext_resource type="Texture2D" uid="uid://gy7yq5jokpym" path="res://Assets/MainMenu/MainMenu_Asset 13.png" id="5_671wd"]
 [ext_resource type="Script" path="res://Scenes/Global/mute_sound.gd" id="5_d3yg3"]
-[ext_resource type="Texture2D" uid="uid://k2i7jclej41s" path="res://Assets/ICONS/home2.png" id="5_jxm6r"]
 [ext_resource type="Script" path="res://Scenes/Global/back.gd" id="6_acemf"]
 
 [node name="Control" type="Control"]
@@ -18,14 +17,13 @@ script = ExtResource("5_d3yg3")
 [node name="MuteSound" type="TextureButton" parent="."]
 z_index = 9
 layout_mode = 0
-offset_left = 1820.0
-offset_top = 34.0
-offset_right = 1852.0
-offset_bottom = 62.0
-scale = Vector2(2.175, 2.175)
+offset_left = 1775.0
+offset_top = 27.0
+offset_right = 1893.0
+offset_bottom = 145.0
 toggle_mode = true
-texture_normal = ExtResource("2_lxcqa")
-texture_pressed = ExtResource("3_lutcg")
+texture_normal = ExtResource("2_1qqhm")
+texture_pressed = ExtResource("3_0rbjq")
 texture_click_mask = ExtResource("4_obl3u")
 
 [node name="Back" type="TextureButton" parent="."]
@@ -33,13 +31,10 @@ z_index = 9
 layout_mode = 0
 offset_left = 22.0
 offset_top = 25.0
-offset_right = 54.0
-offset_bottom = 57.0
-scale = Vector2(2.5, 2.5)
+offset_right = 141.0
+offset_bottom = 143.0
 button_mask = 7
-texture_normal = ExtResource("5_jxm6r")
-texture_pressed = ExtResource("4_q243g")
-texture_hover = ExtResource("4_q243g")
+texture_normal = ExtResource("5_671wd")
 texture_click_mask = ExtResource("4_obl3u")
 script = ExtResource("6_acemf")
 
