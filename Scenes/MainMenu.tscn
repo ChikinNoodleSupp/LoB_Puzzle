@@ -1,7 +1,6 @@
-[gd_scene load_steps=22 format=3 uid="uid://bfet2ccdjje2p"]
+[gd_scene load_steps=21 format=3 uid="uid://bfet2ccdjje2p"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_d7dnp"]
-[ext_resource type="Texture2D" uid="uid://dqac8pf0beers" path="res://Assets/Thumbnails/LB_mobilspel_bg.png" id="2_0hddr"]
 [ext_resource type="Texture2D" uid="uid://offbbqaxbyfv" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_stranden (1).png" id="3_wq343"]
 [ext_resource type="Texture2D" uid="uid://coy6owndisvqn" path="res://TempImages/temp_thumbnail.png" id="4_gburu"]
 [ext_resource type="Texture2D" uid="uid://cakjmwh7skhq0" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_stranden_hover.png" id="4_iec5h"]
@@ -124,8 +123,12 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
-texture = ExtResource("2_0hddr")
 expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Background"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -173,7 +176,7 @@ script = ExtResource("4_j817u")
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 200
-text = "Strand"
+text = "STRANDEN"
 horizontal_alignment = 1
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
@@ -192,7 +195,7 @@ texture_focused = ExtResource("4_gburu")
 [node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 200
-text = "Under Vatten"
+text = "HAVETS BOTTEN"
 horizontal_alignment = 1
 
 [node name="VBoxContainer3" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
@@ -212,7 +215,7 @@ texture_focused = ExtResource("9_2ysyi")
 [node name="Label3" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 200
-text = "Hemma"
+text = "HEMMA"
 horizontal_alignment = 1
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
@@ -238,7 +241,7 @@ texture_focused = ExtResource("11_u6vy4")
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 200
-text = "Bestig Berg"
+text = "BERGETS TOPP"
 horizontal_alignment = 1
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
@@ -257,7 +260,7 @@ texture_focused = ExtResource("4_gburu")
 [node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 200
-text = "Djungel"
+text = "DJUNGELN"
 horizontal_alignment = 1
 
 [node name="VBoxContainer3" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
@@ -276,7 +279,7 @@ texture_focused = ExtResource("4_gburu")
 [node name="Label3" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer3"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 200
-text = "Gym"
+text = "GYMPASALEN"
 horizontal_alignment = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
