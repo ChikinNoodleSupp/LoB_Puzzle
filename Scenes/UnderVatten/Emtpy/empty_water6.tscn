@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cbhnuu4fxx8ft"]
+[gd_scene load_steps=5 format=3 uid="uid://cbhnuu4fxx8ft"]
 
 [ext_resource type="Texture2D" uid="uid://h3yg1jvlcsep" path="res://Assets/Under Vatten/Hover/H_SmallRock.png" id="1_pe5y2"]
 [ext_resource type="Texture2D" uid="uid://x5sfaolwn37v" path="res://Assets/Under Vatten/Pressed/P_SmallRock.png" id="2_iuw85"]
+[ext_resource type="Texture2D" uid="uid://c11nsobs0xchh" path="res://Assets/Under Vatten/Focus/SmallRock_Focus.png" id="3_736fu"]
 [ext_resource type="BitMap" uid="uid://ctyofo4kq7u5y" path="res://Assets/Under Vatten/Mask/M_SmallRock.png" id="3_jtb45"]
 
 [node name="empty_spot" type="TextureButton"]
@@ -10,7 +11,7 @@ offset_right = 263.0
 offset_bottom = 465.0
 texture_normal = ExtResource("1_pe5y2")
 texture_pressed = ExtResource("2_iuw85")
-texture_hover = ExtResource("1_pe5y2")
 texture_disabled = ExtResource("2_iuw85")
+texture_focused = ExtResource("3_736fu")
 texture_click_mask = ExtResource("3_jtb45")
 stretch_mode = 3

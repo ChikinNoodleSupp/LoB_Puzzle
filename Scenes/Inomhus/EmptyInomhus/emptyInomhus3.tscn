@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cbhtmbktwikhr"]
+[gd_scene load_steps=5 format=3 uid="uid://cbhtmbktwikhr"]
 
 [ext_resource type="Texture2D" uid="uid://c626hv04trul8" path="res://Assets/Inom Hus/Hover/H_Window.png" id="1_p2jw6"]
 [ext_resource type="Texture2D" uid="uid://c1njdrfdevi7m" path="res://Assets/Inom Hus/Pressed/P_Window.png" id="2_2j1mp"]
+[ext_resource type="Texture2D" uid="uid://crydbfs8vprdd" path="res://TempImages/Window_Focus_test.png" id="3_23fol"]
 [ext_resource type="BitMap" uid="uid://m7r44f8vvtng" path="res://Assets/Inom Hus/Mask/M_Window.png" id="3_hoaaj"]
 
 [node name="empty_spot" type="TextureButton"]
@@ -20,5 +21,6 @@ texture_normal = ExtResource("1_p2jw6")
 texture_pressed = ExtResource("2_2j1mp")
 texture_hover = ExtResource("1_p2jw6")
 texture_disabled = ExtResource("2_2j1mp")
+texture_focused = ExtResource("3_23fol")
 texture_click_mask = ExtResource("3_hoaaj")
 stretch_mode = 3

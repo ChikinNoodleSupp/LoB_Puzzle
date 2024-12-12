@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://da6ica84rr3di" path="res://Assets/Strand/LnB/L_BigPalm_H_2.png" id="1_41la4"]
 [ext_resource type="Texture2D" uid="uid://cbc0avagh7t0g" path="res://Assets/Strand/LnB/L_BigPalm_F_2.png" id="2_yes06"]
 [ext_resource type="BitMap" uid="uid://dw1baww4a4yfm" path="res://Assets/Strand/Mask/M_BigPalm_2.png" id="3_j8420"]
-[ext_resource type="Texture2D" uid="uid://q7dx2ca5331v" path="res://Assets/Strand/Focus/L_BigPalm_Focus.png" id="3_neas1"]
+[ext_resource type="Texture2D" uid="uid://dh184x3gculc3" path="res://Assets/Strand/Focus/BigPalm_Focus.png" id="3_sv3vb"]
 
 [sub_resource type="GDScript" id="GDScript_hdxlj"]
 script/source = "extends TextureButton
@@ -13,11 +13,9 @@ script/source = "extends TextureButton
 z_index = 3
 offset_right = 845.0
 offset_bottom = 1230.0
-focus_mode = 0
 texture_normal = ExtResource("1_41la4")
 texture_pressed = ExtResource("2_yes06")
-texture_hover = ExtResource("3_neas1")
 texture_disabled = ExtResource("2_yes06")
-texture_focused = ExtResource("3_neas1")
+texture_focused = ExtResource("3_sv3vb")
 texture_click_mask = ExtResource("3_j8420")
 script = SubResource("GDScript_hdxlj")

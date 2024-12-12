@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dh738cd7pmuml"]
+[gd_scene load_steps=6 format=3 uid="uid://dh738cd7pmuml"]
 
 [ext_resource type="Texture2D" uid="uid://bigrnkokyc2qt" path="res://Assets/Strand/Hover/H_BigPalm_2.png" id="1_vg3yh"]
 [ext_resource type="Texture2D" uid="uid://0k1dn7se368i" path="res://Assets/Strand/Pressed/P_BigPalm_2.png" id="2_kpr5h"]
+[ext_resource type="Texture2D" uid="uid://dh184x3gculc3" path="res://Assets/Strand/Focus/BigPalm_Focus.png" id="3_0tyjm"]
 [ext_resource type="BitMap" uid="uid://dw1baww4a4yfm" path="res://Assets/Strand/Mask/M_BigPalm_2.png" id="3_vqbob"]
 [ext_resource type="Script" path="res://Scenes/Strand/Empty/GrabFocus.gd" id="4_44glf"]
 
@@ -12,8 +13,7 @@ offset_bottom = 1230.0
 pivot_offset = Vector2(131.5, 232.5)
 texture_normal = ExtResource("1_vg3yh")
 texture_pressed = ExtResource("2_kpr5h")
-texture_hover = ExtResource("2_kpr5h")
 texture_disabled = ExtResource("2_kpr5h")
-texture_focused = ExtResource("2_kpr5h")
+texture_focused = ExtResource("3_0tyjm")
 texture_click_mask = ExtResource("3_vqbob")
 script = ExtResource("4_44glf")

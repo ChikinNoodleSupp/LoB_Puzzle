@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://dv0a404oxpc6m" path="res://Assets/Strand/LnB/B_Trashcan_H.png" id="1_bewms"]
 [ext_resource type="Texture2D" uid="uid://d0nmtvou4sxwe" path="res://Assets/Strand/LnB/B_Trashcan_F_2.png" id="2_25ums"]
-[ext_resource type="Texture2D" uid="uid://ig5bq7lffx7a" path="res://Assets/Strand/Focus/B_Trashcan_Focus.png" id="3_hr7ov"]
 [ext_resource type="BitMap" uid="uid://6jw72lxk3hbk" path="res://Assets/Strand/Mask/M_Trashcan_2.png" id="3_men8y"]
+[ext_resource type="Texture2D" uid="uid://b62f3x00nrxnp" path="res://Assets/Strand/Focus/Trashcan_Focus.png" id="3_wmq8u"]
 
 [node name="BernieSpot" type="TextureButton"]
 z_index = 3
@@ -11,10 +11,8 @@ offset_right = 176.0
 offset_bottom = 230.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
-focus_mode = 0
 texture_normal = ExtResource("1_bewms")
 texture_pressed = ExtResource("2_25ums")
-texture_hover = ExtResource("3_hr7ov")
 texture_disabled = ExtResource("2_25ums")
-texture_focused = ExtResource("3_hr7ov")
+texture_focused = ExtResource("3_wmq8u")
 texture_click_mask = ExtResource("3_men8y")

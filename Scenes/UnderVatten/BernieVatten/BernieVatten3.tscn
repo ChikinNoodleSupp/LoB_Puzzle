@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dk6cahu2abr8g"]
+[gd_scene load_steps=5 format=3 uid="uid://dk6cahu2abr8g"]
 
 [ext_resource type="Texture2D" uid="uid://c4dfjxwm2svsf" path="res://Assets/Under Vatten/LnB/B_Klippa_H.png" id="1_uw022"]
 [ext_resource type="Texture2D" uid="uid://co4b1p8fwqex1" path="res://Assets/Under Vatten/LnB/B_Klippa_F.png" id="2_ag82d"]
+[ext_resource type="Texture2D" uid="uid://c3ybdavjudpfs" path="res://Assets/Under Vatten/Focus/Klippa_Focus.png" id="3_etry1"]
 [ext_resource type="BitMap" uid="uid://ck1r148ul67bs" path="res://Assets/Under Vatten/Mask/M_Klippa.png" id="3_hd0ii"]
 
 [node name="BernieSpot" type="TextureButton"]
@@ -12,6 +13,6 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 texture_normal = ExtResource("1_uw022")
 texture_pressed = ExtResource("2_ag82d")
-texture_hover = ExtResource("1_uw022")
 texture_disabled = ExtResource("2_ag82d")
+texture_focused = ExtResource("3_etry1")
 texture_click_mask = ExtResource("3_hd0ii")

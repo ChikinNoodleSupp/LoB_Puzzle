@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bgjcgn5583c2g"]
+[gd_scene load_steps=5 format=3 uid="uid://bgjcgn5583c2g"]
 
 [ext_resource type="Texture2D" uid="uid://ofl8ip5m3vqp" path="res://Assets/Under Vatten/Hover/H_Klippa.png" id="1_eg254"]
 [ext_resource type="Texture2D" uid="uid://cydsoso1wded6" path="res://Assets/Under Vatten/Pressed/P_Klippa.png" id="2_in6r2"]
+[ext_resource type="Texture2D" uid="uid://c3ybdavjudpfs" path="res://Assets/Under Vatten/Focus/Klippa_Focus.png" id="3_0qkk8"]
 [ext_resource type="BitMap" uid="uid://ck1r148ul67bs" path="res://Assets/Under Vatten/Mask/M_Klippa.png" id="3_wrrhk"]
 
 [node name="empty_spot" type="TextureButton"]
@@ -10,7 +11,7 @@ offset_right = 263.0
 offset_bottom = 465.0
 texture_normal = ExtResource("1_eg254")
 texture_pressed = ExtResource("2_in6r2")
-texture_hover = ExtResource("1_eg254")
 texture_disabled = ExtResource("2_in6r2")
+texture_focused = ExtResource("3_0qkk8")
 texture_click_mask = ExtResource("3_wrrhk")
 stretch_mode = 3
