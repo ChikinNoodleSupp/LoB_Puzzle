@@ -3997,7 +3997,6 @@ offset_bottom = 1162.0
 texture = ExtResource("279_l3lma")
 
 [node name="Gym_BG" type="TextureRect" parent="."]
-visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
