@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dj8dmmbur0xf8"]
+[gd_scene load_steps=5 format=3 uid="uid://dj8dmmbur0xf8"]
 
 [ext_resource type="Texture2D" uid="uid://crxj52s0yf88h" path="res://Assets/Strand/Hover/H_Palms.png" id="1_5u30t"]
 [ext_resource type="Texture2D" uid="uid://cmolog8f0h1hk" path="res://Assets/Strand/Pressed/P_Palms_2.png" id="2_3qrcy"]
 [ext_resource type="BitMap" uid="uid://fqramrhj3rcf" path="res://Assets/Strand/Mask/M_Palms_2.png" id="3_m8b7r"]
+[ext_resource type="Script" path="res://Scenes/Strand/Empty/GrabFocus.gd" id="4_wl0d3"]
 
 [node name="empty_spot" type="TextureButton"]
 z_index = 1
@@ -10,7 +11,9 @@ offset_right = 263.0
 offset_bottom = 465.0
 texture_normal = ExtResource("1_5u30t")
 texture_pressed = ExtResource("2_3qrcy")
-texture_hover = ExtResource("1_5u30t")
+texture_hover = ExtResource("2_3qrcy")
 texture_disabled = ExtResource("2_3qrcy")
+texture_focused = ExtResource("2_3qrcy")
 texture_click_mask = ExtResource("3_m8b7r")
 stretch_mode = 3
+script = ExtResource("4_wl0d3")
