@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://gx41udh4x63t"]
 
-[ext_resource type="Texture2D" uid="uid://c4mxn8ginvdsk" path="res://Assets/Inom Hus/LnB/L_Window_H.png" id="1_rlnpr"]
+[ext_resource type="Texture2D" uid="uid://cqm7s811hmth1" path="res://Assets/Inom Hus/LnB/L_Window_H_2.png" id="1_sbgbj"]
 [ext_resource type="Texture2D" uid="uid://c1yoiiie1xtuo" path="res://Assets/Inom Hus/LnB/L_Window_F.png" id="2_l50ri"]
-[ext_resource type="Texture2D" uid="uid://crydbfs8vprdd" path="res://TempImages/Window_Focus_test.png" id="3_fy11w"]
+[ext_resource type="Texture2D" uid="uid://e5q8m0m0uhpv" path="res://Assets/Inom Hus/Focus/Window_Focus.png" id="3_515rd"]
 [ext_resource type="BitMap" uid="uid://m7r44f8vvtng" path="res://Assets/Inom Hus/Mask/M_Window.png" id="3_jqmap"]
 
 [sub_resource type="GDScript" id="GDScript_hdxlj"]
@@ -12,10 +12,9 @@ script/source = "extends TextureButton
 [node name="LolloSpot" type="TextureButton"]
 offset_right = 1142.0
 offset_bottom = 777.0
-texture_normal = ExtResource("1_rlnpr")
+texture_normal = ExtResource("1_sbgbj")
 texture_pressed = ExtResource("2_l50ri")
-texture_hover = ExtResource("1_rlnpr")
 texture_disabled = ExtResource("2_l50ri")
-texture_focused = ExtResource("3_fy11w")
+texture_focused = ExtResource("3_515rd")
 texture_click_mask = ExtResource("3_jqmap")
 script = SubResource("GDScript_hdxlj")

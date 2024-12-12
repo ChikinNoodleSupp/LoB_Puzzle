@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cgo47fu5j5wha"]
+[gd_scene load_steps=5 format=3 uid="uid://cgo47fu5j5wha"]
 
 [ext_resource type="Texture2D" uid="uid://wsuafnty6cs2" path="res://Assets/Inom Hus/Hover/H_Pillow.png" id="1_jf7nr"]
 [ext_resource type="Texture2D" uid="uid://dbfx65vwvrcdh" path="res://Assets/Inom Hus/Pressed/P_Pillow.png" id="2_c66tv"]
 [ext_resource type="BitMap" uid="uid://ckbu1kv3ect7d" path="res://Assets/Inom Hus/Mask/M_Pillow.png" id="3_gi4vc"]
+[ext_resource type="Texture2D" uid="uid://br4mqlishml1j" path="res://Assets/Inom Hus/Focus/Pillow_Focus.png" id="3_pyhmq"]
 
 [node name="empty_spot" type="TextureButton"]
 z_index = 1
@@ -19,7 +20,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("1_jf7nr")
 texture_pressed = ExtResource("2_c66tv")
-texture_hover = ExtResource("1_jf7nr")
 texture_disabled = ExtResource("2_c66tv")
+texture_focused = ExtResource("3_pyhmq")
 texture_click_mask = ExtResource("3_gi4vc")
 stretch_mode = 3

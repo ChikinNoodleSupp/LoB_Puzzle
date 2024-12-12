@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://b8qijf7naw15b"]
+[gd_scene load_steps=5 format=3 uid="uid://b8qijf7naw15b"]
 
 [ext_resource type="Texture2D" uid="uid://3yxy0hkwxwhd" path="res://Assets/Berg/LnB/B_Tent_H.png" id="1_xbyed"]
 [ext_resource type="Texture2D" uid="uid://b00bley4x8cdp" path="res://Assets/Berg/LnB/B_Tent_F.png" id="2_2mvsy"]
+[ext_resource type="Texture2D" uid="uid://bjafl1cwxwkm1" path="res://Assets/Berg/Focus/Tent_Focus.png" id="3_r6out"]
 [ext_resource type="BitMap" uid="uid://c36agilsff1wp" path="res://Assets/Berg/Mask/M_Tent.png" id="3_rm601"]
 
 [node name="BernieSpot" type="TextureButton"]
@@ -12,6 +13,6 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 texture_normal = ExtResource("1_xbyed")
 texture_pressed = ExtResource("2_2mvsy")
-texture_hover = ExtResource("1_xbyed")
 texture_disabled = ExtResource("2_2mvsy")
+texture_focused = ExtResource("3_r6out")
 texture_click_mask = ExtResource("3_rm601")

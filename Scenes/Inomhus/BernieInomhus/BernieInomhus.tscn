@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dthiwo3utj43m" path="res://Assets/Inom Hus/LnB/B_Tent_H.png" id="1_kusnp"]
 [ext_resource type="Texture2D" uid="uid://clfxenrosqsao" path="res://Assets/Inom Hus/LnB/B_Tent_F.png" id="2_uhkut"]
 [ext_resource type="BitMap" uid="uid://bt2tc0672wrm4" path="res://Assets/Inom Hus/Mask/M_Tent.png" id="3_1w710"]
-[ext_resource type="Texture2D" uid="uid://djqicepdinhi6" path="res://Assets/Inom Hus/Focus/B_Tent_Focus.png" id="3_gj73f"]
+[ext_resource type="Texture2D" uid="uid://t1r3exyiy25r" path="res://Assets/Inom Hus/Focus/Tent_Focus.png" id="3_oj8o7"]
 
 [node name="BernieSpot" type="TextureButton"]
 z_index = 1
@@ -13,7 +13,6 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 texture_normal = ExtResource("1_kusnp")
 texture_pressed = ExtResource("2_uhkut")
-texture_hover = ExtResource("3_gj73f")
 texture_disabled = ExtResource("2_uhkut")
-texture_focused = ExtResource("3_gj73f")
+texture_focused = ExtResource("3_oj8o7")
 texture_click_mask = ExtResource("3_1w710")

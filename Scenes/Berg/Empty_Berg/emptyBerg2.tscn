@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://qt0p2m1ua5pa"]
+[gd_scene load_steps=5 format=3 uid="uid://qt0p2m1ua5pa"]
 
 [ext_resource type="Texture2D" uid="uid://csxux0271kp6d" path="res://Assets/Berg/Hover/H_Tree1.png" id="1_72bof"]
 [ext_resource type="Texture2D" uid="uid://bxs4oyh53lq7x" path="res://Assets/Berg/Pressed/P_Tree1.png" id="2_ovvhl"]
+[ext_resource type="Texture2D" uid="uid://bc2w845876yfc" path="res://Assets/Berg/Focus/Tree1_Focus.png" id="3_6tump"]
 [ext_resource type="BitMap" uid="uid://bx1phyasu8425" path="res://Assets/Berg/Mask/M_Tree1.png" id="3_duixs"]
 
 [node name="empty_spot" type="TextureButton"]
@@ -19,7 +20,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("1_72bof")
 texture_pressed = ExtResource("2_ovvhl")
-texture_hover = ExtResource("1_72bof")
 texture_disabled = ExtResource("2_ovvhl")
+texture_focused = ExtResource("3_6tump")
 texture_click_mask = ExtResource("3_duixs")
 stretch_mode = 3
