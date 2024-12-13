@@ -373,6 +373,8 @@ func _on_lollo_spot_pressed():
 	LolloButton.disabled = true
 	isLolloBernieFound()
 	AudioPlayer.play_FX(AudioPlayer.foundSFX, 0)
+	LolloButton.focus_next
+	
 	#VFX.emitting = true
 
 func _on_bernie_spot_pressed():

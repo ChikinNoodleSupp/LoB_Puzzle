@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://c4khmxa2rjial"]
+[gd_scene load_steps=6 format=3 uid="uid://c4khmxa2rjial"]
 
-[ext_resource type="Texture2D" uid="uid://wqy2xdcvbb8i" path="res://Assets/Djungel/LnB/L_TreeLeft_H.png" id="1_r71s1"]
+[ext_resource type="Texture2D" uid="uid://btr2f4rggplj7" path="res://Assets/Djungel/LnB/L_TreeLeft_H_2.png" id="1_7jl5j"]
 [ext_resource type="Texture2D" uid="uid://bcpuj66655dwb" path="res://Assets/Djungel/LnB/L_TreeLeft_F_2.png" id="2_mjpg4"]
+[ext_resource type="Texture2D" uid="uid://c7xoiifgcwa51" path="res://Assets/Djungel/Focus/TreeLeft_Focus.png" id="3_moxc4"]
 [ext_resource type="BitMap" uid="uid://cgek5eihsqldv" path="res://Assets/Djungel/Mask/M_TreeLeft.png" id="3_wujbc"]
 
 [sub_resource type="GDScript" id="GDScript_hdxlj"]
@@ -12,9 +13,9 @@ script/source = "extends TextureButton
 z_index = 5
 offset_right = 964.0
 offset_bottom = 1204.0
-texture_normal = ExtResource("1_r71s1")
+texture_normal = ExtResource("1_7jl5j")
 texture_pressed = ExtResource("2_mjpg4")
-texture_hover = ExtResource("1_r71s1")
 texture_disabled = ExtResource("2_mjpg4")
+texture_focused = ExtResource("3_moxc4")
 texture_click_mask = ExtResource("3_wujbc")
 script = SubResource("GDScript_hdxlj")

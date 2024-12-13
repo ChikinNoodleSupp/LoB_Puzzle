@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://xlsq0emgxrxc"]
+[gd_scene load_steps=5 format=3 uid="uid://xlsq0emgxrxc"]
 
 [ext_resource type="Texture2D" uid="uid://dw7gcbea2en0b" path="res://Assets/Gym/Hover/H_Rolls.png" id="1_bk6pk"]
 [ext_resource type="Texture2D" uid="uid://ctn6xnjks5eed" path="res://Assets/Gym/Pressed/P_Rolls.png" id="2_i2n2g"]
 [ext_resource type="BitMap" uid="uid://bxuxfofnbydk1" path="res://Assets/Gym/Mask/M_Rolls.png" id="3_m7ejl"]
+[ext_resource type="Texture2D" uid="uid://xa00vnebcxis" path="res://Assets/Gym/Focus/Rolls_Focus.png" id="3_pwg3s"]
 
 [node name="empty_spot" type="TextureButton"]
 z_index = 5
@@ -20,7 +21,7 @@ grow_vertical = 2
 pivot_offset = Vector2(532, 1288)
 texture_normal = ExtResource("1_bk6pk")
 texture_pressed = ExtResource("2_i2n2g")
-texture_hover = ExtResource("1_bk6pk")
 texture_disabled = ExtResource("2_i2n2g")
+texture_focused = ExtResource("3_pwg3s")
 texture_click_mask = ExtResource("3_m7ejl")
 stretch_mode = 3

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://be2wfnyt7yicf"]
+[gd_scene load_steps=5 format=3 uid="uid://be2wfnyt7yicf"]
 
 [ext_resource type="Texture2D" uid="uid://bue83og5lby0x" path="res://Assets/Gym/Hover/H_Matta.png" id="1_8fwod"]
 [ext_resource type="Texture2D" uid="uid://cpqdplhmvivyh" path="res://Assets/Gym/Pressed/P_Matta.png" id="2_ox81q"]
 [ext_resource type="BitMap" uid="uid://c78on3ed2lwgk" path="res://Assets/Gym/Mask/M_Matta.png" id="3_n2m6j"]
+[ext_resource type="Texture2D" uid="uid://ikd38wv1qj7r" path="res://Assets/Gym/Focus/Matta_Focus.png" id="3_on474"]
 
 [node name="empty_spot" type="TextureButton"]
 z_index = 5
@@ -19,7 +20,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("1_8fwod")
 texture_pressed = ExtResource("2_ox81q")
-texture_hover = ExtResource("1_8fwod")
 texture_disabled = ExtResource("2_ox81q")
+texture_focused = ExtResource("3_on474")
 texture_click_mask = ExtResource("3_n2m6j")
 stretch_mode = 3

@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://canytqr0cddm"]
+[gd_scene load_steps=6 format=3 uid="uid://canytqr0cddm"]
 
 [ext_resource type="Texture2D" uid="uid://dcc4a1iysv51d" path="res://Assets/Djungel/LnB/L_Grass_H.png" id="1_aq82c"]
 [ext_resource type="Texture2D" uid="uid://djgqrirllht6h" path="res://Assets/Djungel/LnB/L_Grass_F.png" id="2_weln3"]
 [ext_resource type="BitMap" uid="uid://bwo7jycaid7gt" path="res://Assets/Djungel/Mask/M_Grass.png" id="3_h4ijr"]
+[ext_resource type="Texture2D" uid="uid://bf1dkvgjx700t" path="res://Assets/Djungel/Focus/Grass_Focus.png" id="3_wvw3y"]
 
 [sub_resource type="GDScript" id="GDScript_hdxlj"]
 script/source = "extends TextureButton
@@ -14,7 +15,7 @@ offset_right = 557.0
 offset_bottom = 706.0
 texture_normal = ExtResource("1_aq82c")
 texture_pressed = ExtResource("2_weln3")
-texture_hover = ExtResource("1_aq82c")
 texture_disabled = ExtResource("2_weln3")
+texture_focused = ExtResource("3_wvw3y")
 texture_click_mask = ExtResource("3_h4ijr")
 script = SubResource("GDScript_hdxlj")

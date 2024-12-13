@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://m8wreerljblo"]
+[gd_scene load_steps=5 format=3 uid="uid://m8wreerljblo"]
 
 [ext_resource type="Texture2D" uid="uid://0s26tri3qmej" path="res://Assets/Gym/LnB/B_Ball_H.png" id="1_qbhrc"]
 [ext_resource type="Texture2D" uid="uid://b2twy5di5bcql" path="res://Assets/Gym/LnB/B_Ball_F.png" id="2_a6gku"]
+[ext_resource type="Texture2D" uid="uid://dvgpja5eaqose" path="res://Assets/Gym/Focus/Ball_Focus.png" id="3_2i3f1"]
 [ext_resource type="BitMap" uid="uid://n56hmlskrdao" path="res://Assets/Gym/Mask/M_Ball.png" id="3_qqlgh"]
 
 [node name="BernieSpot" type="TextureButton"]
@@ -12,6 +13,6 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 texture_normal = ExtResource("1_qbhrc")
 texture_pressed = ExtResource("2_a6gku")
-texture_hover = ExtResource("1_qbhrc")
 texture_disabled = ExtResource("2_a6gku")
+texture_focused = ExtResource("3_2i3f1")
 texture_click_mask = ExtResource("3_qqlgh")
