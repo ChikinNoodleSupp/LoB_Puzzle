@@ -24,7 +24,7 @@ var localizationScene = preload("res://Scenes/Global/Localization_Scene.tscn")
 func _ready() -> void:
 	
 	AudioPlayer.play_music_menu()
-	AudioPlayer.mute = true
+	
 	
 	# Localization.setSwedish = true
 	if Localization.setSwedish:

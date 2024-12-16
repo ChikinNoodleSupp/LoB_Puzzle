@@ -8,7 +8,7 @@ const bg_music3 = preload("res://Music/ES_Singing Birds, Early Morning - Epidemi
 const bg_music4 = preload("res://Music/AB_Bubble_BACKING.mp3")
 const menu_music = preload("res://Music/Lollo Bernie Song_SCAN_SHORT_Backing_WAV_2020.mp3")
 
-var mute = false
+var mute = true
 
 var rng = RandomNumberGenerator.new()
 var pitch = 0
@@ -38,27 +38,29 @@ func play_music_level2():
 func play_music_level3():
 	_play_music(bg_music3)
 func play_music_level6():
-	_play_music(bg_music3, -20.0)
+	_play_music(bg_music4, -20.0)
 func play_music_menu():
 	_play_music(menu_music, -20.0)
 func stop_music_level():
 	playing = false
 
 func play_FX(stream: AudioStream, volume = -5.0):
+	if is_instance_valid(fx_player):
+		fx_player.queue_free()
+	
 	fx_player = AudioStreamPlayer.new()
 	fx_player.stream = stream
 	fx_player.name = "FX_PLAYER"
 	fx_player.volume_db = volume
-	set_bus("Master")
+	fx_player.bus = "Master"
 	add_child(fx_player)
 	
 	fx_player.play()
 	
-	await fx_player.finished
-	
+	# await fx_player.finished
+
+func _on_audio_stream_player_finished() -> void:
 	fx_player.queue_free()
-
-
 
 #func _notification(what): #allegedly does something when gamewindow is focused / unfocused
 	#match what:
