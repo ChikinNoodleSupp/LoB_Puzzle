@@ -22,17 +22,10 @@ var localizationScene = preload("res://Scenes/Global/Localization_Scene.tscn")
 
 #Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	#spawnSlider()
-	#if AudioPlayer.mute == true:
-		#_checkbox.button_pressed = true
-	#elif AudioPlayer.mute == false:
-		#_checkbox.button_pressed = false
-	#else:
-		#pass
 	
 	AudioPlayer.play_music_menu()
 	AudioPlayer.mute = true
-		
+	
 	# Localization.setSwedish = true
 	if Localization.setSwedish:
 		Swedish()

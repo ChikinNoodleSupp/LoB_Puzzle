@@ -247,7 +247,7 @@ func _ready() -> void:
 	
 	elif SM.scene == 6:
 		BG_6.visible = true
-		AudioPlayer.play_music_level3()
+		AudioPlayer.play_music_level6()
 
 	newScene()
 	
@@ -367,13 +367,17 @@ func spawnBernieHidingSpot(pos, spot):
 	# VFX1.position = pos
 	
 
+
 func _on_lollo_spot_pressed():
 	print("Lollo found!")
 	LolloFound = true
 	LolloButton.disabled = true
 	isLolloBernieFound()
 	AudioPlayer.play_FX(AudioPlayer.foundSFX, 0)
-	LolloButton.focus_next
+	#var next_focus = get_focus_neighbor(SIDE_RIGHT)
+	#if next_focus:
+		#next_focus.grab_focus()
+	LolloButton.focus_mode = Control.FOCUS_NONE
 	
 	#VFX.emitting = true
 
@@ -384,6 +388,7 @@ func _on_bernie_spot_pressed():
 	isLolloBernieFound()
 	AudioPlayer.play_FX(AudioPlayer.foundSFX, 0)
 	#VFX.emitting = true
+	BernieButton.focus_mode = Control.FOCUS_NONE
 
 func spawnHidingSpot1(pos, spot): # spawn L and B at random_num1 and 2, and spawn empty hiding spots at the rest
 	EmptyButton = spot.instantiate() as TextureButton # setting this to texture button breaks everything which is quite cringe
@@ -399,9 +404,30 @@ func _on_empty_button_pressed():
 	print("No one here!")
 	AudioPlayer.play_FX(AudioPlayer.clickSFX, 0)
 
+func _unhandled_input(event):
+	if event is InputEventKey and event.pressed and event.keycode == KEY_TAB:
+		# Check if no node is currently focused
+		if not get_tree().root.gui_get_focus_owner():
+			# Find the first TextureButton in the hierarchy
+			var first_button = find_first_texture_button(self)
+			if first_button:
+				first_button.grab_focus()
+
+func find_first_texture_button(node: Node) -> TextureButton:
+	# Recursively find the first TextureButton
+	if node is TextureButton:
+		return node
+	for child in node.get_children():
+		var result = find_first_texture_button(child)
+		if result:
+			return result
+	return null
+
+
 func spawnHUD():
 	HudButton = HUD.instantiate()
 	add_child(HudButton)
+	move_child(HudButton, get_child_count() - 1)
 	var BackButton = HudButton.find_child("Back")
 	BackButton.connect("pressed", _on_back_btn_pressed)
 

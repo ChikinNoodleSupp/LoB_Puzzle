@@ -194,28 +194,6 @@ offset_bottom = 1528.0
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("6_ikh2d")
 
-[node name="TextureRect6" type="TextureRect" parent="Background"]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -169.0
-offset_top = 36.0
-offset_right = 573.0
-offset_bottom = 140.0
-grow_horizontal = 2
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_2o1ie")
-
-[node name="TextureRect7" type="TextureRect" parent="Background"]
-layout_mode = 0
-offset_left = 439.0
-offset_top = 90.0
-offset_right = 2551.0
-offset_bottom = 560.0
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("8_0urtp")
-
 [node name="TextureRect8" type="TextureRect" parent="Background"]
 layout_mode = 0
 offset_left = 1616.0
@@ -232,6 +210,28 @@ offset_right = 556.0
 offset_bottom = 1695.0
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("10_pgcaj")
+
+[node name="TextureRect6" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -169.0
+offset_top = 36.0
+offset_right = 573.0
+offset_bottom = 140.0
+grow_horizontal = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_2o1ie")
+
+[node name="TextureRect7" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 439.0
+offset_top = 90.0
+offset_right = 2551.0
+offset_bottom = 560.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("8_0urtp")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
