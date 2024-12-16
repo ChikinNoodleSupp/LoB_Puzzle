@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://bfet2ccdjje2p"]
+[gd_scene load_steps=43 format=3 uid="uid://bfet2ccdjje2p"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_d7dnp"]
 [ext_resource type="Texture2D" uid="uid://rgdbxvabmhh6" path="res://Assets/MainMenu/MainMenu_Asset 3.png" id="2_b5ewc"]
@@ -9,29 +9,35 @@
 [ext_resource type="Texture2D" uid="uid://2efmpyhfxhcq" path="res://Assets/MainMenu/MainMenu_Asset 6.png" id="6_ikh2d"]
 [ext_resource type="Script" path="res://Scenes/sun2.gd" id="6_t02ey"]
 [ext_resource type="Texture2D" uid="uid://bkkulfbhyivpo" path="res://Assets/MainMenu/MainMenu_Asset 9.png" id="7_2o1ie"]
-[ext_resource type="Texture2D" uid="uid://dfgbft8gff0c6" path="res://Assets/MainMenu/MainMenu_Asset 10.png" id="8_0urtp"]
 [ext_resource type="Texture2D" uid="uid://mt2d0ona8pu7" path="res://Assets/MainMenu/MainMenu_Bernie.png" id="9_uw3jf"]
 [ext_resource type="Texture2D" uid="uid://u0we6o6of1l7" path="res://Assets/MainMenu/MainMenu_Lollo.png" id="10_pgcaj"]
+[ext_resource type="Texture2D" uid="uid://dfgbft8gff0c6" path="res://Assets/MainMenu/Menu/MainMenu_Asset 10.png" id="11_bxhn0"]
 [ext_resource type="Texture2D" uid="uid://yug8selsb4tk" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_stranden(1).png" id="12_m6okd"]
 [ext_resource type="Texture2D" uid="uid://boahqldok84ui" path="res://Assets/Thumbnails/hover/LB_YT_cover_kurragomma_2560x1440_stranden_hover.png" id="13_3ac63"]
+[ext_resource type="Texture2D" uid="uid://ce3s5qqdc38sb" path="res://Assets/MainMenu/Menu/SV_Asset 23.png" id="15_afpir"]
 [ext_resource type="Texture2D" uid="uid://crw15dio8fioy" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_havetsbotten(1).png" id="15_sygv6"]
 [ext_resource type="Texture2D" uid="uid://uutcjii8w1lf" path="res://Assets/Thumbnails/hover/LB_YT_cover_kurragomma_2560x1440_havetsbotten_hover.png" id="16_aaohr"]
 [ext_resource type="Texture2D" uid="uid://cd1ioyo8h7s0o" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_hemma(1).png" id="17_3aygs"]
 [ext_resource type="Texture2D" uid="uid://dxgfihw1fmchf" path="res://Assets/Thumbnails/hover/LB_YT_cover_kurragomma_2560x1440_hemma_hover.png" id="18_n4vac"]
+[ext_resource type="Texture2D" uid="uid://bwl4w7iv31cax" path="res://Assets/MainMenu/Menu/SV_Asset 27.png" id="18_xhdiy"]
 [ext_resource type="Texture2D" uid="uid://d0kophlye616c" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_bergetstopp(1).png" id="19_ypdkl"]
 [ext_resource type="Texture2D" uid="uid://cgerosdeh7t6n" path="res://Assets/Thumbnails/hover/LB_YT_cover_kurragomma_2560x1440_bergetstopp_hover.png" id="20_uff8f"]
 [ext_resource type="Texture2D" uid="uid://bgscb7kml4rvw" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_djungeln(1).png" id="21_ue1ew"]
+[ext_resource type="Texture2D" uid="uid://dmvi5g3lr7fxu" path="res://Assets/MainMenu/Menu/SV_Asset 26.png" id="21_x1ds0"]
 [ext_resource type="Texture2D" uid="uid://c03setn1ge0lh" path="res://Assets/ICONS/Flags_H_Asset 21.png" id="22_edpct"]
 [ext_resource type="Texture2D" uid="uid://c551ppwyie37l" path="res://Assets/Thumbnails/hover/LB_YT_cover_kurragomma_2560x1440_djungeln_hover.png" id="22_ua1jp"]
 [ext_resource type="Texture2D" uid="uid://0tsft3l6fdkr" path="res://Assets/Thumbnails/LB_YT_cover_kurragomma_2560x1440_gympasalen(1).png" id="23_82ii4"]
 [ext_resource type="Texture2D" uid="uid://dhgksdmk8hdyu" path="res://Assets/ICONS/Flags_P_Asset 17.png" id="23_xspqi"]
 [ext_resource type="Texture2D" uid="uid://y8xdxt6es7m7" path="res://Assets/ICONS/Flags_H_Asset 19.png" id="24_cign0"]
 [ext_resource type="Texture2D" uid="uid://bqvt4rtim77wx" path="res://Assets/Thumbnails/hover/LB_YT_cover_kurragomma_2560x1440_gympasalen_hover.png" id="24_ge408"]
+[ext_resource type="Texture2D" uid="uid://bw2e4qq1tddl6" path="res://Assets/MainMenu/Menu/SV_Asset 25.png" id="24_q3d7d"]
 [ext_resource type="Texture2D" uid="uid://b8c5y7adgkarw" path="res://Assets/ICONS/Flags_P_Asset 15.png" id="25_4s46x"]
 [ext_resource type="Texture2D" uid="uid://dhh48hs00enve" path="res://Assets/ICONS/Flags_H_Asset 20.png" id="26_l8h25"]
+[ext_resource type="Texture2D" uid="uid://dct8gxfvb86od" path="res://Assets/MainMenu/Menu/SV_Asset 24.png" id="27_45gbs"]
 [ext_resource type="Texture2D" uid="uid://yimg5se28731" path="res://Assets/ICONS/Flags_P_Asset 16.png" id="27_kj86s"]
 [ext_resource type="Texture2D" uid="uid://c1i0yaiudbkj5" path="res://Assets/ICONS/Flags_H_Asset 18.png" id="28_f2dvh"]
 [ext_resource type="Texture2D" uid="uid://d10p7ounijhcl" path="res://Assets/ICONS/Flags_P_Asset 14.png" id="29_r3t1q"]
+[ext_resource type="Texture2D" uid="uid://dpvfoxxjlrsnj" path="res://Assets/MainMenu/Menu/SV_Asset 22.png" id="30_vkcqv"]
 
 [sub_resource type="Animation" id="Animation_6d8hl"]
 resource_name = "Fade_in"
@@ -224,14 +230,10 @@ grow_horizontal = 2
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_2o1ie")
 
-[node name="TextureRect7" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = 439.0
-offset_top = 90.0
-offset_right = 2551.0
-offset_bottom = 560.0
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(993, 208)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("8_0urtp")
+texture = ExtResource("11_bxhn0")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -253,7 +255,7 @@ theme_override_constants/margin_top = 0
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_constants/separation = 200
+theme_override_constants/separation = 600
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -279,11 +281,17 @@ texture_focused = ExtResource("13_3ac63")
 script = ExtResource("4_j817u")
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 theme_override_colors/font_color = Color(0.0980392, 0.321569, 0.643137, 1)
 theme_override_font_sizes/font_size = 200
 text = "STRANDEN"
 horizontal_alignment = 1
+
+[node name="StrandTitle" type="Sprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+position = Vector2(1280, 1700)
+scale = Vector2(4, 4)
+texture = ExtResource("15_afpir")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -302,11 +310,17 @@ texture_hover = ExtResource("16_aaohr")
 texture_focused = ExtResource("16_aaohr")
 
 [node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+visible = false
 layout_mode = 2
 theme_override_colors/font_color = Color(0.0980392, 0.321569, 0.643137, 1)
 theme_override_font_sizes/font_size = 200
 text = "HAVETS BOTTEN"
 horizontal_alignment = 1
+
+[node name="VattenTitle" type="Sprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+position = Vector2(1280, 1700)
+scale = Vector2(4, 4)
+texture = ExtResource("18_xhdiy")
 
 [node name="VBoxContainer3" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -325,11 +339,17 @@ texture_hover = ExtResource("18_n4vac")
 texture_focused = ExtResource("18_n4vac")
 
 [node name="Label3" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3"]
+visible = false
 layout_mode = 2
 theme_override_colors/font_color = Color(0.0980392, 0.321569, 0.643137, 1)
 theme_override_font_sizes/font_size = 200
 text = "HEMMA"
 horizontal_alignment = 1
+
+[node name="HemmaTitle" type="Sprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3"]
+position = Vector2(1280, 1700)
+scale = Vector2(4, 4)
+texture = ExtResource("21_x1ds0")
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -354,11 +374,17 @@ texture_hover = ExtResource("20_uff8f")
 texture_focused = ExtResource("20_uff8f")
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+visible = false
 layout_mode = 2
 theme_override_colors/font_color = Color(0.0980392, 0.321569, 0.643137, 1)
 theme_override_font_sizes/font_size = 200
 text = "BERGETS TOPP"
 horizontal_alignment = 1
+
+[node name="BergTitle" type="Sprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer"]
+position = Vector2(1280, 1700)
+scale = Vector2(4, 4)
+texture = ExtResource("24_q3d7d")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
@@ -377,11 +403,17 @@ texture_hover = ExtResource("22_ua1jp")
 texture_focused = ExtResource("22_ua1jp")
 
 [node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2"]
+visible = false
 layout_mode = 2
 theme_override_colors/font_color = Color(0.0980392, 0.321569, 0.643137, 1)
 theme_override_font_sizes/font_size = 200
 text = "DJUNGELN"
 horizontal_alignment = 1
+
+[node name="DjungelTitle" type="Sprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2"]
+position = Vector2(1280, 1700)
+scale = Vector2(4, 4)
+texture = ExtResource("27_45gbs")
 
 [node name="VBoxContainer3" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
@@ -400,11 +432,17 @@ texture_hover = ExtResource("24_ge408")
 texture_focused = ExtResource("24_ge408")
 
 [node name="Label3" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer3"]
+visible = false
 layout_mode = 2
 theme_override_colors/font_color = Color(0.0980392, 0.321569, 0.643137, 1)
 theme_override_font_sizes/font_size = 200
 text = "GYMPASALEN"
 horizontal_alignment = 1
+
+[node name="GymTitle" type="Sprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer3"]
+position = Vector2(1280, 1700)
+scale = Vector2(4, 4)
+texture = ExtResource("30_vkcqv")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

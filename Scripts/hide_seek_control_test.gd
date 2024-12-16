@@ -218,6 +218,9 @@ var HudButton
 var VFX = preload("res://Scenes/Global/vfx.tscn")
 var VFXbool = false
 
+var rng = RandomNumberGenerator.new()
+var pitch = 0
+
 func _ready() -> void:
 	BG_1.visible = false
 	BG_2.visible = false
@@ -373,7 +376,9 @@ func _on_lollo_spot_pressed():
 	LolloFound = true
 	LolloButton.disabled = true
 	isLolloBernieFound()
+
 	AudioPlayer.play_FX(AudioPlayer.foundSFX, 0)
+
 	#var next_focus = get_focus_neighbor(SIDE_RIGHT)
 	#if next_focus:
 		#next_focus.grab_focus()
@@ -402,7 +407,8 @@ func spawnHidingSpot1(pos, spot): # spawn L and B at random_num1 and 2, and spaw
 
 func _on_empty_button_pressed():
 	print("No one here!")
-	AudioPlayer.play_FX(AudioPlayer.clickSFX, 0)
+	AudioPlayer.play_FX(AudioPlayer.clickSFX, -5.0)
+
 
 func _unhandled_input(event):
 	if event is InputEventKey and event.pressed and event.keycode == KEY_TAB:

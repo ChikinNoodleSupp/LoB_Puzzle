@@ -31,8 +31,8 @@ func _ready() -> void:
 		Swedish()
 	elif Localization.setDanish:
 		Danish()
-	elif Localization.setEnglish:
-		English()
+	#elif Localization.setEnglish:
+		#English()
 	elif Localization.setNorwegian:
 		Norwegian()
 	elif Localization.setFinnish:
@@ -72,72 +72,104 @@ func spawnHUD():
 
 func Swedish():
 	print("Svenska")
-	HnS.text = "Kurragömma1"
-	HnS2.text = "Kurragömma2"
-	HnS3.text = "Kurragömma3"
-	HnS4.text = "Kurragömma4"
-	HnS5.text = "Kurragömma5"
-	HnS6.text = "Kurragömma6"
+	$Title.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/MainMenu_Asset 10.png")
+	
+	$MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/StrandTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/SV_Asset 23.png")
+	$MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/VattenTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/SV_Asset 27.png")
+	$MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/HemmaTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/SV_Asset 26.png")
+	$MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/BergTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/SV_Asset 25.png")
+	$MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2/DjungelTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/SV_Asset 24.png")
+	$MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer3/GymTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/SV_Asset 22.png")
+	#HnS.text = "Kurragömma1"
+	#HnS2.text = "Kurragömma2"
+	#HnS3.text = "Kurragömma3"
+	#HnS4.text = "Kurragömma4"
+	#HnS5.text = "Kurragömma5"
+	#HnS6.text = "Kurragömma6"
 	Localization.setSwedish = true
-	Localization.setEnglish = false
+	#Localization.setEnglish = false
 	Localization.setDanish = false
 	Localization.setNorwegian = false
 	Localization.setFinnish = false
 	
 
-func English():
-	print("English")
-	# menuButton.text = "Language"
-	HnS.text = "Hide & Seek1"
-	HnS2.text = "Hide & Seek2"
-	HnS3.text = "Hide & Seek3"
-	Localization.setSwedish = false
-	Localization.setEnglish = true
-	Localization.setDanish = false
-	Localization.setNorwegian = false
-	Localization.setFinnish = false
+#func English():
+	#print("English")
+	## menuButton.text = "Language"
+	#HnS.text = "Hide & Seek1"
+	#HnS2.text = "Hide & Seek2"
+	#HnS3.text = "Hide & Seek3"
+	#Localization.setSwedish = false
+	#Localization.setEnglish = true
+	#Localization.setDanish = false
+	#Localization.setNorwegian = false
+	#Localization.setFinnish = false
 
 func Danish():
 	print("Dansk")
+	$Title.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/DK_Title_Asset 28.png")
+	
+	$MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/StrandTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/DK_Asset 23.png")
+	$MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/VattenTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/DK_Asset 27.png")
+	$MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/HemmaTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/DK_Asset 26.png")
+	$MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/BergTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/DK_Asset 25.png")
+	$MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2/DjungelTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/DK_Asset 24.png")
+	$MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer3/GymTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/DK_Asset 22.png")
 	# menuButton.text = "Sprog"
-	HnS.text = "Gemmeleg1"
-	HnS2.text = "Gemmeleg2"
-	HnS3.text = "Gemmeleg3"
-	HnS4.text = "Gemmeleg4"
-	HnS5.text = "Gemmeleg5"
-	HnS6.text = "Gemmeleg6"
+	#HnS.text = "Gemmeleg1"
+	#HnS2.text = "Gemmeleg2"
+	#HnS3.text = "Gemmeleg3"
+	#HnS4.text = "Gemmeleg4"
+	#HnS5.text = "Gemmeleg5"
+	#HnS6.text = "Gemmeleg6"
 	Localization.setSwedish = false
-	Localization.setEnglish = false
+	#Localization.setEnglish = false
 	Localization.setDanish = true
 	Localization.setNorwegian = false
 	Localization.setFinnish = false
 
 func Norwegian():
 	print("Norsk")
+	$Title.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/NO_Title_Asset 28.png")
+	
+	$MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/StrandTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/NO_Asset 23.png")
+	$MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/VattenTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/NO_Asset 27.png")
+	$MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/HemmaTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/NO_Asset 26.png")
+	$MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/BergTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/NO_Asset 25.png")
+	$MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2/DjungelTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/NO_Asset 24.png")
+	$MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer3/GymTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/NO_Asset 22.png")
 	# menuButton.text = "Språk"
-	HnS.text = "Gjemsel1"
-	HnS2.text = "Gjemsel2"
-	HnS3.text = "Gjemsel3"
-	HnS4.text = "Gjemsel4"
-	HnS5.text = "Gjemsel5"
-	HnS6.text = "Gjemsel6"
+	#HnS.text = "Gjemsel1"
+	#HnS2.text = "Gjemsel2"
+	#HnS3.text = "Gjemsel3"
+	#HnS4.text = "Gjemsel4"
+	#HnS5.text = "Gjemsel5"
+	#HnS6.text = "Gjemsel6"
 	Localization.setSwedish = false
-	Localization.setEnglish = false
+	#Localization.setEnglish = false
 	Localization.setDanish = false
 	Localization.setNorwegian = true
 	Localization.setFinnish = false
 
 func Finnish():
 	print("Suomi")
+	$Title.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/FI_Title_Asset 28.png")
+	
+	$MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/StrandTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/FI_Asset 23.png")
+	$MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/VattenTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/FI_Asset 27.png")
+	$MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/HemmaTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/FI_Asset 26.png")
+	$MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer/BergTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/FI_Asset 25.png")
+	$MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer2/DjungelTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/FI_Asset 24.png")
+	$MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer3/GymTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/FI_Asset 22.png")
 	# menuButton.text = "Kieli"
-	HnS.text = "Piiloleikki1"
-	HnS2.text = "Piiloleikki2"
-	HnS3.text = "Piiloleikki3"
-	HnS4.text = "Piiloleikki4"
-	HnS5.text = "Piiloleikki5"
-	HnS6.text = "Piiloleikki6"
+	#HnS.text = "Piiloleikki1"
+	#HnS2.text = "Piiloleikki2"
+	#HnS3.text = "Piiloleikki3"
+	#HnS4.text = "Piiloleikki4"
+	#HnS5.text = "Piiloleikki5"
+	#HnS6.text = "Piiloleikki6"
 	Localization.setSwedish = false
-	Localization.setEnglish = false
+	#Localization.setEnglish = false
 	Localization.setDanish = false
 	Localization.setNorwegian = false
 	Localization.setFinnish = true
@@ -204,9 +236,9 @@ func _on_fi_btn_pressed() -> void:
 	AudioPlayer.play_FX(AudioPlayer.languageSFX, 0)
 
 
-func _on_en_btn_pressed() -> void:
-	English()
-	AudioPlayer.play_FX(AudioPlayer.languageSFX, 0)
+#func _on_en_btn_pressed() -> void:
+	#English()
+	#AudioPlayer.play_FX(AudioPlayer.languageSFX, 0)
 
 
 

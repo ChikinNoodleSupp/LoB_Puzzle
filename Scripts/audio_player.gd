@@ -10,7 +10,12 @@ const menu_music = preload("res://Music/Lollo Bernie Song_SCAN_SHORT_Backing_WAV
 
 var mute = false
 
-@onready var clickSFX = preload("res://SFX/test_btn-01.mp3")
+var rng = RandomNumberGenerator.new()
+var pitch = 0
+
+var fx_player
+
+@onready var clickSFX = preload("res://SFX/SFX_Tap_1.mp3")
 @onready var foundSFX = preload("res://SFX/SFX_LnB_1.mp3")
 @onready var languageSFX = preload("res://SFX/SFX_Blop_1.mp3")
 
@@ -39,13 +44,14 @@ func play_music_menu():
 func stop_music_level():
 	playing = false
 
-func play_FX(stream: AudioStream, volume = 0.0):
-	var fx_player = AudioStreamPlayer.new()
+func play_FX(stream: AudioStream, volume = -5.0):
+	fx_player = AudioStreamPlayer.new()
 	fx_player.stream = stream
 	fx_player.name = "FX_PLAYER"
 	fx_player.volume_db = volume
 	set_bus("Master")
 	add_child(fx_player)
+	
 	fx_player.play()
 	
 	await fx_player.finished
