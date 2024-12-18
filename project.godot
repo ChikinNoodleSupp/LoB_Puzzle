@@ -10,14 +10,13 @@ config_version=5
 
 [application]
 
-config/name="L&B_Hide&Seek"
-config/description="Lollo & Bernie Hide and Seek game"
-config/version="1"
+config/name="Lollo & Bernie Kurragömma"
+config/description="Lollo & Bernie Kurragömma"
+config/version="1.1"
 run/main_scene="res://Scenes/MainMenu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/show_image=false
-boot_splash/image="res://TempImages/hns hover.png"
 config/icon="res://Assets/ICONS/Lollo_Bernie.png_favicon_fea23897-7ba6-4e6f-b221-31c36a545312.png"
 boot_splash/minimum_display_time=3000
 
