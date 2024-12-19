@@ -1,12 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://eo2y3to8yrxe"]
+[gd_scene load_steps=8 format=3 uid="uid://eo2y3to8yrxe"]
 
 [ext_resource type="Texture2D" uid="uid://d3lhuw2sg0kln" path="res://Assets/MainMenu/MainMenu_Asset 12.png" id="2_1qqhm"]
 [ext_resource type="Texture2D" uid="uid://dua58jinmpm6k" path="res://Assets/MainMenu/MainMenu_Asset 11.png" id="3_0rbjq"]
 [ext_resource type="Texture2D" uid="uid://dkrfli68waaeg" path="res://Assets/ICONS/sound_focus.png" id="4_3e4df"]
 [ext_resource type="BitMap" uid="uid://beq5i87dw7o02" path="res://Assets/ICONS/M_sound.png" id="4_obl3u"]
 [ext_resource type="Texture2D" uid="uid://gy7yq5jokpym" path="res://Assets/MainMenu/MainMenu_Asset 13.png" id="5_671wd"]
-[ext_resource type="Script" path="res://Scenes/Global/mute_sound.gd" id="5_d3yg3"]
-[ext_resource type="Script" path="res://Scenes/Global/back.gd" id="6_acemf"]
+[ext_resource type="Script" path="res://Scripts/mute_sound.gd" id="5_d3yg3"]
 [ext_resource type="Texture2D" uid="uid://d0xckp0867e32" path="res://Assets/ICONS/Esc_Focus.png" id="6_wvagh"]
 
 [node name="Control" type="Control"]
@@ -23,6 +22,7 @@ offset_left = 1775.0
 offset_top = 27.0
 offset_right = 1893.0
 offset_bottom = 145.0
+focus_mode = 0
 toggle_mode = true
 texture_normal = ExtResource("2_1qqhm")
 texture_pressed = ExtResource("3_0rbjq")
@@ -36,10 +36,10 @@ offset_left = 22.0
 offset_top = 25.0
 offset_right = 141.0
 offset_bottom = 143.0
+focus_mode = 0
 button_mask = 7
 texture_normal = ExtResource("5_671wd")
 texture_focused = ExtResource("6_wvagh")
 texture_click_mask = ExtResource("4_obl3u")
-script = ExtResource("6_acemf")
 
 [connection signal="toggled" from="MuteSound" to="." method="_on_mute_sound_toggled"]

@@ -240,7 +240,24 @@ func _on_fi_btn_pressed() -> void:
 	#English()
 	#AudioPlayer.play_FX(AudioPlayer.languageSFX, 0)
 
+func _unhandled_input(event):
+	if event is InputEventKey and event.pressed and event.keycode == KEY_TAB:
+		# Check if no node is currently focused
+		if not get_tree().root.gui_get_focus_owner():
+			# Find the first TextureButton in the hierarchy
+			var first_button = find_first_texture_button(self)
+			if first_button:
+				first_button.grab_focus()
 
+func find_first_texture_button(node: Node) -> TextureButton:
+	# Recursively find the first TextureButton
+	if node is TextureButton:
+		return node
+	for child in node.get_children():
+		var result = find_first_texture_button(child)
+		if result:
+			return result
+	return null
 
 #func _on_hide_seek_mouse_entered() -> void:
 	#mouseHover = true # set mouse hover = true, and in another func on mouse click / input, play() sfx. If hover = true, dont play()

@@ -1,13 +1,12 @@
-[gd_scene load_steps=43 format=3 uid="uid://bfet2ccdjje2p"]
+[gd_scene load_steps=42 format=3 uid="uid://bfet2ccdjje2p"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_d7dnp"]
 [ext_resource type="Texture2D" uid="uid://rgdbxvabmhh6" path="res://Assets/MainMenu/MainMenu_Asset 3.png" id="2_b5ewc"]
 [ext_resource type="Texture2D" uid="uid://bdj4orewn1fmk" path="res://Assets/MainMenu/MainMenu_Asset 4.png" id="3_7l8ay"]
-[ext_resource type="Script" path="res://Scenes/ui-nav.gd" id="4_j817u"]
 [ext_resource type="Texture2D" uid="uid://dbhtvj83yod0o" path="res://Assets/MainMenu/MainMenu_Asset 2.png" id="4_nsucy"]
 [ext_resource type="Texture2D" uid="uid://dg2n4dv420cnd" path="res://Assets/MainMenu/MainMenu_Asset 5.png" id="5_xoxnp"]
 [ext_resource type="Texture2D" uid="uid://2efmpyhfxhcq" path="res://Assets/MainMenu/MainMenu_Asset 6.png" id="6_ikh2d"]
-[ext_resource type="Script" path="res://Scenes/sun2.gd" id="6_t02ey"]
+[ext_resource type="Script" path="res://Scenes/Animations/sun2.gd" id="6_t02ey"]
 [ext_resource type="Texture2D" uid="uid://bkkulfbhyivpo" path="res://Assets/MainMenu/MainMenu_Asset 9.png" id="7_2o1ie"]
 [ext_resource type="Texture2D" uid="uid://mt2d0ona8pu7" path="res://Assets/MainMenu/MainMenu_Bernie.png" id="9_uw3jf"]
 [ext_resource type="Texture2D" uid="uid://u0we6o6of1l7" path="res://Assets/MainMenu/MainMenu_Lollo.png" id="10_pgcaj"]
@@ -278,7 +277,6 @@ texture_normal = ExtResource("12_m6okd")
 texture_pressed = ExtResource("13_3ac63")
 texture_hover = ExtResource("13_3ac63")
 texture_focused = ExtResource("13_3ac63")
-script = ExtResource("4_j817u")
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
 visible = false

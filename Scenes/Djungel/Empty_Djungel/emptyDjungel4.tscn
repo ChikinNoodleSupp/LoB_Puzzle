@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dxvqa5pg1aive"]
 
-[ext_resource type="Texture2D" uid="uid://dq0l35nj78xjq" path="res://Assets/Djungel/Hover/H_TreeLeft.png" id="2_2c4im"]
-[ext_resource type="Texture2D" uid="uid://ce22fotsschot" path="res://Assets/Djungel/Pressed/P_TreeLeft.png" id="2_ao67a"]
+[ext_resource type="Texture2D" uid="uid://bnp0eviqsu38l" path="res://Assets/Djungel/Hover/H_TreeLeft_2.png" id="1_m3h0d"]
+[ext_resource type="Texture2D" uid="uid://cadijjad523f3" path="res://Assets/Djungel/Pressed/P_TreeLeft_2.png" id="2_iu2o8"]
 [ext_resource type="Texture2D" uid="uid://c7xoiifgcwa51" path="res://Assets/Djungel/Focus/TreeLeft_Focus.png" id="3_0p654"]
 [ext_resource type="BitMap" uid="uid://cgek5eihsqldv" path="res://Assets/Djungel/Mask/M_TreeLeft.png" id="4_v07v1"]
 
@@ -19,9 +19,9 @@ offset_bottom = 664.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(532, 1288)
-texture_normal = ExtResource("2_2c4im")
-texture_pressed = ExtResource("2_ao67a")
-texture_disabled = ExtResource("2_ao67a")
+texture_normal = ExtResource("1_m3h0d")
+texture_pressed = ExtResource("2_iu2o8")
+texture_disabled = ExtResource("2_iu2o8")
 texture_focused = ExtResource("3_0p654")
 texture_click_mask = ExtResource("4_v07v1")
 stretch_mode = 3
