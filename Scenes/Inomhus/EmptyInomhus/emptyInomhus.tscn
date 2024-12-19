@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://d02c2nimxt4gx"]
+[gd_scene load_steps=5 format=3 uid="uid://d02c2nimxt4gx"]
 
 [ext_resource type="Texture2D" uid="uid://dtqutihykkpn4" path="res://Assets/Inom Hus/Hover/H_Tent.png" id="1_okeww"]
 [ext_resource type="Texture2D" uid="uid://clhlwfgh3loxh" path="res://Assets/Inom Hus/Pressed/P_Tent.png" id="2_00agy"]
 [ext_resource type="BitMap" uid="uid://bt2tc0672wrm4" path="res://Assets/Inom Hus/Mask/M_Tent.png" id="3_0l14i"]
 [ext_resource type="Texture2D" uid="uid://t1r3exyiy25r" path="res://Assets/Inom Hus/Focus/Tent_Focus.png" id="3_652nh"]
-[ext_resource type="Script" path="res://Scenes/Strand/Empty/GrabFocus.gd" id="5_qfqmr"]
 
 [node name="empty_spot" type="TextureButton"]
 z_index = 1
@@ -26,4 +25,3 @@ texture_disabled = ExtResource("2_00agy")
 texture_focused = ExtResource("3_652nh")
 texture_click_mask = ExtResource("3_0l14i")
 stretch_mode = 3
-script = ExtResource("5_qfqmr")

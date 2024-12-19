@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dm5jq6m64xm40"]
+[gd_scene load_steps=5 format=3 uid="uid://dm5jq6m64xm40"]
 
 [ext_resource type="Texture2D" uid="uid://cpa4pd2hal7m8" path="res://Assets/Strand/Hover/H_Chair_2.png" id="1_m8i35"]
 [ext_resource type="Texture2D" uid="uid://cj885mneb2dax" path="res://Assets/Strand/Pressed/P_Chair_2.png" id="2_bhn18"]
 [ext_resource type="Texture2D" uid="uid://cxiyb3lssjsjo" path="res://Assets/Strand/Focus/Chair_Focus.png" id="3_m3mi8"]
 [ext_resource type="BitMap" uid="uid://d0cb0wmajvrsn" path="res://Assets/Strand/Mask/M_Chair_2.png" id="3_sxtpw"]
-[ext_resource type="Script" path="res://Scenes/Strand/Empty/GrabFocus.gd" id="4_7b6v1"]
 
 [node name="empty_spot4" type="TextureButton"]
 z_index = 3
@@ -16,4 +15,3 @@ texture_pressed = ExtResource("2_bhn18")
 texture_disabled = ExtResource("2_bhn18")
 texture_focused = ExtResource("3_m3mi8")
 texture_click_mask = ExtResource("3_sxtpw")
-script = ExtResource("4_7b6v1")
