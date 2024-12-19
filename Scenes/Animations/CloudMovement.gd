@@ -5,7 +5,6 @@ var myXCordLimit = 2000
 
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if SM.scene == 4:
 		position.x += .1

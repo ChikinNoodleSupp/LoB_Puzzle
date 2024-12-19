@@ -7,10 +7,7 @@ var eagleMaxHeight = eagle + 25
 var eagleMinHeight = eagle - 25
 var eagleMovement = 0.3
 
-func _ready():
-	pass
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if SM.scene == 4:
 		position.x += 1
@@ -22,5 +19,3 @@ func _process(delta: float) -> void:
 			eagleMovement = -0.3
 		if position.y <= eagleMinHeight:
 			eagleMovement = 0.3
-	
-	

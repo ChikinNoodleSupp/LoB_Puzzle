@@ -1,6 +1,5 @@
 extends AudioStreamPlayer
 
-# signal audio_started
 
 const bg_music1 = preload("res://Music/ES_Ocean, Rhythmic Waves, Crashing In On Beach, Distant Birds 02 - Epidemic Sound.mp3")
 const bg_music2 = preload("res://Music/ES_Complex 01 - Epidemic Sound.mp3")
@@ -27,9 +26,7 @@ func _play_music(music: AudioStream, volume = -8.0):
 	volume_db = volume
 	set_bus("Master")
 	play()
-	
-	# emit_signal("audio_started")
-	
+
 func play_music_level():
 	_play_music(bg_music1)
 	playing = true
@@ -57,14 +54,7 @@ func play_FX(stream: AudioStream, volume = -5.0):
 	
 	fx_player.play()
 	
-	# await fx_player.finished
+
 
 func _on_audio_stream_player_finished() -> void:
 	fx_player.queue_free()
-
-#func _notification(what): #allegedly does something when gamewindow is focused / unfocused
-	#match what:
-		#MainLoop.NOTIFICATION_WM_FOCUS_OUT:
-			#pass
-		#MainLoop.NOTIFICATION_WM_FOCUS_IN:
-			#pass
