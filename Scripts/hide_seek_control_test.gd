@@ -255,10 +255,10 @@ func _ready() -> void:
 	newScene()
 	
 	transition.play("Fade_in")
-	print("fade in")
+	#print("fade in")
 
 func mainCode(): # on start basically
-	print("Running mainCode(), current scene: ", current_scene.name)
+	#print("Running mainCode(), current scene: ", current_scene.name)
 	randomize()
 	clearHUD()
 	spawnHUD()
@@ -283,18 +283,18 @@ func mainCode(): # on start basically
 	
 	 # Roll a random number from array1
 	var random_num1 = get_random_from_array(array1)
-	print("First random number: ", random_num1)
+	#print("First random number: ", random_num1)
 	
 	# Remove the selected number from array2
 	array2.erase(random_num1)
 	
 	# Roll a random number from the updated array2
 	var random_num2 = get_random_from_array(array2)
-	print("Second random number: ", random_num2)
+	#print("Second random number: ", random_num2)
 	
 	# You can now use both random_num1 and random_num2 as needed
-	print("First random number from array1: ", random_num1)
-	print("Second random number from array2 (after removal): ", random_num2)
+	#print("First random number from array1: ", random_num1)
+	#print("Second random number from array2 (after removal): ", random_num2)
 	
 	var positionArray = [HnS_1position, HnS_2position, HnS_3position, HnS_4position, HnS_5position, HnS_6position]
 	
@@ -372,7 +372,7 @@ func spawnBernieHidingSpot(pos, spot):
 
 
 func _on_lollo_spot_pressed():
-	print("Lollo found!")
+	#print("Lollo found!")
 	LolloFound = true
 	LolloButton.disabled = true
 	isLolloBernieFound()
@@ -387,7 +387,7 @@ func _on_lollo_spot_pressed():
 	#VFX.emitting = true
 
 func _on_bernie_spot_pressed():
-	print("Bernie found!")
+	#print("Bernie found!")
 	BernieFound = true
 	BernieButton.disabled = true
 	isLolloBernieFound()
@@ -406,7 +406,7 @@ func spawnHidingSpot1(pos, spot): # spawn L and B at random_num1 and 2, and spaw
 	# EmptyButton1.position = HnS_2position
 
 func _on_empty_button_pressed():
-	print("No one here!")
+	#print("No one here!")
 	AudioPlayer.play_FX(AudioPlayer.clickSFX, -5.0)
 
 
@@ -451,7 +451,7 @@ func reset_arrays():
 	# Reset booleans if needed
 	LolloFound = false
 	BernieFound = false
-	print("Arrays reset!")
+	#print("Arrays reset!")
 
 func reset_hidingSpots():
 	for instance in instances:
@@ -504,7 +504,7 @@ func toMainMenu():
 
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "Fade_out_2":
-		print("fade out")
+		#print("fade out")
 		get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
 		# get_tree().change_scene_to_file(sceneArray[sceneNumber%sceneArray.size()])
 		#WHY ISNT IT WORKING REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE

@@ -71,7 +71,7 @@ func spawnHUD():
 	## documentation: https://www.reddit.com/r/godot/comments/177rdyo/menubutton_difficult_to_use/
 
 func Swedish():
-	print("Svenska")
+	#print("Svenska")
 	$Title.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/MainMenu_Asset 10.png")
 	
 	$MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/StrandTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/SV_Asset 23.png")
@@ -106,7 +106,7 @@ func Swedish():
 	#Localization.setFinnish = false
 
 func Danish():
-	print("Dansk")
+	#print("Dansk")
 	$Title.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/DK_Title_Asset 28.png")
 	
 	$MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/StrandTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/DK_Asset 23.png")
@@ -129,7 +129,7 @@ func Danish():
 	Localization.setFinnish = false
 
 func Norwegian():
-	print("Norsk")
+	#print("Norsk")
 	$Title.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/NO_Title_Asset 28.png")
 	
 	$MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/StrandTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/NO_Asset 23.png")
@@ -152,7 +152,7 @@ func Norwegian():
 	Localization.setFinnish = false
 
 func Finnish():
-	print("Suomi")
+	#print("Suomi")
 	$Title.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/FI_Title_Asset 28.png")
 	
 	$MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/StrandTitle.texture = ResourceLoader.load("res://Assets/MainMenu/Menu/FI_Asset 23.png")
@@ -209,7 +209,7 @@ func playAnim():
 
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "Fade_out":
-		print("Fade_out played")
+		#print("Fade_out played")
 		
 		get_tree().change_scene_to_file("res://Scenes/Strand/Hide_Seek_Main.tscn")
 		
@@ -242,16 +242,16 @@ func _on_fi_btn_pressed() -> void:
 
 
 
-func _on_hide_seek_mouse_entered() -> void:
-	mouseHover = true # set mouse hover = true, and in another func on mouse click / input, play() sfx. If hover = true, dont play()
-	if mouseHover:
-		print("mouse hover true")
-
-
-func _on_hide_seek_mouse_exited() -> void:
-	mouseHover = false # set mouse hover = false
-	if mouseHover == false:
-		print("mouse hover false")
+#func _on_hide_seek_mouse_entered() -> void:
+	#mouseHover = true # set mouse hover = true, and in another func on mouse click / input, play() sfx. If hover = true, dont play()
+	#if mouseHover:
+		#print("mouse hover true")
+#
+#
+#func _on_hide_seek_mouse_exited() -> void:
+	#mouseHover = false # set mouse hover = false
+	#if mouseHover == false:
+		##print("mouse hover false")
 
 
 #func _on_mute_sound_toggled(toggled_on: bool) -> void:

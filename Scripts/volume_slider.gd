@@ -6,7 +6,7 @@ var bus_index: int  # Store the bus index
 func _ready() -> void:
 	# Get the bus index from the provided bus name
 	bus_index = AudioServer.get_bus_index(bus_name)
-	print("Bus Index: ", bus_index, " for bus name: ", bus_name)
+	#print("Bus Index: ", bus_index, " for bus name: ", bus_name)
 	# Connect the value_changed signal to update the volume
 	value_changed.connect(_value_changed)
 	
