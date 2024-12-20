@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://mmfto03b35rw"
+path="res://.godot/imported/M_TreeRight_2.png-0fceabe8764f5fa1297ebd242f9fcffb.res"
+
+[deps]
+
+source_file="res://Assets/Djungel/Mask/M_TreeRight_2.png"
+dest_files=["res://.godot/imported/M_TreeRight_2.png-0fceabe8764f5fa1297ebd242f9fcffb.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

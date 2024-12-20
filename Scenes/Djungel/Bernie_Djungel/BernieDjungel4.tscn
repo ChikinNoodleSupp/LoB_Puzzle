@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://bnp0eviqsu38l" path="res://Assets/Djungel/Hover/H_TreeLeft_2.png" id="1_o3ohm"]
 [ext_resource type="Texture2D" uid="uid://dvwbuvbug8sda" path="res://Assets/Djungel/LnB/B_TreeLeft_F_2.png" id="2_obldl"]
-[ext_resource type="BitMap" uid="uid://cgek5eihsqldv" path="res://Assets/Djungel/Mask/M_TreeLeft.png" id="3_sqjxp"]
 [ext_resource type="Texture2D" uid="uid://c7xoiifgcwa51" path="res://Assets/Djungel/Focus/TreeLeft_Focus.png" id="3_vbt0k"]
+[ext_resource type="BitMap" uid="uid://bnuheiks8c868" path="res://Assets/Djungel/Mask/M_TreeLeft_2.png" id="4_lkfd1"]
 
 [node name="BernieSpot" type="TextureButton"]
 z_index = 5
@@ -15,4 +15,4 @@ texture_normal = ExtResource("1_o3ohm")
 texture_pressed = ExtResource("2_obldl")
 texture_disabled = ExtResource("2_obldl")
 texture_focused = ExtResource("3_vbt0k")
-texture_click_mask = ExtResource("3_sqjxp")
+texture_click_mask = ExtResource("4_lkfd1")

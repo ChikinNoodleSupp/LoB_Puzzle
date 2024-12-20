@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://chsr4itigvw68" path="res://Assets/Djungel/Hover/H_TreeRight.png" id="1_v2tuu"]
 [ext_resource type="Texture2D" uid="uid://csam4c3yntmxe" path="res://Assets/Djungel/Pressed/P_TreeRight.png" id="2_gvkp1"]
 [ext_resource type="Texture2D" uid="uid://dtptb1xajtsh" path="res://Assets/Djungel/Focus/TreeRight_Focus.png" id="3_5g1g4"]
-[ext_resource type="BitMap" uid="uid://b38wkyklad1w7" path="res://Assets/Djungel/Mask/M_TreeRight.png" id="3_aoe13"]
+[ext_resource type="BitMap" uid="uid://mmfto03b35rw" path="res://Assets/Djungel/Mask/M_TreeRight_2.png" id="4_7euas"]
 
 [node name="empty_spot" type="TextureButton"]
 z_index = 5
@@ -23,5 +23,5 @@ texture_normal = ExtResource("1_v2tuu")
 texture_pressed = ExtResource("2_gvkp1")
 texture_disabled = ExtResource("2_gvkp1")
 texture_focused = ExtResource("3_5g1g4")
-texture_click_mask = ExtResource("3_aoe13")
+texture_click_mask = ExtResource("4_7euas")
 stretch_mode = 3
